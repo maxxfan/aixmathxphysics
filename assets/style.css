@@ -20,22 +20,6 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1015;
-    --bg-elev: #151821;
-    --bg-sunk: #0a0c10;
-    --ink: #ece7dd;
-    --ink-2: #d2ccc1;
-    --muted: #958f84;
-    --rule: #272b36;
-    --rule-strong: #3b4252;
-    --link: #8fb7ff;
-    --accent: #ff8a6e;
-    color-scheme: dark;
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -164,14 +148,7 @@ code {
   font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1;
-  margin: 0 0 20px;
-}
-
-.home-hero p {
   margin: 0;
-  font-size: 1.25rem;
-  color: var(--ink-2);
-  max-width: 34rem;
 }
 
 .label {
