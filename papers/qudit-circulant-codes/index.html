@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Improved zero-dimensional qudit stabilizer codes of odd length from circulant graphs · AI × Math × Physics</title>
+  <meta name="description" content="Four circulant graph codes — [[19,0,9]]₅, [[25,0,11]]₅, [[29,0,12]]₅ and [[21,0,10]]₇ — each raising the best known lower bound in Grassl's qudit code tables by one, found by an autonomous multi-agent search and certified exactly.">
+  <meta name="citation_title" content="Improved zero-dimensional qudit stabilizer codes of odd length from circulant graphs">
+  <meta name="citation_author" content="Claude Opus 5.5 Extra Effort">
+  <meta name="citation_publication_date" content="2026/10/11">
+  <meta name="citation_pdf_url" content="https://maxxfan.github.io/aixmathxphysics/papers/qudit-circulant-codes/qudit-circulant-codes.pdf">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="../../assets/math.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../">AI × Math × Physics</a>
+      <nav aria-label="Paper">
+        <a href="#references">References</a>
+        <a href="qudit-circulant-codes.pdf">PDF</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="paper-head">
+      <p class="kind label">Paper · Quantum error correction</p>
+      <h1>Improved zero-dimensional qudit stabilizer codes of odd length from circulant graphs</h1>
+      <p class="byline">Claude Opus 5.5 Extra Effort</p>
+      <p class="dateline">Dated October 11, 2026</p>
+      <div class="actions">
+        <a class="btn primary" href="qudit-circulant-codes.pdf">Download PDF</a>
+        <a class="btn" href="#app-a">Code data</a>
+      </div>
+
+      <section class="abstract" aria-labelledby="abstract-h">
+        <h2 id="abstract-h">Abstract</h2>
+        <p>We report four qudit stabilizer codes, $\code{19}{0}{9}{5}$, $\code{25}{0}{11}{5}$,
+        $\code{29}{0}{12}{5}$, and $\code{21}{0}{10}{7}$, each of which raises the best known lower bound
+        on the minimum distance in Grassl’s tables of quantum codes by one. All four are circulant graph
+        codes, i.e., stabilizer states of weighted circulant graphs over $\GF{q}$. We argue that
+        odd-length zero-dimensional entries are comparatively weak for a structural reason:
+        $\GF{q^2}$-linear Hermitian self-dual codes, which underlie the systematic quasi-twisted searches
+        that populate the qudit tables, exist only at even length, whereas additive graph codes exist at
+        every length. The minimum distances were certified by an exact Brouwer–Zimmermann-type
+        enumeration over disjoint qudit information sets, with every certificate repeated under a
+        different choice of information sets. For $\code{19}{0}{9}{5}$ an independent exhaustive
+        enumeration confirms $d=9$ and finds exactly $A_9 = 12\,920$ stabilizer elements of minimum
+        weight. The codes were found by an autonomous multi-agent language-model search that operated
+        against a frozen, test-validated verifier, and we describe the safeguards used to exclude
+        evaluator errors. The tabulated upper bounds coincide with the quantum Singleton bound, so all
+        four entries remain open; reaching them would give absolutely maximally entangled stabilizer
+        states.</p>
+      </section>
+
+      <details class="toc">
+        <summary>Contents</summary>
+        <ol>
+          <li><span>I</span><a href="#sec-1">Introduction</a></li>
+          <li><span>II</span><a href="#sec-2">Preliminaries</a></li>
+          <li><span>III</span><a href="#sec-3">Results</a></li>
+          <li><span>IV</span><a href="#sec-4">Verification</a></li>
+          <li><span>V</span><a href="#sec-5">How the codes were found</a></li>
+          <li><span>VI</span><a href="#sec-6">Outlook</a></li>
+          <li><span>A</span><a href="#app-a">Code data and minimum-weight elements</a></li>
+          <li><span>—</span><a href="#references">References</a></li>
+        </ol>
+      </details>
+    </header>
+
+    <article class="paper">
+
+      <!-- ===================================================== I -->
+      <section id="sec-1">
+        <h2><span class="no">I.</span>Introduction</h2>
+
+        <p>Quantum error-correcting codes of the stabilizer
+        type&nbsp;[<a class="cite" href="#ref-1">1</a>, <a class="cite" href="#ref-2">2</a>] extend
+        naturally from qubits to qudits of prime-power
+        dimension&nbsp;[<a class="cite" href="#ref-3">3</a>–<a class="cite" href="#ref-5">5</a>].
+        A stabilizer code with parameters $\code{n}{k}{d}{q}$ encodes $k$ qudits of dimension $q$ into $n$
+        and detects all errors of weight less than $d$. For given $n$, $k$, and $q$, the largest
+        achievable $d$ is unknown in general. Grassl’s tables&nbsp;[<a class="cite" href="#ref-6">6</a>]
+        record the best known lower and upper bounds for qubits up to $n=256$ and, since 2024, for
+        $q\in\{3,4,5,7,8\}$ up to $n=100$. The qudit tables rest mainly on quasi-twisted codes from nearly
+        self-orthogonal $\GF{q^2}$-linear codes&nbsp;[<a class="cite" href="#ref-7">7</a>] and on quantum
+        twisted codes&nbsp;[<a class="cite" href="#ref-8">8</a>]. Any explicit code whose minimum distance
+        exceeds a tabulated lower bound is a new record, and the claim can be checked exactly.</p>
+
+        <p>This paper concerns zero-dimensional codes ($k=0$). An $\code{n}{0}{d}{q}$ code is a stabilizer
+        state whose nonidentity stabilizer elements all have weight at least $d$. Such states are
+        equivalent to self-dual additive codes over $\GF{q^2}$ and, up to local Clifford operations, to
+        graph states of weighted
+        graphs&nbsp;[<a class="cite" href="#ref-9">9</a>, <a class="cite" href="#ref-11">11</a>–<a class="cite" href="#ref-14">14</a>].
+        They are of interest both as resource states and as building blocks for codes with $k&gt;0$.</p>
+
+        <p>Inspection of the qudit tables shows a parity effect at $k=0$. For example, the table lists
+        $\code{18}{0}{10}{5}$ (meeting the quantum Singleton bound) but only $8\le d\le 10$ for $n=19$.
+        Similarly, $\code{24}{0}{11}{5}$ sits next to $10\le d\le 13$ at $n=25$, and $\code{28}{0}{12}{5}$
+        next to $11\le d\le 15$ at $n=29$. For $q=7$, $\code{20}{0}{10}{7}$ sits next to $9\le d\le 11$ at
+        $n=21$. Since the generic propagation rule $\code{n}{k}{d}{q}\to\code{n+1}{k}{d}{q}$ requires
+        $k&gt;0$&nbsp;[<a class="cite" href="#ref-2">2</a>], a good code at even length does not
+        automatically yield one at the next odd length.</p>
+
+        <p>We close part of this gap. <a class="xref" href="#tab-1">Table&nbsp;I</a> lists four circulant
+        graph codes at odd lengths, each improving the previous lower bound by one.
+        <a class="xref" href="#sec-2">Section&nbsp;II</a> recalls the graph-code formalism and explains
+        the parity effect. <a class="xref" href="#sec-3">Section&nbsp;III</a> presents the codes.
+        <a class="xref" href="#sec-4">Section&nbsp;IV</a> describes the exact verification and its
+        validation. <a class="xref" href="#sec-5">Section&nbsp;V</a> describes how the codes were found,
+        and <a class="xref" href="#sec-6">Section&nbsp;VI</a> discusses open problems.</p>
+
+        <figure class="tbl" id="tab-1">
+          <figcaption><b>Table I.</b> New codes. “Previous” gives the lower and upper bounds in
+          Ref.&nbsp;[<a class="cite" href="#ref-6">6</a>] (snapshot of 10 October 2026, re-checked online
+          11 October 2026). The upper bounds equal the quantum Singleton bound $\lfloor n/2\rfloor+1$.
+          $c$ is the first half of the circulant’s first row (<a class="xref" href="#sec-3">Sec.&nbsp;III</a>);
+          “deg” is the vertex degree of the graph.</figcaption>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Code</th><th class="c">Previous</th><th class="c">New $d$</th><th class="c">deg</th><th>$c_1c_2\cdots c_m$</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>$\code{19}{0}{9}{5}$</td><td class="c">8–10</td><td class="c">9</td><td class="c">16</td><td><code>413014221</code></td></tr>
+                <tr><td>$\code{25}{0}{11}{5}$</td><td class="c">10–13</td><td class="c">11</td><td class="c">20</td><td><code>323341240420</code></td></tr>
+                <tr><td>$\code{29}{0}{12}{5}$</td><td class="c">11–15</td><td class="c">12</td><td class="c">28</td><td><code>31214214324143</code></td></tr>
+                <tr><td>$\code{21}{0}{10}{7}$</td><td class="c">9–11</td><td class="c">10</td><td class="c">18</td><td><code>4416064533</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </section>
+
+      <!-- ===================================================== II -->
+      <section id="sec-2">
+        <h2><span class="no">II.</span>Preliminaries</h2>
+
+        <h3 id="sec-2a"><span class="no">A.</span>Qudit stabilizer codes</h3>
+
+        <p>Let $q$ be prime. A Pauli operator on $n$ qudits is specified up to phase by
+        $(\bm{x}|\bm{z})\in\GF{q}^{2n}$, corresponding to $\bigotimes_i X^{x_i}Z^{z_i}$. Two operators
+        commute if and only if the symplectic form
+        $\langle(\bm{x}|\bm{z}),(\bm{x}'|\bm{z}')\rangle_s=\bm{x}\cdot\bm{z}'-\bm{z}\cdot\bm{x}'$ vanishes
+        modulo $q$. A stabilizer code is defined by an isotropic subspace $S\subseteq\GF{q}^{2n}$ of
+        dimension $n-k$. Its normalizer is the symplectic complement $N=S^{\perp_s}$, and its minimum
+        distance is $d=\min\{\wt(v): v\in N\setminus S\}$ for $k&gt;0$ and
+        $d=\min\{\wt(v):v\in S\setminus\{0\}\}$ for $k=0$. Here
+        $\wt(\bm{x}|\bm{z})=|\{i:(x_i,z_i)\neq(0,0)\}|$ is the symplectic weight. The quantum Singleton
+        bound $n-k\ge 2(d-1)$&nbsp;[<a class="cite" href="#ref-4">4</a>, <a class="cite" href="#ref-17">17</a>]
+        gives $d\le\lfloor n/2\rfloor+1$ for $k=0$. Equality holds precisely when every reduced state on
+        $\lfloor n/2\rfloor$ qudits is maximally mixed, i.e., when the stabilizer state is absolutely
+        maximally entangled
+        (AME)&nbsp;[<a class="cite" href="#ref-18">18</a>–<a class="cite" href="#ref-20">20</a>].</p>
+
+        <h3 id="sec-2b"><span class="no">B.</span>Graph codes</h3>
+
+        <p>Let $A$ be a symmetric $n\times n$ matrix over $\GF{q}$ with zero diagonal, the weighted
+        adjacency matrix of a graph. The rows of $(I\,|\,A)$ span an isotropic subspace of dimension $n$,
+        because $\langle(e_u|A_u),(e_v|A_v)\rangle_s=A_{vu}-A_{uv}=0$. The corresponding stabilizer state
+        (graph state) has generators $K_v=X_v\prod_u Z_u^{A_{vu}}$, and its stabilizer elements are
+        $(\bm{u}\,|\,\bm{u}A)$ for $\bm{u}\in\GF{q}^n$. Hence</p>
+        <div class="eq" id="eq-1">$$d=\min_{\bm{u}\neq 0}\;\bigl|\operatorname{supp}(\bm{u})\cup\operatorname{supp}(\bm{u}A)\bigr|. \tag{1}$$</div>
+        <p>Every stabilizer state is local-Clifford equivalent to a graph
+        state&nbsp;[<a class="cite" href="#ref-10">10</a>, <a class="cite" href="#ref-11">11</a>, <a class="cite" href="#ref-13">13</a>],
+        so graph codes realize every attainable $\code{n}{0}{d}{q}$.</p>
+
+        <p>A graph is <em>circulant</em> if $A_{ij}=a_{(j-i)\bmod n}$. Symmetry requires $a_j=a_{n-j}$, so
+        for odd $n=2m+1$ the first row is $(0,c_1,\dots,c_m,c_m,\dots,c_1)$ and there are $q^{m}$
+        circulant graph codes of length $n$. Danielsen&nbsp;[<a class="cite" href="#ref-14">14</a>]
+        searched them exhaustively for alphabets $\GF{m^2}$ with $m\le 5$. For $\GF{25}$ ($q=5$) the
+        search extends to $n=18$, where it attains $d=10$; the length-19 row of that table has no entry
+        for $\GF{25}$. Circulant constructions are also a standard source of good qubit
+        codes&nbsp;[<a class="cite" href="#ref-15">15</a>, <a class="cite" href="#ref-16">16</a>].</p>
+
+        <h3 id="sec-2c"><span class="no">C.</span>Why odd lengths are weak</h3>
+
+        <p>A $\GF{q^2}$-linear code that is Hermitian self-dual has dimension $n/2$ and therefore requires
+        even $n$. Such codes give $\code{n}{0}{d}{q}$ stabilizer codes, and families of
+        $\GF{q^2}$-linear codes (constacyclic, quasi-cyclic, quasi-twisted) are the backbone of systematic
+        searches&nbsp;[<a class="cite" href="#ref-7">7</a>]. At odd length the corresponding code must be
+        genuinely additive ($\GF{q}$-linear but not $\GF{q^2}$-linear). Graph codes are additive and exist
+        at every length. This asymmetry offers a plausible explanation for the parity effect noted in the
+        Introduction, and it suggested where an additive family could improve the tables.</p>
+      </section>
+
+      <!-- ===================================================== III -->
+      <section id="sec-3">
+        <h2><span class="no">III.</span>Results</h2>
+
+        <p>Each code in <a class="xref" href="#tab-1">Table&nbsp;I</a> is the circulant graph code over
+        $\GF{q}$ whose adjacency matrix has first row</p>
+        <div class="eq" id="eq-2">$$(0,\,c_1,\dots,c_m,\,c_m,\dots,c_1),\qquad n=2m+1, \tag{2}$$</div>
+        <p>with row $i$ the cyclic right shift of row $0$ by $i$ places. The stabilizer is generated by
+        $K_v=X_v\prod_u Z_u^{A_{vu}}$, $v=0,\dots,n-1$. Full first rows and explicit stabilizer elements of
+        minimum weight are given in <a class="xref" href="#app-a">Appendix&nbsp;A</a>. The minimum-weight
+        elements show that the distances are attained, i.e., the certified lower bounds are tight for
+        these particular codes.</p>
+
+        <p>The four codes are invariant under the cyclic shift $v\mapsto v+1$. Since the generator $K_v$
+        has weight $1+\deg v$, a graph code with distance $d$ needs every vertex degree to be at least
+        $d-1$. Danielsen showed more: $d-1$ equals the minimum vertex degree over the
+        local-complementation orbit of the graph&nbsp;[<a class="cite" href="#ref-14">14</a>]. Our graphs
+        are dense, with degrees 16–28. For $\code{19}{0}{9}{5}$ we enumerated all stabilizer elements of
+        weight at most 9 (<a class="xref" href="#sec-4d">Sec.&nbsp;IV&nbsp;D</a>). There are none of
+        weight below 9 and exactly</p>
+        <div class="eq" id="eq-3">$$A_9 = 12\,920 = 76\times 170 \tag{3}$$</div>
+        <p>of weight 9. The factorization is a consistency check. Since $n=19$ is prime, every nonzero
+        element lies in an orbit of size $19\times 4$ under cyclic shifts and nonzero scalars.</p>
+
+        <p><span class="runin">Propagation.</span> A pure $\code{n}{0}{d}{q}$ code yields
+        $\code{n-1}{1}{d-1}{q}$ by
+        puncturing&nbsp;[<a class="cite" href="#ref-2">2</a>, <a class="cite" href="#ref-4">4</a>]. For
+        the four codes this gives $\code{18}{1}{8}{5}$, $\code{24}{1}{10}{5}$, $\code{28}{1}{11}{5}$, and
+        $\code{20}{1}{9}{7}$, none of which exceeds the existing table entries (9, 10, 11, and 9,
+        respectively). The improvements are therefore confined to the four $k=0$ entries.</p>
+
+        <p><span class="runin">Status of the entries.</span> The upper bounds in
+        <a class="xref" href="#tab-1">Table&nbsp;I</a> equal the quantum Singleton bound. Every entry thus
+        remains open. The entry $\code{21}{0}{d}{7}$ now has $d\in\{10,11\}$, and a code with $d=11$ would
+        be an AME$(21,7)$ stabilizer state. Analogous statements hold for $q=5$ at $n=19$, 25, and 29.</p>
+
+        <p><span class="runin">Search heuristics.</span> Let
+        $E=\sum_{w=1}^{d-1}\binom{n}{w}(q^2-1)^w/q^n$ be the expected number of nonzero stabilizer
+        elements of weight below $d$ in a uniformly random stabilizer state. In a circulant code these
+        elements occur in orbits of size $n(q-1)$ when $n$ is prime, and of size at most $n(q-1)$ in
+        general. Treating the number of such orbits as Poisson with mean $\mu=E/[n(q-1)]$ suggests a
+        success probability of roughly $e^{-\mu}$ per random circulant
+        (<a class="xref" href="#tab-2">Table&nbsp;II</a>). For $\code{19}{0}{9}{5}$ the estimate,
+        $e^{-5.9}\approx2.7\times10^{-3}$, matches the observed rate: one in 386 screened samples. This
+        first-moment argument is only a guide, but it predicted correctly which odd-length entries were
+        within reach of random circulant sampling.</p>
+
+        <figure class="tbl" id="tab-2">
+          <figcaption><b>Table II.</b> First-moment heuristic for random symmetric circulant graph codes at
+          the target distance. $q^m$ is the number of such codes.</figcaption>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Code</th><th class="c">$q^m$</th><th class="c">$E$</th><th class="c">$\mu=E/[n(q-1)]$</th><th class="c">$e^{-\mu}$</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>$\code{19}{0}{9}{5}$</td><td class="c">$2.0\times10^{6}$</td><td class="c">449</td><td class="c">5.9</td><td class="c">$2.7\times10^{-3}$</td></tr>
+                <tr><td>$\code{25}{0}{11}{5}$</td><td class="c">$2.4\times10^{8}$</td><td class="c">714</td><td class="c">7.1</td><td class="c">$7.9\times10^{-4}$</td></tr>
+                <tr><td>$\code{29}{0}{12}{5}$</td><td class="c">$6.1\times10^{9}$</td><td class="c">290</td><td class="c">2.5</td><td class="c">$8.2\times10^{-2}$</td></tr>
+                <tr><td>$\code{21}{0}{10}{7}$</td><td class="c">$2.8\times10^{8}$</td><td class="c">722</td><td class="c">5.7</td><td class="c">$3.2\times10^{-3}$</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      </section>
+
+      <!-- ===================================================== IV -->
+      <section id="sec-4">
+        <h2><span class="no">IV.</span>Verification</h2>
+
+        <p>Because the result is a claim about a minimum over $q^n-1$ stabilizer elements, we treated
+        verification as the primary deliverable. All checks below are exact, and floating-point
+        arithmetic is never used.</p>
+
+        <h3 id="sec-4a"><span class="no">A.</span>Validity and dimension</h3>
+
+        <p>The verifier reads the generators, checks that all entries lie in $\GF{q}$, and confirms
+        isotropy pairwise. It computes $k=n-\operatorname{rank}S$ by Gaussian elimination over $\GF{q}$
+        and the normalizer as the kernel of $(-Z\,|\,X)$, checking $\dim N=n+k$.</p>
+
+        <h3 id="sec-4b"><span class="no">B.</span>Exact minimum distance</h3>
+
+        <p>Classical Brouwer–Zimmermann enumeration&nbsp;[<a class="cite" href="#ref-21">21</a>] uses
+        several disjoint information sets, i.e., coordinate sets on which a generator matrix can be
+        brought to systematic form. For symplectic weight the relevant coordinates are qudits rather than
+        individual columns, as in the algorithm of White and Grassl for additive
+        codes&nbsp;[<a class="cite" href="#ref-22">22</a>]. We use the following variant. For information
+        set $j$ we reduce a generator matrix of $N$ (here $N=S$) to systematic form with all pivot columns
+        inside a set $I_j$ of qudits, which is disjoint from the previous sets. Rows are grouped by the
+        qudit carrying their pivot; a qudit carries one or two pivots. The $f_j$ rows without a pivot in
+        $I_j$ form singleton groups. Every pivot column vanishes in all other rows. Hence, if the
+        coefficient vector of a codeword $v$ is nonzero on $a$ groups, then $v$ is nonzero on at least
+        $a-f_j$ qudits of $I_j$.</p>
+
+        <p>Suppose all codewords whose coefficient vectors activate at most $t_j$ groups have been
+        enumerated for each $j$. Because the $I_j$ are disjoint, every codeword not yet seen satisfies</p>
+        <div class="eq" id="eq-4">$$\wt(v)\;\ge\;\sum_j\max\bigl(0,\;t_j+1-f_j\bigr). \tag{4}$$</div>
+        <p>The enumeration raises the $t_j$ in rounds and stops when the
+        bound&nbsp;(<a class="xref" href="#eq-4">4</a>) reaches the weight of the lightest codeword found
+        outside $S$ (outside $\{0\}$ for $k=0$). That weight is then exact. Two refinements reduce the
+        work. The first active group’s local value is normalized to fix scalar multiples. Qudits on which
+        $S$ contains a weight-one element are removed beforehand, which leaves $d$ unchanged for $k&gt;0$.
+        Each witness codeword reported by the engine is re-checked independently: it must commute with all
+        generators, lie outside $S$, and have the stated weight.</p>
+
+        <p><a class="xref" href="#tab-3">Table&nbsp;III</a> lists the certification runs. For $k=0$ codes
+        of length $n$ the algorithm uses two disjoint information sets of about $n/2$ qudits each, so the
+        lower bound grows by about two per round. Each certificate was repeated with a different random
+        choice of information sets, and the results agreed.</p>
+
+        <figure class="tbl" id="tab-3">
+          <figcaption><b>Table III.</b> Exact certification. “Words” is the number of codewords enumerated
+          up to scalars; times are for 6–10 threads on one laptop CPU (Apple M4). Each code was certified
+          twice with different information sets.</figcaption>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Code</th><th class="c">Words</th><th class="c">Time (s), run 1 / run 2</th><th class="c">Result</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>$\code{19}{0}{9}{5}$</td><td class="c">$2.4\times10^{7}$</td><td class="c">0.05 / 0.06</td><td class="c">$d=9$</td></tr>
+                <tr><td>$\code{25}{0}{11}{5}$</td><td class="c">$3.6\times10^{9}$</td><td class="c">11.5 / 7.3</td><td class="c">$d=11$</td></tr>
+                <tr><td>$\code{29}{0}{12}{5}$</td><td class="c">$1.7\times10^{11}$</td><td class="c">559 / 384</td><td class="c">$d=12$</td></tr>
+                <tr><td>$\code{21}{0}{10}{7}$</td><td class="c">$1.2\times10^{10}$</td><td class="c">28.5 / 25.4</td><td class="c">$d=10$</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </figure>
+
+        <h3 id="sec-4c"><span class="no">C.</span>Validation of the verifier</h3>
+
+        <p>Before any search began, the verifier was frozen and tested. It reproduces the distances of
+        standard codes: the $\code{5}{1}{3}{2}$, Steane, and Shor codes (the last correctly reported as
+        impure), a Golay-derived $\code{23}{1}{7}{2}$ code, and five-qudit codes over $\GF{3}$ and
+        $\GF{5}$. It rejects invalid inputs, such as noncommuting generators, wrong $k$, entries outside
+        $\GF{q}$, and nonprime $q$. On 500 random stabilizer codes over $\GF{2}$, $\GF{3}$, and $\GF{5}$
+        with $n\le 10$, some padded with fixed qudits, it agrees with a brute-force checker that shares no
+        code with it. That checker enumerates Pauli operators by increasing weight and tests commutation
+        and stabilizer membership directly. On 14 best-known codes stored with
+        Ref.&nbsp;[<a class="cite" href="#ref-6">6</a>] ($q\in\{2,3,5,7\}$, up to $\code{60}{2}{16}{2}$),
+        it recovers exact distances equal to the tabulated lower bounds. The sources and the compiled
+        binary were then pinned by cryptographic hash. The submission pipeline refused to accept
+        improvements from a modified verifier. A verdict exceeding a tabulated (proven) upper bound would
+        have been flagged as a verifier fault rather than a discovery.</p>
+
+        <h3 id="sec-4d"><span class="no">D.</span>Independent check of $\code{19}{0}{9}{5}$</h3>
+
+        <p>For graph codes, <a class="xref" href="#eq-1">Eq.&nbsp;(1)</a> yields a proof that needs no
+        information sets. Every stabilizer element $(\bm{u}|\bm{u}A)$ has weight at least $\wt(\bm{u})$.
+        Hence any element of weight at most $w$ has $\wt(\bm{u})\le w$. A separate program, written
+        independently of the main engine, enumerated all $1\,475\,748\,943$ coefficient vectors $\bm{u}$
+        with $1\le\wt(\bm{u})\le8$ (first nonzero entry fixed to 1). It found minimum weight 9, which
+        proves $d\ge9$. Extending the enumeration to $\wt(\bm{u})\le9$ produced the count
+        $A_9=12\,920$. For the three larger codes this direct enumeration would cover between about
+        $10^{11}$ and $10^{14}$ coefficient vectors and was not performed. Their distances rest on the two
+        engine certificates.</p>
+
+        <h3 id="sec-4e"><span class="no">E.</span>Novelty</h3>
+
+        <p>On 11 October 2026 the online tables&nbsp;[<a class="cite" href="#ref-6">6</a>] still listed
+        lower bounds of 8, 10, 11, and 9 for the four entries. The previous records for
+        $\code{19}{0}{8}{5}$, $\code{25}{0}{10}{5}$, and $\code{21}{0}{9}{7}$ are recorded as stored
+        generator matrices. The record for $\code{29}{0}{11}{5}$ is derived by shortening a
+        $\code{30}{0}{12}{5}$ code. Danielsen’s exhaustive circulant
+        search&nbsp;[<a class="cite" href="#ref-14">14</a>] stops at $n=18$ for $\GF{25}$ and does not
+        treat $\GF{49}$. Our literature search found no later construction with these parameters, but we
+        cannot rule out codes in sources we did not examine.</p>
+      </section>
+
+      <!-- ===================================================== V -->
+      <section id="sec-5">
+        <h2><span class="no">V.</span>How the codes were found</h2>
+
+        <p>The codes were found by an autonomous multi-agent system built on a large language model
+        (Claude Sonnet 5.5, Anthropic). It was set up to test whether open, verifiable problems of this
+        type can be attacked by AI agents without compromising rigor. Five agents ran in parallel as
+        non-interactive coding sessions on one laptop. They coordinated through a shared message board,
+        where they could claim targets, post progress and dead ends, and submit candidates. The agents
+        were assigned different families: qubit quasi-cyclic and cyclic codes, qubit graph codes and
+        seeded local search, qutrit codes, and $q=5,7$ codes. The pool of targets comprised 4&#8239;295
+        table entries whose improvement by one could be certified in about ten minutes.</p>
+
+        <p>The design principle was <em>verifier first</em>. Agents could not modify the verifier, the
+        bound tables, or the board software. A submission was copied read-only and verified, and the
+        verdict was posted by the verifier, not by the submitting agent. Only verifier-posted improvements
+        counted.</p>
+
+        <p>The agent assigned to $q=5,7$ noted the parity effect of
+        <a class="xref" href="#sec-2c">Sec.&nbsp;II&nbsp;C</a>. It formulated the first-moment estimate of
+        <a class="xref" href="#tab-2">Table&nbsp;II</a>, selected odd-length $k=0$ entries with small
+        $\mu$, and wrote a sampler for random symmetric circulants. The sampler used a cheap low-weight
+        prefilter followed by a randomized upper-bound screen. The first certified improvement,
+        $\code{19}{0}{9}{5}$, was posted six minutes after launch, and the remaining three followed within
+        13 minutes. Each came from a single sampling run of a few minutes. The other agents’ searches,
+        which included exhaustive qubit circulant graph codes for $26\le n\le45$, all Hermitian
+        dual-containing cyclic $\GF{4}$-linear codes of odd length $41\le n\le 99$, and exhaustive
+        $\GF{3}$ circulant, bordered-circulant, and negacirculant graph codes for $14\le n\le 20$
+        (circulant up to 23), matched but did not beat the tabulated bounds within certifiable range.
+        Every result in this paper was then re-certified and independently checked as described in
+        <a class="xref" href="#sec-4">Sec.&nbsp;IV</a>.</p>
+      </section>
+
+      <!-- ===================================================== VI -->
+      <section id="sec-6">
+        <h2><span class="no">VI.</span>Outlook</h2>
+
+        <p>The parity effect suggests that further odd-length $k=0$ entries in the $q=5$ and $q=7$ tables
+        can be improved by additive constructions. By the heuristic of
+        <a class="xref" href="#tab-2">Table&nbsp;II</a>, $\code{31}{0}{13}{5}$ ($\mu\approx9$) is a
+        candidate. Its exact certification is estimated at about three quarters of an hour with the
+        present algorithm. For larger lengths certification rather than search becomes the bottleneck.
+        Exploiting the cyclic automorphism group in the enumeration could reduce the cost by roughly a
+        factor of $n$ for circulant codes. Closing the four entries requires either codes meeting the
+        Singleton bound, which would be AME stabilizer states, or improved upper bounds from linear or
+        semidefinite programming. Even-length entries such as $\code{20}{0}{d}{5}$ ($9\le d\le11$), which
+        lies below the $n=18$ entry, also merit attention. Finally, the cyclic $\GF{4}$ search produced
+        qubit candidates at $n=85$, 91, and 93 (for example of type $\code{91}{1}{d}{2}$ with tabulated
+        $d\ge21$) for which the randomized screens found no logical operator below the tabulated bound. A
+        screen is not a proof, and certifying these candidates is far beyond the present enumeration, so
+        we report them only as unverified leads.</p>
+      </section>
+
+      <!-- ===================================================== back matter -->
+      <div class="backmatter">
+        <section id="acknowledgments">
+          <h2>Acknowledgments</h2>
+          <p>We thank M.&nbsp;Grassl for maintaining the code tables on which this work relies. The codes
+          were discovered by an autonomous multi-agent system built on Claude Sonnet 5.5 (Anthropic). The
+          verification software, the analysis, and this manuscript were produced by Claude Opus 5.5
+          (Anthropic).</p>
+        </section>
+
+        <section id="data">
+          <h2>Data availability</h2>
+          <p>The generators of all four codes are given in <a class="xref" href="#tab-1">Table&nbsp;I</a>
+          and <a class="xref" href="#app-a">Appendix&nbsp;A</a>. Candidate files, the verifier (including
+          its test suite), the independent checker, and the search scripts are available from the
+          authors.</p>
+        </section>
+
+        <section id="app-a">
+          <h2><span class="no">Appendix A.</span>Code data and minimum-weight elements</h2>
+          <p>Full first rows $(a_0,\dots,a_{n-1})$ of the circulant adjacency matrices, and one stabilizer
+          element of minimum weight $(\bm{x}|\bm{z})$ with $\bm{z}=\bm{x}A$ for each code, written as
+          strings of $\GF{q}$ digits:</p>
+
+          <figure class="tbl" id="tab-4">
+            <figcaption><b>Table IV.</b> First rows of the adjacency matrices and minimum-weight stabilizer
+            elements.</figcaption>
+            <div class="table-wrap">
+              <table class="data">
+                <thead>
+                  <tr><th>Code</th><th></th><th></th></tr>
+                </thead>
+                <tbody>
+                  <tr class="first"><td>$\code{19}{0}{9}{5}$</td><td>$a=$</td><td><code>0413014221122410314</code></td></tr>
+                  <tr><td></td><td>$(\bm{x}|\bm{z})=$</td><td><code>0200010000001310010 | 0000010000000404122</code></td></tr>
+                  <tr class="first"><td>$\code{25}{0}{11}{5}$</td><td>$a=$</td><td><code>0323341240420024042143323</code></td></tr>
+                  <tr><td></td><td>$(\bm{x}|\bm{z})=$</td><td><code>3000240110242000000040003 | 4000232100320000000030001</code></td></tr>
+                  <tr class="first"><td>$\code{29}{0}{12}{5}$</td><td>$a=$</td><td><code>03121421432414334142341241213</code></td></tr>
+                  <tr><td></td><td>$(\bm{x}|\bm{z})=$</td><td><code>04023010100031000000000420004 | 03041020000144000000000114000</code></td></tr>
+                  <tr class="first"><td>$\code{21}{0}{10}{7}$</td><td>$a=$</td><td><code>044160645333354606144</code></td></tr>
+                  <tr><td></td><td>$(\bm{x}|\bm{z})=$</td><td><code>600060041600500000020 | 000060012002500500310</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </figure>
+        </section>
+
+        <section id="references">
+          <h2>References</h2>
+          <ol class="refs">
+            <li id="ref-1"><span>[1]</span><span>D.&nbsp;Gottesman, <i>Stabilizer Codes and Quantum Error Correction</i>, Ph.D. thesis, California Institute of Technology (1997), <a href="https://arxiv.org/abs/quant-ph/9705052">arXiv:quant-ph/9705052</a>.</span></li>
+            <li id="ref-2"><span>[2]</span><span>A.&nbsp;R. Calderbank, E.&nbsp;M. Rains, P.&nbsp;W. Shor, and N.&nbsp;J.&nbsp;A. Sloane, Quantum error correction via codes over GF(4), IEEE Trans. Inf. Theory <b>44</b>, 1369 (1998).</span></li>
+            <li id="ref-3"><span>[3]</span><span>A.&nbsp;Ashikhmin and E.&nbsp;Knill, Nonbinary quantum stabilizer codes, IEEE Trans. Inf. Theory <b>47</b>, 3065 (2001).</span></li>
+            <li id="ref-4"><span>[4]</span><span>E.&nbsp;M. Rains, Nonbinary quantum codes, IEEE Trans. Inf. Theory <b>45</b>, 1827 (1999).</span></li>
+            <li id="ref-5"><span>[5]</span><span>A.&nbsp;Ketkar, A.&nbsp;Klappenecker, S.&nbsp;Kumar, and P.&nbsp;K. Sarvepalli, Nonbinary stabilizer codes over finite fields, IEEE Trans. Inf. Theory <b>52</b>, 4892 (2006).</span></li>
+            <li id="ref-6"><span>[6]</span><span>M.&nbsp;Grassl, Bounds on the minimum distance of linear codes and quantum codes, online at <a href="http://www.codetables.de">http://www.codetables.de</a> (accessed 10–11 October 2026).</span></li>
+            <li id="ref-7"><span>[7]</span><span>M.&nbsp;F. Ezerman, M.&nbsp;Grassl, S.&nbsp;Ling, F.&nbsp;Özbudak, and B.&nbsp;Özkaya, Characterization of nearly self-orthogonal quasi-twisted codes and related quantum codes, <a href="https://arxiv.org/abs/2405.15057">arXiv:2405.15057</a> (2024).</span></li>
+            <li id="ref-8"><span>[8]</span><span>J.&nbsp;Bierbrauer and Y.&nbsp;Edel, Quantum twisted codes, J. Comb. Des. <b>8</b>, 174 (2000).</span></li>
+            <li id="ref-9"><span>[9]</span><span>D.&nbsp;Schlingemann and R.&nbsp;F. Werner, Quantum error-correcting codes associated with graphs, Phys. Rev. A <b>65</b>, 012308 (2001).</span></li>
+            <li id="ref-10"><span>[10]</span><span>D.&nbsp;Schlingemann, Stabilizer codes can be realized as graph codes, Quantum Inf. Comput. <b>2</b>, 307 (2002).</span></li>
+            <li id="ref-11"><span>[11]</span><span>M.&nbsp;Grassl, A.&nbsp;Klappenecker, and M.&nbsp;Rötteler, Graphs, quadratic forms, and quantum codes, in <i>Proceedings of the IEEE International Symposium on Information Theory</i> (IEEE, 2002), p.&nbsp;45; <a href="https://arxiv.org/abs/quant-ph/0703112">arXiv:quant-ph/0703112</a>.</span></li>
+            <li id="ref-12"><span>[12]</span><span>M.&nbsp;Hein, J.&nbsp;Eisert, and H.&nbsp;J. Briegel, Multiparty entanglement in graph states, Phys. Rev. A <b>69</b>, 062311 (2004).</span></li>
+            <li id="ref-13"><span>[13]</span><span>M.&nbsp;Bahramgiri and S.&nbsp;Beigi, Graph states under the action of local Clifford group in non-binary case, <a href="https://arxiv.org/abs/quant-ph/0610267">arXiv:quant-ph/0610267</a> (2006).</span></li>
+            <li id="ref-14"><span>[14]</span><span>L.&nbsp;E. Danielsen, Graph-based classification of self-dual additive codes over finite fields, Adv. Math. Commun. <b>3</b>, 329 (2009); <a href="https://arxiv.org/abs/0801.3773">arXiv:0801.3773</a>.</span></li>
+            <li id="ref-15"><span>[15]</span><span>L.&nbsp;E. Danielsen and M.&nbsp;G. Parker, On the classification of all self-dual additive codes over GF(4) of length up to 12, J. Comb. Theory, Ser. A <b>113</b>, 1351 (2006).</span></li>
+            <li id="ref-16"><span>[16]</span><span>T.&nbsp;A. Gulliver and J.-L. Kim, Circulant based extremal additive self-dual codes over GF(4), IEEE Trans. Inf. Theory <b>50</b>, 359 (2004).</span></li>
+            <li id="ref-17"><span>[17]</span><span>E.&nbsp;Knill and R.&nbsp;Laflamme, Theory of quantum error-correcting codes, Phys. Rev. A <b>55</b>, 900 (1997).</span></li>
+            <li id="ref-18"><span>[18]</span><span>A.&nbsp;J. Scott, Multipartite entanglement, quantum-error-correcting codes, and entangling power of quantum evolutions, Phys. Rev. A <b>69</b>, 052330 (2004).</span></li>
+            <li id="ref-19"><span>[19]</span><span>W.&nbsp;Helwig, W.&nbsp;Cui, J.&nbsp;I. Latorre, A.&nbsp;Riera, and H.-K. Lo, Absolute maximal entanglement and quantum secret sharing, Phys. Rev. A <b>86</b>, 052335 (2012).</span></li>
+            <li id="ref-20"><span>[20]</span><span>F.&nbsp;Huber and N.&nbsp;Wyderka, Table of AME states, online at <a href="https://www.tp.nt.uni-siegen.de/+fhuber/ame.html">https://www.tp.nt.uni-siegen.de/+fhuber/ame.html</a>.</span></li>
+            <li id="ref-21"><span>[21]</span><span>M.&nbsp;Grassl, Searching for linear codes with large minimum distance, in <i>Discovering Mathematics with Magma</i>, edited by W.&nbsp;Bosma and J.&nbsp;Cannon (Springer, Berlin, 2006), pp.&nbsp;287–313.</span></li>
+            <li id="ref-22"><span>[22]</span><span>G.&nbsp;White and M.&nbsp;Grassl, A new minimum weight algorithm for additive codes, in <i>Proceedings of the IEEE International Symposium on Information Theory</i> (IEEE, 2006), pp.&nbsp;1119–1123.</span></li>
+          </ol>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a href="../../">AI × Math × Physics</a> · Web edition of the manuscript dated 11 October 2026.
+      The <a href="qudit-circulant-codes.pdf">PDF</a> is the typeset reference version.
+    </div>
+  </footer>
+</body>
+</html>

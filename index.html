@@ -4,25 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI × Math × Physics</title>
-  <meta name="description" content="Notes and experiments at the intersection of AI, mathematics and physics.">
-  <style>
-    :root { --bg: #f6f3ec; --ink: #17171b; --muted: #6b675f; color-scheme: light dark; }
-    @media (prefers-color-scheme: dark) { :root { --bg: #0e1015; --ink: #ece7dd; --muted: #958f84; } }
-    html, body { height: 100%; margin: 0; }
-    body {
-      display: grid; place-items: center; padding: 16px;
-      background: var(--bg); color: var(--ink);
-      font-family: "Iowan Old Style", Georgia, serif;
-    }
-    main { text-align: center; }
-    h1 { font-weight: 400; font-size: clamp(2.2rem, 8vw, 4.5rem); letter-spacing: -0.02em; margin: 0 0 12px; }
-    p { color: var(--muted); font-family: ui-monospace, Menlo, monospace; font-size: 0.85rem; margin: 0; }
-  </style>
+  <meta name="description" content="Notes, papers and experiments at the intersection of AI, mathematics and physics.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,500&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script defer src="assets/math.js"></script>
 </head>
 <body>
-  <main>
-    <h1>AI × Math × Physics</h1>
-    <p>Coming soon.</p>
+  <main class="wrap">
+    <header class="home-hero">
+      <h1>AI × Math × Physics</h1>
+      <p>Notes, papers and experiments at the intersection of artificial intelligence, mathematics and physics.</p>
+    </header>
+
+    <section aria-labelledby="papers-h">
+      <h2 id="papers-h" class="label list-head">Papers</h2>
+
+      <article class="entry">
+        <p class="meta label">October 2026 · Quantum error correction</p>
+        <h2><a href="papers/qudit-circulant-codes/">Improved zero-dimensional qudit stabilizer codes of odd length from circulant graphs</a></h2>
+        <p>Four circulant graph codes, $\code{19}{0}{9}{5}$, $\code{25}{0}{11}{5}$, $\code{29}{0}{12}{5}$
+        and $\code{21}{0}{10}{7}$, each raise the best known lower bound in Grassl’s qudit code tables by
+        one. They were found by an autonomous multi-agent language-model search working against a
+        frozen, test-validated verifier, and every minimum distance is certified exactly.</p>
+        <div class="actions">
+          <a class="btn primary" href="papers/qudit-circulant-codes/">Read online</a>
+          <a class="btn" href="papers/qudit-circulant-codes/qudit-circulant-codes.pdf">PDF</a>
+        </div>
+      </article>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      Source on <a href="https://github.com/maxxfan/aixmathxphysics">GitHub</a>.
+    </div>
+  </footer>
 </body>
 </html>
