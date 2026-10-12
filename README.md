@@ -2,7 +2,7 @@
 
 Notes and experiments at the intersection of AI, mathematics and physics.
 
-Live site: https://dust007.github.io/aixmathxphysics/
+Live site: https://maxxfan.github.io/aixmathxphysics/
 
 ## Development
 
