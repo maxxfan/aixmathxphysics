@@ -17,7 +17,7 @@
 
   --measure: 42rem;
   --gutter: 16px;
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 *,
