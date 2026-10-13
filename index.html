@@ -36,13 +36,13 @@
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum circuits</p>
-        <h2><a href="papers/tcount-gf2-multipliers/tcount-gf2-multipliers.pdf">Subfield interpolation lowers the T-count of GF($2^n$) multipliers by up to half</a></h2>
+        <h2><a href="papers/tcount-gf2-multipliers/tcount-gf2-multipliers.pdf?v=2">Chinese remaindering lowers the T-count of binary-field multipliers by up to two thirds</a></h2>
         <p>Ancilla-free Clifford+T circuits for multiplication in GF($2^n$) that use fewer T gates than
-        the best published ones for $n = 8$, 12, 14, 15, 16 and 32, down from 1177 to 585 at $n = 32$.
-        The circuits come from one composition rule, interpolation over a subfield, which gives
-        $\mathcal{T}(md)\le(2d-1)\,\mathcal{T}(m)$. The paper also proves that 17 T gates are optimal
-        for GF(4), and every circuit is certified by exact arithmetic in two independent
-        implementations.</p>
+        the best published ones for twelve field sizes, $n = 6$, 7, 8, 10–16, 32 and 64, down from 3729
+        to 1255 at $n = 64$. They come from one composition principle: if the product can be computed by
+        Chinese remaindering in small algebras $A_i$ (subfields, local rings or the points of an
+        algebraic curve), the T-count is at most $\sum_i \mathcal{T}(A_i)$. Annealing and FastTODD-type
+        reduction remove further gates, and every circuit is certified exactly.</p>
       </article>
     </section>
   </main>
