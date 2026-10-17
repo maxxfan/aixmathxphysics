@@ -1,0 +1,62 @@
+$ python3 -I check_release.py .
+manifest: ok
+records (n, T-count; reported value, best checked published value): irreducible | tensor criterion | exact circuit identity | simulation
+  GF(2^5 )  T=57    (   49*,   59)  ok | ok | ok | ok (all 2^15 inputs)
+  GF(2^6 )  T=69    (    77,   77)  ok | ok | ok | ok (all 2^18 inputs)
+  GF(2^7 )  T=97    (   101,  104)  ok | ok | ok | ok (all 2^21 inputs)
+  GF(2^8 )  T=113   (   123,  123)  ok | ok | ok | ok (all 2^24 inputs)
+  GF(2^10)  T=151   (   157,  157)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^11)  T=179   (  215*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^12)  T=191   (  243*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^13)  T=219   (  293*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^14)  T=229   (  319*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^15)  T=253   (  363*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^16)  T=267   (  383*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^32)  T=571   ( 1177*,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^64)  T=1255  ( 3729*,    -)  ok | ok | ok | ok (2048 random inputs)
+blocks (algebra, T-count): factor count, distinct, modulus, tensor criterion
+  GF(4)                                    T=17   ok
+  GF(8)                                    T=29   ok
+  GF(16)                                   T=39   ok
+  F2[y]/((y^2+y+1)^2) = GF(4)[e]/(e^2)     T=35   ok
+  F2[y]/(y^2)                              T=15   ok
+  F2[y]/(y^3)                              T=25   ok
+genus-2 construction data: ok (33 rational points, Q of degree 16 on the curve, identity a*b = sum_k l_k(a) l_k(b) w_k on 20 random pairs)
+ALL CHECKS PASSED
+
+$ python3 -I negative_controls.py .
+  unchanged control                             checker exit 0: as expected
+  drop one cz from the Clifford correction      checker exit 1: as expected
+  change one t into tdg                         checker exit 1: as expected
+  drop one cx from a ladder                     checker exit 1: as expected
+  flip one bit of one factor                    checker exit 1: as expected
+  swap in another irreducible modulus (n=7)     checker exit 1: as expected
+  statement hidden on the include line          checker exit 1: as expected
+  include another gate library                  checker exit 1: as expected
+  remove one record                             checker exit 1: as expected
+  empty bundle (no records, no blocks)          checker exit 1: as expected
+  block T-count field wrong                     checker exit 1: as expected
+  ring F2[x]/(x^3+1) relabelled GF(8)           checker exit 1: as expected
+  form-feed separator hides a gate in a comment checker exit 1: as expected
+  fullwidth digits in a qubit index             checker exit 1: as expected
+  gate_counts field wrong                       checker exit 1: as expected
+  clifford_correction field wrong               checker exit 1: as expected
+  duplicate record for the same n               checker exit 1: as expected
+  modulus with a sign ('-100101')               checker exit 1: as expected
+  factor with an underscore                     checker exit 1: as expected
+  leading zero in a qubit index                 checker exit 1: as expected
+  modulus_poly text wrong                       checker exit 1: as expected
+  comparison value changed                      checker exit 1: as expected
+  tcount as a float                             checker exit 1: as expected
+  record bar changed in both record and table   checker exit 1: as expected
+  file missing from the manifest                checker exit 1: as expected
+  file changed without updating the manifest    checker exit 1: as expected
+NEGATIVE CONTROLS OK
+
+$ python3 -I construction/regen_n64.py .
+identity a*b = sum lam lam omega OK on 20 random pairs
+pulled-back factors: 1287 (before cancellation 1287)
+singles odd: 0, pairs odd: 0, triple mismatches: 0
+VALID decomposition of GF(2^64) multiplication
+raw network: 1287 factors, sha256 016f80bccaad1af1... matches curve64.json
+REGENERATION OK

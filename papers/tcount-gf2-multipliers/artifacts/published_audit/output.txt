@@ -1,0 +1,48 @@
+# Columns: low-order-even = every single and pair of variables appears an even number of times; equals-mult-mod-P = the tensor equals multiplication modulo the polynomial named in the FILE NAME, in the polynomial basis (False also when the name gives no modulus, P=?; future runs print n/a); depends-on-i+j = the bilinear map depends only on i+j (polynomial product then a linear map). The decisive column is the last: 'singular a' counts nonzero a for which b -> M(a,b) is singular; a GF(2^n) multiplication tensor has 0 in any basis.
+ gf2_10_187.npy T=187 n=10 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 550/1023
+ gf2_10_khor_157.npy T=157 n=10 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/1023
+ gf2_11_215.npy T=215 n=11 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 852/2047
+ gf2_12_243.npy T=243 n=12 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 2064/4095
+ gf2_13_293.npy T=293 n=13 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 3978/8191
+ gf2_14_319.npy T=319 n=14 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 8406/16383
+ gf2_15_363.npy T=363 n=15 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 8192/32767
+ gf2_16_385.npy T=385 n=16 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 32762/65535
+ gf2_32_1177.npy T=1177 n=32 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2050
+ gf2_5_49.npy T=49 n=5 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 12/31
+ gf2_6_79.npy T=79 n=6 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 14/63
+ gf2_8_khor_123.npy T=123 n=8 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/255
+ gf2_9_165.npy T=165 n=9 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 240/511
+ gf2_9_khor_139.npy T=139 n=9 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/511
+gf_mult_Khoruzhii_best gf2_10.npy T=231 n=10 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/1023
+gf_mult_Khoruzhii_best gf2_3.npy T=42 n=3 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/7
+gf_mult_Khoruzhii_best gf2_4.npy T=63 n=4 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/15
+gf_mult_Khoruzhii_best gf2_5.npy T=91 n=5 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/31
+gf_mult_Khoruzhii_best gf2_6.npy T=105 n=6 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/63
+gf_mult_Khoruzhii_best gf2_7.npy T=150 n=7 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/127
+gf_mult_Khoruzhii_best gf2_8.npy T=168 n=8 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/255
+gf_mult_Khoruzhii_best gf2_9.npy T=210 n=9 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 0/511
+gf_mult_Vandaele_wo_anci gf2_3_310.npy T=42 n=3 P=x^3.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 2/7
+gf_mult_Vandaele_wo_anci gf2_3_320.npy T=40 n=3 P=x^3.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 2/7
+gf_mult_Vandaele_wo_anci gf2_4_410.npy T=56 n=4 P=x^4.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 4/15
+gf_mult_Vandaele_wo_anci gf2_5_520.npy T=98 n=5 P=x^5.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 12/31
+gf_mult_Vandaele_wo_anci gf2_6_610.npy T=132 n=6 P=x^6.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 14/63
+gf_mult_Vandaele_wo_anci gf2_7_710.npy T=164 n=7 P=x^7.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 32/127
+gf_mult_Vandaele_wo_anci gf2_8_84320.npy T=189 n=8 P=x^8.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 148/255
+gf_mult_Vandaele_wo_anci gf2_9_940.npy T=320 n=9 P=x^9.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 240/511
+gf_mult_Vandaele_wo_anci gf2_9_94320.npy T=324 n=9 P=x^9.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 263/511
+gf_mult_Vandaele_wo_anci gf2_10_1030.npy T=334 n=10 P=x^10.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 550/1023
+gf_mult_Vandaele_wo_anci gf2_11_1120.npy T=376 n=11 P=x^11.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 852/2047
+gf_mult_Vandaele_wo_anci gf2_12_126410.npy T=396 n=12 P=x^12.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 2064/4095
+gf_mult_Vandaele_wo_anci gf2_13_134310.npy T=460 n=13 P=x^13.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 3978/8191
+gf_mult_Vandaele_wo_anci gf2_14_148610.npy T=492 n=14 P=x^14.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 8406/16383
+gf_mult_Vandaele_wo_anci gf2_15_1510.npy T=536 n=15 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 8192/32767
+gf_mult_Vandaele_wo_anci gf2_16_1612310.npy T=567 n=16 P=x^16.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a: 32762/65535
+gf_mult_Vandaele_wo_anci gf2_32_3226310.npy T=1701 n=32 P=x^32.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2023
+gf_mult_Vandaele_wo_anci gf2_32_3228310.npy T=1701 n=32 P=x^32.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2022
+gf_mult_Vandaele_wo_anci gf2_32_3228320.npy T=1701 n=32 P=x^32.. low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2024
+gf2_5_49.npy x^s -> ['10000', '01000', '00100', '00010', '00001', '10100', '11010', '01101', '10010']
+gf2_3_310.npy x^s -> ['100', '010', '001', '110', '111']
+gf2_3_320.npy x^s -> ['100', '010', '001', '011', '110']
+gf2_4_410.npy x^s -> ['1000', '0100', '0010', '0001', '1100', '0110', '1011']
+gf2_5_520.npy x^s -> ['10000', '01000', '00100', '00010', '00001', '10100', '11010', '01101', '10010']
+gf_mult_Vandaele_wo_anci gf2_64_644310.npy T=5103 n=64 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2023

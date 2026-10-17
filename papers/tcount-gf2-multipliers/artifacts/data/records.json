@@ -1,0 +1,94 @@
+{
+ "snapshot": "2026-10-11 (19:55 update; n=64 added 21:00); 2026-10-17 audit of released data (n=5 bar)",
+ "quantity": "minimum T-count of an ancilla-free Clifford+T (phase-polynomial) implementation of GF(2^n) multiplication |a,b,c> -> |a,b,c+ab>, i.e. the symmetric Waring rank over GF(2) of its signature tensor",
+ "sources": {
+  "V25": "V. Vandaele, Lower T-count with faster algorithms, Quantum 9, 1860 (2025), arXiv:2407.08695, Table 3",
+  "ATQ": "F. J. R. Ruiz et al., Quantum circuit optimization with AlphaTensor, Nat. Mach. Intell. (2025), arXiv:2402.14396; decompositions github.com/google-deepmind/alphatensor_quantum",
+  "this": "this project: exhaustive coset enumeration (qlib/exact_small.c), 2026-10-11",
+  "F26": "D. Fisher, V. Khrulkov, M. Saygin, I. Oseledets, S. Straupe, LLM-Guided Evolutionary Search for Algebraic T-Count Optimization, arXiv:2603.29894 (2026), Table 1 (VarTODD+GigaEvo)"
+ },
+ "records": {
+  "2": {
+   "tcount": 17,
+   "by": "ATQ; also Ref.[61]+FastTODD in V25 (proven optimal: this)"
+  },
+  "3": {
+   "tcount": 23,
+   "by": "V25 (Ref.[61] Karatsuba circuit + FastTODD); F26 lists 27"
+  },
+  "4": {
+   "tcount": 39,
+   "by": "ATQ; matched by F26"
+  },
+  "5": {
+   "tcount": 59,
+   "by": "ATQ (decomposition released, verified); also Khoruzhii et al. and F26 K-branch. F26's 49 is excluded: its released matrix gf2^5_49.npy and its Vandaele start gf2^5_520.npy encode a bilinear map with zero divisors (12 of 31 nonzero a give a singular b -> a*b), so they are not GF(32) multiplication (results/published_values_audit.md)"
+  },
+  "6": {
+   "tcount": 77,
+   "by": "ATQ; matched by F26"
+  },
+  "7": {
+   "tcount": 101,
+   "by": "F26 (VarTODD+GigaEvo, Khoruzhii initial decomposition)"
+  },
+  "8": {
+   "tcount": 123,
+   "by": "ATQ; matched by F26"
+  },
+  "9": {
+   "tcount": 139,
+   "by": "F26 (Khoruzhii branch)"
+  },
+  "10": {
+   "tcount": 157,
+   "by": "F26 (Khoruzhii branch)"
+  },
+  "11": {
+   "tcount": 215,
+   "by": "F26"
+  },
+  "12": {
+   "tcount": 243,
+   "by": "F26"
+  },
+  "13": {
+   "tcount": 293,
+   "by": "F26"
+  },
+  "14": {
+   "tcount": 319,
+   "by": "F26"
+  },
+  "15": {
+   "tcount": 363,
+   "by": "F26"
+  },
+  "16": {
+   "tcount": 383,
+   "by": "F26"
+  },
+  "32": {
+   "tcount": 1177,
+   "by": "F26"
+  },
+  "64": {
+   "tcount": 3729,
+   "by": "F26"
+  }
+ },
+ "proven_lower": {
+  "2": {
+   "tcount": 17,
+   "by": "this"
+  }
+ },
+ "not_comparable": {
+  "WYWC26": "H. Wang, M. Yu, X. Wu, J. Cong, Quantum Circuit Synthesis Using an Exact T Library, arXiv:2605.15476 (2026): out-of-place GF(2^n) multipliers with clean-ancilla don't-cares (a different unitary/cost model); values only in a bar chart"
+ },
+ "disputed": {
+  "note": "Published values whose released data do not decompose GF(2^n) multiplication, or that could not be checked. Bars below are kept (conservatively) except n=5.",
+  "F26_V_branch": "Fisher et al. arXiv:2603.29894 Table I, Vandaele-start column: every released Vandaele start (n=3..16, 32) and final (n=5, 6, 9, 10, 11..16, 32) matrix encodes a map with zero divisors, i.e. not a field multiplication tensor in any basis. Affected Table I values include n=3: 27, 5: 49, 11: 215, 12: 243, 13: 293, 14: 319, 15: 363, 16: 383, 32: 1177; n=64: 3729 was not released. The Khoruzhii-start column (n=7..10) is correct where released.",
+  "V25_n3": "Vandaele 2025 Table 3 'Ref.[61] & FastTODD' n=3: 23 - no circuit released; the public generator and optimizer give 31 T gates with 3 clean ancillas (in-place correct). Not refuted, not reproduced."
+ }
+}

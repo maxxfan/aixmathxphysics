@@ -1,0 +1,26 @@
+{
+ "algebra": "F2[y]/(y^2)",
+ "dimension": 2,
+ "modulus": "100",
+ "modulus_poly": "x^2",
+ "tcount": 15,
+ "factors": [
+  "000101",
+  "010000",
+  "011001",
+  "101000",
+  "000100",
+  "100100",
+  "001001",
+  "011000",
+  "010001",
+  "100010",
+  "101010",
+  "100101",
+  "100001",
+  "001010",
+  "000010"
+ ],
+ "source": "this work; optimal (exhaustive)",
+ "variable_order": "a_0..a_{d-1}, b_0..b_{d-1}, c_0..c_{d-1} (polynomial basis of F2[y]/(modulus))"
+}
