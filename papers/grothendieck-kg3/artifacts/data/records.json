@@ -1,0 +1,53 @@
+{
+ "meta": {
+  "snapshot": "2026-10-14 (phase-1 overlay 2026-10-15 00:15; phase-2 overlay 2026-10-15 04:30)",
+  "note": "Certified bounds on the Grothendieck constant of order 3 (real, 3-dimensional vectors). K_G(3) = 1/v_c where v_c is the critical visibility of the two-qubit Werner state under projective measurements (Acin-Gisin-Toner 2006). No later K_G(3) bound was found in a web search on 2026-10-14 (2409.03739v4, Oct 2026, still cites 2302.04721 for the upper bound).",
+  "delta": "0.000001"
+ },
+ "upper": {
+  "value": "1.4494177506",
+  "exact_note": "phase-2 best certified bound (board #241, cg): K_G(3) <= 1.4494177506 (verifier output, rounded up), Werner v >= 0.6899322156; 721 directions (rad721_a: icosahedral geodesic ico_m721_geo with a small per-orbit radius/position deformation), lam = 0.6922221022, eta^2 = 0.996691977 (exact), K = 19318 orbit-atoms x 60 rotations x transpose.",
+  "source": "this project, phase 2 (2026-10-15): results/RESULTS.md, results/certificates/KG3_upper_1.4494177506_rad721.json; audited (results/audits.json). Phase-1 record 1.4529358988; published record 1.4546336567 (DIB+23, see published_upper).",
+  "method": "symmetry-reduced FW / primal-dual column generation with IPM masters, pool unions and exact re-solve; covering-saturated geodesic sets with dual-guided radius deformation"
+ },
+ "lower": {
+  "value": "1.4367003433",
+  "exact_note": "SDP3(M)/SDP1(M) = 1.4367003433346903 for a 97x97 integer matrix M with exact local bound 13921227005628453160441 (QuBowl) and rational 3D vectors.",
+  "source": "S. Designolle, T. Vertesi, S. Pokutta, Better bounds on finite-order Grothendieck constants, Phys. Rev. A 113, 022401 (2026), arXiv:2409.03739; supplemental DVP24_sup.jl lines 3-16 (data/sources/DVP24_sup_kg3_lines.jl); Zenodo 10.5281/zenodo.13693164.",
+  "use": "proven lower bound: a certified upper bound below 1.4367 contradicts it and raises VERIFIER_ALARM"
+ },
+ "history_upper": [
+  [
+   "1.5163",
+   "Krivine 1979; as Werner visibility v >= 0.6595 in Acin-Gisin-Toner 2006"
+  ],
+  [
+   "1.4644",
+   "Hirsch, Quintino, Vertesi, Navascues, Brunner, Quantum 1, 3 (2017): v >= 0.6829, 625 directions"
+  ],
+  [
+   "1.4546",
+   "Designolle et al. 2023 (published record before this project)"
+  ],
+  [
+   "1.4529358988",
+   "this project, phase 1 (2026-10-14), pol541 local model"
+  ],
+  [
+   "1.4494177506",
+   "this project, phase 2 (2026-10-15), 721-direction non-unit icosahedral local model"
+  ]
+ ],
+ "estimates": [
+  [
+   "v_c ~ 0.691 (K_G(3) ~ 1.447)",
+   "von Selzam & Marquardt, PRX Quantum 6, 020317 (2025), arXiv:2407.04673, numerical gradient-descent LHV models; not a certified bound"
+  ]
+ ],
+ "published_upper": {
+  "value": "1.4546336567",
+  "exact_note": "1/v_low with v_low = eta^2 * nu2 * v0 = 0.6874583132193997, eta^2 = 0.9935 (406 rational vertices), nu2 = 1/(1+sqrt(7.5e-9)) = 0.999914, v0 = 173/250; printed 1/v_low = 1.4546336567186929. Stored value is truncated at 10 decimals (truncation makes a win harder).",
+  "source": "S. Designolle, G. Iommazzo, M. Besancon, S. Knebel, P. Gelss, S. Pokutta, Improved local models and new Bell inequalities via Frank-Wolfe algorithms, Phys. Rev. Research 5, 043059 (2023), arXiv:2302.04721 (v4 Oct 2026 erratum concerns marginals/multipartite only); supplemental DIB+23_sup.jl lines 7-19 (data/sources/DIB23_sup_lines1-20.jl). The explicit local model is not public ('provided upon request').",
+  "method": "406 measurement directions for both parties (icosahedral geodesic polyhedron GP(9,0) from Conway operators, rationalized), Frank-Wolfe (BPCG) decomposition with 78747 deterministic strategies, residual absorbed by the l2-ball lemma, shrinking factor eta^2 for both parties."
+ }
+}

@@ -1,0 +1,26 @@
+$ python3 -I check_release.py .
+PASS  0 manifest: 12 files match MANIFEST.sha256
+PASS  1-4 format, exact accumulation, residual, hull (a)-(e): m = (721, 721), 19318 orbit atoms x 60 transforms (+ transposition), weight 0.999999998769, ||E||_F <= 2.306e-10, facets (2880, 2880), 18.3 s
+PASS  5 bound: lambda = 3447864100660712344387584/4980863930023830797932435; eta_A^2 >= 0.996691977035244 (exact rational with 388-digit denominator); K_G(3) <= 1.4494177506 (claimed 1.4494177506; published 1.4546336567; proven lower bound 1.4367003433)
+PASS  6 project verifier (separate code): p04-grothendieck-kg3/1.1: MATCHES_RECORD, K_G(3) <= 1.4494177506 (7.0 s)
+ALL CHECKS PASSED
+
+$ python3 -I negative_controls.py .
+rejected      scale = 0: scale must be positive
+rejected      a JSON float coordinate: alice[0]: not an exact rational
+rejected      denominator halved (total weight > 1): total weight exceeds 1
+rejected      sign mask with a bit beyond m: strategies[0].A: bits beyond the number of settings
+rejected      a transform that is not a permutation: transforms[1]: not a permutation
+rejected      one direction removed: strategies[0].A: bits beyond the number of settings
+rejected      scale raised by a factor 1 + 1e-9: residual: weight 0.999999998769 + ||E||_F 2.882e-07 > 1
+rejected      scale lowered by a factor 1 - 1e-6: residual: weight 0.999999998769 + ||E||_F 2.882e-04 > 1
+rejected      one sign of the heaviest atom flipped: residual: weight 0.999999998769 + ||E||_F 7.195e-03 > 1
+rejected      the 100 heaviest atoms removed: residual: weight 0.922534706045 + ||E||_F 2.251e+01 > 1
+rejected      two entries of one permutation swapped: residual: weight 0.999999998769 + ||E||_F 1.964e-01 > 1
+rejected      one transform sign flipped: residual: weight 0.999999998769 + ||E||_F 2.489e-01 > 1
+rejected      one direction lengthened by 1e-6: residual: weight 0.999999998769 + ||E||_F 1.521e-05 > 1
+rejected      transposition flag cleared: residual: weight 0.999999998769 + ||E||_F 7.660e-01 > 1
+rejected      README.md changed after the manifest: SHA-256 mismatch: README.md
+15 of 15 corruptions rejected
+
+(timings vary by machine; generated 2026-10-18 on an Apple M4, Python 3.9)
