@@ -1,0 +1,9 @@
+file      work/lead/cands/independent_xz_n80_0.12463577.json
+family    independent_xz  n 80  rank 2  p 0.12463577 (= 0.12463577)  frame rot  complex  prec 128 bits
+series    Poisson mu 22.936901, 120 terms; Taylor 0 terms; trace-norm tail <= 3.70e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 1.9e-35; eigenvalue intervals clipped at 0: 0
+I_c       [2.600475411142379e-9, 2.600475411142379e-9] bits  (width 2.83e-31)
+I_c exact [2600475411142379441080, 2600475411142379441081] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 46.4 s (channel 16.0, spectra 30.3; 4 processes)

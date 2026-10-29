@@ -1,0 +1,9 @@
+file      work/lead/arbcands/independent_xz_n320_0.12770564.json
+family    independent_xz  n 320  rank 2  p 0.12770564 (= 0.12770564)  frame rot  complex  prec 128 bits
+series    Poisson mu 94.375445, 263 terms; Taylor 0 terms; trace-norm tail <= 5.69e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 8.9e-34; eigenvalue intervals clipped at 0: 7634
+I_c       [1.722045867045543e-9, 1.722045867045543e-9] bits  (width 1.01e-28)
+I_c exact [1722045867045543156425, 1722045867045543156528] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 7956.8 s (channel 1674.3, spectra 6276.1; 4 processes)

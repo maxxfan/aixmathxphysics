@@ -1,0 +1,9 @@
+file      work/lead/arbcands/independent_xz_n120_0.1259_board_path1.json
+family    independent_xz  n 120  rank 2  p 0.1259 (= 0.1259)  frame rot  complex  prec 128 bits
+series    Poisson mu 34.810195, 148 terms; Taylor 0 terms; trace-norm tail <= 5.79e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 3.7e-35; eigenvalue intervals clipped at 0: 16
+I_c       [2.760167715781341e-8, 2.760167715781341e-8] bits  (width 5.04e-31)
+I_c exact [27601677157813408892899, 27601677157813408892900] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 523.6 s (channel 102.3, spectra 421.1; 2 processes)

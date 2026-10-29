@@ -1,0 +1,9 @@
+file      candidates/20261028-024810_lead_5f09c5df10a5804f.json
+family    depolarizing  n 480  rank 2  p 0.06679861 (= 0.06679861)  frame plain  real  prec 128 bits
+series    Poisson mu 111.914956, 293 terms; Taylor 0 terms; trace-norm tail <= 5.65e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 4.1e-35; eigenvalue intervals clipped at 0: 44608
+I_c       [4.532174099133242e-9, 4.532174099133242e-9] bits  (width 1.55e-28)
+I_c exact [4532174099133242252227, 4532174099133242252383] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 5317.1 s (channel 1629.9, spectra 3686.2; 8 processes)

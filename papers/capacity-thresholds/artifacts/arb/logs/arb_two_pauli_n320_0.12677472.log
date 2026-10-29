@@ -1,0 +1,9 @@
+file      work/lead/arbcands/two_pauli_n320_0.12677472.json
+family    two_pauli  n 320  rank 2  p 0.12677472 (= 0.12677472)  frame rot  complex  prec 128 bits
+series    Poisson mu 113.191471, 295 terms; Taylor 121 terms; trace-norm tail <= 2.14e-37
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 1.2e-33; eigenvalue intervals clipped at 0: 18892
+I_c       [1.189800134543455e-9, 1.189800134543455e-9] bits  (width 1.13e-27)
+I_c exact [1189800134543454507921, 1189800134543454509050] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 10501.1 s (channel 3445.9, spectra 7044.7; 3 processes)

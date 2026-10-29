@@ -1,0 +1,395 @@
+{
+ "audits": {
+  "depolarizing:kg-crosscheck-n45": {
+   "target": "depolarizing",
+   "file": "work/lead/cand_dep_n45_06497.json (n=45 rank-2, KG2026 state A re-optimised with the analytic gradient)",
+   "p": "6497/100000",
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-26 22:50",
+   "audited_by": "auditor subagent (independent code path: Krohn-Grimberghe's own verifier)",
+   "checks": {
+    "own_verifier": "verifier/verify.py -> IMPROVEMENT, I_c in [5.2932e-9, 5.3929e-9] bits",
+    "kg_verifier": "Krohn-Grimberghe 2026 verify.py UNMODIFIED (sha256 59662e70...bb7, matches their MANIFEST), python -I: ACCEPT POS coherent in [534543241111018806874081249826800422545285, 534543241111018807060758434297471090811600] x 1e-50 bits = 5.3454324111e-9, inside our enclosure; 2369 s on Python 3.14, identical line on /usr/bin/python3 3.9.6 (6127 s)",
+    "payload_binding": "payload = row-major 2x46 little-endian complex128 built from the candidate floats by results/kgcheck/to_c128.py; sha256 1d8d26a2e0bce72fe9ebcc7596d2bbd445ce2742aaeebb4260574f73dbd88233 (shasum and the emitter agree); KG binds the state only through this hash on the command line",
+    "calibration": "results/kgcheck/emit_kg_certificate.py on KG's payload A at p=16239/250000: ACCEPT POS [8.60887680595e-8 bits], inside KG's own shipped certificate interval [8.3895e-8, 8.7075e-8] for the same point (re-run here: ACCEPT POS)",
+    "negative_controls": "same certificate with p=203/3125 -> REJECT endpoint-binding; with A's sha256 -> REJECT payload-external-digest; p=6496/100000 (not lowest terms) -> REJECT rational-canonical; block-0 centre mantissa +2 -> REJECT offdiagonal-sum; block-0 basis mantissa +2 -> REJECT gram-defect-frobenius (results/kgcheck/tamper.py)",
+    "certificate": "26 MB, not committed; sha256 337e60af7c2e08b995a243458bfd3ee1dbb0a989cbca69f7e228ced81c7a2010 (results/kgcheck/logs/cert_hashes.txt); regenerate with emit_kg_certificate.py (about 8.5 min, 8 processes)"
+   },
+   "caveat": "KG's verifier is hard-coded to N=45, rank 2 and the depolarizing kernel, so it cannot check the n>=48 record states or the X-Z / 2-Pauli targets. What it independently confirms is the depolarizing block kernel and our entropy enclosures: two unrelated codes (ball arithmetic in C vs exact dyadic Gershgorin in Python) agree to about 10 digits on I_c for both KG's state A and ours. KG clips Gershgorin discs that straddle 0 to [0,1] instead of flagging them; with 2^-112 hints every disc here is ~1e-30 wide and every component simple, so this did not matter.",
+   "novelty": "n=45 point p=0.06497 already exceeds KG's certified 0.064956; superseded by the larger-n states on the board"
+  },
+  "board-records:independent-reevaluation": {
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-27 00:10",
+   "audited_by": "auditor subagent; code in results/indep/ shares nothing with verifier/, qlib/ or work/lead/",
+   "method": "operators stored as weighted Schur blocks; each Pauli channel written as exp(G) with G a Lindblad generator whose action on the blocks is built from spin-1/2 Clebsch-Gordan coefficients (PIQS-style Dicke master equation), exp applied by a positive Poisson series (two_pauli: the one negative-rate piece commutes and is applied first by Taylor series); X-Z and 2-Pauli also run in the exp(-i pi/4 X) frame; entropies by LAPACK; O(n^4). No coherent-state kernel, Horner binomials or Dicke partial traces. Shared ingredients: the Schur-Weyl block decomposition and I_c as a sum over blocks.",
+   "validation": "brute force 2^n, n<=10, ranks 1-4, all families, both frames: max diff 1.7e-14; Pauli-weight operator spectrum test to n=30; KG2026 state A at 16239/250000 and our n=45 state at 6497/100000 agree with KG exact certificates to 1.3e-15; 45-digit re-run at n=48 (X-Z, 2-Pauli): float error 3e-15 / 6e-15; at n=150/240 two exp algorithms agree to 9e-16, two eigensolvers to 1e-15, random block rotations move I_c by <= 6e-14",
+   "records": {
+    "#2 depolarizing n=150 p=0.06629494": {
+     "file": "candidates/20261026-210916_lead_481ce3870c2d4e21.json",
+     "I_c_indep_bits": "2.0000895e-9",
+     "verifier_enclosure": "[1.5821e-9, 2.1906e-9]",
+     "inside": true,
+     "controls": "zero crossing 0.0663515; I_c(p+1e-6) = +1.965e-9; I_c(p*+1e-6) = -3.5e-11"
+    },
+    "#6 depolarizing n=240 p=0.06646039": {
+     "file": "candidates/20261026-230622_lead_32025a4e90f6200f.json",
+     "I_c_indep_bits": "4.0005656e-9",
+     "verifier_enclosure": "[2.9994e-9, 4.4447e-9]",
+     "inside": true,
+     "controls": "zero crossing 0.0665306; I_c(p+1e-6) = +3.944e-9; I_c(p*+1e-6) = -5.7e-11"
+    },
+    "#3 independent_xz n=48 p=0.12179852": {
+     "file": "candidates/20261026-210926_lead_c9b944ed9a6f8a4a.json",
+     "I_c_indep_bits": "1.0071729e-8",
+     "verifier_enclosure": "[9.9207e-9, 1.0197e-8]",
+     "inside": true,
+     "controls": "zero crossing 0.12179896; I_c(p+1e-6) = -1.280e-8"
+    },
+    "#4 two_pauli n=48 p=0.12086867": {
+     "file": "candidates/20261026-210955_lead_ad42e025717074f4.json",
+     "I_c_indep_bits": "1.0048938e-8",
+     "verifier_enclosure": "[9.8282e-9, 1.0237e-8]",
+     "inside": true,
+     "controls": "zero crossing 0.12086910; I_c(p+1e-6) = -1.312e-8"
+    },
+    "#9 independent_xz n=64 p=0.12331552": {
+     "file": "candidates/20261026-231833_lead_cc6a44c7cf5414bb.json",
+     "I_c_indep_bits": "1.00064e-8",
+     "verifier_enclosure": "[9.5442e-9, 1.0323e-8]",
+     "inside": true,
+     "controls": "zero crossing 0.1233282; I_c(p+1e-6) = +9.2e-9"
+    },
+    "#10 two_pauli n=64 p=0.12235314": {
+     "file": "candidates/20261026-232813_lead_9c563111d96087e5.json",
+     "I_c_indep_bits": "1.00030e-8",
+     "verifier_enclosure": "[9.0366e-9, 1.0657e-8]",
+     "inside": true,
+     "controls": "zero crossing 0.1223640; I_c(p+1e-6) = +9.1e-9"
+    }
+   },
+   "error": "measured float64 error ~1e-13 bits or better; conservative LAPACK worst-case bound <= 7.5e-10 (n=240), not rigorous (the board verifier is the rigorous enclosure)",
+   "findings": [
+    "large-n states are flat in p: |dI_c/dp| = 3.5e-5 (dep n=150), 5.7e-5 (dep n=240), 8-9e-4 (X-Z, 2-Pauli n=64) bits per unit p, against 0.017-0.023 at n=45-48. So the fixed float margins (2e-9..1e-8 bits) used to pick p left 1e-5..7e-5 in p unclaimed; work/lead/maxcert.py now bisects p against the verifier",
+    "verifier enclosures for these states are 2.8e-10..1.45e-9 bits wide, 10-50x the widths PROBLEM.md quoted for the test states (many tiny eigenvalues from the Gaussian envelope)",
+    "independent_xz and two_pauli antidegradability: antidegradability (Q = 0) sets in at p = (1-1/sqrt2)/2 = 0.146447 (X-Z) and 1/6 (2-Pauli), tighter than records.json zero_capacity_from 293/1000 and 1/4. The auditor proposed the closed form sqrt(pI) <= sqrt(pX)+sqrt(pY)+sqrt(pZ); results/zero_capacity_sdp.py confirms it with a symmetric-extension SDP on the Choi state (CLARABEL): 0.083333 / 0.146446 / 0.166545 for depolarizing / X-Z / 2-Pauli (the 2-Pauli SDP value sits 1.2e-4 low because its Choi state is rank 3 and the test uses a 1e-7 eigenvalue tolerance). All certified values lie below. Tightening the verifier alarm needs a re-freeze (records.json is pinned)."
+   ]
+  },
+  "board-records:maxcert-recheck": {
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-27 01:05",
+   "audited_by": "lead, running the auditor tool results/indep/indep_ic.py (default mode: second exp method + eigensolver checks)",
+   "records": {
+    "#11 depolarizing n=240 p=0.06651279": {
+     "file": "candidates/20261027-010137_lead_5a8d8b8895df26cb.json",
+     "I_c_indep_bits": "1.016263897894e-09",
+     "error": "empirical 5.7e-13, first-order 4.8e-11, worst-case floor 7.5e-10",
+     "verifier_enclosure": "[1.0198e-11, 1.4597e-9]",
+     "inside": true
+    },
+    "#12 independent_xz n=64 p=0.12332757": {
+     "file": "candidates/20261027-010209_lead_ad2fcf9c940ceb22.json",
+     "I_c_indep_bits": "4.782680175302e-10",
+     "error": "empirical 2.8e-14, first-order 3.4e-12, floor 1.9e-11",
+     "verifier_enclosure": "[2.4427e-11, 7.8861e-10]",
+     "inside": true
+    },
+    "#13 two_pauli n=64 p=0.12236279": {
+     "file": "candidates/20261027-010328_lead_713c6cf1f278172f.json",
+     "I_c_indep_bits": "1.102854973933e-09",
+     "error": "empirical 1.4e-13, first-order 3.7e-12, floor 2.2e-11",
+     "verifier_enclosure": "[1.3766e-10, 1.7557e-9]",
+     "inside": true
+    }
+   },
+   "note": "same states as #6/#9/#10, re-certified at the highest p the frozen verifier accepts (work/lead/maxcert.py bisection, resolution <= 5e-7 in p). The verifier enclosures are asymmetric (true value near their upper end), so the certified lower ends are only 1e-11..1.4e-10 bits; the independent values sit 0.5-1.1e-9 bits above zero."
+  },
+  "board-records:round2": {
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-27 05:10",
+   "audited_by": "lead, running the auditor tool results/indep/indep_ic.py (default mode: second exp method + eigensolver checks)",
+   "records": {
+    "#15 depolarizing n=240 p=0.06662756": {
+     "file": "candidates/20261027-033842_lead_38eff8cefeab3c5d.json",
+     "I_c_indep_bits": "1.313041166230e-09",
+     "error": "empirical 2.4e-14, first-order 2.8e-11, floor 3.5e-10",
+     "verifier_enclosure": "[4.0998e-12, 2.1039e-9]",
+     "inside": true,
+     "state": "dep_n240_nm_margin climbed one round (climb_margin.py, margin 4e-9, 400 its); float zero crossing 0.0666442"
+    },
+    "#16 two_pauli n=80 p=0.1233958": {
+     "file": "candidates/20261027-045237_lead_673b3e61d692d1a4.json",
+     "I_c_indep_bits": "4.533048930188e-09",
+     "error": "empirical 8.1e-13, first-order 6.3e-12, floor 4.9e-11",
+     "verifier_enclosure": "[5.1234e-11, 7.1850e-9]",
+     "inside": true,
+     "state": "Y-pole ansatz n=80, Nelder-Mead (a0, sf, q) = (29.463, 1.2901, 0.4389); float zero crossing 0.1234234"
+    },
+    "#17 independent_xz n=80 p=0.12437928": {
+     "file": "candidates/20261027-045237_lead_4675821f074f5b91.json",
+     "I_c_indep_bits": "1.564439259943e-09",
+     "error": "empirical 1.1e-13, first-order 6.0e-12, floor 4.6e-11",
+     "verifier_enclosure": "[8.7420e-12, 2.4725e-9]",
+     "inside": true,
+     "state": "Y-pole ansatz n=80, Nelder-Mead (a0, sf, q) = (29.164, 1.2998, 0.4750); float zero crossing 0.1243871"
+    },
+    "#18 depolarizing n=240 p=0.06667253": {
+     "file": "candidates/20261027-050500_lead_ba11e08853949e86.json",
+     "I_c_indep_bits": "1.344762645283e-09",
+     "error": "empirical 2.9e-14; independent positivity interval [1.0005e-9, 1.6891e-9]",
+     "verifier_enclosure": "[9.7537e-12, 2.1687e-9]",
+     "inside": true,
+     "state": "same climb, second round; float zero crossing 0.0666965; total error 3p = 0.2000176"
+    },
+    "#20 depolarizing n=240 p=0.0666847": {
+     "file": "candidates/20261027-053852_lead_9e078e22e51cd14b.json",
+     "I_c_indep_bits": "1.312978313267e-09",
+     "error": "empirical 8.4e-15; independent positivity interval [9.7221e-10, 1.6537e-9]",
+     "verifier_enclosure": "[9.3916e-12, 2.1094e-9]",
+     "inside": true,
+     "state": "same climb, third round (levelled off: margin threshold +5.2e-6); float zero crossing 0.0667112; total error 3p = 0.2000541"
+    },
+    "#21 two_pauli n=80 p=0.1236419": {
+     "file": "candidates/20261027-074257_lead_d1c9e883b77efe7c.json",
+     "I_c_indep_bits": "4.612515100544e-09",
+     "error": "empirical 7.6e-13; independent positivity interval [4.5811e-9, 4.6440e-9]",
+     "verifier_enclosure": "[6.1335e-11, 7.6129e-9]",
+     "inside": true,
+     "state": "#16 state climbed one round in the Y frame (climb_y.py, margin 1e-8, 200 its); float zero crossing 0.1236713"
+    },
+    "#22 independent_xz n=80 p=0.12459005": {
+     "file": "candidates/20261027-074257_lead_834edf5841fffd54.json",
+     "I_c_indep_bits": "1.563816304712e-09",
+     "error": "empirical 5.8e-14; independent positivity interval [1.5383e-9, 1.5893e-9]",
+     "verifier_enclosure": "[2.2419e-11, 2.6302e-9]",
+     "inside": true,
+     "state": "#17 state climbed one round in the Y frame (climb_y.py, margin 1e-8, 200 its); float zero crossing 0.1245964"
+    },
+    "#24 independent_xz n=80 p=0.12463166": {
+     "file": "candidates/20261027-101825_lead_46b0d3127de5b834.json",
+     "I_c_indep_bits": "1.603092120097e-09",
+     "error": "empirical 3.3e-14; independent positivity interval [1.5708e-9, 1.6354e-9]",
+     "verifier_enclosure": "[3.2608e-12, 2.6262e-9]",
+     "inside": true,
+     "state": "second Y-frame climb round (margin threshold +3.3e-5); float zero crossing 0.1246399"
+    },
+    "#25 two_pauli n=80 p=0.12367023": {
+     "file": "candidates/20261027-101825_lead_6b2ddb012ce45bff.json",
+     "I_c_indep_bits": "4.688546276604e-09",
+     "error": "empirical 1.8e-13; independent positivity interval [4.6535e-9, 4.7235e-9]",
+     "verifier_enclosure": "[2.2868e-12, 7.5983e-9]",
+     "inside": true,
+     "state": "second Y-frame climb round (margin threshold +2.1e-5); float zero crossing 0.1237067"
+    },
+    "#27 two_pauli n=80 p=0.12367528": {
+     "file": "candidates/20261027-124857_lead_585247a2e5ee8280.json",
+     "I_c_indep_bits": "4.687997465879e-09",
+     "error": "empirical 5.4e-14; independent positivity interval [4.6511e-9, 4.7249e-9]",
+     "verifier_enclosure": "[1.3223e-13, 7.5729e-9]",
+     "inside": true,
+     "state": "third (final) Y-frame climb round (margin threshold +3.9e-6, levelled off); float zero crossing 0.1237128"
+    },
+    "#28 independent_xz n=80 p=0.12464123": {
+     "file": "candidates/20261027-124857_lead_2a327ea83c2b10f7.json",
+     "I_c_indep_bits": "1.605067502052e-09",
+     "error": "empirical 6.6e-15; independent positivity interval [1.5722e-9, 1.6380e-9]",
+     "verifier_enclosure": "[3.5713e-11, 2.6056e-9]",
+     "inside": true,
+     "state": "third (final) Y-frame climb round (margin threshold +6.5e-6, levelled off); float zero crossing 0.1246500"
+    }
+   },
+   "note": "all four p values chosen by work/lead/maxcert.py (bisection against the frozen verifier, resolution <= 5e-7 dep, 2e-7 Pauli). The 2-Pauli n=80 enclosure is ~7e-9 bits wide (true value mid-interval), against ~2.2e-9 for the other three, so 2-Pauli loses ~3e-5 in p to enclosure width. The #27 certified lower end is only 1.3e-13 bits (p pushed to the verifier's edge); the independent value 4.69e-9 shows the true I_c is far from 0 and the enclosure is simply wide."
+  },
+  "rigorous-arb:independent-certification": {
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-28 03:00",
+   "audited_by": "auditor subagent (built results/rigorous/, 2026-10-27/28); spot re-run of the X-Z record by lead reproduced the enclosure exactly",
+   "method": "results/rigorous/arb_ic.py: 128-bit Arb (python-flint 0.9.0) ball arithmetic throughout. Exact inputs (doubles, rational p, rational Z). Channel = exp(G) with the Lindblad/Clebsch-Gordan construction of results/indep (not the board's det^k Sym^{2j} kernel), positive-rate part by Poisson uniformisation with a rigorous tail bound (<= 2.8e-44 in trace norm, added as a Weyl perturbation), the 2-Pauli negative rate by a Taylor series with a rigorous tail. X-Z / 2-Pauli in the exp(-i pi/4 X) frame via an exact Krawtchouk closed form. Spectra: float hints refined in Arb (untrusted), then certified by Gershgorin components on X*HX with Ostrowski's theorem for the non-orthogonality of X; -x log2 x bounded on each interval with Arb logs. Shares no code with verifier/ and does not use its formula.",
+   "validation": "252 brute-force cases n<=8 (all families, ranks 1-3) contain results/indep/brute.py values to float error; 35 cases inside a 50-digit mpmath reference (hpbrute.py); spectral unit test with exact degeneracies, 1e-30/1e-40 clusters and 1e-76 tails (test_eig.py, all OK); Krohn-Grimberghe: state A at 16239/250000 = 8.608876805954981e-8 (their certificate [8.3895e-8, 8.7075e-8]), our n=45 state at 6497/100000 inside KG's exact interval and 1e4 times narrower, all four KG signs reproduced; negative controls (p just above each float zero crossing, one amplitude perturbed by 1e-4) come out NEGATIVE.",
+   "records": {
+    "#20 depolarizing n=240 p=0.0666847": {
+     "I_c_arb_bits": "[1.312979763222851481978e-9, 1.312979763222851482036e-9]",
+     "width": "5.8e-29",
+     "time": "500 s, 6 processes",
+     "inside_board_enclosure": true
+    },
+    "#28 independent_xz n=80 p=0.12464123": {
+     "I_c_arb_bits": "[1.605068705609815603826e-9, 1.605068705609815603827e-9]",
+     "width": "2.8e-31",
+     "time": "23 s",
+     "inside_board_enclosure": true,
+     "note": "--prec 192 value inside the 128-bit enclosure"
+    },
+    "#27 two_pauli n=80 p=0.12367528": {
+     "I_c_arb_bits": "[4.688004925413416462978e-9, 4.688004925413416462986e-9]",
+     "width": "7.1e-30",
+     "time": "24 s",
+     "inside_board_enclosure": true
+    }
+   },
+   "conservative_points": {
+    "note": "highest p whose BOARD-verifier lower bound is >= 1e-9 bits (work/lead/maxcert.py --min-lower 1e-9), then re-certified with arb_ic; files in work/lead/cands/",
+    "depolarizing n=240 p=0.06666451": {
+     "board": ">= 1e-9 (bisection)",
+     "I_c_arb_bits": "[2.313249372406896121086e-9, 2.313249372406896121143e-9]"
+    },
+    "independent_xz n=80 p=0.12463577": {
+     "board": "[1.0227e-9, 3.6058e-9]",
+     "I_c_arb_bits": "[2.600475411142379441080e-9, 2.600475411142379441081e-9]"
+    },
+    "two_pauli n=80 p=0.12366746": {
+     "board": "[1.0017e-9, 8.5360e-9]",
+     "I_c_arb_bits": "[5.665418663789639437500e-9, 5.665418663789639437508e-9]"
+    }
+   },
+   "finding": "the board verifier's enclosures (2e-9..7.6e-9 bits wide) are dominated by the double-precision floor on many tiny eigenvalues; the 128-bit Arb evaluator is 1e20 times narrower, so it certifies up to ~1e-6 below a state's float zero crossing. It is also O(n^4) for every Pauli channel (board path 1 is O(n^6)); at n=120 board path 1 took 43 min with a 5.3e-8-bit enclosure (UNDECIDED at p=0.1259 for an X-Z state that arb certifies far higher), so beyond n=80 only the Arb evaluator can certify X-Z / 2-Pauli usefully."
+  },
+  "rigorous-arb:beyond-caps": {
+   "verdict": "CONFIRMED",
+   "audited": "2026-10-28",
+   "audited_by": "lead (results/rigorous/arb_ic.py at 128 bits, the auditor's validated tool; unchanged since its audit)",
+   "states": "board records zero-padded to more copies (work/lead/transplant.py for depolarizing from the n=240 climbed state; work/lead/transplant_pauli.py for X-Z / 2-Pauli from records #28 / #27, padded in the Y frame); p = float zero crossing - 1e-5 rounded down to 1e-8 (work/lead/mkarb.py)",
+   "beyond_caps": {
+    "depolarizing n=480 p=0.06688201": {
+     "p": "0.06688201",
+     "n": 480,
+     "sign": "POSITIVE",
+     "I_c_arb_e30_bits": "[485190991292415409011, 485190991292415409190]",
+     "width": "1.8e-28",
+     "tail_bound": "7.36e-46",
+     "time_s": 10552.7,
+     "file": "work/lead/arbcands/depolarizing_n480_0.06688201.json"
+    },
+    "independent_xz n=240 p=0.12737956": {
+     "p": "0.12737956",
+     "n": 240,
+     "sign": "POSITIVE",
+     "I_c_arb_e30_bits": "[1730665272872527453149, 1730665272872527453152]",
+     "width": "1.6e-30",
+     "tail_bound": "7.21e-46",
+     "time_s": 3173.6,
+     "file": "work/lead/arbcands/independent_xz_n240_0.12737956.json"
+    },
+    "independent_xz n=320 p=0.12770564": {
+     "p": "0.12770564",
+     "n": 320,
+     "sign": "POSITIVE",
+     "I_c_arb_e30_bits": "[1722045867045543156425, 1722045867045543156528]",
+     "width": "1e-28",
+     "tail_bound": "5.69e-46",
+     "time_s": 7956.8,
+     "file": "work/lead/arbcands/independent_xz_n320_0.12770564.json"
+    },
+    "two_pauli n=320 p=0.12677472": {
+     "p": "0.12677472",
+     "n": 320,
+     "sign": "POSITIVE",
+     "I_c_arb_e30_bits": "[1189800134543454507921, 1189800134543454509050]",
+     "width": "1.1e-27",
+     "tail_bound": "2.14e-37",
+     "time_s": 10501.1,
+     "file": "work/lead/arbcands/two_pauli_n320_0.12677472.json"
+    }
+   },
+   "record_30_depolarizing_n480_p0.06679861": {
+    "p": "0.06679861",
+    "n": 480,
+    "sign": "POSITIVE",
+    "I_c_arb_e30_bits": "[4532174099133242252227, 4532174099133242252383]",
+    "width": "1.6e-28",
+    "tail_bound": "5.65e-46",
+    "time_s": 5317.1,
+    "file": "candidates/20261028-024810_lead_5f09c5df10a5804f.json",
+    "board_enclosure_bits": "[2.4950e-11, 6.8873e-9]",
+    "inside_board_enclosure": true
+   },
+   "crosscheck_xz_n120_board_path1": {
+    "p": "0.1259",
+    "n": 120,
+    "sign": "POSITIVE",
+    "I_c_arb_e30_bits": "[27601677157813408892899, 27601677157813408892900]",
+    "width": "5e-31",
+    "tail_bound": "5.79e-46",
+    "time_s": 523.6,
+    "file": "work/lead/arbcands/independent_xz_n120_0.1259_board_path1.json",
+    "board_path1_enclosure_bits": "[-6.2267e-9, 4.6651e-8] (UNDECIDED, verifier copy with NMAX[1]=160, 2558 s)",
+    "indep_float_bits": "2.760167016903397e-08",
+    "inside_board_enclosure": true
+   },
+   "finding": "Arb certifies Q > 0 beyond the board caps: depolarizing 0.06688201 (n=480; 3p = 0.20064603), X-Z 0.12770564 and 2-Pauli 0.12677472 (n=320). These are not board records (arb_ic is not a frozen verifier path). Record #30 re-certified at its own p, inside the board enclosure; at n=120 the board's general-Pauli kernel (path 1) and the Arb Lindblad construction agree, so the Pauli construction is cross-checked above the n=80 cap.",
+   "decision": "2026-10-28 (user): arb_ic stays a paper-level certifier, not a board verifier path; the board stays official at its caps (n<=480 depolarizing, n<=80 Pauli) and the beyond-cap values are reported in the paper only"
+  }
+ },
+ "events": [
+  {
+   "t": "2026-10-26 22:50",
+   "agent": "auditor",
+   "key": "depolarizing:kg-crosscheck-n45",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 00:10",
+   "agent": "auditor",
+   "key": "board-records:independent-reevaluation",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 01:05",
+   "agent": "lead",
+   "key": "board-records:maxcert-recheck",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 05:10",
+   "agent": "lead",
+   "key": "board-records:round2",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 05:45",
+   "agent": "lead",
+   "key": "board-records:round2 (#20 added)",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 07:55",
+   "agent": "lead",
+   "key": "board-records:round2 (#21, #22 added)",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 10:30",
+   "agent": "lead",
+   "key": "board-records:round2 (#24, #25 added)",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-27 13:00",
+   "agent": "lead",
+   "key": "board-records:round2 (#27, #28 added)",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-28 03:00",
+   "agent": "auditor+lead",
+   "key": "rigorous-arb:independent-certification",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-28",
+   "agent": "lead",
+   "key": "rigorous-arb:beyond-caps",
+   "verdict": "CONFIRMED"
+  },
+  {
+   "t": "2026-10-28",
+   "agent": "lead",
+   "key": "rigorous-arb:beyond-caps",
+   "verdict": "DECISION: paper-only"
+  }
+ ],
+ "next_steps": [
+  "optional (needs re-freeze, coordinator decision): tighten zero_capacity_from to (1-1/sqrt2)/2 (X-Z) and 1/6 (2-Pauli)",
+  "re-run results/rigorous/arb_ic.py (rigorous, 128-bit) and results/indep/indep_ic.py on every new record"
+ ]
+}

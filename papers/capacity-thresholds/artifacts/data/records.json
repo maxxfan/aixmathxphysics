@@ -1,0 +1,47 @@
+{
+ "meta": {
+  "snapshot": "2026-10-25",
+  "convention": "Pauli channel N(rho) = pI rho + pX X rho X + pY Y rho Y + pZ Z rho Z. depolarizing: (1-3p, p, p, p), p is the per-Pauli probability (total error 3p; much of the older literature quotes 3p). two_pauli: (1-2p, p, 0, p). independent_xz: ((1-p)^2, p(1-p), p^2, p(1-p)). Same conventions as arXiv:2605.09138 (code: getDepolKraus, getTwoPKraus, getIndepKraus) and arXiv:2608.15870.",
+  "win_rule": "IMPROVEMENT: the verifier certifies I_c > 0 (exact/ball arithmetic) for an explicit input at a rational p >= bar. MATCHES_RECORD: certified I_c > 0 at match_from <= p < bar. bar is past the point where the best published state is known (certified or numerically) to have I_c < 0, so a win needs a new state, not a sharper evaluation of a published one.",
+  "monotone": "depolarizing and independent_xz are semigroups in p (N_p' = M o N_p for p' > p), so I_c > 0 at p gives Q > 0 on [0, p]. two_pauli is not a semigroup under Pauli post-processing: its records (ours and the literature's) are pointwise.",
+  "sources": {
+   "KG2026": "A. Krohn-Grimberghe, A certified lower bound on the quantum-capacity threshold of the depolarizing channel, arXiv:2608.15870 (v2, 18 Aug 2026); artifact doi:10.5281/zenodo.21962925 (CC BY 4.0), tarball sha256 e365a001d99aa310163c606ebce72171d680a99f5b7fc44cc53165d29afa17cc",
+   "AKLLSSS2026": "A. Agarwal, A. R. Kalra, S. Lee, D. Leung, L. Schaeffer, P. Sinha, G. Smith, Enhanced quantum capacity thresholds from symmetry, arXiv:2605.09138 (v2, 13 May 2026); code and states github.com/avantikaag03/Enhanced-quantum-capacity-thresholds-from-symmetry (pushed 2026-07-03)",
+   "choir2026": "A depolarizing choir sings in Gaussian harmony, arXiv:2609.39747 (Sep 2026; Bhalerao, Leditzky et al.): p_th >= 0.2029161 (total) from an emergent thermal-attenuator limit, asymptotic in the number of channel uses with no finite-n rate and numerics at margin ~1e-12; not a finite-n certificate",
+   "FW2008": "J. Fern, K. B. Whaley, Lower bounds on the nonzero capacity of Pauli channels, PRA 78, 062335 (2008)",
+   "SS2007": "G. Smith, J. A. Smolin, Degenerate quantum codes for Pauli channels, PRL 98, 030501 (2007), arXiv:quant-ph/0604107"
+  }
+ },
+ "cells": {
+  "depolarizing": {
+   "probs": "(1-3p, p, p, p)",
+   "certified_record": "16239/250000",
+   "certified_record_decimal": "0.064956",
+   "certified_by": "KG2026: 45-copy rank-two symmetric state A (payload sha256 1df2e00c06b2614cd04a5bfc7bede040da2d3fc1dd49e7138e201c101aab266f), certified I_c > 0 at 16239/250000 and I_c < 0 at 203/3125",
+   "match_from": "16239/250000",
+   "bar": "203/3125",
+   "numerical": {"AKLLSSS2026 printed": "0.064657 (n=45)", "AKLLSSS2026 repo": "0.06491119062628092 (n=45; KG2026 certifies that state positive at 4057/62500, negative at 16229/250000)", "FW2008": "0.06376 (0.19128 total)", "SS2007": "0.19088 total = 0.063627", "hashing": "0.0630965 (0.1892896 total)"},
+   "asymptotic_claim": "0.0676387 (choir2026, 0.2029161/3; not certified at any finite n)",
+   "zero_capacity_from": "1/12",
+   "zero_capacity_reason": "antidegradable for total error 3p >= 1/4 (no-cloning)"
+  },
+  "independent_xz": {
+   "probs": "((1-p)^2, p(1-p), p^2, p(1-p))",
+   "certified_record": null,
+   "match_from": "0.118370",
+   "bar": "0.118372",
+   "numerical": {"AKLLSSS2026": "0.11837113922723974 (n=30; optimizer not peaked; state file indep_positive_for_p_at_0.11836627486983782)", "hashing": "0.1100279"},
+   "zero_capacity_from": "293/1000",
+   "zero_capacity_reason": "entanglement-breaking once pI = (1-p)^2 <= 1/2, i.e. p >= 1 - 1/sqrt(2) = 0.29289"
+  },
+  "two_pauli": {
+   "probs": "(1-2p, p, 0, p)",
+   "certified_record": null,
+   "match_from": "0.118066",
+   "bar": "0.118068",
+   "numerical": {"AKLLSSS2026": "0.1180672806619063 (n=30; optimizer not peaked; state file twopauli_positive_for_p_at_0.11805955918753513)", "FW2008": "0.11398", "hashing": "0.1135461"},
+   "zero_capacity_from": "1/4",
+   "zero_capacity_reason": "entanglement-breaking once pI = 1-2p <= 1/2"
+  }
+ }
+}

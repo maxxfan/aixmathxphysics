@@ -1,0 +1,27 @@
+file      candidates/20261027-053852_lead_9e078e22e51cd14b.json
+family    depolarizing  n 240  rank 2  p 0.0666847 (= 0.0666847)  frame plain  real  prec 128 bits
+series    Poisson mu 55.845593, 192 terms; Taylor 0 terms; trace-norm tail <= 5.84e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 5.3e-35; eigenvalue intervals clipped at 0: 0
+I_c       [1.312979763222851e-9, 1.312979763222851e-9] bits  (width 5.76e-29)
+I_c exact [1312979763222851481978, 1312979763222851482036] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 500.0 s (channel 231.6, spectra 268.2; 6 processes)
+      500.28 real      2369.44 user        54.51 sys
+           426196992  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             8937598  page reclaims
+                 325  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5545  voluntary context switches
+             4258763  involuntary context switches
+         12066107833  instructions retired
+          3901336138  cycles elapsed
+           474874696  peak memory footprint

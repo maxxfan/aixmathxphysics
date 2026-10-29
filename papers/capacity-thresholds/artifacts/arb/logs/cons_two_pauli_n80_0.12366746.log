@@ -1,0 +1,9 @@
+file      work/lead/cands/two_pauli_n80_0.12366746.json
+family    two_pauli  n 80  rank 2  p 0.12366746 (= 0.12366746)  frame rot  complex  prec 128 bits
+series    Poisson mu 27.301731, 131 terms; Taylor 62 terms; trace-norm tail <= 2.79e-44
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 1.6e-36; eigenvalue intervals clipped at 0: 1
+I_c       [5.665418663789639e-9, 5.665418663789639e-9] bits  (width 7.11e-30)
+I_c exact [5665418663789639437500, 5665418663789639437508] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 52.0 s (channel 22.8, spectra 29.1; 4 processes)

@@ -1,0 +1,9 @@
+file      work/lead/cands/depolarizing_n240_0.06666451.json
+family    depolarizing  n 240  rank 2  p 0.06666451 (= 0.06666451)  frame plain  real  prec 128 bits
+series    Poisson mu 55.825770, 192 terms; Taylor 0 terms; trace-norm tail <= 5.57e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 7.4e-36; eigenvalue intervals clipped at 0: 0
+I_c       [2.313249372406896e-9, 2.313249372406896e-9] bits  (width 5.61e-29)
+I_c exact [2313249372406896121086, 2313249372406896121143] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 906.5 s (channel 388.4, spectra 517.8; 4 processes)

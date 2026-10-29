@@ -1,0 +1,9 @@
+file      work/lead/arbcands/depolarizing_n480_0.06688201.json
+family    depolarizing  n 480  rank 2  p 0.06688201 (= 0.06688201)  frame plain  real  prec 128 bits
+series    Poisson mu 112.078879, 293 terms; Taylor 0 terms; trace-norm tail <= 7.36e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 2.3e-35; eigenvalue intervals clipped at 0: 44714
+I_c       [4.851909912924154e-10, 4.851909912924154e-10] bits  (width 1.78e-28)
+I_c exact [485190991292415409011, 485190991292415409190] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 10552.7 s (channel 4103.3, spectra 6448.3; 3 processes)
