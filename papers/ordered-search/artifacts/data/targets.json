@@ -1,0 +1,27 @@
+{
+ "meta": {
+  "note": "Record (best explicit finite claim): 6 queries for 90000 (numerical, Wu et al. ICML 2026). Win: certified (k, n) with n^6 > 90000^k; a certified (6, 90000) is MATCHES_RECORD. No exact certificate for any k >= 6 existed before p09. Achieved 2026-10-30: certified (7, 650000) = 0.362505, verdict IMPROVEMENT. 2026-10-31: certified (6, 90000), verdict MATCHES_RECORD (Wu et al.'s numerical record is now exact); certified (6, 91000) = 0.364220, verdict IMPROVEMENT (first 6-query result beyond 90000); certified (7, 700000) = 0.360509, verdict IMPROVEMENT."
+ },
+ "targets": [
+  {
+   "id": "k6",
+   "band": "upper",
+   "score": 0.3645720231321232,
+   "display": "6 queries: certify n >= 90000 (numerical record), win from 90001 (certified N* < 94000)",
+   "achieved": "certified (6, 90000), MATCHES_RECORD, and (6, 91000) = 0.364220, IMPROVEMENT (2026-10-31): 91000 <= N*(6) < 94000"
+  },
+  {
+   "id": "k7",
+   "band": "upper",
+   "score": 0.3645723625451865,
+   "display": "7 queries for n >= 602490",
+   "achieved": "certified (7, 650000), 0.362505 log2 N (2026-10-30); (7, 700000), 0.360509 log2 N (2026-10-31)"
+  },
+  {
+   "id": "k6-cert",
+   "band": "certified",
+   "display": "first exact certificate for any 6-query algorithm (n > 43002 beats the prior explicit 5-query 7265)",
+   "achieved": "certified (6, 45000) and (6, 80000) (2026-10-29)"
+  }
+ ]
+}

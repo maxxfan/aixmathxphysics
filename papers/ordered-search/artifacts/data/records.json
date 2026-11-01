@@ -1,0 +1,132 @@
+{
+ "snapshot": "2026-10-31",
+ "problem": "exact quantum query complexity of n-element ordered search (Table 8 item 9)",
+ "record": {
+  "k": 6,
+  "n": 90000,
+  "constant": 0.3645723782278663,
+  "source": "Y. Wu, H. Liu, W. Gao, Y. Su, T. Li, D. Ge, Y. Ye, 'Matrix-Free GPU Semidefinite Programming for Quantum Ordered Search at the k=6 Frontier', ICML 2026 poster (icml.cc/virtual/2026/poster/65135; openreview GSGOyxRrBo)",
+  "note": "'strong numerical evidence' that N*(6) >= 90000 (not certified); rigorous dual certificate N*(6) < 94000"
+ },
+ "win_rule": "certified (k, n) with n^6 > 90000^k (beats the best explicit finite claim, which is numerical); n^6 = 90000^k certifies it rigorously (MATCHES_RECORD); beats_prior_explicit: n^5 > 7265^k",
+ "min_n_for_win": {
+  "6": 90001,
+  "7": 602490
+ },
+ "history_exact_upper": [
+  {
+   "k": 3,
+   "n": 52,
+   "constant": 0.5262751907458636,
+   "source": "Farhi-Goldstone-Gutmann-Sipser 1999 (FGGS99, as cited in arXiv:2503.21090)"
+  },
+  {
+   "k": 3,
+   "n": 56,
+   "constant": 0.5165863013822943,
+   "source": "as cited by Childs-Landahl-Parrilo, quant-ph/0608161 (PRA 75, 032335, 2007)"
+  },
+  {
+   "k": 4,
+   "n": 605,
+   "constant": 0.43286336161257827,
+   "source": "Childs-Landahl-Parrilo, quant-ph/0608161 (2007); 606 infeasible"
+  },
+  {
+   "k": 5,
+   "n": 7265,
+   "constant": 0.3898104459246575,
+   "source": "arXiv:2503.21090 (2025); 7266 infeasible"
+  },
+  {
+   "k": 6,
+   "n": 90000,
+   "constant": 0.3645723782278663,
+   "source": "Wu et al., ICML 2026 (numerical)"
+  }
+ ],
+ "lower_bound": {
+  "constant": 0.22063560015265163,
+  "statement": "exact algorithms need >= (ln n - 1)/pi queries, about 0.2206 log2 n",
+  "source": "Hoyer-Neerbek-Shi, quant-ph/0102078 (ICALP 2001; Algorithmica 34, 2002); Childs-Lee, arXiv:0708.3396 (2008): the adversary method cannot do better"
+ },
+ "theorem": "FGGS99 / CLP07 / Thm 8 of arXiv:2503.21090: an exact k-query translation-invariant algorithm for n-element ordered search exists iff symmetric nonnegative Laurent polynomials q_0..q_k of degree < n exist with q_0 = Fejer kernel F_n, q_k = 1, constant terms 1 and q_t = q_(t-1) on z^n = (-1)^t; Thm 1 of arXiv:2503.21090: translation invariance is without loss of generality",
+ "published_limits": {
+  "2": 6,
+  "4": 605,
+  "5": 7265,
+  "6": 93999
+ },
+ "prior_explicit": {
+  "k": 5,
+  "n": 7265,
+  "constant": 0.3898104459246575,
+  "source": "J. Carolan, A. M. Childs, M. Kovacs-Deak, L. Schaeffer, arXiv:2503.21090 (v2 Jul 2025; ACM TQC 2026)",
+  "note": "LP relaxation + numerical nonnegativity check; n = 7266 infeasible"
+ },
+ "asymptotic": {
+  "constant": 0.22063560015265163,
+  "statement": "exact algorithms with (1/pi) ln n + o(log n) queries exist, matching the lower bound",
+  "source": "J. Carolan, A. M. Childs, 'Optimal Quantum Algorithms for Ordered Search', arXiv:2609.34293 (28 Sep 2026; discovery credited to Claude Fable 5 and GPT-5.6-Sol)",
+  "note": "analytic FGGS chain, parameters chosen for sufficiently large n; no explicit finite (k, n) instances; open: O(1) vs o(log n), explicit finite-n algorithms"
+ },
+ "certified_by_p09": [
+  {
+   "k": 4,
+   "n": 605,
+   "constant": 0.43286336161257827,
+   "file": "results/certificates/cert_k4_n605.json"
+  },
+  {
+   "k": 6,
+   "n": 45000,
+   "constant": 0.3881576370382574,
+   "file": "results/certificates/cert_k6_n45000.json.gz"
+  },
+  {
+   "k": 6,
+   "n": 80000,
+   "constant": 0.36837585660792294,
+   "file": "results/certificates/cert_k6_n80000.json.gz"
+  },
+  {
+   "k": 6,
+   "n": 90000,
+   "constant": 0.3645723782278663,
+   "file": "results/certificates/cert_k6_n90000.json.gz",
+   "verdict": "MATCHES_RECORD",
+   "note": "exact certificate of Wu et al.'s numerical (6, 90000): 90000 <= N*(6) < 94000 (2026-10-31)"
+  },
+  {
+   "k": 6,
+   "n": 91000,
+   "constant": 0.36421958017545397,
+   "file": "results/certificates/cert_k6_n91000.json.gz",
+   "verdict": "IMPROVEMENT",
+   "note": "first 6-query algorithm beyond Wu et al.'s 90000, exact: 91000 <= N*(6) < 94000 (2026-10-31)"
+  },
+  {
+   "k": 7,
+   "n": 650000,
+   "constant": 0.36250496788151854,
+   "file": "results/certificates/cert_k7_n650000.json.gz",
+   "verdict": "IMPROVEMENT",
+   "note": "first 7-query exact algorithm; beats the numerical (6, 90000) constant 0.364572; exact certificate (sha256 52fdb8b3da99ec23...)"
+  },
+  {
+   "k": 7,
+   "n": 700000,
+   "constant": 0.3605089179381376,
+   "file": "results/certificates/cert_k7_n700000.json.gz",
+   "verdict": "IMPROVEMENT",
+   "note": "warm start from the (7, 650000) chain; 1.11% below the numerical (6, 90000); exact certificate (sha256 5047e1f18dd64482...) (2026-10-31)"
+  }
+ ],
+ "best_certified": {
+  "k": 7,
+  "n": 700000,
+  "constant": 0.3605089179381376,
+  "source": "p09 (this repo), 2026-10-31: results/certificates/cert_k7_n700000.json.gz",
+  "note": "best explicit exact ordered-search algorithm known to us; the external 'record' above stays the published claim the frozen verifier compares against"
+ }
+}

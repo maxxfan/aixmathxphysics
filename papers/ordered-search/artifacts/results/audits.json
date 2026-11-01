@@ -367,7 +367,8 @@
   "2026-10-30 18:47 audited results/certificates/cert_k7_n650000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=650000: 0.362505 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.55e-07",
   "2026-10-31 08:57 audited results/certificates/cert_k6_n90000.json.gz: MATCHES_RECORD: exact ordered search with 6 queries for n=90000: 0.364572 log2 N (record 0.364572, k=6, n=90000); min certified margin 1.74e-06",
   "2026-10-31 11:30 audited results/certificates/cert_k6_n91000.json.gz: IMPROVEMENT: exact ordered search with 6 queries for n=91000: 0.364220 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.25e-07",
-  "2026-10-31 19:07 audited results/certificates/cert_k7_n700000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07"
+  "2026-10-31 19:07 audited results/certificates/cert_k7_n700000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07",
+  "2026-10-31 22:35 results/check_independent.py hardened after the external review (explicit Rejected exceptions instead of assert, exact-integer and positive-denominator checks, output key beats_prior_explicit; tests in results/test_check_independent.py, 42 checks incl. python -O); re-run under python -O on all nine certificates: every margin identical to the recorded one"
  ],
  "next_steps": []
 }

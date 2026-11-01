@@ -100,15 +100,16 @@
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum algorithms</p>
-        <h2><a href="papers/ordered-search/ordered-search.pdf">Exact certificates for quantum ordered search: seven queries for 700,000 elements and six for 91,000</a></h2>
-        <p>Nine explicit quantum algorithms for searching an ordered list are certified in exact integer
-        arithmetic, each by a standard-library verifier and by an independent checker built on FLINT. Seven
-        queries search 700,000 elements, which gives $0.360509\log_2 N$ queries, better than the numerical
-        six-query algorithm for 90,000 elements of Wu <em>et al.</em> ($0.364572$). Six queries search 91,000
-        elements, so the largest list that six queries can search exactly satisfies
-        $91000 \le N^*(6) &lt; 94000$. Each certificate is a chain of symmetric Laurent polynomials in the
-        characterization of Farhi, Goldstone, Gutmann and Sipser, found by a smoothed max–min optimization.
-        <a href="https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v1">Certificates and checkers</a>.</p>
+        <h2><a href="papers/ordered-search/ordered-search.pdf?v=2">Exact certificates for quantum ordered search: seven queries for 700,000 elements and six for 91,000</a></h2>
+        <p>Exact integer feasibility certificates prove that nine quantum algorithms for searching an
+        ordered list exist. Each is checked by a standard-library verifier and by an independent checker
+        built on FLINT. Seven queries search 700,000 elements, so ordered search on $N$ elements needs at
+        most $0.360509\log_2 N + 7$ queries. The coefficient improves on the numerical six-query algorithm
+        for 90,000 elements of Wu <em>et al.</em> ($0.364572$). Six queries search 91,000 elements, so the
+        largest list that six queries can search exactly satisfies $91000 \le N^*(6) &lt; 94000$. Each
+        certificate is a chain of symmetric Laurent polynomials in the characterization of Farhi, Goldstone,
+        Gutmann and Sipser, found by a smoothed max–min optimization.
+        <a href="https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v2">Certificates and checkers</a>.</p>
       </article>
     </section>
   </main>
