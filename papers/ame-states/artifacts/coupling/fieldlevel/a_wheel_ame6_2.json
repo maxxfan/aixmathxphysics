@@ -1,0 +1,52 @@
+{
+ "id": "a_wheel_ame6_2",
+ "n": 6,
+ "local_dim": 2,
+ "kind": "fq_graph",
+ "field": {
+  "Q": 2,
+  "p": 2,
+  "m": 1,
+  "modulus": null,
+  "modulus_str": null,
+  "encoding": "prime field F_2: the ints 0..1 with arithmetic mod 2"
+ },
+ "Gamma": [
+  [0, 1, 0, 0, 1, 1],
+  [1, 0, 1, 0, 0, 1],
+  [0, 1, 0, 1, 0, 1],
+  [0, 0, 1, 0, 1, 1],
+  [1, 0, 0, 1, 0, 1],
+  [1, 1, 1, 1, 1, 0]
+ ],
+ "structure": {
+  "type": "wheel",
+  "rule": "5-cycle 0-1-2-3-4-0 plus hub 5 adjacent to all: Gamma[i][i+1 mod 5] = Gamma[i][5] = 1 (symmetric), else 0"
+ },
+ "claimed_property": {
+  "statement": "AME(6,2)",
+  "uniformity_k": 3,
+  "n": 6,
+  "d": 2
+ },
+ "stabilizer_code": "[[6,0,4]]_2",
+ "code": {
+  "params": "[[6,0,4]]_2",
+  "distance": 4
+ },
+ "used_as": "G_a (k = 2, needs 2-uniform; it is AME(6,2), i.e. 3-uniform)",
+ "converter": {
+  "function": "canonical_from_graph",
+  "rule": "rows [e_i | Gamma_i] over F_p"
+ },
+ "used_in": [
+  "AME(5,10)"
+ ],
+ "source": {
+  "script": "work/couple/calib.py",
+  "note": "AME(6,2) wheel graph state",
+  "builder": "work/couple/lib.py wheel6()",
+  "board_posts": [586]
+ },
+ "canonical_file": "../ingredients/a_wheel_ame6_2.json"
+}

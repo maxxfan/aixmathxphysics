@@ -1,0 +1,75 @@
+{
+ "id": "b_ame16_11_circulant",
+ "n": 16,
+ "local_dim": 11,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 121,
+  "p": 11,
+  "m": 2,
+  "modulus": [7, 1, 1],
+  "modulus_str": "x^2 + x + 7",
+  "encoding": "F_121 = F_11[x]/(x^2 + x + 7); the int e = sum_{i<2} c_i 11^i (0 <= c_i < 11) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 11,
+  "conjugation": "z -> z^11"
+ },
+ "q": 11,
+ "generator": "[I_8 | A] over F_121, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [92, 1, 1, 1, 1, 1, 1, 1],
+  [1, 58, 4, 21, 30, 109, 118, 38],
+  [1, 38, 58, 4, 21, 30, 109, 118],
+  [1, 118, 38, 58, 4, 21, 30, 109],
+  [1, 109, 118, 38, 58, 4, 21, 30],
+  [1, 30, 109, 118, 38, 58, 4, 21],
+  [1, 21, 30, 109, 118, 38, 58, 4],
+  [1, 4, 21, 30, 109, 118, 38, 58]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 11,
+  "w_to_the_q": 120,
+  "xi": 11
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 7,
+  "corner_alpha": 92,
+  "row_border_beta": 1,
+  "column_border_gamma": 1,
+  "core_first_row": [58, 4, 21, 30, 109, 118, 38],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "bordered Z_7 circulant, border beta = gamma = 1",
+  "search": "f121z7.py: the core is diagonalised over F_{11^6} (7 does not divide 120); hit 0 = (m = 0, e1 = 16469); 84 of the 1.6e7 unitary family members are MDS"
+ },
+ "claimed_property": {
+  "statement": "AME(16,11)",
+  "uniformity_k": 8,
+  "n": 16,
+  "d": 11
+ },
+ "used_as": "G_b (AME(16,11))",
+ "code": {
+  "params": "[16,8,9]_121",
+  "field_order": 121,
+  "length": 16,
+  "dimension": 8,
+  "distance": 9,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^11 (MDS)"
+ },
+ "stabilizer_code": "[[16,0,9]]_11",
+ "used_in": [
+  "AME(15,44)"
+ ],
+ "source": {
+  "script": "work/couple/ame16_11.py 0",
+  "note": "AME(16,11) Hermitian self-dual MDS [16,8,9]_121 = [I|M], M bordered Z_7 circulant over F_121 (couple f121z7.py hit 0: m=0 e1=16469)",
+  "builder": "work/couple/ame16_11.py 0 (hit 0 of work/couple/f121z7.py)",
+  "board_posts": [653]
+ },
+ "canonical_file": "../ingredients/b_ame16_11_circulant.json"
+}

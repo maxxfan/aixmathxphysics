@@ -1,0 +1,6 @@
+k=8 n=17 monomials=36 rank of evaluation matrix=17; dim of quadrics through the columns = 19; GRS would give 21 (= C(k-1,2) = 21) i.e. rank 15; generic: rank 17
+control GRS (rational normal curve, n=17): rank 15, quadric dimension 21 (expected 21)
+VERDICT: NOT GRS (shortened code has no rational-normal-curve structure)
+k=8 n=17 monomials=36 rank of evaluation matrix=17; dim of quadrics through the columns = 19; GRS would give 21 (= C(k-1,2) = 21) i.e. rank 15; generic: rank 17
+control GRS (rational normal curve, n=17): rank 15, quadric dimension 21 (expected 21)
+VERDICT: NOT GRS (shortened code has no rational-normal-curve structure)

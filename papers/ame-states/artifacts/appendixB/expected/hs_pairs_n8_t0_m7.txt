@@ -1,0 +1,4 @@
+# Prop. prop:loc, uniform H (Hermitian adjacency, type 0) type at n = 8, pairs' implementation pairs/dfs4b.c, row-0 weight m = 7.
+# Expected = work/pairs/dfs4.log (complete n = 8 run, time field dropped); board #84 (S type) and the H-type posts of
+# pairs (m = 4..7 nsol = 0).  m = 4..7 is complete: a graph-state generator X_v Z_N(v) has party weight 1 + deg v >= 5.
+DONE n=8 type=0 m=7 part=0/1 nsol=0 timedout=0 nodes: 1 84 20496 3605056 143032320 624729056 44408556

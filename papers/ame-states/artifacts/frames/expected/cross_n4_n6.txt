@@ -1,0 +1,3 @@
+N4 impl1=4478976000 impl2=4478976000 equal=yes
+N6 impl1=10525951918080000000 impl2=10525951918080000000 equal=yes
+n6 completions per class impl1 (sorted)=[64, 112, 288, 368, 2272], distinct per-Sp-orbit counts impl2=[64, 112, 288, 368, 2272] equal=yes

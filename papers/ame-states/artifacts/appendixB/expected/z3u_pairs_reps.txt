@@ -1,0 +1,19 @@
+# Table VI, row "3 | (3^2,1^2), h = 1" -- pairs' pipeline exactly as originally run (board #138; log work/pairs/z3_scan.log):
+# classes_z3.py: "414 reps mod GL(2,2)^4 prepared in z3_reps.txt but not needed"; scan_z3.py/scan_z3.c: 77760 phi, none passes
+# S_nf alone, so no (rep, phi) pair is tested and NSOL = 0.  The progress lines are copied from z3_scan.log.
+AME(4,4) graph forms: 514944
+orbits under GL(2,2)^4: 414
+wrote 414 reps
+anti-isometries phi found: 77760 (expect 77760)
+wrote z3_in.txt: R=414 M=77760
+R=414 M=77760 phi passing S_nf alone: 0
+progress r=0/414 tested=0 nsol=0
+progress r=50/414 tested=0 nsol=0
+progress r=100/414 tested=0 nsol=0
+progress r=150/414 tested=0 nsol=0
+progress r=200/414 tested=0 nsol=0
+progress r=250/414 tested=0 nsol=0
+progress r=300/414 tested=0 nsol=0
+progress r=350/414 tested=0 nsol=0
+progress r=400/414 tested=0 nsol=0
+DONE R=414 tested=0 NSOL=0

@@ -1,0 +1,148 @@
+{
+ "conventions": {
+  "encoding": "an element of GF(2^m) is the integer sum c_i 2^i, i.e. bit i is the coefficient of x^i",
+  "GF(8)": "F_2[x]/(x^3+x+1)",
+  "GF(16)": "F_2[x]/(x^4+x+1)",
+  "GF(256)": "F_2[x]/(x^8+x^4+x^3+x^2+1) (0x11D)",
+  "graph": "symmetric circulant Gamma_ij = c_{delta(i,j)}, delta(i,j) = min(|i-j|, n-|i-j|), zero diagonal, over GF(q); the state is q^(-n/2) sum_x (-1)^Tr(sum_{i<j} Gamma_ij x_i x_j) |x> (paper Eq. (1))",
+  "hermitian": "generator [I | A] of an F_256-linear code of length n; A is n/2 x n/2 built from circulant blocks circ(r)_{ij} = r_{(j-i) mod len(r)}; for n = 20, A = [[C00, C01], [C01^T, C11]]; Hermitian conjugation x -> x^16",
+  "canonical": "the candidate files are the same states in the verifier's canonical F_2 form (m qubits per party; X in the polynomial basis of GF(q) over F_2, Z in its trace-dual basis); qlib_ame.py is the converter that produced them"
+ },
+ "states": [
+  {
+   "cell": "AME(15,8)",
+   "q": 8,
+   "kind": "graph",
+   "n": 15,
+   "c": [
+    1,
+    0,
+    4,
+    6,
+    3,
+    0,
+    0
+   ],
+   "c_powers": "(1, 0, a^2, a^4, a^3, 0, 0)",
+   "candidate": "candidates/AME_15_8.json",
+   "source": "phase 1, board #11/#12 (additive)"
+  },
+  {
+   "cell": "AME(17,8)",
+   "q": 8,
+   "kind": "graph",
+   "n": 17,
+   "c": [
+    1,
+    2,
+    2,
+    1,
+    2,
+    5,
+    5,
+    2
+   ],
+   "c_powers": "(1, a, a, 1, a, a^6, a^6, a)",
+   "candidate": "candidates/AME_17_8.json",
+   "source": "phase 1, board #13/#14 (additive)"
+  },
+  {
+   "cell": "AME(19,16)",
+   "q": 16,
+   "kind": "graph",
+   "n": 19,
+   "c": [
+    1,
+    5,
+    11,
+    7,
+    6,
+    12,
+    4,
+    0,
+    4
+   ],
+   "candidate": "candidates/AME_19_16.json",
+   "source": "phase 3, board #565/#566 (coordinator probe)"
+  },
+  {
+   "cell": "AME(21,16)",
+   "q": 16,
+   "kind": "graph",
+   "n": 21,
+   "c": [
+    0,
+    12,
+    6,
+    2,
+    10,
+    1,
+    1,
+    0,
+    1,
+    3
+   ],
+   "twist": {
+    "u": 8,
+    "frobenius_power": 4,
+    "statement": "c_{8j mod 21} = c_j^4 for all j (multiplier 8 combined with x -> x^4)"
+   },
+   "candidate": "candidates/AME_21_16.json",
+   "source": "phase 3, board #599 (extend)"
+  },
+  {
+   "cell": "AME(18,16)",
+   "q": 16,
+   "kind": "hermitian",
+   "n": 18,
+   "Q": 256,
+   "blocks": {
+    "A": [
+     92,
+     74,
+     70,
+     173,
+     117,
+     59,
+     208,
+     212,
+     182
+    ]
+   },
+   "candidate": "candidates/AME_18_16.json",
+   "source": "phase 3, board #609 (extend)"
+  },
+  {
+   "cell": "AME(20,16)",
+   "q": 16,
+   "kind": "hermitian",
+   "n": 20,
+   "Q": 256,
+   "blocks": {
+    "C00": [
+     78,
+     231,
+     216,
+     216,
+     231
+    ],
+    "C01": [
+     215,
+     146,
+     221,
+     152,
+     79
+    ],
+    "C11": [
+     78,
+     117,
+     65,
+     65,
+     117
+    ]
+   },
+   "candidate": "candidates/AME_20_16.json",
+   "source": "phase 3, board #635 (extend)"
+  }
+ ]
+}

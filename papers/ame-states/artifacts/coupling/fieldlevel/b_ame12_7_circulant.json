@@ -1,0 +1,69 @@
+{
+ "id": "b_ame12_7_circulant",
+ "n": 12,
+ "local_dim": 7,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 49,
+  "p": 7,
+  "m": 2,
+  "modulus": [3, 1, 1],
+  "modulus_str": "x^2 + x + 3",
+  "encoding": "F_49 = F_7[x]/(x^2 + x + 3); the int e = sum_{i<2} c_i 7^i (0 <= c_i < 7) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 7,
+  "conjugation": "z -> z^7"
+ },
+ "q": 7,
+ "generator": "[I_6 | A] over F_49, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [14, 45, 1, 13, 34, 23],
+  [23, 14, 45, 1, 13, 34],
+  [34, 23, 14, 45, 1, 13],
+  [13, 34, 23, 14, 45, 1],
+  [1, 13, 34, 23, 14, 45],
+  [45, 1, 13, 34, 23, 14]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 7,
+  "w_to_the_q": 48,
+  "xi": 7
+ },
+ "structure": {
+  "type": "circulant",
+  "description": "Z_6 group circulant",
+  "first_row": [14, 45, 1, 13, 34, 23],
+  "rule": "A[i][j] = first_row[(j - i) mod 6]"
+ },
+ "claimed_property": {
+  "statement": "AME(12,7)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 7
+ },
+ "used_as": "G_b (AME(12,7))",
+ "code": {
+  "params": "[12,6,7]_49",
+  "field_order": 49,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^7 (MDS)"
+ },
+ "stabilizer_code": "[[12,0,7]]_7",
+ "used_in": [
+  "AME(11,14)",
+  "AME(11,21)"
+ ],
+ "source": {
+  "script": "work/couple/batch11b.py (a=2, b=7)",
+  "note": "AME(12,7) Z6 group circulant [12,6,7]_49",
+  "builder": "work/couple/run_gorb.py 7 6 0 -> work/mds/grp_orbits3.py (first hit, work/couple/gorb/grp3_q7_Z6_b0_n12.json)",
+  "board_posts": [597]
+ },
+ "canonical_file": "../ingredients/b_ame12_7_circulant.json"
+}

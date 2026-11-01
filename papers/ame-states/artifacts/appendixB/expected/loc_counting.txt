@@ -1,0 +1,27 @@
+# Prop. prop:loc (paper): "This Singleton-type bound, applied to all assignments of per-party types (dim U_j, dim W_j), leaves
+# only (2,2)^8 and (0,4)^8 for l = 3, (0,4)^8 for l = 5, and (1,3)^8 for l = 7." and "For l = 2 ... the same counting leaves
+# (1)^8 and (2)^8" (here: types (dim ker N, dim im N) = (3,1)^8 and (2,2)^8).
+# Source: auditor/fixpt_count.py (argument.md 5.3 + addendum; board #118, #119).  No original log was kept; the script is
+# deterministic and its n = 8 patterns are exactly the ones stated in argument.md 5.3 and in the paper.  n = 4, 6: sanity
+# (the existing AME(4,4), AME(6,4) are not excluded: the uniform patterns survive there too).
+n = 8  dmin = 5  dim S = 16
+  l = 2 feasible by Singleton counting: ((3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1))  max dims (A,B) = 12 4
+  l = 2 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 8 8
+  l = 3 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 8 8
+  l = 3 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 16
+  l = 5 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 16
+  l = 7 feasible by Singleton counting: ((1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3))  max dims (A,B) = 4 12
+n = 4  dmin = 3  dim S = 8
+  l = 2 feasible by Singleton counting: ((3, 1), (3, 1), (3, 1), (3, 1))  max dims (A,B) = 6 2
+  l = 2 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 4 4
+  l = 3 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 4 4
+  l = 3 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 8
+  l = 5 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 8
+  l = 7 feasible by Singleton counting: ((1, 3), (1, 3), (1, 3), (1, 3))  max dims (A,B) = 2 6
+n = 6  dmin = 4  dim S = 12
+  l = 2 feasible by Singleton counting: ((3, 1), (3, 1), (3, 1), (3, 1), (3, 1), (3, 1))  max dims (A,B) = 9 3
+  l = 2 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 6 6
+  l = 3 feasible by Singleton counting: ((2, 2), (2, 2), (2, 2), (2, 2), (2, 2), (2, 2))  max dims (A,B) = 6 6
+  l = 3 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 12
+  l = 5 feasible by Singleton counting: ((0, 4), (0, 4), (0, 4), (0, 4), (0, 4), (0, 4))  max dims (A,B) = 0 12
+  l = 7 feasible by Singleton counting: ((1, 3), (1, 3), (1, 3), (1, 3), (1, 3), (1, 3))  max dims (A,B) = 3 9

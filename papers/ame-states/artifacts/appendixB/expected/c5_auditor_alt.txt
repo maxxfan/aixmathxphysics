@@ -1,0 +1,9 @@
+# Table VI, row "5 | (5,1^3), order-5 h" -- auditor's c5graph.py with a second pair of order-5 twists (indices 5, 101 of the
+# 144 order-5 elements of Sp(4,2)); argument.md 5.6 "same result for two different pairs (h5, h6) of order-5 elements
+# (indices (0,0) and (5,101))"; original log work/auditor/c5graph_5_101.log (lines below copied from it, timings dropped).
+h5=(0, 13, 4, 9, 1, 12, 5, 8, 6, 11, 2, 15, 7, 10, 3, 14) h6=(0, 7, 5, 2, 14, 9, 11, 12, 10, 13, 15, 8, 4, 3, 1, 6); dim C=16 dim W=8
+isotropic nonzero vectors in C: 16575 -> lines 1105 (expected 1105)
+solutions-per-w histogram (expect {300: 1105}): {300: 1105}
+total graph-type Lagrangians: 331500 (expected 1105*300 = 331500)
+min-party-weight histogram over all graph-type L (pairs: {2: 4500, 3: 54000, 4: 273000}): {2: 4500, 3: 54000, 4: 273000}
+max over L of min weight: 4

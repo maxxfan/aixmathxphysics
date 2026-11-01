@@ -1,0 +1,4 @@
+U=6 subspaces=651
+U=7 subspaces=11811
+U=8 subspaces=200787
+random_trials=3 dfs_equals_bruteforce_over_20160=yes

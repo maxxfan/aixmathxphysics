@@ -1,0 +1,13 @@
+# nice -n 10 work/classify/frames 2 3 work/classify/v0_m2.txt -1 -1 work/classify/sol_m2.txt
+class 0 (tuple-orbit 336): nodes 1 1  nsol=1  time=0.0s
+# exit 0
+# nice -n 10 work/classify/frames 3 4 work/classify/v0_m3.txt -1 -1 work/classify/sol_m3.txt
+class 0 (tuple-orbit 5040): nodes 1 112 112  nsol=112  time=0.0s
+class 1 (tuple-orbit 2520): nodes 1 64 64  nsol=64  time=0.0s
+class 2 (tuple-orbit 1260): nodes 1 288 288  nsol=288  time=0.0s
+class 3 (tuple-orbit 1008): nodes 1 368 368  nsol=368  time=0.0s
+class 4 (tuple-orbit 28): nodes 1 2272 2272  nsol=2272  time=0.0s
+# exit 0
+# nice -n 10 work/classify/frames 4 4 work/classify/v0_m4.txt 9 20 work/classify/sol_m4_t4.txt
+class 9 (tuple-orbit 1344): nodes 1 2 1700 20  nsol=20  time=0.4s
+# exit 0

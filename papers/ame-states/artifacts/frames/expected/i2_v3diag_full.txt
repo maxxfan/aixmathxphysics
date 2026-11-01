@@ -1,0 +1,11 @@
+rep=0 n_V2=712 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=712 singles_ok_pairs_fail=0 pairs_ok_singles_fail=712
+rep=1 n_V2=1776 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=1776 singles_ok_pairs_fail=0 pairs_ok_singles_fail=1776
+rep=2 n_V2=176 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=176 singles_ok_pairs_fail=0 pairs_ok_singles_fail=176
+rep=3 n_V2=2444 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=2444 singles_ok_pairs_fail=0 pairs_ok_singles_fail=2444
+rep=4 n_V2=416 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=416 singles_ok_pairs_fail=0 pairs_ok_singles_fail=416
+rep=5 n_V2=702 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=702 singles_ok_pairs_fail=0 pairs_ok_singles_fail=702
+rep=6 n_V2=3640 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=3640 singles_ok_pairs_fail=0 pairs_ok_singles_fail=3640
+rep=7 n_V2=3744 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=3744 singles_ok_pairs_fail=0 pairs_ok_singles_fail=3744
+rep=8 n_V2=8912 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=8912 singles_ok_pairs_fail=0 pairs_ok_singles_fail=8912
+rep=9 n_V2=1712 n_SOL=0 V3_singles_ok=0 V3_pairs_ok=1712 singles_ok_pairs_fail=0 pairs_ok_singles_fail=1712
+TOTAL reps=10

@@ -1,0 +1,5 @@
+frames=3104 m=3
+valid_frames=3104 (theta invertible, V_i nondegenerate, pairwise orthogonal, direct sum)
+min_party_weight_histogram={4: 3104}
+party_weight_enumerator=[1,0,0,0,225,1080,2790] frames=3104
+pattern_lines=0 pattern_agree=0 (18 conditions each)

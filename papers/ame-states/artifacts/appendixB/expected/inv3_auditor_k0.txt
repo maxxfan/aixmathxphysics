@@ -1,0 +1,9 @@
+# inv3_auditor_k0 -- Table VI, l = 2, sigma = (2^3,1^2): "8640 candidates, 10 up to gauge" (first half).
+# argument.md 5.7 / board #190: "the pairs (F_M, F_N) of nondegenerate alternating forms with F_M + F_N = J number 12 and form
+# ONE Sp(4,2)-orbit, so pairs' 12 x 720 = 8640 K are 720 up to gauge". (The reduction of the 720 to 10 orbits is printed by
+# t3lift.py, checks inv3_auditor_lift*.) Original output not logged; lines = deterministic script output, numbers as in #190.
+nondegenerate alternating forms: 28 (expect 28)
+|Sp(4,2)| = 720 (expect 720)
+ordered pairs (F_M, F_N) with F_M + F_N = J, both nondegenerate: 12
+Sp(4,2)-orbits on these pairs: 1 sizes [12]
+=> K_0 classes: 1 ; times 720 isometries f: 720 K  (pairs: 12 and 8640)

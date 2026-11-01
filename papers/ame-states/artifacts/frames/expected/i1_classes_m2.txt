@@ -1,0 +1,2 @@
+336 4804
+TOTAL classes=1 orbit_sum=336 sizes=[336]

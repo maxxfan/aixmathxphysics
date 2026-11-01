@@ -1,0 +1,1 @@
+{"type": "stabilizer", "n": 6, "d": 2, "p": 2, "generators": ["100000010011", "010000101001", "001000010101", "000100001011", "000010100101", "000001111110"], "script": "work/couple/calib.py", "note": "AME(6,2) wheel graph state", "id": "a_wheel_ame6_2", "used_in": ["AME(5,10)"]}

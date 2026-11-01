@@ -1,0 +1,15 @@
+# Prop. prop:loc: "calibrated ... against random sampling at intermediate depths" (board #87, #99, argument.md 5).
+# Original runs: hdfs h=3 sample 2078.43 +- 9.54 vs 2074 (hdfs_h3_sample.log), prefix P=1 2082.7 +- 15.1 (hdfs_h3_prefix.log),
+# h=4 starts 624.7 +- 0.9, party-1 survivors 774881 +- 3835 vs 778584 (#99); hsdfs n=4 2.01 +- 0.01, n=6 381.77 +- 1.42,
+# n=8 party-1 18872.46 +- 104.53 vs 18720 (hsdfs_*_sample/prefix logs).  The original seeds were not logged, so this replay
+# uses seed 1 and checks |estimate - exact| <= 4 sigma; the estimates are in out/hs_sampling.log.
+H h=2 N_norm (sample)                  exact 6        within 4 sigma: yes
+H h=3 N_norm (sample)                  exact 2074     within 4 sigma: yes
+H h=3 starts (prefix P=0)              exact 64       within 4 sigma: yes
+H h=3 party-1 nodes (prefix P=1)       exact 2074     within 4 sigma: yes
+H h=4 starts (prefix P=0)              exact 624      within 4 sigma: yes
+H h=4 party-1 nodes (prefix P=1)       exact 778584   within 4 sigma: yes
+S h=2 N_norm (sample)                  exact 2        within 4 sigma: yes
+S h=3 N_norm (sample)                  exact 380      within 4 sigma: yes
+S h=4 starts (prefix P=0)              exact 20       within 4 sigma: yes
+S h=4 party-1 nodes (prefix P=1)       exact 18720    within 4 sigma: yes

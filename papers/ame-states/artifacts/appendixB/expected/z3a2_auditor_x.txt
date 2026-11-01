@@ -1,0 +1,36 @@
+# Table VI row "l=3, (3^2,1^2), h with 2-dim fixed space", AUDITOR within-author cross-checks (ame84_f2linear_closure.md a=2 row:
+# "the generic unstaged DFS lagsearch.c (5,735,899 nodes per T, no use of the dim-2 structure) gives 0 Lagrangians on T = 0-6,
+# 384-386, 768-770 (all three X_A classes), agreeing with the staged lagsearch2.c"; argument.md 5.5(c): "1152 in all (12 random T
+# re-verified directly)").
+# Provenance: work/auditor/lagsearch_nonfpf_0_1151.log, lagsearch_nonfpf_384_386.log, lagsearch_nonfpf_768_770.log (identical
+# lines); z3twist_check.py output in runs/auditor/shift-05.jsonl ("T: dim 10 min weight 5 isotropic True Omega-invariant True
+# in V_nf True" ..., "checked 12 random T: all fine"); 1152 = number of T (z3twist4 output, same transcript).
+== z3twist_check.py nonfpf
+number of T: 1152
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+T: dim 10 min weight 5 isotropic True Omega-invariant True in V_nf True
+checked 12 random T: all fine
+== lagsearch (generic DFS) on T 0-6, 384-386, 768-770
+T 0 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 1 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 2 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 3 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 4 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 5 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 6 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 384 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 385 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 386 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 768 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 769 |Vs| 2928 nodes 5735899 Lagrangians 0
+T 770 |Vs| 2928 nodes 5735899 Lagrangians 0

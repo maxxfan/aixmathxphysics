@@ -1,0 +1,19 @@
+# inv3_auditor_lift -- Table VI, l = 2, sigma = (2^3,1^2): "8640 candidates, 10 up to gauge. A lift search for the rest of S
+# finds 0 solutions" -- auditor implementation t3lift.py (argument.md 5.7, board #190: "0 solutions for all 10 representatives
+# (1.13M surviving nodes, 175 s)").
+# Expected lines = the original log work/auditor/t3lift_5_0_720.log with the wall-clock times removed.
+15-class involutions found: 15 (expect 15)
+K_0 basis ok; isometries K/K_0 -> L6+L7: 720 (expect 720)
+centralizer of l0 in Sp(4,2): 48 induced permutations of L: 6
+orbit representatives of the 720 isometries under C(l0)^2 x swap: 10 orbit sizes sum 720
+K 0: nsol 0 survivors per level [152, 6504, 37944, 6048, 576, 0, 0, 0] done
+K 12: nsol 0 survivors per level [144, 5968, 37056, 6048, 576, 4608, 0, 0] done
+K 14: nsol 0 survivors per level [152, 6256, 37944, 6048, 576, 4608, 4608, 0] done
+K 15: nsol 0 survivors per level [144, 6256, 37056, 6048, 576, 4608, 4608, 0] done
+K 192: nsol 0 survivors per level [152, 6256, 37944, 6048, 96768, 4608, 0, 0] done
+K 194: nsol 0 survivors per level [152, 5968, 37944, 6048, 96768, 4608, 0, 0] done
+K 195: nsol 0 survivors per level [152, 6256, 37944, 6048, 96768, 4608, 0, 0] done
+K 204: nsol 0 survivors per level [144, 6256, 37056, 6048, 96768, 4608, 0, 0] done
+K 206: nsol 0 survivors per level [152, 6256, 37944, 6048, 96768, 4608, 0, 0] done
+K 207: nsol 0 survivors per level [144, 5968, 37056, 6048, 96768, 4608, 0, 0] done
+done: K processed up to 207, total solutions 0, total surviving nodes 1133400

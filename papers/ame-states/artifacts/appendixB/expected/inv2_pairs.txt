@@ -1,0 +1,18 @@
+# Table VI row (2^2,1^4), pairs' implementation (board #163): pairs/chk_t2f4.py ("number exactly 432, and ALL 432 have a
+# 2-dim radical for b (radical size 4)") and pairs/enum_t2f4.py ("independent second enumeration via hyperbolic-plane pairs
+# finds 0 symplectic Z_A, and a relaxed control with block weight >= 2 finds 42264"); the intermediate counts (6264 / 14040
+# hyperbolic planes, 25920 ordered pairs, 9072 three-dim subspaces) are as in the pairs transcript runs/pairs/shift-04.jsonl.
+dim 1 subspaces 189
+dim 2 subspaces 4248
+dim 3 subspaces 9072
+dim 4 subspaces 432
+radical sizes (1=nondegenerate): {4: 432}
+allowed vectors 189
+hyperbolic planes 6264
+candidate Z_A (symplectic, block weight>=3): 0
+ordered (Z_A,Z_B) pairs 0 (unordered 0 )
+TOTAL pairs 0 K valid 0 ran 0 nsol_total 0
+allowed vectors 243
+hyperbolic planes 14040
+candidate Z_A (symplectic, block weight>=3): 42264
+ordered (Z_A,Z_B) pairs 25920 (unordered 12960 )

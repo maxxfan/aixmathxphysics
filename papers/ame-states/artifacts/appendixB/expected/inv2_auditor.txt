@@ -1,0 +1,6 @@
+# Table VI row (2^2,1^4): "S^Omega requires a nondegenerate subspace among the 432 subspaces of (F_2^2)^4 with block weight
+# >= 3; all 432 are degenerate."  auditor/t2audit.py (board #190, argument.md 5.7: "all 200787 four-dim subspaces ... exactly
+# 432 have block weight at least 3 and ALL 432 have b-rank 2 ... relaxed control (block weight at least 2) gives 42264").
+total 4-dim subspaces enumerated: 200787 (Gaussian binomial [8,4]_2 = 200787)
+min block weight >= 3: 432 subspaces; rank of b|Z histogram {2: 432}  -> radical dims {2: 432}
+min block weight >= 2: 94158 subspaces; rank of b|Z histogram {0: 1242, 2: 50652, 4: 42264}  -> radical dims {0: 42264, 2: 50652, 4: 1242}

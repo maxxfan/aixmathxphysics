@@ -1,0 +1,11 @@
+# inv4_pairs_ctrl -- positive control for the t = 4 DFS, ADDED FOR THE RELEASE (no original log; the swarm validated this DFS
+# with val_inv8.py / val2_inv8.py / dump_check.py, check inv4_pairs_validate). pairs' inv8.c has a built-in relaxed threshold
+# (argv[3] = THR; "3 = distance-4 control"). On the class-0 representative C of classes_inv8.py: THR = 4 gives NSOL 0
+# (as in inv8_classes.log), THR = 3 finds solutions (capped at 1000, deterministic DFS order), and each printed solution,
+# rebuilt as a 16-qubit stabilizer, is isotropic of rank 16 with minimum party weight exactly 4 (so the THR = 4 search is not
+# vacuous: it rejects states that are one weight short).
+THR=4 (AME search) on C: NSOL 0
+THR=3 (distance-4 control) on C, cap 1000: NSOL 1000 nodes 1 1 1 3 37 265 801 1000 stopped=1
+  solution q = 01 02 04 08 10 20 40 80 : isotropic True rank 16 distinct words 65536 min party weight 4 words of weight <= 4: 72 bad_cuts 8 of 35
+  solution q = 01 02 04 08 10 20 80 c0 : isotropic True rank 16 distinct words 65536 min party weight 4 words of weight <= 4: 54 bad_cuts 9 of 35
+  solution q = 01 02 04 08 10 40 20 80 : isotropic True rank 16 distinct words 65536 min party weight 4 words of weight <= 4: 50 bad_cuts 15 of 35

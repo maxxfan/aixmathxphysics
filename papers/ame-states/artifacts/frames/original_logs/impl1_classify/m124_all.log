@@ -1,0 +1,21 @@
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 0 -1 -  env=JMASKS=124
+class 0 (tuple-orbit 80640): nodes 1 26556 702 0  nsol=0  time=21.4s  free-dim histogram: L1{32:1 } L2{16:26556 } L3{0:490 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 1 -1 -  env=JMASKS=124
+class 1 (tuple-orbit 60480): nodes 1 24128 176 0  nsol=0  time=21.6s  free-dim histogram: L1{32:1 } L2{16:24128 } L3{0:104 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 2 -1 -  env=JMASKS=124
+class 2 (tuple-orbit 40320): nodes 1 24128 416 0  nsol=0  time=20.8s  free-dim histogram: L1{32:1 } L2{16:24128 } L3{0:240 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 3 -1 -  env=JMASKS=124
+class 3 (tuple-orbit 20160): nodes 1 28960 1776 0  nsol=0  time=22.1s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{0:1264 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 4 -1 -  env=JMASKS=124
+class 4 (tuple-orbit 20160): nodes 1 24488 712 0  nsol=0  time=21.5s  free-dim histogram: L1{32:1 } L2{16:24488 } L3{0:544 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 5 -1 -  env=JMASKS=124
+class 5 (tuple-orbit 20160): nodes 1 28960 3640 0  nsol=0  time=22.3s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{0:3112 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 6 -1 -  env=JMASKS=124
+class 6 (tuple-orbit 13440): nodes 1 24488 2444 0  nsol=0  time=20.8s  free-dim histogram: L1{32:1 } L2{16:24488 } L3{0:312 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 7 -1 -  env=JMASKS=124
+class 7 (tuple-orbit 10080): nodes 1 28960 1712 0  nsol=0  time=22.2s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{0:1072 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 8 -1 -  env=JMASKS=124
+class 8 (tuple-orbit 2016): nodes 1 28656 8912 0  nsol=0  time=22.0s  free-dim histogram: L1{32:1 } L2{16:28656 } L3{0:4928 }
+# nice -n 10 work/classify/frames3_s8 4 5 work/classify/v0_m4.txt 9 -1 -  env=JMASKS=124
+class 9 (tuple-orbit 1344): nodes 1 28656 3744 0  nsol=0  time=21.6s  free-dim histogram: L1{32:1 } L2{16:28656 } L3{0:2992 }
+# SUMMARY sum nodes[1]=267980 sum nodes[2]=24234 sum nodes[3]=0

@@ -1,0 +1,80 @@
+{
+ "id": "a_16_0_8_d4_bordered_circulant",
+ "n": 16,
+ "local_dim": 4,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 16,
+  "p": 2,
+  "m": 4,
+  "modulus": [1, 1, 0, 0, 1],
+  "modulus_str": "x^4 + x + 1",
+  "encoding": "F_16 = F_2[x]/(x^4 + x + 1); the int e = sum_{i<4} c_i 2^i (0 <= c_i < 2) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 4,
+  "conjugation": "z -> z^4"
+ },
+ "q": 4,
+ "generator": "[I_8 | A] over F_16, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [2, 4, 4, 4, 4, 4, 4, 4],
+  [4, 2, 1, 1, 0, 2, 8, 5],
+  [4, 5, 2, 1, 1, 0, 2, 8],
+  [4, 8, 5, 2, 1, 1, 0, 2],
+  [4, 2, 8, 5, 2, 1, 1, 0],
+  [4, 0, 2, 8, 5, 2, 1, 1],
+  [4, 1, 0, 2, 8, 5, 2, 1],
+  [4, 1, 1, 0, 2, 8, 5, 2]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1, 6],
+  "trace_dual_basis_gamma": [7, 1],
+  "normal_element_w": 2,
+  "w_to_the_q": 3,
+  "xi": 2
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 7,
+  "corner_alpha": 2,
+  "row_border_beta": 4,
+  "column_border_gamma": 4,
+  "core_first_row": [2, 1, 1, 0, 2, 8, 5],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "bordered Z_7 circulant over F_16 (row border beta, column border gamma)",
+  "search": "near_bord.py 4 7 8: 1228500 unitary bordered circulants (A conj(A)^T = -I), first 20 hits with d >= 8 stored in work/couple/nearb_q4_c7_d8.json; this is hit 0"
+ },
+ "claimed_property": {
+  "statement": "7-uniform",
+  "uniformity_k": 7,
+  "n": 16,
+  "d": 4
+ },
+ "used_as": "G_a (k = 7, needs 7-uniform)",
+ "code": {
+  "params": "[16,8,8]_16",
+  "field_order": 16,
+  "length": 16,
+  "dimension": 8,
+  "distance": 8,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^4"
+ },
+ "stabilizer_code": "[[16,0,8]]_4",
+ "used_in": [
+  "AME(15,36)",
+  "AME(15,44)",
+  "AME(15,52)"
+ ],
+ "source": {
+  "script": "work/couple/ame16_9.py",
+  "note": "[[16,0,8]]_4 bordered circulant Hermitian self-dual [8+8,8,8]_16 [2, 4, 4, 2, 1, 1, 0, 2, 8, 5] (7-uniform)",
+  "builder": "work/couple/g16_4.py 0 (hit 0 of work/couple/near_bord.py 4 7 8, work/couple/nearb_q4_c7_d8.json)",
+  "board_posts": [616, 644, 653]
+ },
+ "canonical_file": "../ingredients/a_16_0_8_d4_bordered_circulant.json",
+ "remarks": [
+  "The note's list [2, 4, 4, 2, 1, 1, 0, 2, 8, 5] is [alpha, beta, gamma, core_first_row] (near_bord.py hit format)."
+ ]
+}

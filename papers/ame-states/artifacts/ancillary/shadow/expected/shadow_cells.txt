@@ -1,0 +1,5 @@
+AME(8,4): shadow pass  min W = 0 at |S| = 1
+AME(22,16): shadow pass  min W = 0 at |S| = 1
+AME(23,16): shadow pass  min W = 0 at |S| = 1
+AME(4,2): shadow FAIL  min W = -0.5 at |S| = 4
+AME(8,3): shadow FAIL  min W = -0.3951 at |S| = 8

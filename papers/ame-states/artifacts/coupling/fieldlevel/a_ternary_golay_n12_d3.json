@@ -1,0 +1,72 @@
+{
+ "id": "a_ternary_golay_n12_d3",
+ "n": 12,
+ "local_dim": 3,
+ "kind": "css_minimal_support",
+ "field": {
+  "Q": 3,
+  "p": 3,
+  "m": 1,
+  "modulus": null,
+  "modulus_str": null,
+  "encoding": "prime field F_3: the ints 0..2 with arithmetic mod 3"
+ },
+ "state": "|C> = |C|^(-1/2) sum_{c in C} |c>, stabilized by X(c) (c in C) and Z(h) (h in C^perp, Euclidean dual)",
+ "G": [
+  [1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1],
+  [0, 1, 0, 0, 0, 0, 1, 0, 1, 2, 2, 1],
+  [0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 2, 2],
+  [0, 0, 0, 1, 0, 0, 1, 2, 1, 0, 1, 2],
+  [0, 0, 0, 0, 1, 0, 1, 2, 2, 1, 0, 1],
+  [0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 1, 0]
+ ],
+ "structure": {
+  "type": "systematic_bordered_circulant",
+  "c": 5,
+  "corner_alpha": 0,
+  "row_border_beta": 1,
+  "column_border_gamma": 1,
+  "core_first_row": [0, 1, 2, 2, 1],
+  "rule": "P[0][0] = alpha; P[0][j] = beta and P[j][0] = gamma (1 <= j <= c); P[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "G = [I_6 | P], P = bordered circulant (Paley matrix, quadratic residues mod 5)",
+  "core_rule": "core_first_row[j] = 0 (j = 0), 1 (j a nonzero square mod 5), 2 (j a non-square)"
+ },
+ "claimed_property": {
+  "statement": "5-uniform",
+  "uniformity_k": 5,
+  "n": 12,
+  "d": 3
+ },
+ "code": {
+  "params": "[12,6,6]_3",
+  "field_order": 3,
+  "length": 12,
+  "dimension": 6,
+  "distance": 6,
+  "duality": "Euclidean self-dual (extended ternary Golay code), so C^perp = C"
+ },
+ "stabilizer_code": "[[12,0,6]]_3",
+ "used_as": "G_a (k = 5, needs 5-uniform)",
+ "converter": {
+  "function": "mds_state_rows",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1]
+ },
+ "used_in": [
+  "AME(11,15)",
+  "AME(11,21)",
+  "AME(11,24)",
+  "AME(11,33)",
+  "AME(11,39)",
+  "AME(11,48)",
+  "AME(11,51)",
+  "AME(11,57)"
+ ],
+ "source": {
+  "script": "work/couple/batch11b.py (a=3, b=5)",
+  "note": "extended ternary Golay state [[12,0,6]]_3 (5-uniform)",
+  "builder": "work/couple/lib.py golay12()",
+  "board_posts": [586]
+ },
+ "canonical_file": "../ingredients/a_ternary_golay_n12_d3.json"
+}

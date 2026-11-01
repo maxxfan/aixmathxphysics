@@ -1,0 +1,60 @@
+# Table VI row "l=3, (3^2,1^2), h fixed-point-free": "391 910 400 pairs (X_A, X_B) reduce to 7 classes and 138 completions T;
+# none of the 720 f in Sp(4,2) gives S^Omega (best: 3 bad cuts)."
+# AUDITOR implementation (argument.md 5.8; board #202: "233280 X_A solutions in 180 d-keys ..., 391,910,400 (X_A,X_B) pairs;
+# Sp(4,2)_A acts freely with 324 orbits; ... 756 compatible orbit pairs -> 7 classes. Completions T ...: 24,24,24,18,16,16,16
+# per class ... none of the 720 f passes (hits 0). Controls: (i) ... (ii) 21 random UNREDUCED pairs ... (21/21);
+# (iii) near-miss: best (T,f) has 14 of the 15 nonzero a passing, min party weight 4, ame.bad_cuts = 3 of 35").
+# Provenance: step-1 lines = original tool output of z3twist5.py in runs/auditor/shift-06.jsonl; the rest =
+# work/auditor/z3twist5_0.log and work/auditor/z3twist6.log (identical text, run times removed).
+order-3 elements: Counter({4: 40, 1: 40})
+case fpf |N6| = 16 r = 2
+c basis: [1, 4]
+cand 0 3150 -> 1620
+cand 1 3150 -> 1620
+X_A solutions: 233280
+distinct d-keys: 180  solutions per key (min/max): 720 2160
+compatible key pairs: 180  total (X_A, X_B) pairs: 391910400
+partners per key (distribution): Counter({1: 180})
+step 1 done: X_A solutions 233280 keys 180 comp key pairs 180 total pairs 391910400
+A-orbits under Sp(4,2)_A: 324  covering 233280 solutions (expect 233280 )
+centralizer of h6 in Sp(4,2): 18
+generators of C6, C7: 3 3
+action of the generators of C6 x C7 on A-orbits computed
+distinct permutations of the A-orbits: 6
+orbit pairs (O_A,O_B) compatible: 756
+pair classes under C6 x C7 (x Sp_A x Sp_B): 7  (class sizes [54, 54, 54, 108, 162, 162, 162])
+|V_nf| = 16777216
+class 0/7 (162 pairs) keys (5, 11) (11, 5): T found 24, (T,f) hits 0
+class 1/7 (162 pairs) keys (5, 11) (11, 5): T found 24, (T,f) hits 0
+class 2/7 (162 pairs) keys (5, 11) (11, 5): T found 24, (T,f) hits 0
+class 3/7 (108 pairs) keys (5, 1) (4, 5): T found 18, (T,f) hits 0
+class 4/7 (54 pairs) keys (1, 4) (1, 4): T found 16, (T,f) hits 0
+class 5/7 (54 pairs) keys (1, 4) (1, 4): T found 16, (T,f) hits 0
+class 6/7 (54 pairs) keys (1, 4) (1, 4): T found 16, (T,f) hits 0
+DONE: classes processed up to 6  total T 138  total (T,f) hits 0
+(i) all T verified (weight >= 5, isotropic, Omega-invariant); S = S^Omega + T: 65536 distinct words, direct min weight == table prediction, isotropic
+T counts per class: {0: 24, 1: 24, 2: 24, 3: 18, 4: 16, 5: 16, 6: 16}
+(iii) best near-miss over all T,f: 14 of 15 nonzero a pass (class 3, T #3)
+   ame.bad_cuts of that near-miss: 3 of 35, direct min weight 4
+(ii) trial 0 class 0: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 1 class 1: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 2 class 2: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 3 class 3: unreduced pair gives T=18 (rep 18), hits 0  OK
+(ii) trial 4 class 4: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 5 class 5: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 6 class 6: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 7 class 0: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 8 class 1: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 9 class 2: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 10 class 3: unreduced pair gives T=18 (rep 18), hits 0  OK
+(ii) trial 11 class 4: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 12 class 5: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 13 class 6: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 14 class 0: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 15 class 1: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 16 class 2: unreduced pair gives T=24 (rep 24), hits 0  OK
+(ii) trial 17 class 3: unreduced pair gives T=18 (rep 18), hits 0  OK
+(ii) trial 18 class 4: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 19 class 5: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) trial 20 class 6: unreduced pair gives T=16 (rep 16), hits 0  OK
+(ii) 21 of 21 unreduced pairs agree with their class representative

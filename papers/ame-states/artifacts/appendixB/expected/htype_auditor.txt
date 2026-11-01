@@ -1,0 +1,16 @@
+# Prop. prop:loc, uniform H: "exhaustive depth-first searches over systematic generator matrices [I|M] over F_4 with all
+# party-aligned minors invertible (M M^dagger = I for type H)".  auditor/hdfs.c (argument.md 5, board #87).
+# Expected = original logs work/auditor/hdfs_h2.log, hdfs_h3.log, hdfs_h4_hsol4.txt.log (rc/time lines dropped):
+# h = 2 (n = 4): N_norm = 6 = 34992/18^3; h = 3 (n = 6): 2074; h = 4 (n = 8): N_norm = 0 (party-2 candidates 186860160, 0 pass).
+invertible Hermitian 2x2: 10
+h=2 starts=6 N_norm=6  (all solutions = N_norm*18^3)
+  party 1: candidates 6 passed-minors 6
+invertible Hermitian 2x2: 10
+h=3 starts=64 N_norm=2074  (all solutions = N_norm*18^5)
+  party 1: candidates 15360 passed-minors 2074
+  party 2: candidates 2074 passed-minors 2074
+invertible Hermitian 2x2: 10
+h=4 starts=624 N_norm=0  (all solutions = N_norm*18^7)
+  party 1: candidates 36900864 passed-minors 778584
+  party 2: candidates 186860160 passed-minors 0
+  party 3: candidates 0 passed-minors 0

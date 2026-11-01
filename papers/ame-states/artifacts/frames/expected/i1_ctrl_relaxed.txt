@@ -1,0 +1,2 @@
+class=9 orbit=1344 nodes=1,24,60,60 nsol=60 hist=L1{32:1} L2{16:24} L3{0:60}
+TOTAL classes=1 nodes=1,24,60,60 nsol=60

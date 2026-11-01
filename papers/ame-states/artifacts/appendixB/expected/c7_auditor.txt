@@ -1,0 +1,21 @@
+# Table VI, row "7 | (7,1)": "S_nf = L + L^perp for an F_8-subspace L of F_8^4; all 5917 such L give minimum weight <= 4."
+# SINGLE implementation (auditor's c7sym.py / c7dbg.py; the paper says so: "except the l = 7 row (one implementation)").
+# Sources: board #132(a), results/argument.md 5.4: "c7sym.py enumerates ALL F_8-subspaces L1 (dim 0..4: 1 + 585 + 4745 + 585
+#   + 1 = 5917; counts match the Gaussian binomials): none passes (i); the best minimum party weight over all of them is 4.
+#   Validation (c7dbg.py): for 6 random lines the party-weight histogram of the directly enumerated 2^16-word stabilizer
+#   equals the histogram predicted by these formulas; ame.bad_cuts on sampled lines = 7..35 of 35."
+# Positive control: none with a relaxed threshold in the sources; the validation is c7dbg (direct 2^16-word enumeration)
+# plus the 40 rank-test cross-checks.  The c7dbg histograms below are deterministic (Python random.Random(3)).
+r=0 subspaces 1 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=1 subspaces 585 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=2 subspaces 4745 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=2 crosscheck: 40 sampled lines, rank 16 and isotropic: 40, bad_cuts min 7 max 35 (of 35), formula-pass: 0
+r=3 subspaces 585 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=4 subspaces 1 pass_weight5 0 pass_both 0 best_min_party_weight 4
+total subspaces 5917
+trial 0 rank 16 iso True direct [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] pred [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] match True
+trial 1 rank 16 iso True direct [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] pred [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] match True
+trial 2 rank 16 iso True direct [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] pred [1, 0, 0, 14, 42, 756, 4480, 21294, 38949] match True
+trial 3 rank 16 iso True direct [1, 0, 0, 0, 42, 672, 4872, 20832, 39117] pred [1, 0, 0, 0, 42, 672, 4872, 20832, 39117] match True
+trial 4 rank 16 iso True direct [1, 0, 0, 14, 84, 588, 4732, 21126, 38991] pred [1, 0, 0, 14, 84, 588, 4732, 21126, 38991] match True
+trial 5 rank 16 iso True direct [1, 0, 0, 0, 84, 504, 5124, 20664, 39159] pred [1, 0, 0, 0, 84, 504, 5124, 20664, 39159] match True

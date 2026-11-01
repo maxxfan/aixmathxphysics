@@ -1,0 +1,74 @@
+{
+ "id": "a_14_0_7_d4_hermitian_circulant",
+ "n": 14,
+ "local_dim": 4,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 16,
+  "p": 2,
+  "m": 4,
+  "modulus": [1, 1, 0, 0, 1],
+  "modulus_str": "x^4 + x + 1",
+  "encoding": "F_16 = F_2[x]/(x^4 + x + 1); the int e = sum_{i<4} c_i 2^i (0 <= c_i < 2) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 4,
+  "conjugation": "z -> z^4"
+ },
+ "q": 4,
+ "generator": "[I_7 | A] over F_16, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [0, 1, 2, 15, 6, 2, 7],
+  [7, 0, 1, 2, 15, 6, 2],
+  [2, 7, 0, 1, 2, 15, 6],
+  [6, 2, 7, 0, 1, 2, 15],
+  [15, 6, 2, 7, 0, 1, 2],
+  [2, 15, 6, 2, 7, 0, 1],
+  [1, 2, 15, 6, 2, 7, 0]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1, 6],
+  "trace_dual_basis_gamma": [7, 1],
+  "normal_element_w": 2,
+  "w_to_the_q": 3,
+  "xi": 2
+ },
+ "structure": {
+  "type": "circulant",
+  "description": "7 x 7 circulant over F_16",
+  "first_row": [0, 1, 2, 15, 6, 2, 7],
+  "rule": "A[i][j] = first_row[(j - i) mod 7]",
+  "search": "near14_4.py: 20475 unitary 7 x 7 circulants over F_16 (A conj(A)^T = I), 840 with d = 7; this is hit 0 (work/couple/near14_4_result.json)"
+ },
+ "claimed_property": {
+  "statement": "6-uniform",
+  "uniformity_k": 6,
+  "n": 14,
+  "d": 4
+ },
+ "used_as": "G_a (k = 6, needs 6-uniform)",
+ "code": {
+  "params": "[14,7,7]_16",
+  "field_order": 16,
+  "length": 14,
+  "dimension": 7,
+  "distance": 7,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^4"
+ },
+ "stabilizer_code": "[[14,0,7]]_4",
+ "used_in": [
+  "AME(13,20)",
+  "AME(13,28)",
+  "AME(13,36)",
+  "AME(13,44)",
+  "AME(13,52)"
+ ],
+ "source": {
+  "script": "work/couple/batch13.py (a=4, b=5)",
+  "note": "[[14,0,7]]_4 Hermitian self-dual circulant [I|circ(0, 1, 2, 15, 6, 2, 7)]_16 (6-uniform)",
+  "builder": "work/couple/g14_4.py 0 (hit 0 of work/couple/near14_4.py)",
+  "board_posts": [597]
+ },
+ "canonical_file": "../ingredients/a_14_0_7_d4_hermitian_circulant.json"
+}

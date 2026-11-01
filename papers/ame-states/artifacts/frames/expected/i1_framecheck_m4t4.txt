@@ -1,0 +1,13 @@
+frames=20 m=4
+valid_frames=20 (theta invertible, V_i nondegenerate, pairwise orthogonal, direct sum)
+min_party_weight_histogram={4: 20}
+party_weight_enumerator=[1,0,0,0,30,720,4800,20880,39105] frames=2
+party_weight_enumerator=[1,0,0,0,34,704,4824,20864,39109] frames=2
+party_weight_enumerator=[1,0,0,0,36,696,4836,20856,39111] frames=4
+party_weight_enumerator=[1,0,0,0,38,688,4848,20848,39113] frames=1
+party_weight_enumerator=[1,0,0,0,40,680,4860,20840,39115] frames=6
+party_weight_enumerator=[1,0,0,0,42,672,4872,20832,39117] frames=1
+party_weight_enumerator=[1,0,0,0,44,664,4884,20824,39119] frames=2
+party_weight_enumerator=[1,0,0,0,46,656,4896,20816,39121] frames=1
+party_weight_enumerator=[1,0,0,0,48,648,4908,20808,39123] frames=1
+pattern_lines=0 pattern_agree=0 (68 conditions each)

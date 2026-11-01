@@ -1,0 +1,2 @@
+n=15 q=8: circulants tested 299593, AME hits 336, orbits 28 (orbit sizes [12]); python re-check over all sets: 24 hits checked, 0 failed
+n=17 q=8: circulants tested 2396745, AME hits 48, orbits 4 (orbit sizes [12]); python re-check over all sets: 24 hits checked, 0 failed

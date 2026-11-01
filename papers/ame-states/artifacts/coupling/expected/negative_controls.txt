@@ -1,0 +1,18 @@
+  neg_a_gt_b.json : a (5-uniform)              n=12 d=11 (F_11, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  neg_a_gt_b.json : b (AME(12,2))              n=12 d= 2 (F_2, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 540, deficient 384 [C exhaustive + python sample 200 (deficient in sample: 82)] -> FAIL
+  neg_a_gt_b.json: shape check FAIL (parties of a and b: 12, 12, need 12; a = 11 <= b = 2: no)
+  => neg_a_gt_b.json: AME(11,22) by coupling (k=5, a=11 <= b=2): FAIL
+OVERALL FAIL
+  neg_a_gt_b_only.json : a (5-uniform)         n=12 d=11 (F_11, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  neg_a_gt_b_only.json : b (AME(12,7))         n=12 d= 7 (F_7, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  neg_a_gt_b_only.json: shape check FAIL (parties of a and b: 12, 12, need 12; a = 11 <= b = 7: no)
+  => neg_a_gt_b_only.json: AME(11,77) by coupling (k=5, a=11 <= b=7): FAIL
+OVERALL FAIL
+  neg_b_not_ame.json : a (5-uniform)           n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  neg_b_not_ame.json : b (AME(12,11))          n=12 d=11 (F_11, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 0, deficient 924 [C exhaustive + python sample 200 (deficient in sample: 200)] -> FAIL
+  => neg_b_not_ame.json: AME(11,22) by coupling (k=5, a=2 <= b=11): FAIL
+OVERALL FAIL
+  neg_regrouped_a.json : a (7-uniform)         n=16 d= 4 (F_2, m=2, N=32) k=7: isotropic=yes rank=32/32 sets of 9 parties: 11440, full rank 11338, deficient 102 [C exhaustive + python sample 200 (deficient in sample: 1)] -> FAIL
+  neg_regrouped_a.json : b (AME(16,11))        n=16 d=11 (F_11, m=1, N=16) k=8: isotropic=yes rank=16/16 sets of 8 parties: 12870, full rank 12870, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  => neg_regrouped_a.json: AME(15,44) by coupling (k=7, a=4 <= b=11): FAIL
+OVERALL FAIL

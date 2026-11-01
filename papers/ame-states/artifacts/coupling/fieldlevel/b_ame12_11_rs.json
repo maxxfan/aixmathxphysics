@@ -1,0 +1,70 @@
+{
+ "id": "b_ame12_11_rs",
+ "n": 12,
+ "local_dim": 11,
+ "kind": "css_minimal_support",
+ "field": {
+  "Q": 11,
+  "p": 11,
+  "m": 1,
+  "modulus": null,
+  "modulus_str": null,
+  "encoding": "prime field F_11: the ints 0..10 with arithmetic mod 11"
+ },
+ "state": "|C> = |C|^(-1/2) sum_{c in C} |c>, stabilized by X(c) (c in C) and Z(h) (h in C^perp, Euclidean dual)",
+ "G": [
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0],
+  [0, 1, 4, 9, 5, 3, 3, 5, 9, 4, 1, 0],
+  [0, 1, 8, 5, 9, 4, 7, 2, 6, 3, 10, 0],
+  [0, 1, 5, 4, 3, 9, 9, 3, 4, 5, 1, 0],
+  [0, 1, 10, 1, 1, 1, 10, 10, 10, 1, 10, 1]
+ ],
+ "structure": {
+  "type": "doubly_extended_reed_solomon",
+  "k": 6,
+  "evaluation_points": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "point_at_infinity": true,
+  "rule": "G[i][j] = x_j^i for the evaluation point x_j (field ints; 0^0 = 1), i < k; last column = e_{k-1} (point at infinity)"
+ },
+ "G_systematic": [
+  [1, 0, 0, 0, 0, 0, 10, 5, 1, 10, 6, 1],
+  [0, 1, 0, 0, 0, 0, 6, 2, 10, 7, 7, 6],
+  [0, 0, 1, 0, 0, 0, 7, 4, 6, 6, 9, 10],
+  [0, 0, 0, 1, 0, 0, 9, 6, 6, 4, 7, 1],
+  [0, 0, 0, 0, 1, 0, 7, 7, 10, 2, 6, 5],
+  [0, 0, 0, 0, 0, 1, 6, 10, 1, 5, 10, 10]
+ ],
+ "claimed_property": {
+  "statement": "AME(12,11)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 11
+ },
+ "code": {
+  "params": "[12,6,7]_11",
+  "field_order": 11,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "C^perp is again MDS [12,6,7]"
+ },
+ "stabilizer_code": "[[12,0,7]]_11",
+ "used_as": "G_b (AME(12,11))",
+ "converter": {
+  "function": "mds_state_rows",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1]
+ },
+ "used_in": [
+  "AME(11,22)",
+  "AME(11,33)"
+ ],
+ "source": {
+  "script": "work/couple/batch11.py (a=2, b=11)",
+  "note": "AME(12,11) RS",
+  "builder": "work/couple/lib.py ame_rs() -> qlib rs_extended, mds_state_rows",
+  "board_posts": [586]
+ },
+ "canonical_file": "../ingredients/b_ame12_11_rs.json"
+}

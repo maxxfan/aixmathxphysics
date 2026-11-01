@@ -1,0 +1,12 @@
+# Prop. prop:loc, uniform S: exhaustive DFS over [I|M] with M J M^T = J.  auditor/hsdfs.c (board #99).
+# Expected = original logs work/auditor/hsdfs_h2_dfs.log, hsdfs_h3_dfs.log, hsdfs_h4_hsol_s4.txt.log (rc/time dropped):
+# N_norm = 2 (n = 4), 380 (n = 6), 0 (n = 8; party-1 survivors 18720, party-2 candidates 5091840, 0 pass).
+S-type h=2 starts=2 N_norm=2 (all solutions = N_norm*60^3)
+  party 1: candidates 2 passed-minors 2
+S-type h=3 starts=7 N_norm=380 (all solutions = N_norm*60^5)
+  party 1: candidates 1904 passed-minors 380
+  party 2: candidates 380 passed-minors 380
+S-type h=4 starts=20 N_norm=0 (all solutions = N_norm*60^7)
+  party 1: candidates 1397760 passed-minors 18720
+  party 2: candidates 5091840 passed-minors 0
+  party 3: candidates 0 passed-minors 0

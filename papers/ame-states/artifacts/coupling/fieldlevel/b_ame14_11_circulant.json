@@ -1,0 +1,74 @@
+{
+ "id": "b_ame14_11_circulant",
+ "n": 14,
+ "local_dim": 11,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 121,
+  "p": 11,
+  "m": 2,
+  "modulus": [7, 1, 1],
+  "modulus_str": "x^2 + x + 7",
+  "encoding": "F_121 = F_11[x]/(x^2 + x + 7); the int e = sum_{i<2} c_i 11^i (0 <= c_i < 11) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 11,
+  "conjugation": "z -> z^11"
+ },
+ "q": 11,
+ "generator": "[I_7 | A] over F_121, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [109, 27, 27, 27, 27, 27, 27],
+  [27, 23, 51, 79, 34, 40, 41],
+  [27, 41, 23, 51, 79, 34, 40],
+  [27, 40, 41, 23, 51, 79, 34],
+  [27, 34, 40, 41, 23, 51, 79],
+  [27, 79, 34, 40, 41, 23, 51],
+  [27, 51, 79, 34, 40, 41, 23]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 11,
+  "w_to_the_q": 120,
+  "xi": 11
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 6,
+  "corner_alpha": 109,
+  "row_border_beta": 27,
+  "column_border_gamma": 27,
+  "core_first_row": [23, 51, 79, 34, 40, 41],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "bordered Z_6 group circulant, symmetric border (beta = gamma)",
+  "corner_relation": "alpha = -conj(F0) * beta / conj(beta), F0 = sum(core_first_row) (holds)"
+ },
+ "claimed_property": {
+  "statement": "AME(14,11)",
+  "uniformity_k": 7,
+  "n": 14,
+  "d": 11
+ },
+ "used_as": "G_b (AME(14,11))",
+ "code": {
+  "params": "[14,7,8]_121",
+  "field_order": 121,
+  "length": 14,
+  "dimension": 7,
+  "distance": 8,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^11 (MDS)"
+ },
+ "stabilizer_code": "[[14,0,8]]_11",
+ "used_in": [
+  "AME(13,44)"
+ ],
+ "source": {
+  "script": "work/couple/batch13.py (a=4, b=11)",
+  "note": "AME(14,11) bordered Z6 circulant [14,7,8]_121",
+  "builder": "work/couple/run_gorb.py 11 6 1 -> work/mds/grp_orbits3.py (first hit, work/couple/gorb/grp3_q11_Z6_b1_n14.json)",
+  "board_posts": [597]
+ },
+ "canonical_file": "../ingredients/b_ame14_11_circulant.json"
+}

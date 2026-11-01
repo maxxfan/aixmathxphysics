@@ -1,0 +1,10 @@
+# Prop. prop:loc calibration: "(for example, 34 992 of the 77 760 unitary 4x4 matrices over F_4)".
+# auditor/hform.py 4 (argument.md 5: "34992 is the independent full enumeration of the 77760 unitary 4x4 M (hform.py)";
+# board #87); the node count 51096 is a deterministic property of hform's DFS (no original log).  extra/unitary44.py
+# (written for the release) enumerates all 77760 = |GU(4,2)| unitary matrices first and filters: 34992 = 6 * 18^3.
+n=4: solutions found 34992, (nodes 51096)
+re-check unitary: True  all party minors: True
+unit vectors of F_4^4 (h(v,v) = 1): 120
+unitary 4x4 matrices over F_4: 77760   |GU(4,2)| = 2^6 * prod_{i=1..4} (2^i - (-1)^i) = 77760
+with all party block minors nonsingular (H-type AME(4,4) in systematic form): 34992
+normalised count 34992 / 18^3 = 6.0

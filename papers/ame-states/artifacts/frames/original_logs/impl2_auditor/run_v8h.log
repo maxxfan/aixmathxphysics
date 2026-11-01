@@ -1,0 +1,32 @@
+rep 0: RESULT n_V1=24488 n_V1_with_V2=604 n_V2=712 n_SOL=0 | V3 singles ok 0, V3 pairs ok 712, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 712
+rep 0: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:128 6:72 9:48 15:464
+rep 0: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 2220:48 2200:72 4000:464 2000:128
+rep 1: RESULT n_V1=28960 n_V1_with_V2=1600 n_V2=1776 n_SOL=0 | V3 singles ok 0, V3 pairs ok 1776, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 1776
+rep 1: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:544 6:176 9:96 15:960
+rep 1: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:960 2220:96 2000:544 2200:176
+rep 2: RESULT n_V1=24128 n_V1_with_V2=176 n_V2=176 n_SOL=0 | V3 singles ok 0, V3 pairs ok 176, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 176
+rep 2: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 15:176
+rep 2: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:176
+rep 3: RESULT n_V1=24488 n_V1_with_V2=2324 n_V2=2444 n_SOL=0 | V3 singles ok 0, V3 pairs ok 2444, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 2444
+rep 3: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:72 6:96 9:120 15:2156
+rep 3: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:2156 2000:72 2200:96 2220:120
+rep 4: RESULT n_V1=24128 n_V1_with_V2=416 n_V2=416 n_SOL=0 | V3 singles ok 0, V3 pairs ok 416, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 416
+rep 4: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 6:24 8:24 9:24 15:344
+rep 4: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:344 2211:24 2220:24 2200:24
+rep 5: RESULT n_V1=26556 n_V1_with_V2=638 n_V2=702 n_SOL=0 | V3 singles ok 0, V3 pairs ok 702, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 702
+rep 5: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:144 5:36 6:84 8:6 9:36 15:396
+rep 5: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:396 2211:6 2220:36 2200:84 2000:144 2110:36
+rep 6: RESULT n_V1=28960 n_V1_with_V2=3224 n_V2=3640 n_SOL=0 | V3 singles ok 0, V3 pairs ok 3640, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 3640
+rep 6: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:480 6:144 9:160 15:2856
+rep 6: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:2856 2200:144 2000:480 2220:160
+rep 7: RESULT n_V1=28656 n_V1_with_V2=3156 n_V2=3744 n_SOL=0 | V3 singles ok 0, V3 pairs ok 3744, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 3744
+rep 7: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 6:240 15:3504
+rep 7: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:3504 2200:240
+rep 8: RESULT n_V1=28656 n_V1_with_V2=7168 n_V2=8912 n_SOL=0 | V3 singles ok 0, V3 pairs ok 8912, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 8912
+rep 8: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:320 6:400 9:320 15:7872
+rep 8: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:7872 2220:320 2200:400 2000:320
+rep 9: RESULT n_V1=28960 n_V1_with_V2=1504 n_V2=1712 n_SOL=0 | V3 singles ok 0, V3 pairs ok 1712, singles-ok-but-pairs-fail 0, pairs-ok-but-singles-fail 1712
+rep 9: HIST3 (number of nonzero V3 words of B-weight <= 3 : count of V2 candidates), words of weight <= 2 in 0: 3:224 6:240 9:224 15:1024
+rep 9: PATTERNS (sorted k_b, descending, key k0k1k2k3 : count): 4000:1024 2220:224 2200:240 2000:224
+TOTAL patterns {k_b sorted : V2 candidates} = {'2000': 1912, '2110': 36, '2200': 1476, '2211': 30, '2220': 1028, '4000': 19752}
+TOTAL histogram {number of low-weight words : V2 candidates} = {3: 1912, 5: 36, 6: 1476, 8: 30, 9: 1028, 15: 19752}

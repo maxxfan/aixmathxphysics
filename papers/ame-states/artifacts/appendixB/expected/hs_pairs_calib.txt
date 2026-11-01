@@ -1,0 +1,23 @@
+# Prop. prop:loc, pairs' implementation pairs/dfs4b.c (dfs4.c is the same search with the minors tested in the opposite
+# order; node counts are counted before the test and are identical).  Calibration: solutions must exist at n = 4, 6 (and 7).
+# Type 0 (H): identical to work/pairs/dfs4.log lines 1-2, 10-12 (n = 4, 6) and 15-18 (n = 7).
+# Type 1 (S): REPLAY VALUES of the final code; the only logged type-1 calibration (dfs4.log lines 6-8: nsol 5192/5664/5484)
+# was made by an earlier version with a different row-1 normalisation (that version's type-0 numbers 3798/3592/3566, lines
+# 3-5, also differ from the final 2742/3108/2233).  These calibration counts are not quoted in the paper.
+DONE n=4 type=0 m=2 part=0/1 nsol=8 timedout=0 nodes: 1 8 16
+DONE n=4 type=0 m=3 part=0/1 nsol=13 timedout=0 nodes: 1 10 24
+DONE n=6 type=0 m=3 part=0/1 nsol=2742 timedout=0 nodes: 1 30 1280 11520 20160
+DONE n=6 type=0 m=4 part=0/1 nsol=3108 timedout=0 nodes: 1 40 1920 19200 30692
+DONE n=6 type=0 m=5 part=0/1 nsol=2233 timedout=0 nodes: 1 35 1240 11520 18668
+# type 1: replay values of the final code (see header)
+DONE n=4 type=1 m=2 part=0/1 nsol=8 timedout=0 nodes: 1 8 16
+DONE n=4 type=1 m=3 part=0/1 nsol=12 timedout=0 nodes: 1 10 24
+DONE n=6 type=1 m=3 part=0/1 nsol=3712 timedout=0 nodes: 1 30 1280 11520 20160
+DONE n=6 type=1 m=4 part=0/1 nsol=4848 timedout=0 nodes: 1 40 1920 19200 31216
+DONE n=6 type=1 m=5 part=0/1 nsol=3400 timedout=0 nodes: 1 35 1240 11520 19024
+# n = 7, type 0: work/pairs/dfs4.log lines 15-18
+DONE n=7 type=0 m=3 part=0/1 nsol=1443576 timedout=0 nodes: 1 40 4480 190720 2514400 6333580
+DONE n=7 type=0 m=4 part=0/1 nsol=3853440 timedout=0 nodes: 1 60 8960 455040 5869546 13233240
+DONE n=7 type=0 m=5 part=0/1 nsol=4739427 timedout=0 nodes: 1 70 10240 534400 6991536 17308884
+DONE n=7 type=0 m=6 part=0/1 nsol=2329238 timedout=0 nodes: 1 56 5466 254720 3269166 7853020
+dfs4.c and dfs4b.c give identical DONE lines at n = 4, 6: yes

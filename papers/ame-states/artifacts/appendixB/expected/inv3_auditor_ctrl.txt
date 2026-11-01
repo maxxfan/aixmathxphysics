@@ -1,0 +1,17 @@
+# inv3_auditor_ctrl -- positive control of the t = 3 lift search. Paper (tab:sectors): "(at threshold 4 it finds 1.4x10^6)".
+# Original run (work/auditor/t3lift_4_0_2.log, board #190): threshold 4, K 0, stopped by a 200 s WALL-CLOCK cap:
+#   "K 0: nsol 1433150 survivors per level [252, 124, 122, 3107, 40568, 234172, 874088, 1433152] TIMEOUT"
+#   "SOLUTION: rank 16 isotropic True Omega-invariant True min weight 4"
+#   "done: K processed up to 0, total solutions 1433150, total surviving nodes 2585585, 200s"
+# The count 1.4x10^6 is therefore NOT a property of the sector (the threshold-4 tree was not finished); it is the number found
+# in 200 s on the original machine. Here the same deterministic DFS is stopped by a solution cap T3_MAXSOL = 1,433,150,
+# checked (like the original wall-clock check) on entry to a leaf: the search stops when it reaches solution 1,433,151.
+# This reproduces the original count AND per-level profile exactly; only the status word differs (cap instead of TIMEOUT).
+# The two "centralizer"/"orbit representatives" lines are printed by the final t3lift.py (see t3lift_5_0_720.log).
+15-class involutions found: 15 (expect 15)
+K_0 basis ok; isometries K/K_0 -> L6+L7: 720 (expect 720)
+centralizer of l0 in Sp(4,2): 48 induced permutations of L: 6
+orbit representatives of the 720 isometries under C(l0)^2 x swap: 10 orbit sizes sum 720
+K 0: nsol 1433150 survivors per level [252, 124, 122, 3107, 40568, 234172, 874088, 1433152] stopped at solution cap 1433150
+   SOLUTION: rank 16 isotropic True Omega-invariant True min weight 4
+done: K processed up to 0, total solutions 1433150, total surviving nodes 2585585

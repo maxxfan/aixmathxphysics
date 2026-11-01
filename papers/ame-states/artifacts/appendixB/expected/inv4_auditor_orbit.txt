@@ -1,0 +1,20 @@
+# inv4_auditor_orbit -- Table VI, l = 2, sigma = (2^4). Paper (tab:sectors): "All AME(4,4) codes form a single orbit of
+# Sp(4,2)^4 x| S_4: there are 4 478 976 000 of them, equal to the group order divided by the 1440 automorphisms of a
+# representative." Also Sec. "Checks": 8640 * 720^2 = 4 478 976 000. Source: argument.md 5.5(a) (auditor, ame44_classes.py):
+# "N_tot = 4 478 976 000", "|Aut_G(C0)| = 1440 (60 local maps for each of the 24 position permutations)",
+# "|G|/1440 = 6 449 725 440 000/1440 = 4 478 976 000 = N_tot exactly". No log file of the original run was kept (it ran as a
+# background task, board #147); the lines below are the script's deterministic output, every number checked against 5.5(a).
+# NOTE: argument.md 5.5(a) says "28 coset reps of GL(4,2)/Sp(4,2); half give 0, half give 518400"; the computation gives
+# 16 and 12 (12 * 518400 * 720 = 4 478 976 000; "half" would give 5.2e9), so the word "half" in argument.md is a slip.
+|GL(4,2)| = 20160
+|Sp(4,2)| = 720
+coset reps: 28
+N_tot = 4478976000
+C0 min party weight: 3
+C0 isotropic (3000 random pairs), 256 words, min weight 3: ok
+|Aut(C0)| in Sp(4,2)^4 x S_4 = 1440
+|G| = 6449725440000  |G|/|Aut| = 4478976000.0
+N_tot = 4478976000  single orbit: True
+coset reps with n(A) = 0: 16
+coset reps with n(A) = 518400: 12
+position permutations with 60 local maps: 24

@@ -1,0 +1,8 @@
+n=16 q=8: circulants tested 2396745, AME hits 0
+n=16 q=7: circulants tested 960800, AME hits 0
+n=16 q=5: circulants tested 97656, AME hits 0
+n=19 q=5: circulants tested 488281, AME hits 0
+n=13 q=4: circulants tested 1365, AME hits 0
+n=15 q=4: circulants tested 5461, AME hits 0
+n=19 q=7: circulants tested 6725601, AME hits 0
+n=19 q=8: circulants tested 19173961, AME hits 0

@@ -1,0 +1,70 @@
+{
+ "id": "b_ame12_19_rs",
+ "n": 12,
+ "local_dim": 19,
+ "kind": "css_minimal_support",
+ "field": {
+  "Q": 19,
+  "p": 19,
+  "m": 1,
+  "modulus": null,
+  "modulus_str": null,
+  "encoding": "prime field F_19: the ints 0..18 with arithmetic mod 19"
+ },
+ "state": "|C> = |C|^(-1/2) sum_{c in C} |c>, stabilized by X(c) (c in C) and Z(h) (h in C^perp, Euclidean dual)",
+ "G": [
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  [0, 1, 4, 9, 16, 6, 17, 11, 7, 5, 5, 7],
+  [0, 1, 8, 8, 7, 11, 7, 1, 18, 7, 12, 1],
+  [0, 1, 16, 5, 9, 17, 4, 7, 11, 6, 6, 11],
+  [0, 1, 13, 15, 17, 9, 5, 11, 12, 16, 3, 7]
+ ],
+ "structure": {
+  "type": "reed_solomon",
+  "k": 6,
+  "evaluation_points": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "point_at_infinity": false,
+  "rule": "G[i][j] = x_j^i for the evaluation point x_j (field ints; 0^0 = 1), i < k"
+ },
+ "G_systematic": [
+  [1, 0, 0, 0, 0, 0, 18, 13, 17, 1, 7, 14],
+  [0, 1, 0, 0, 0, 0, 6, 16, 6, 11, 16, 18],
+  [0, 0, 1, 0, 0, 0, 4, 11, 5, 2, 2, 17],
+  [0, 0, 0, 1, 0, 0, 1, 10, 13, 4, 14, 7],
+  [0, 0, 0, 0, 1, 0, 4, 6, 18, 9, 14, 15],
+  [0, 0, 0, 0, 0, 1, 6, 2, 18, 12, 5, 6]
+ ],
+ "claimed_property": {
+  "statement": "AME(12,19)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 19
+ },
+ "code": {
+  "params": "[12,6,7]_19",
+  "field_order": 19,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "C^perp is again MDS [12,6,7]"
+ },
+ "stabilizer_code": "[[12,0,7]]_19",
+ "used_as": "G_b (AME(12,19))",
+ "converter": {
+  "function": "mds_state_rows",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1]
+ },
+ "used_in": [
+  "AME(11,38)",
+  "AME(11,57)"
+ ],
+ "source": {
+  "script": "work/couple/batch11.py (a=2, b=19)",
+  "note": "AME(12,19) RS",
+  "builder": "work/couple/lib.py ame_rs() -> qlib rs_extended, mds_state_rows",
+  "board_posts": [586]
+ },
+ "canonical_file": "../ingredients/b_ame12_19_rs.json"
+}

@@ -1,0 +1,9 @@
+# Table VI row "l=3, (3^2,1^2), h fixed-point-free": "... none of the 720 f in Sp(4,2) gives S^Omega".
+# PAIRS implementation (board #186), T_A orbit representative 1 (orbit size 77760): "rep 1 (720, 12960) ... g_ok_max = 0;
+# the best line has ... 96 ... of the 225 (c,d) pairs ok". Auditor cross-check (argument.md 5.8): 720*1*18 = 12960.
+# Provenance: work/pairs/z3a_results.log (REP 1 DONE line); header and first-T_B lines from the original tool output in
+# runs/pairs/shift-05.jsonl.
+rep {'M': [1, 3, 2, 0], 'alpha': 135, 'beta': 241, 'size': 77760} M' (0, 3, 2, 1) #T_B: 720
+first T_B: isotropic nonzero cosets 135 (expect 135) good 117
+first T_B: weight-good lines 18 (<= 27)
+REP 1 DONE {'TB': 720, 'good_cosets': 84240, 'lines': 12960, 'L_ok': 12960, 'cd_ok_max': 96, 'g_ok_max': 0} found 0

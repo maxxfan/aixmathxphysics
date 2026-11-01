@@ -1,0 +1,10 @@
+# Table VI row "l=3, (3^2,1^2), h fixed-point-free": "... none of the 720 f in Sp(4,2) gives S^Omega".
+# PAIRS implementation (board #186), T_A orbit representative 2 (orbit size 116640): "rep 2 (2160, 51840) ... g_ok_max = 0;
+# the best line has ... 80 of the 225 (c,d) pairs ok". Auditor cross-check (argument.md 5.8): 720*3*24 = 51840.
+# Provenance: the REP 2 DONE line is work/pairs/z3a_results.log; "#T_B: 2160" and the 135 isotropic nonzero cosets are stated in
+# #186. NOTE: the original logs do not contain rep 2's header/first-T_B lines; the values M' (3, 1, 3, 2), "good 132" and
+# "weight-good lines 24" below were established by this release's replay (they are intermediate counts, not paper claims).
+rep {'M': [1, 3, 2, 3], 'alpha': 135, 'beta': 166, 'size': 116640} M' (3, 1, 3, 2) #T_B: 2160
+first T_B: isotropic nonzero cosets 135 (expect 135) good 132
+first T_B: weight-good lines 24 (<= 27)
+REP 2 DONE {'TB': 2160, 'good_cosets': 285120, 'lines': 51840, 'L_ok': 51840, 'cd_ok_max': 80, 'g_ok_max': 0} found 0

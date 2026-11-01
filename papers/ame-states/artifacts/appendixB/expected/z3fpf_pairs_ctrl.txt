@@ -1,0 +1,31 @@
+# Table VI row "l=3, (3^2,1^2), h fixed-point-free", PAIRS implementation, controls (board #186: "Positive control: the same
+# code with weight threshold 4 (z3a_full_thr.py, Z3A_THR=4) finds hundreds of valid g per line. Validation (z3a_val.py): for
+# random (T_A rep, T_B, line, g) the 16-qubit rows built from the construction are isotropic of rank 16 and the direct
+# 2^16-word min party weight equals the formula"; "T^perp/T = F_4^4 with ... EXACTLY 27 isotropic lines (checked)").
+# Provenance: original tool output of `Z3A_THR=4 z3a_full_thr.py 1 12` and `z3a_val.py 1 4 3` in runs/pairs/shift-05.jsonl
+# (the original control ran 12 T_B; its first 11 FOUND lines, all from T_B #0, are reproduced here with T_B #0 only).
+== Z3A_THR=4 z3a_full_thr.py 1 1 (positive control, representative 1, first T_B)
+rep {'M': [1, 3, 2, 0], 'alpha': 135, 'beta': 241, 'size': 77760} M' (0, 3, 2, 1) #T_B: 720
+first T_B: isotropic nonzero cosets 135 (expect 135) good 117
+first T_B: weight-good lines 18 (<= 27)
+FOUND line 0: number of valid g = 508
+FOUND line 1: number of valid g = 359
+FOUND line 2: number of valid g = 359
+FOUND line 3: number of valid g = 359
+FOUND line 4: number of valid g = 508
+FOUND line 5: number of valid g = 359
+FOUND line 6: number of valid g = 359
+FOUND line 7: number of valid g = 359
+FOUND line 8: number of valid g = 508
+FOUND line 9: number of valid g = 720
+FOUND line 10: number of valid g = 351
+positive control finds valid g: True
+== z3a_val.py 1 4 3 (validation)
+trial 0 isotropic lines (no weight filter): 27 (expect 27)
+trial 1 isotropic lines (no weight filter): 27 (expect 27)
+trial 2 isotropic lines (no weight filter): 27 (expect 27)
+trial 3 isotropic lines (no weight filter): 27 (expect 27)
+   isotropic True rank 16 MATCH
+   isotropic True rank 16 MATCH
+   isotropic True rank 16 MATCH
+   isotropic True rank 16 MATCH

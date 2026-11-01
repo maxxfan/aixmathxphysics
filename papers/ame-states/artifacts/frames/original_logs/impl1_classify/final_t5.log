@@ -1,0 +1,30 @@
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 0 -1 work/classify/sol_m4_t5_frames3.txt
+class 0 (tuple-orbit 80640): nodes 1 26556 0 0  nsol=0  time=28.4s  free-dim histogram: L1{32:1 } L2{16:26556 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 1 -1 work/classify/sol_m4_t5_frames3.txt
+class 1 (tuple-orbit 60480): nodes 1 24128 0 0  nsol=0  time=28.3s  free-dim histogram: L1{32:1 } L2{16:24128 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 2 -1 work/classify/sol_m4_t5_frames3.txt
+class 2 (tuple-orbit 40320): nodes 1 24128 0 0  nsol=0  time=27.7s  free-dim histogram: L1{32:1 } L2{16:24128 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 3 -1 work/classify/sol_m4_t5_frames3.txt
+class 3 (tuple-orbit 20160): nodes 1 28960 0 0  nsol=0  time=27.2s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 4 -1 work/classify/sol_m4_t5_frames3.txt
+class 4 (tuple-orbit 20160): nodes 1 24488 0 0  nsol=0  time=27.3s  free-dim histogram: L1{32:1 } L2{16:24488 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 5 -1 work/classify/sol_m4_t5_frames3.txt
+class 5 (tuple-orbit 20160): nodes 1 28960 0 0  nsol=0  time=28.8s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 6 -1 work/classify/sol_m4_t5_frames3.txt
+class 6 (tuple-orbit 13440): nodes 1 24488 0 0  nsol=0  time=27.0s  free-dim histogram: L1{32:1 } L2{16:24488 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 7 -1 work/classify/sol_m4_t5_frames3.txt
+class 7 (tuple-orbit 10080): nodes 1 28960 0 0  nsol=0  time=27.8s  free-dim histogram: L1{32:1 } L2{16:28960 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 8 -1 work/classify/sol_m4_t5_frames3.txt
+class 8 (tuple-orbit 2016): nodes 1 28656 0 0  nsol=0  time=27.4s  free-dim histogram: L1{32:1 } L2{16:28656 } L3{}
+# exit 0
+# nice -n 10 work/classify/frames3 4 5 work/classify/v0_m4.txt 9 -1 work/classify/sol_m4_t5_frames3.txt
+class 9 (tuple-orbit 1344): nodes 1 28656 0 0  nsol=0  time=25.1s  free-dim histogram: L1{32:1 } L2{16:28656 } L3{}
+# exit 0

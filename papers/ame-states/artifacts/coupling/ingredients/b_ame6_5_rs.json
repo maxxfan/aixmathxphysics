@@ -1,0 +1,1 @@
+{"type": "stabilizer", "n": 6, "d": 5, "p": 5, "generators": ["111110000000", "012340000000", "014411000000", "000000432100", "000000234010", "000000212001"], "script": "work/couple/calib.py", "note": "AME(6,5) RS", "id": "b_ame6_5_rs", "used_in": ["AME(5,10)"]}

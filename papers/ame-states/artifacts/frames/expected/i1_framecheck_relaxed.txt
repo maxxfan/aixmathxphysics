@@ -1,0 +1,8 @@
+frames=60 m=4
+valid_frames=60 (theta invertible, V_i nondegenerate, pairwise orthogonal, direct sum)
+min_party_weight_histogram={4: 60}
+party_weight_enumerator=[1,0,0,0,12,792,4692,20952,39087] frames=4
+party_weight_enumerator=[1,0,0,0,18,768,4728,20928,39093] frames=10
+party_weight_enumerator=[1,0,0,0,24,744,4764,20904,39099] frames=2
+party_weight_enumerator=[1,0,0,0,30,720,4800,20880,39105] frames=44
+pattern_lines=60 pattern_agree=60 (68 conditions each)

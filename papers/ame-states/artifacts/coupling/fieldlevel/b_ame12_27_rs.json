@@ -1,0 +1,71 @@
+{
+ "id": "b_ame12_27_rs",
+ "n": 12,
+ "local_dim": 27,
+ "kind": "css_minimal_support",
+ "field": {
+  "Q": 27,
+  "p": 3,
+  "m": 3,
+  "modulus": [1, 2, 0, 1],
+  "modulus_str": "x^3 + 2*x + 1",
+  "encoding": "F_27 = F_3[x]/(x^3 + 2*x + 1); the int e = sum_{i<3} c_i 3^i (0 <= c_i < 3) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)"
+ },
+ "state": "|C> = |C|^(-1/2) sum_{c in C} |c>, stabilized by X(c) (c in C) and Z(h) (h in C^perp, Euclidean dual)",
+ "G": [
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  [0, 1, 1, 9, 16, 13, 9, 13, 16, 15, 7, 25],
+  [0, 1, 2, 5, 3, 4, 7, 8, 6, 13, 14, 12],
+  [0, 1, 1, 15, 12, 11, 15, 11, 12, 20, 13, 8],
+  [0, 1, 2, 23, 26, 18, 16, 9, 13, 12, 3, 20]
+ ],
+ "structure": {
+  "type": "reed_solomon",
+  "k": 6,
+  "evaluation_points": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "point_at_infinity": false,
+  "rule": "G[i][j] = x_j^i for the evaluation point x_j (field ints; 0^0 = 1), i < k"
+ },
+ "G_systematic": [
+  [1, 0, 0, 0, 0, 0, 11, 12, 15, 24, 15, 2],
+  [0, 1, 0, 0, 0, 0, 15, 11, 12, 2, 24, 15],
+  [0, 0, 1, 0, 0, 0, 12, 15, 11, 15, 2, 24],
+  [0, 0, 0, 1, 0, 0, 11, 15, 12, 20, 22, 23],
+  [0, 0, 0, 0, 1, 0, 12, 11, 15, 23, 20, 22],
+  [0, 0, 0, 0, 0, 1, 15, 12, 11, 22, 23, 20]
+ ],
+ "claimed_property": {
+  "statement": "AME(12,27)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 27
+ },
+ "code": {
+  "params": "[12,6,7]_27",
+  "field_order": 27,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "C^perp is again MDS [12,6,7]"
+ },
+ "stabilizer_code": "[[12,0,7]]_27",
+ "used_as": "G_b (AME(12,27))",
+ "converter": {
+  "function": "mds_state_rows",
+  "subfield_basis_beta": [1, 3, 9],
+  "trace_dual_basis_gamma": [19, 6, 2]
+ },
+ "used_in": [
+  "AME(11,54)"
+ ],
+ "source": {
+  "script": "work/couple/batch11.py (a=2, b=27)",
+  "note": "AME(12,27) RS",
+  "builder": "work/couple/lib.py ame_rs() -> qlib rs_extended, mds_state_rows",
+  "board_posts": [586]
+ },
+ "canonical_file": "../ingredients/b_ame12_27_rs.json"
+}

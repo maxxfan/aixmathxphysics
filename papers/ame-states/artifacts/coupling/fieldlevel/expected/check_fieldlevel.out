@@ -1,0 +1,251 @@
+check_fieldlevel.py: field-level verification of the coupling ingredients (exact ranks over F_Q)
+a_14_0_7_d4_hermitian_circulant  [hermitian_systematic, F_16 mod x^4 + x + 1, [14,7,7]_16, claim: 6-uniform]
+  field F_16 = F_2[x]/(x^4 + x + 1): all 15 nonzero elements invertible (modulus irreducible), x primitive (order 15)
+  structure: circulant, first row [0, 1, 2, 15, 6, 2, 7]
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^4, 7x7): yes
+  d(C) >= 7 (state 6-uniform): column sets of size n-6 = 8 of [I|A]: 3003 checked, 3003 of rank 7
+  exactness: column sets of size 7: 3432 checked, 3292 of rank 7, 140 rank-deficient => d(C) = 7
+  VERDICT: PASS  ([14,7,7]_16 Hermitian self-dual => [[14,0,7]]_4, 6-uniform)
+a_16_0_8_d4_bordered_circulant  [hermitian_systematic, F_16 mod x^4 + x + 1, [16,8,8]_16, claim: 7-uniform]
+  field F_16 = F_2[x]/(x^4 + x + 1): all 15 nonzero elements invertible (modulus irreducible), x primitive (order 15)
+  structure: bordered circulant, alpha=2 beta=4 gamma=4 core first row [2, 1, 1, 0, 2, 8, 5]
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^4, 8x8): yes
+  d(C) >= 8 (state 7-uniform): column sets of size n-7 = 9 of [I|A]: 11440 checked, 11440 of rank 8
+  exactness: column sets of size 8: 12870 checked, 12296 of rank 8, 574 rank-deficient => d(C) = 8
+  VERDICT: PASS  ([16,8,8]_16 Hermitian self-dual => [[16,0,8]]_4, 7-uniform)
+a_dodecacode_n12_d2  [fq_graph, F_2, [[12,0,6]]_2 (additive (12, 2^12, 6) over GF(4)), claim: 5-uniform]
+  field F_2 (prime field): all 1 nonzero elements invertible
+  structure: circulant, first row [0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0]
+  printed Gamma rebuilt from these parameters: equal
+  Gamma symmetric with zero diagonal: yes
+  Lemma 2: Gamma[A, A^c] of full row rank 5 for |A| = 5: 792 sets checked, 792 of full row rank
+  exactness: |A| = 6: 924 sets, 540 of full row rank, 384 not => not 6-uniform, distance exactly 6
+  VERDICT: PASS  (graph state over F_2 => [[12,0,6]]_2, 5-uniform)
+a_ternary_golay_n12_d3  [css_minimal_support, F_3, [12,6,6]_3, claim: 5-uniform]
+  field F_3 (prime field): all 2 nonzero elements invertible
+  structure: [I_6 | P], P bordered circulant alpha=0 beta=1 gamma=1 core first row [0, 1, 2, 2, 1]
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_3: dim C = 6
+  Euclidean self-duality G G^T = 0 and dim C = n/2: yes
+  d(C) >= 6: column sets of size n-5 = 7 of G: 792 checked, 792 of rank 6
+  d(C^perp) >= 6: column sets of size 5 of G: 792 checked, 792 of rank 5 (independent)
+  exactness: column sets of size 6: 924 checked, 792 of rank 6, 132 rank-deficient => d(C) = 6
+  VERDICT: PASS  (C = [12,6,6]_3 => [[12,0,6]]_3, 5-uniform)
+a_wheel_ame6_2  [fq_graph, F_2, [[6,0,4]]_2, claim: AME(6,2)]
+  field F_2 (prime field): all 1 nonzero elements invertible
+  structure: wheel graph: 5-cycle plus hub 5
+  printed Gamma rebuilt from these parameters: equal
+  Gamma symmetric with zero diagonal: yes
+  Lemma 2: Gamma[A, A^c] of full row rank 3 for |A| = 3: 20 sets checked, 20 of full row rank
+  VERDICT: PASS  (graph state over F_2 => [[6,0,4]]_2, AME(6,2))
+b_ame12_11_rs  [css_minimal_support, F_11, [12,6,7]_11, claim: AME(12,11)]
+  field F_11 (prime field): all 10 nonzero elements invertible
+  structure: doubly extended RS [12,6] over F_11, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] + infinity; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_11: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_11 => [[12,0,7]]_11, AME(12,11))
+b_ame12_13_rs  [css_minimal_support, F_13, [12,6,7]_13, claim: AME(12,13)]
+  field F_13 (prime field): all 12 nonzero elements invertible
+  structure: RS [12,6] over F_13, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_13: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_13 => [[12,0,7]]_13, AME(12,13))
+b_ame12_16_rs  [css_minimal_support, F_16 mod x^4 + x + 1, [12,6,7]_16, claim: AME(12,16)]
+  field F_16 = F_2[x]/(x^4 + x + 1): all 15 nonzero elements invertible (modulus irreducible), x primitive (order 15)
+  structure: RS [12,6] over F_16, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_16: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_16 => [[12,0,7]]_16, AME(12,16))
+b_ame12_17_rs  [css_minimal_support, F_17, [12,6,7]_17, claim: AME(12,17)]
+  field F_17 (prime field): all 16 nonzero elements invertible
+  structure: RS [12,6] over F_17, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_17: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_17 => [[12,0,7]]_17, AME(12,17))
+b_ame12_19_rs  [css_minimal_support, F_19, [12,6,7]_19, claim: AME(12,19)]
+  field F_19 (prime field): all 18 nonzero elements invertible
+  structure: RS [12,6] over F_19, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_19: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_19 => [[12,0,7]]_19, AME(12,19))
+b_ame12_23_rs  [css_minimal_support, F_23, [12,6,7]_23, claim: AME(12,23)]
+  field F_23 (prime field): all 22 nonzero elements invertible
+  structure: RS [12,6] over F_23, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_23: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_23 => [[12,0,7]]_23, AME(12,23))
+b_ame12_27_rs  [css_minimal_support, F_27 mod x^3 + 2*x + 1, [12,6,7]_27, claim: AME(12,27)]
+  field F_27 = F_3[x]/(x^3 + 2*x + 1): all 26 nonzero elements invertible (modulus irreducible), x primitive (order 26)
+  structure: RS [12,6] over F_27, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_27: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_27 => [[12,0,7]]_27, AME(12,27))
+b_ame12_29_rs  [css_minimal_support, F_29, [12,6,7]_29, claim: AME(12,29)]
+  field F_29 (prime field): all 28 nonzero elements invertible
+  structure: RS [12,6] over F_29, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_29: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_29 => [[12,0,7]]_29, AME(12,29))
+b_ame12_31_rs  [css_minimal_support, F_31, [12,6,7]_31, claim: AME(12,31)]
+  field F_31 (prime field): all 30 nonzero elements invertible
+  structure: RS [12,6] over F_31, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_31: dim C = 6
+  d(C) >= 7: column sets of size n-6 = 6 of G: 924 checked, 924 of rank 6
+  d(C^perp) >= 7: same condition (every 6 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [12,6,7]_31 => [[12,0,7]]_31, AME(12,31))
+b_ame12_5_bevins_bidav  [hermitian_systematic, F_25 mod x^2 + x + 2, [12,6,7]_25, claim: AME(12,5)]
+  field F_25 = F_5[x]/(x^2 + x + 2): all 24 nonzero elements invertible (modulus irreducible), x primitive (order 24)
+  structure: explicit printed matrix (Bevins-Bidav A_5 (arXiv:2608.05781), the printed 6 x 6 matrix); labels e -> (e mod 5) + (e div 5) r with r = 5 a root of x^2 + x + 2: yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^5, 6x6): yes
+  d(C) >= 7 (state 6-uniform): column sets of size n-6 = 6 of [I|A]: 924 checked, 924 of rank 6
+  VERDICT: PASS  ([12,6,7]_25 Hermitian self-dual => [[12,0,7]]_5, AME(12,5))
+b_ame12_7_circulant  [hermitian_systematic, F_49 mod x^2 + x + 3, [12,6,7]_49, claim: AME(12,7)]
+  field F_49 = F_7[x]/(x^2 + x + 3): all 48 nonzero elements invertible (modulus irreducible), x primitive (order 48)
+  structure: circulant, first row [14, 45, 1, 13, 34, 23]
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^7, 6x6): yes
+  d(C) >= 7 (state 6-uniform): column sets of size n-6 = 6 of [I|A]: 924 checked, 924 of rank 6
+  VERDICT: PASS  ([12,6,7]_49 Hermitian self-dual => [[12,0,7]]_7, AME(12,7))
+b_ame12_8_circulant  [hermitian_systematic, F_64 mod x^6 + x + 1, [12,6,7]_64, claim: AME(12,8)]
+  field F_64 = F_2[x]/(x^6 + x + 1): all 63 nonzero elements invertible (modulus irreducible), x primitive (order 63)
+  structure: 2x2 blocks of 3x3 circulants, first rows [[[45, 46, 45], [28, 6, 57]], [[42, 51, 43], [24, 24, 60]]]
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^8, 6x6): yes
+  d(C) >= 7 (state 6-uniform): column sets of size n-6 = 6 of [I|A]: 924 checked, 924 of rank 6
+  VERDICT: PASS  ([12,6,7]_64 Hermitian self-dual => [[12,0,7]]_8, AME(12,8))
+b_ame12_9_circulant  [hermitian_systematic, F_81 mod x^4 + x + 2, [12,6,7]_81, claim: AME(12,9)]
+  field F_81 = F_3[x]/(x^4 + x + 2): all 80 nonzero elements invertible (modulus irreducible), x primitive (order 80)
+  structure: bordered circulant, alpha=13 beta=5 gamma=5 core first row [2, 13, 80, 41, 24]; alpha = -conj(sum core) beta/conj(beta): yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^9, 6x6): yes
+  d(C) >= 7 (state 6-uniform): column sets of size n-6 = 6 of [I|A]: 924 checked, 924 of rank 6
+  VERDICT: PASS  ([12,6,7]_81 Hermitian self-dual => [[12,0,7]]_9, AME(12,9))
+b_ame14_11_circulant  [hermitian_systematic, F_121 mod x^2 + x + 7, [14,7,8]_121, claim: AME(14,11)]
+  field F_121 = F_11[x]/(x^2 + x + 7): all 120 nonzero elements invertible (modulus irreducible), x primitive (order 120)
+  structure: bordered circulant, alpha=109 beta=27 gamma=27 core first row [23, 51, 79, 34, 40, 41]; alpha = -conj(sum core) beta/conj(beta): yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^11, 7x7): yes
+  d(C) >= 8 (state 7-uniform): column sets of size n-7 = 7 of [I|A]: 3432 checked, 3432 of rank 7
+  VERDICT: PASS  ([14,7,8]_121 Hermitian self-dual => [[14,0,8]]_11, AME(14,11))
+b_ame14_13_rs  [css_minimal_support, F_13, [14,7,8]_13, claim: AME(14,13)]
+  field F_13 (prime field): all 12 nonzero elements invertible
+  structure: doubly extended RS [14,7] over F_13, evaluation points [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] + infinity; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_13: dim C = 7
+  d(C) >= 8: column sets of size n-7 = 7 of G: 3432 checked, 3432 of rank 7
+  d(C^perp) >= 8: same condition (every 7 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [14,7,8]_13 => [[14,0,8]]_13, AME(14,13))
+b_ame14_5_circulant  [hermitian_systematic, F_25 mod x^2 + x + 2, [14,7,8]_25, claim: AME(14,5)]
+  field F_25 = F_5[x]/(x^2 + x + 2): all 24 nonzero elements invertible (modulus irreducible), x primitive (order 24)
+  structure: bordered circulant, alpha=1 beta=8 gamma=8 core first row [23, 11, 16, 9, 3, 4]; alpha = -conj(sum core) beta/conj(beta): yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^5, 7x7): yes
+  d(C) >= 8 (state 7-uniform): column sets of size n-7 = 7 of [I|A]: 3432 checked, 3432 of rank 7
+  VERDICT: PASS  ([14,7,8]_25 Hermitian self-dual => [[14,0,8]]_5, AME(14,5))
+b_ame14_7_circulant  [hermitian_systematic, F_49 mod x^2 + x + 3, [14,7,8]_49, claim: AME(14,7)]
+  field F_49 = F_7[x]/(x^2 + x + 3): all 48 nonzero elements invertible (modulus irreducible), x primitive (order 48)
+  structure: bordered circulant, alpha=8 beta=2 gamma=2 core first row [4, 36, 20, 38, 2, 26]; alpha = -conj(sum core) beta/conj(beta): yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^7, 7x7): yes
+  d(C) >= 8 (state 7-uniform): column sets of size n-7 = 7 of [I|A]: 3432 checked, 3432 of rank 7
+  VERDICT: PASS  ([14,7,8]_49 Hermitian self-dual => [[14,0,8]]_7, AME(14,7))
+b_ame14_9_hz  [hermitian_systematic, F_81 mod x^4 + x + 2, [14,7,8]_81, claim: AME(14,9)]
+  field F_81 = F_3[x]/(x^4 + x + 2): all 80 nonzero elements invertible (modulus irreducible), x primitive (order 80)
+  structure: Hontarenko-Zyczkowski kernel A_9 rebuilt from its formula (g=3): equal to the printed kernel; kernel K conj(K)^T = -I: yes; A = diag(Lambda) K[rows [0, 1, 2, 3, 5, 6, 7]][cols [0, 1, 2, 3, 5, 6, 7]] diag(D)
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^9, 7x7): yes
+  d(C) >= 8 (state 7-uniform): column sets of size n-7 = 7 of [I|A]: 3432 checked, 3432 of rank 7
+  VERDICT: PASS  ([14,7,8]_81 Hermitian self-dual => [[14,0,8]]_9, AME(14,9))
+b_ame16_11_circulant  [hermitian_systematic, F_121 mod x^2 + x + 7, [16,8,9]_121, claim: AME(16,11)]
+  field F_121 = F_11[x]/(x^2 + x + 7): all 120 nonzero elements invertible (modulus irreducible), x primitive (order 120)
+  structure: bordered circulant, alpha=92 beta=1 gamma=1 core first row [58, 4, 21, 30, 109, 118, 38]
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^11, 8x8): yes
+  d(C) >= 9 (state 8-uniform): column sets of size n-8 = 8 of [I|A]: 12870 checked, 12870 of rank 8
+  VERDICT: PASS  ([16,8,9]_121 Hermitian self-dual => [[16,0,9]]_11, AME(16,11))
+b_ame16_13_circulant  [hermitian_systematic, F_169 mod x^2 + x + 2, [16,8,9]_169, claim: AME(16,13)]
+  field F_169 = F_13[x]/(x^2 + x + 2): all 168 nonzero elements invertible (modulus irreducible), x primitive (order 168)
+  structure: bordered circulant, alpha=12 beta=3 gamma=3 core first row [2, 110, 22, 29, 144, 164, 76]; alpha = -conj(sum core) beta/conj(beta): yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^13, 8x8): yes
+  d(C) >= 9 (state 8-uniform): column sets of size n-8 = 8 of [I|A]: 12870 checked, 12870 of rank 8
+  VERDICT: PASS  ([16,8,9]_169 Hermitian self-dual => [[16,0,9]]_13, AME(16,13))
+b_ame16_9_hz  [hermitian_systematic, F_81 mod x^4 + x + 2, [16,8,9]_81, claim: AME(16,9)]
+  field F_81 = F_3[x]/(x^4 + x + 2): all 80 nonzero elements invertible (modulus irreducible), x primitive (order 80)
+  structure: bordered circulant, alpha=1 beta=1 gamma=1 core first row [53, 68, 80, 9, 2, 19, 41]; core = g^[29, 21, 37, 2, 40, 57, 76] with g = 3 of order 80: yes
+  printed A rebuilt from these parameters: equal
+  Hermitian self-duality A conj(A)^T = -I (conj z = z^9, 8x8): yes
+  d(C) >= 9 (state 8-uniform): column sets of size n-8 = 8 of [I|A]: 12870 checked, 12870 of rank 8
+  VERDICT: PASS  ([16,8,9]_81 Hermitian self-dual => [[16,0,9]]_9, AME(16,9))
+b_ame6_5_rs  [css_minimal_support, F_5, [6,3,4]_5, claim: AME(6,5)]
+  field F_5 (prime field): all 4 nonzero elements invertible
+  structure: doubly extended RS [6,3] over F_5, evaluation points [0, 1, 2, 3, 4] + infinity; G_systematic spans the same code: yes
+  printed G rebuilt from these parameters: equal
+  C = rowspace G over F_5: dim C = 3
+  d(C) >= 4: column sets of size n-3 = 3 of G: 20 checked, 20 of rank 3
+  d(C^perp) >= 4: same condition (every 3 columns of G independent, dim C = n/2)
+  VERDICT: PASS  (C = [6,3,4]_5 => [[6,0,4]]_5, AME(6,5))
+ingredients: 27 PASS, 0 FAIL
+
+negative controls (expected FAIL)
+b_ame12_7_circulant, first-row entry 0 changed by +1 (as an int)   FAIL (as expected)
+    Hermitian self-duality A conj(A)^T = -I (conj z = z^7, 6x6): NO
+    d(C) >= 7 (state 6-uniform): column sets of size n-6 = 6 of [I|A]: 924 checked, 911 of rank 6
+a_14_0_7_d4_hermitian_circulant claimed 7-uniform (AME(14,4))      FAIL (as expected)
+    d(C) >= 8 (state 7-uniform): column sets of size n-7 = 7 of [I|A]: 3432 checked, 3292 of rank 7
+a_dodecacode_n12_d2 claimed 6-uniform (AME(12,2))                  FAIL (as expected)
+    Lemma 2: Gamma[A, A^c] of full row rank 6 for |A| = 6: 924 sets checked, 540 of full row rank
+b_ame16_9_hz with core exponent 29 -> 30 (matrix as printed)       FAIL (as expected)
+    structure: bordered circulant, alpha=1 beta=1 gamma=1 core first row [53, 68, 80, 9, 2, 19, 41]; core = g^[30, 21, 37, 2, 40, 57, 76] with g = 3 of order 80: NO
+    d(C) >= 9 (state 8-uniform): column sets of size n-8 = 8 of [I|A]: 12870 checked, 12870 of rank 8
+
+cells (coupling lemma: G_a k-uniform on 2k+2 parties, G_b AME(2k+2,b), a <= b => AME(2k+1, ab))
+AME(5,10)   (matches_record)  G_a=a_wheel_ame6_2                   3-uniform PASS | G_b=b_ame6_5_rs             AME(6,5) PASS | a=2, b=5, k=2 | OK
+AME(11,10)  (matches_record)  G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_5_bevins_bidav  AME(12,5) PASS | a=2, b=5, k=5 | OK
+AME(11,14)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_7_circulant     AME(12,7) PASS | a=2, b=7, k=5 | OK
+AME(11,15)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_5_bevins_bidav  AME(12,5) PASS | a=3, b=5, k=5 | OK
+AME(11,18)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_9_circulant     AME(12,9) PASS | a=2, b=9, k=5 | OK
+AME(11,21)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_7_circulant     AME(12,7) PASS | a=3, b=7, k=5 | OK
+AME(11,22)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_11_rs           AME(12,11) PASS | a=2, b=11, k=5 | OK
+AME(11,24)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_8_circulant     AME(12,8) PASS | a=3, b=8, k=5 | OK
+AME(11,26)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_13_rs           AME(12,13) PASS | a=2, b=13, k=5 | OK
+AME(11,33)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_11_rs           AME(12,11) PASS | a=3, b=11, k=5 | OK
+AME(11,34)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_17_rs           AME(12,17) PASS | a=2, b=17, k=5 | OK
+AME(11,38)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_19_rs           AME(12,19) PASS | a=2, b=19, k=5 | OK
+AME(11,39)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_13_rs           AME(12,13) PASS | a=3, b=13, k=5 | OK
+AME(11,46)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_23_rs           AME(12,23) PASS | a=2, b=23, k=5 | OK
+AME(11,48)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_16_rs           AME(12,16) PASS | a=3, b=16, k=5 | OK
+AME(11,51)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_17_rs           AME(12,17) PASS | a=3, b=17, k=5 | OK
+AME(11,54)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_27_rs           AME(12,27) PASS | a=2, b=27, k=5 | OK
+AME(11,57)  (improvement)     G_a=a_ternary_golay_n12_d3           5-uniform PASS | G_b=b_ame12_19_rs           AME(12,19) PASS | a=3, b=19, k=5 | OK
+AME(11,58)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_29_rs           AME(12,29) PASS | a=2, b=29, k=5 | OK
+AME(11,62)  (improvement)     G_a=a_dodecacode_n12_d2              5-uniform PASS | G_b=b_ame12_31_rs           AME(12,31) PASS | a=2, b=31, k=5 | OK
+AME(13,20)  (improvement)     G_a=a_14_0_7_d4_hermitian_circulant  6-uniform PASS | G_b=b_ame14_5_circulant     AME(14,5) PASS | a=4, b=5, k=6 | OK
+AME(13,28)  (improvement)     G_a=a_14_0_7_d4_hermitian_circulant  6-uniform PASS | G_b=b_ame14_7_circulant     AME(14,7) PASS | a=4, b=7, k=6 | OK
+AME(13,36)  (improvement)     G_a=a_14_0_7_d4_hermitian_circulant  6-uniform PASS | G_b=b_ame14_9_hz            AME(14,9) PASS | a=4, b=9, k=6 | OK
+AME(13,44)  (improvement)     G_a=a_14_0_7_d4_hermitian_circulant  6-uniform PASS | G_b=b_ame14_11_circulant    AME(14,11) PASS | a=4, b=11, k=6 | OK
+AME(13,52)  (improvement)     G_a=a_14_0_7_d4_hermitian_circulant  6-uniform PASS | G_b=b_ame14_13_rs           AME(14,13) PASS | a=4, b=13, k=6 | OK
+AME(15,36)  (improvement)     G_a=a_16_0_8_d4_bordered_circulant   7-uniform PASS | G_b=b_ame16_9_hz            AME(16,9) PASS | a=4, b=9, k=7 | OK
+AME(15,44)  (improvement)     G_a=a_16_0_8_d4_bordered_circulant   7-uniform PASS | G_b=b_ame16_11_circulant    AME(16,11) PASS | a=4, b=11, k=7 | OK
+AME(15,52)  (improvement)     G_a=a_16_0_8_d4_bordered_circulant   7-uniform PASS | G_b=b_ame16_13_circulant    AME(16,13) PASS | a=4, b=13, k=7 | OK
+cells: 28 OK, 0 FAIL

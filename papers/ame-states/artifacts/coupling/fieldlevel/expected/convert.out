@@ -1,0 +1,67 @@
+convert.py: field-level object -> canonical F_p rows (qlib conventions) vs certified rows ../ingredients/<id>.json
+a_14_0_7_d4_hermitian_circulant    hermitian_systematic p=2  m=2 N=28 rank(built)=28 rank(certified)=28 isotropic=True  MATCH
+a_16_0_8_d4_bordered_circulant     hermitian_systematic p=2  m=2 N=32 rank(built)=32 rank(certified)=32 isotropic=True  MATCH
+a_dodecacode_n12_d2                fq_graph             p=2  m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+a_ternary_golay_n12_d3             css_minimal_support  p=3  m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+a_wheel_ame6_2                     fq_graph             p=2  m=1 N=6  rank(built)=6  rank(certified)=6  isotropic=True  MATCH
+b_ame12_11_rs                      css_minimal_support  p=11 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_13_rs                      css_minimal_support  p=13 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_16_rs                      css_minimal_support  p=2  m=4 N=48 rank(built)=48 rank(certified)=48 isotropic=True  MATCH
+b_ame12_17_rs                      css_minimal_support  p=17 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_19_rs                      css_minimal_support  p=19 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_23_rs                      css_minimal_support  p=23 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_27_rs                      css_minimal_support  p=3  m=3 N=36 rank(built)=36 rank(certified)=36 isotropic=True  MATCH
+b_ame12_29_rs                      css_minimal_support  p=29 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_31_rs                      css_minimal_support  p=31 m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_5_bevins_bidav             hermitian_systematic p=5  m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_7_circulant                hermitian_systematic p=7  m=1 N=12 rank(built)=12 rank(certified)=12 isotropic=True  MATCH
+b_ame12_8_circulant                hermitian_systematic p=2  m=3 N=36 rank(built)=36 rank(certified)=36 isotropic=True  MATCH
+b_ame12_9_circulant                hermitian_systematic p=3  m=2 N=24 rank(built)=24 rank(certified)=24 isotropic=True  MATCH
+b_ame14_11_circulant               hermitian_systematic p=11 m=1 N=14 rank(built)=14 rank(certified)=14 isotropic=True  MATCH
+b_ame14_13_rs                      css_minimal_support  p=13 m=1 N=14 rank(built)=14 rank(certified)=14 isotropic=True  MATCH
+b_ame14_5_circulant                hermitian_systematic p=5  m=1 N=14 rank(built)=14 rank(certified)=14 isotropic=True  MATCH
+b_ame14_7_circulant                hermitian_systematic p=7  m=1 N=14 rank(built)=14 rank(certified)=14 isotropic=True  MATCH
+b_ame14_9_hz                       hermitian_systematic p=3  m=2 N=28 rank(built)=28 rank(certified)=28 isotropic=True  MATCH
+b_ame16_11_circulant               hermitian_systematic p=11 m=1 N=16 rank(built)=16 rank(certified)=16 isotropic=True  MATCH
+b_ame16_13_circulant               hermitian_systematic p=13 m=1 N=16 rank(built)=16 rank(certified)=16 isotropic=True  MATCH
+b_ame16_9_hz                       hermitian_systematic p=3  m=2 N=32 rank(built)=32 rank(certified)=32 isotropic=True  MATCH
+b_ame6_5_rs                        css_minimal_support  p=5  m=1 N=6  rank(built)=6  rank(certified)=6  isotropic=True  MATCH
+ingredients: 27 MATCH, 0 MISMATCH
+
+cell mapping: frozen certificate's a/b == ingredient files named in cells.json (equal F_p row spaces)
+AME(5,10)   k=2 (2x5)      a=a_wheel_ame6_2 same  b=b_ame6_5_rs same  OK
+AME(11,10)  k=5 (2x5)      a=a_dodecacode_n12_d2 same  b=b_ame12_5_bevins_bidav same  OK
+AME(11,14)  k=5 (2x7)      a=a_dodecacode_n12_d2 same  b=b_ame12_7_circulant same  OK
+AME(11,15)  k=5 (3x5)      a=a_ternary_golay_n12_d3 same  b=b_ame12_5_bevins_bidav same  OK
+AME(11,18)  k=5 (2x9)      a=a_dodecacode_n12_d2 same  b=b_ame12_9_circulant same  OK
+AME(11,21)  k=5 (3x7)      a=a_ternary_golay_n12_d3 same  b=b_ame12_7_circulant same  OK
+AME(11,22)  k=5 (2x11)     a=a_dodecacode_n12_d2 same  b=b_ame12_11_rs same  OK
+AME(11,24)  k=5 (3x8)      a=a_ternary_golay_n12_d3 same  b=b_ame12_8_circulant same  OK
+AME(11,26)  k=5 (2x13)     a=a_dodecacode_n12_d2 same  b=b_ame12_13_rs same  OK
+AME(11,33)  k=5 (3x11)     a=a_ternary_golay_n12_d3 same  b=b_ame12_11_rs same  OK
+AME(11,34)  k=5 (2x17)     a=a_dodecacode_n12_d2 same  b=b_ame12_17_rs same  OK
+AME(11,38)  k=5 (2x19)     a=a_dodecacode_n12_d2 same  b=b_ame12_19_rs same  OK
+AME(11,39)  k=5 (3x13)     a=a_ternary_golay_n12_d3 same  b=b_ame12_13_rs same  OK
+AME(11,46)  k=5 (2x23)     a=a_dodecacode_n12_d2 same  b=b_ame12_23_rs same  OK
+AME(11,48)  k=5 (3x16)     a=a_ternary_golay_n12_d3 same  b=b_ame12_16_rs same  OK
+AME(11,51)  k=5 (3x17)     a=a_ternary_golay_n12_d3 same  b=b_ame12_17_rs same  OK
+AME(11,54)  k=5 (2x27)     a=a_dodecacode_n12_d2 same  b=b_ame12_27_rs same  OK
+AME(11,57)  k=5 (3x19)     a=a_ternary_golay_n12_d3 same  b=b_ame12_19_rs same  OK
+AME(11,58)  k=5 (2x29)     a=a_dodecacode_n12_d2 same  b=b_ame12_29_rs same  OK
+AME(11,62)  k=5 (2x31)     a=a_dodecacode_n12_d2 same  b=b_ame12_31_rs same  OK
+AME(13,20)  k=6 (4x5)      a=a_14_0_7_d4_hermitian_circulant same  b=b_ame14_5_circulant same  OK
+AME(13,28)  k=6 (4x7)      a=a_14_0_7_d4_hermitian_circulant same  b=b_ame14_7_circulant same  OK
+AME(13,36)  k=6 (4x9)      a=a_14_0_7_d4_hermitian_circulant same  b=b_ame14_9_hz same  OK
+AME(13,44)  k=6 (4x11)     a=a_14_0_7_d4_hermitian_circulant same  b=b_ame14_11_circulant same  OK
+AME(13,52)  k=6 (4x13)     a=a_14_0_7_d4_hermitian_circulant same  b=b_ame14_13_rs same  OK
+AME(15,36)  k=7 (4x9)      a=a_16_0_8_d4_bordered_circulant same  b=b_ame16_9_hz same  OK
+AME(15,44)  k=7 (4x11)     a=a_16_0_8_d4_bordered_circulant same  b=b_ame16_11_circulant same  OK
+AME(15,52)  k=7 (4x13)     a=a_16_0_8_d4_bordered_circulant same  b=b_ame16_13_circulant same  OK
+cells: 28 OK, 0 FAIL
+
+negative controls (one entry altered; expected MISMATCH)
+a_14_0_7_d4_hermitian_circulant    A[0][-1] altered: MISMATCH (as expected)
+b_ame16_9_hz                       A[0][-1] altered: MISMATCH (as expected)
+b_ame12_16_rs                      G[0][-1] altered: MISMATCH (as expected)
+a_ternary_golay_n12_d3             G[0][-1] altered: MISMATCH (as expected)
+a_dodecacode_n12_d2                Gamma[0][1] altered: MISMATCH (as expected)

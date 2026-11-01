@@ -1,0 +1,12 @@
+# Table VI row (3^2,1^2), mixed: "Parity and weight counting."  HAND DERIVATION (auditor #168, pairs #191(3), audited #199);
+# extra/z3_mixed.py (written for the release) runs it over all 9 (r6, r7): (1,0),(0,1),(2,1),(1,2) die by parity, (2,0),(0,2)
+# by a forced word on 4 parties; (0,0), (1,1), (2,2) are the computational rows h = 1, a = 2, fixed-point-free.
+(r6,r7) = (0,0): dim T = 4, no forced 4-party word -> row h = 1 (77760 isometries)
+(r6,r7) = (0,1): dim V_nf = 9 odd -> no F_4-Lagrangian: excluded by parity
+(r6,r7) = (0,2): dim T = 5, dim(T cap X) >= 1 for X = A+N7,B+N7 (4 parties): excluded by weight
+(r6,r7) = (1,0): dim V_nf = 9 odd -> no F_4-Lagrangian: excluded by parity
+(r6,r7) = (1,1): dim T = 5, no forced 4-party word -> row 'h with 2-dim fixed space' (a = 2)
+(r6,r7) = (1,2): dim V_nf = 11 odd -> no F_4-Lagrangian: excluded by parity
+(r6,r7) = (2,0): dim T = 5, dim(T cap X) >= 1 for X = A+N6,B+N6 (4 parties): excluded by weight
+(r6,r7) = (2,1): dim V_nf = 11 odd -> no F_4-Lagrangian: excluded by parity
+(r6,r7) = (2,2): dim T = 6, no forced 4-party word -> row 'h fixed-point-free' (sector A)

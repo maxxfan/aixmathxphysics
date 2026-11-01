@@ -1,0 +1,7 @@
+  AME_15_8.json                                n=15 d= 8 (F_2, m=3, N=45) k=7: isotropic=yes rank=45/45 sets of 8 parties: 6435, full rank 6435, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  AME_17_8.json                                n=17 d= 8 (F_2, m=3, N=51) k=8: isotropic=yes rank=51/51 sets of 9 parties: 24310, full rank 24310, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  AME_18_16.json                               n=18 d=16 (F_2, m=4, N=72) k=9: isotropic=yes rank=72/72 sets of 9 parties: 48620, full rank 48620, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  AME_19_16.json                               n=19 d=16 (F_2, m=4, N=76) k=9: isotropic=yes rank=76/76 sets of 10 parties: 92378, full rank 92378, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  AME_20_16.json                               n=20 d=16 (F_2, m=4, N=80) k=10: isotropic=yes rank=80/80 sets of 10 parties: 184756, full rank 184756, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+  AME_21_16.json                               n=21 d=16 (F_2, m=4, N=84) k=10: isotropic=yes rank=84/84 sets of 11 parties: 352716, full rank 352716, deficient 0 [C exhaustive + python sample 200 (deficient in sample: 0)] -> PASS
+OVERALL PASS

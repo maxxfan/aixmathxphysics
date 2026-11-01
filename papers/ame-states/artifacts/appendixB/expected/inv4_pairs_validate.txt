@@ -1,0 +1,19 @@
+# inv4_pairs_validate -- validations of the pairs t = 4 reduction and DFS (board #129 "CHECKS"; runs/pairs/NOTES.md).
+# val_inv8.py 7 120: "parametrization vs brute-force 2^16-word min weight on 120 random (C,q) at thresholds 2,3,4 agree";
+# val2_inv8.py 4: "DFS node counts at levels 1-4 match Monte-Carlo with independent coset enumeration" (MC estimates
+#   169.3 / 20480 / 341836 / 4071271 vs the exact inv8 counts 168 / 20128 / 343544 / 3842216 printed below; the docstring of
+#   val2_inv8.py quotes the same exact counts);
+# dump_check.py: "the 96 depth-7 survivors x 2 values of q_77 all have brute-force min weight 4 with 12 or 16 words of
+#   weight <= 4".
+# All lines identical to the original outputs in runs/pairs/shift-03.jsonl.
+(a) parametrization/table agree on 120 random (C,q); example min weights follow
+min weight histogram of random (C,q): {3: 1167, 4: 833}
+level 1 MC fraction 0.6613333333333333 -> est nodes 169.30133333333333
+level 2 MC fraction 0.625 -> est nodes 20480.0
+level 3 MC fraction 0.163 -> est nodes 341835.776
+level 4 MC fraction 0.06066666666666667 -> est nodes 4071271.0826666667
+exact inv8 nodes for the same C (THR=4):
+NSOL 0 nodes 168 20128 343544 3842216 3377472 119040 96 0 stopped=0
+level-7 survivors: 96 ['NSOL 0 nodes 168 9088 187072 1043232 1658368 163296 96 0 stopped=0']
+(min weight, #words of weight<=4) over the 2*96 completions: {(4, 16): 96, (4, 12): 96}
+best near miss (n words wt<=4, minwt, cols): (12, 4, [12, 244, 63, 29, 158, 230, 226, 242])

@@ -1,0 +1,13 @@
+# Prop. prop:loc, (0,4)^8, type M: "A Singleton argument on its socle again forces an [8,4,5]_4 MDS code, and a similar count
+# excludes M parties mixed with H or S parties."  Hand derivation (auditor, argument.md 5.2; board #103/#106); its counting is
+# run over all cases by extra/m_type_counting.py (written for the release).  The [8,4,5]_4 nonexistence: classical_bounds.
+a_M = number of M-type parties (a_O = 8 - a_M parties of type H or S), k1 = rank of the free part
+  a_M = 1 (mixed with 7 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 2 (mixed with 6 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 3 (mixed with 5 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 4 (mixed with 4 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 5 (mixed with 3 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 6 (mixed with 2 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 7 (mixed with 1 H/S parties): k1 surviving (i)+(ii): none
+  a_M = 8 (uniform M): 8 - k1 <= 4 forces k1 = 4: T is an [8,4,5]_4 MDS code, which does not exist
+  a_M = 0: H and S parties only; mixed H/S splits S as a product (hand), uniform H / S are the exhaustive searches

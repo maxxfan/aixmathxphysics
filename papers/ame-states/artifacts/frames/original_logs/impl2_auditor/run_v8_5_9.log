@@ -1,0 +1,5 @@
+rep 5 orbit_size 2880 V0 [4369, 9282, 33316, 27016] mode 0: RESULT n_V1=26556 n_V1_with_V2=638 n_V2=702 n_SOL=0 [cand1 = 2040] 3.8s
+rep 6 orbit_size 720 V0 [4369, 16962, 14372, 56968] mode 0: RESULT n_V1=28960 n_V1_with_V2=3224 n_V2=3640 n_SOL=0 [cand1 = 2028] 3.7s
+rep 7 orbit_size 48 V0 [4369, 17474, 8740, 39320] mode 0: RESULT n_V1=28656 n_V1_with_V2=3156 n_V2=3744 n_SOL=0 [cand1 = 1980] 3.2s
+rep 8 orbit_size 72 V0 [4369, 17474, 25124, 35224] mode 0: RESULT n_V1=28656 n_V1_with_V2=7168 n_V2=8912 n_SOL=0 [cand1 = 1980] 3.3s
+rep 9 orbit_size 360 V0 [4369, 17474, 29220, 35224] mode 0: RESULT n_V1=28960 n_V1_with_V2=1504 n_V2=1712 n_SOL=0 [cand1 = 2028] 3.6s

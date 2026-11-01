@@ -1,0 +1,74 @@
+{
+ "id": "b_ame14_5_circulant",
+ "n": 14,
+ "local_dim": 5,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 25,
+  "p": 5,
+  "m": 2,
+  "modulus": [2, 1, 1],
+  "modulus_str": "x^2 + x + 2",
+  "encoding": "F_25 = F_5[x]/(x^2 + x + 2); the int e = sum_{i<2} c_i 5^i (0 <= c_i < 5) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 5,
+  "conjugation": "z -> z^5"
+ },
+ "q": 5,
+ "generator": "[I_7 | A] over F_25, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [1, 8, 8, 8, 8, 8, 8],
+  [8, 23, 11, 16, 9, 3, 4],
+  [8, 4, 23, 11, 16, 9, 3],
+  [8, 3, 4, 23, 11, 16, 9],
+  [8, 9, 3, 4, 23, 11, 16],
+  [8, 16, 9, 3, 4, 23, 11],
+  [8, 11, 16, 9, 3, 4, 23]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 5,
+  "w_to_the_q": 24,
+  "xi": 5
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 6,
+  "corner_alpha": 1,
+  "row_border_beta": 8,
+  "column_border_gamma": 8,
+  "core_first_row": [23, 11, 16, 9, 3, 4],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "bordered Z_6 group circulant, symmetric border (beta = gamma)",
+  "corner_relation": "alpha = -conj(F0) * beta / conj(beta), F0 = sum(core_first_row) (holds)"
+ },
+ "claimed_property": {
+  "statement": "AME(14,5)",
+  "uniformity_k": 7,
+  "n": 14,
+  "d": 5
+ },
+ "used_as": "G_b (AME(14,5))",
+ "code": {
+  "params": "[14,7,8]_25",
+  "field_order": 25,
+  "length": 14,
+  "dimension": 7,
+  "distance": 8,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^5 (MDS)"
+ },
+ "stabilizer_code": "[[14,0,8]]_5",
+ "used_in": [
+  "AME(13,20)"
+ ],
+ "source": {
+  "script": "work/couple/batch13.py (a=4, b=5)",
+  "note": "AME(14,5) bordered Z6 circulant [14,7,8]_25",
+  "builder": "work/couple/run_gorb.py 5 6 1 -> work/mds/grp_orbits3.py (first hit, work/couple/gorb/grp3_q5_Z6_b1_n14.json)",
+  "board_posts": [597]
+ },
+ "canonical_file": "../ingredients/b_ame14_5_circulant.json"
+}

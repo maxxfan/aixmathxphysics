@@ -1,0 +1,75 @@
+{
+ "id": "b_ame16_13_circulant",
+ "n": 16,
+ "local_dim": 13,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 169,
+  "p": 13,
+  "m": 2,
+  "modulus": [2, 1, 1],
+  "modulus_str": "x^2 + x + 2",
+  "encoding": "F_169 = F_13[x]/(x^2 + x + 2); the int e = sum_{i<2} c_i 13^i (0 <= c_i < 13) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 13,
+  "conjugation": "z -> z^13"
+ },
+ "q": 13,
+ "generator": "[I_8 | A] over F_169, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [12, 3, 3, 3, 3, 3, 3, 3],
+  [3, 2, 110, 22, 29, 144, 164, 76],
+  [3, 76, 2, 110, 22, 29, 144, 164],
+  [3, 164, 76, 2, 110, 22, 29, 144],
+  [3, 144, 164, 76, 2, 110, 22, 29],
+  [3, 29, 144, 164, 76, 2, 110, 22],
+  [3, 22, 29, 144, 164, 76, 2, 110],
+  [3, 110, 22, 29, 144, 164, 76, 2]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 13,
+  "w_to_the_q": 168,
+  "xi": 13
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 7,
+  "corner_alpha": 12,
+  "row_border_beta": 3,
+  "column_border_gamma": 3,
+  "core_first_row": [2, 110, 22, 29, 144, 164, 76],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "bordered Z_7 group circulant, symmetric border (beta = gamma)",
+  "corner_relation": "alpha = -conj(F0) * beta / conj(beta), F0 = sum(core_first_row) (holds)"
+ },
+ "claimed_property": {
+  "statement": "AME(16,13)",
+  "uniformity_k": 8,
+  "n": 16,
+  "d": 13
+ },
+ "used_as": "G_b (AME(16,13))",
+ "code": {
+  "params": "[16,8,9]_169",
+  "field_order": 169,
+  "length": 16,
+  "dimension": 8,
+  "distance": 9,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^13 (MDS)"
+ },
+ "stabilizer_code": "[[16,0,9]]_13",
+ "used_in": [
+  "AME(15,52)"
+ ],
+ "source": {
+  "script": "work/couple/g16_4.py 0",
+  "note": "AME(16,13) bordered Z7 circulant [16,8,9]_169",
+  "builder": "work/couple/run_gorb.py 13 7 1 -> work/mds/grp_orbits3.py (first hit, work/couple/gorb/grp3_q13_Z7_b1_n16.json)",
+  "board_posts": [614, 616]
+ },
+ "canonical_file": "../ingredients/b_ame16_13_circulant.json"
+}

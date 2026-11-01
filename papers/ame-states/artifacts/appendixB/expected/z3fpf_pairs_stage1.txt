@@ -1,0 +1,13 @@
+# Table VI row "l=3, (3^2,1^2), h fixed-point-free": "391 910 400 pairs (X_A, X_B) reduce to 7 classes ...".
+# PAIRS implementation, stage 1 (board #186: "T_A ... 233280 solutions (independent of auditor's count; 108 M with 720,
+# 72 M with 2160), 3 orbits (38880/77760/116640) under G = Sp(4,2)_A x GU(2,2)_6 x GU(2,2)_7 (order 233280)").
+# Provenance: original tool output of `z3a_stage1.py orbits` in runs/pairs/shift-05.jsonl (identical lines), and the
+# original work/pairs/z3a_reps.json (shipped as pairs/z3a_reps.json).
+form checks ok
+GL(2,4): 180
+GU(2,2): 18 (expect 18)
+Sp(4,2): 720 (expect 720)
+X_A solutions: 233280 (auditor: 233280)
+per-M counts histogram: [(720, 108), (2160, 72)]
+orbits under random subgroup generators: 3 [38880, 77760, 116640]
+orbit representatives identical to the shipped pairs/z3a_reps.json: True

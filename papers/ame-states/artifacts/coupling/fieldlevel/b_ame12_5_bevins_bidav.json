@@ -1,0 +1,78 @@
+{
+ "id": "b_ame12_5_bevins_bidav",
+ "n": 12,
+ "local_dim": 5,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 25,
+  "p": 5,
+  "m": 2,
+  "modulus": [2, 1, 1],
+  "modulus_str": "x^2 + x + 2",
+  "encoding": "F_25 = F_5[x]/(x^2 + x + 2); the int e = sum_{i<2} c_i 5^i (0 <= c_i < 5) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 5,
+  "conjugation": "z -> z^5"
+ },
+ "q": 5,
+ "generator": "[I_6 | A] over F_25, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [1, 1, 1, 1, 1, 2],
+  [23, 1, 2, 3, 5, 3],
+  [19, 7, 1, 22, 17, 12],
+  [9, 15, 11, 2, 18, 15],
+  [1, 4, 22, 9, 2, 1],
+  [6, 7, 18, 15, 10, 2]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1],
+  "trace_dual_basis_gamma": [1],
+  "normal_element_w": 5,
+  "w_to_the_q": 24,
+  "xi": 5
+ },
+ "structure": {
+  "type": "explicit_labels",
+  "description": "Bevins-Bidav A_5 (arXiv:2608.05781), the printed 6 x 6 matrix",
+  "source_labels": [
+   [1, 1, 1, 1, 1, 2],
+   [23, 1, 2, 3, 5, 3],
+   [19, 7, 1, 22, 17, 12],
+   [9, 15, 11, 2, 18, 15],
+   [1, 4, 22, 9, 2, 1],
+   [6, 7, 18, 15, 10, 2]
+  ],
+  "r": 5,
+  "r_minimal_polynomial": [2, 1, 1],
+  "rule": "a printed label e (0 <= e < 25) is the element (e mod 5) + (e div 5) r, r a root of the printed minimal polynomial x^2 + x + 2 (transcription: work/couple/lib.py ame12_5, work/auditor/bb_kernel.py); r = x = int 5 here, because x^2 + x + 2 is also the modulus, so the printed labels and the ints of this file coincide"
+ },
+ "claimed_property": {
+  "statement": "AME(12,5)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 5
+ },
+ "used_as": "G_b (AME(12,5))",
+ "code": {
+  "params": "[12,6,7]_25",
+  "field_order": 25,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^5 (MDS)"
+ },
+ "stabilizer_code": "[[12,0,7]]_5",
+ "used_in": [
+  "AME(11,10)",
+  "AME(11,15)"
+ ],
+ "source": {
+  "script": "work/couple/batch11b.py (a=2, b=5)",
+  "note": "AME(12,5) Bevins-Bidav [12,6,7]_25",
+  "builder": "work/couple/lib.py ame12_5() (data in results/literature.md)",
+  "board_posts": [597]
+ },
+ "canonical_file": "../ingredients/b_ame12_5_bevins_bidav.json"
+}

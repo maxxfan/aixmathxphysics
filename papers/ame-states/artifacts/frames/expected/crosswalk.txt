@@ -1,0 +1,98 @@
+# impl2 full-gauge representative -> impl1 class, matched by the GL(4,2) x S_4 congruence class of (Q_0..Q_3)
+# columns: impl2 rep, impl1 class, orbit (impl2 x 28 vs impl1), #V_1 (impl2 n_V1 vs impl1 nodes[1] at t=5),
+#          level 2 (impl2 n_V2 vs impl1 nodes[2] with JMASKS=124), solutions (impl2 n_SOL, impl1 nsol at t=5)
+i2rep=0 -> i1class=4 orbit=720*28=20160/20160 n_V1=24488/24488 level2=712/712 solutions=0/0 OK
+i2rep=1 -> i1class=3 orbit=720*28=20160/20160 n_V1=28960/28960 level2=1776/1776 solutions=0/0 OK
+i2rep=2 -> i1class=1 orbit=2160*28=60480/60480 n_V1=24128/24128 level2=176/176 solutions=0/0 OK
+i2rep=3 -> i1class=6 orbit=480*28=13440/13440 n_V1=24488/24488 level2=2444/2444 solutions=0/0 OK
+i2rep=4 -> i1class=2 orbit=1440*28=40320/40320 n_V1=24128/24128 level2=416/416 solutions=0/0 OK
+i2rep=5 -> i1class=0 orbit=2880*28=80640/80640 n_V1=26556/26556 level2=702/702 solutions=0/0 OK
+i2rep=6 -> i1class=5 orbit=720*28=20160/20160 n_V1=28960/28960 level2=3640/3640 solutions=0/0 OK
+i2rep=7 -> i1class=9 orbit=48*28=1344/1344 n_V1=28656/28656 level2=3744/3744 solutions=0/0 OK
+i2rep=8 -> i1class=8 orbit=72*28=2016/2016 n_V1=28656/28656 level2=8912/8912 solutions=0/0 OK
+i2rep=9 -> i1class=7 orbit=360*28=10080/10080 n_V1=28960/28960 level2=1712/1712 solutions=0/0 OK
+bijection_between_class_lists=yes
+# impl2 Sp(4,2)-only representatives (72) -> impl1 class (same invariant)
+sp=0 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=1 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=2 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=3 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=4 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=5 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=6 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=7 -> i1class=6 orbit=120 n_V1=24488 n_V2=2444 n_SOL=0 OK
+sp=8 -> i1class=2 orbit=360 n_V1=24128 n_V2=416 n_SOL=0 OK
+sp=9 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=10 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=11 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=12 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=13 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=14 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=15 -> i1class=6 orbit=120 n_V1=24488 n_V2=2444 n_SOL=0 OK
+sp=16 -> i1class=2 orbit=360 n_V1=24128 n_V2=416 n_SOL=0 OK
+sp=17 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=18 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=19 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=20 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=21 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=22 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=23 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=24 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=25 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=26 -> i1class=1 orbit=360 n_V1=24128 n_V2=176 n_SOL=0 OK
+sp=27 -> i1class=6 orbit=120 n_V1=24488 n_V2=2444 n_SOL=0 OK
+sp=28 -> i1class=2 orbit=360 n_V1=24128 n_V2=416 n_SOL=0 OK
+sp=29 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=30 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=31 -> i1class=9 orbit=12 n_V1=28656 n_V2=3744 n_SOL=0 OK
+sp=32 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=33 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=34 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=35 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=36 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=37 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=38 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=39 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=40 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=41 -> i1class=9 orbit=12 n_V1=28656 n_V2=3744 n_SOL=0 OK
+sp=42 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=43 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=44 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=45 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=46 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=47 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=48 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=49 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=50 -> i1class=0 orbit=240 n_V1=26556 n_V2=702 n_SOL=0 OK
+sp=51 -> i1class=6 orbit=120 n_V1=24488 n_V2=2444 n_SOL=0 OK
+sp=52 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=53 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=54 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=55 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=56 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=57 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=58 -> i1class=2 orbit=360 n_V1=24128 n_V2=416 n_SOL=0 OK
+sp=59 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=60 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=61 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=62 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=63 -> i1class=5 orbit=60 n_V1=28960 n_V2=3640 n_SOL=0 OK
+sp=64 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=65 -> i1class=4 orbit=120 n_V1=24488 n_V2=712 n_SOL=0 OK
+sp=66 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=67 -> i1class=9 orbit=12 n_V1=28656 n_V2=3744 n_SOL=0 OK
+sp=68 -> i1class=3 orbit=60 n_V1=28960 n_V2=1776 n_SOL=0 OK
+sp=69 -> i1class=8 orbit=12 n_V1=28656 n_V2=8912 n_SOL=0 OK
+sp=70 -> i1class=7 orbit=60 n_V1=28960 n_V2=1712 n_SOL=0 OK
+sp=71 -> i1class=9 orbit=12 n_V1=28656 n_V2=3744 n_SOL=0 OK
+i1class=0 sp_reps=12 sp_orbit_sum=2880*28=80640/80640 OK
+i1class=1 sp_reps=6 sp_orbit_sum=2160*28=60480/60480 OK
+i1class=2 sp_reps=4 sp_orbit_sum=1440*28=40320/40320 OK
+i1class=3 sp_reps=12 sp_orbit_sum=720*28=20160/20160 OK
+i1class=4 sp_reps=6 sp_orbit_sum=720*28=20160/20160 OK
+i1class=5 sp_reps=12 sp_orbit_sum=720*28=20160/20160 OK
+i1class=6 sp_reps=4 sp_orbit_sum=480*28=13440/13440 OK
+i1class=7 sp_reps=6 sp_orbit_sum=360*28=10080/10080 OK
+i1class=8 sp_reps=6 sp_orbit_sum=72*28=2016/2016 OK
+i1class=9 sp_reps=4 sp_orbit_sum=48*28=1344/1344 OK
+ALL_CONSISTENT=yes

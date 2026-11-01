@@ -1,0 +1,27 @@
+# Table VI row "l=3, (3^2,1^2), h with 2-dim fixed space": "1152 completions T of S_nf, none admits a valid S^Omega."
+# PAIRS implementation (board #238: "X_A lines ... = 270 ... ONE orbit (auditor: 3 classes of 90 under Sp_A alone) ... X_B: 3
+# Sp_B-orbits of 90; ... exactly ONE Sp_B-class (90) is orthogonal ... exhaustive binary-branching DFS (pool 31488 vectors,
+# 88,863 nodes): 384 completions = the auditor's 384 per pair (1152 = 3 x 384). Stage 3: ... 2928 of 4096 ... ALL 576 + 576
+# allowed planes, 55,296 orthogonal pairs, 144 with all mixed words allowed ...: 0 Lagrangians for all 384 T. Positive control
+# (same code, threshold 4 for L against T, first 40 T): 40/40 find L, rebuilt S = L + T has |span| = 65536 and min party weight 4").
+# Provenance: original tool outputs of `a2_audit.py 1`, `a2_stage3.py 0 9999` and `a2_stage3.py 0 40 4` in
+# runs/pairs/shift-07.jsonl (identical text, run times removed; the 20 printed stage-3 lines T#0, T#20, ..., T#380 are identical).
+== a2_audit.py 1 (stages 1-2)
+order-3 elements with 2-dim fixed space: 40  fpf order-3: 40
+|C(h)| = 18
+dim V_nf = 20
+dim V^Omega = 12
+X_A lines: 270  X_B lines: 270 (auditor: 270)
+orbits of X_A under Sp_A x C6 x C7: [270] (auditor: 3 classes of 90)
+orbits of X_B: [270]
+X_B orbits under Sp_B alone: [90, 90, 90]
+X_A rep 570425635 orbit size 270 : compatible X_B Sp_B-classes sizes [90]
+rep pairs: 1
+   nodes visited 88863  initial pool 31488
+rep pair 570425635 571617280 : completions T with all words wt>=5: 384
+== a2_stage3.py 0 9999 (stage 3; printed every 20th T, run time removed)
+20 x allowed=2928 planesX=576 planesY=576 orthopairs=55296 goodD=144 found=None
+DONE Ts processed 384  Lagrangians found: 0
+== a2_stage3.py 0 40 4 (positive control, threshold 4 for L against T)
+40 x FOUND: |span|=65536 min nonzero party weight=4
+DONE Ts processed 40  Lagrangians found: 40

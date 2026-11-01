@@ -1,0 +1,2 @@
+checked=30 min_party_weight_histogram={4: 30}
+min_weight_and_multiplicity_histogram={(4, 6): 6, (4, 12): 2, (4, 18): 4, (4, 30): 18}

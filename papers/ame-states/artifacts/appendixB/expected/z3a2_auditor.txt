@@ -1,0 +1,53 @@
+# Table VI row "l=3, (3^2,1^2), h with 2-dim fixed space": "1152 completions T of S_nf, none admits a valid S^Omega."
+# AUDITOR implementation (argument.md 5.5(c); board #168 "270 solutions in 3 classes of 90, Sp(4,2)_A transitive on each;
+# ... 3 representative pairs x 384 completions = 1152 Lagrangians T ...; Vs ... 2928 of 4096 for every T; ... staged DFS:
+# 3565 nodes per T, ZERO Lagrangians for all 1152 T. Positive control (lag_control.py): a planted Lagrangian is found;
+# removing one of its words gives 0"; argument.md 5.5(c): "276480 ordered duplicates").
+# Provenance of every line below: the original tool output of `z3twist4.py nonfpf` and `lag_control.py` in
+# runs/auditor/shift-05.jsonl (identical text, run times removed), work/auditor/lagsearch2_nonfpf_0_1151.log (1152 identical
+# lines "T k |Vs| 2928 |Va0| 108 |Vb0| 108 nodes 3565 Lagrangians 0"), and the sha256 of work/auditor/z3twist_Vs_nonfpf.bin.
+== z3twist4.py nonfpf (steps 1-2 and export)
+order-3 elements: Counter({4: 40, 1: 40})
+case nonfpf |N6| = 4 r = 1
+c basis: [4]
+cand 0 630 -> 270
+X_A solutions: 270
+distinct d-keys: 3  solutions per key (min/max): 90 90
+compatible key pairs: 3  total (X_A, X_B) pairs: 24300
+partners per key (distribution): Counter({1: 3})
+key (4,) : 90 solutions, 1 orbit(s) under Sp(4,2)_A; orbit sizes []
+key (8,) : 90 solutions, 1 orbit(s) under Sp(4,2)_A; orbit sizes []
+key (12,) : 90 solutions, 1 orbit(s) under Sp(4,2)_A; orbit sizes []
+key (4,) orbit sizes [90]
+key (8,) orbit sizes [90]
+key (12,) orbit sizes [90]
+|V_nf| = 1048576
+pair keys (4,) (4,)
+   |Cd| = 31488  (X words 16 )
+   level 1 : subspaces 656  F2 dim 6
+   level 2 : subspaces 4800  F2 dim 8
+   level 3 : subspaces 384  F2 dim 10
+   final subspaces by F2-dim: {10: 384}
+pair keys (8,) (8,)
+   |Cd| = 31488  (X words 16 )
+   level 1 : subspaces 656  F2 dim 6
+   level 2 : subspaces 4800  F2 dim 8
+   level 3 : subspaces 384  F2 dim 10
+   final subspaces by F2-dim: {10: 384}
+pair keys (12,) (12,)
+   |Cd| = 31488  (X words 16 )
+   level 1 : subspaces 656  F2 dim 6
+   level 2 : subspaces 4800  F2 dim 8
+   level 3 : subspaces 384  F2 dim 10
+   final subspaces by F2-dim: {10: 384}
+full-dimension T found (dim 10 over F_2): 1152
+code-omega consistent with vector-omega
+done 1152
+== sha256 of the exported Vs file (original work/auditor/z3twist_Vs_nonfpf.bin)
+5aca20044d8c2f12ed624cdbd798d058a704cad84814b1e5eaa13e4a9e1218f2
+== lagsearch2 z3twist_Vs_nonfpf.bin 0 1151 (count x identical per-T lines, T index dropped)
+1152 x |Vs| 2928 |Va0| 108 |Vb0| 108 nodes 3565 Lagrangians 0
+== lag_control.py (positive control)
+L_only T 0 |Vs| 63 |Va0| 7 |Vb0| 7 nodes 294287 Lagrangians 276480 first: 64 1296 4 1281 547 2083
+L_plus_random T 0 |Vs| 253 |Va0| 18 |Vb0| 24 nodes 294301 Lagrangians 276480 first: 64 1296 4 1281 547 2083
+L_minus_one_word_plus_random T 0 |Vs| 252 |Va0| 18 |Vb0| 24 nodes 12061 Lagrangians 0

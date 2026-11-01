@@ -1,0 +1,3 @@
+class=0 orbit=336 nodes=1,1 nsol=1
+TOTAL classes=1 nodes=1,1 nsol=1
+DERIVED sum_c(orbit_c/28*nsol_c)=12 ordered_frames=8640 N_labelled_stabilizer_states=4478976000

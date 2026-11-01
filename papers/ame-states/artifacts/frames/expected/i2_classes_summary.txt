@@ -1,0 +1,3 @@
+admissible_triples=9600/21952
+sp_only_orbits=72
+full_gauge_orbits=10 sizes=[48, 72, 360, 480, 720, 720, 720, 1440, 2160, 2880]

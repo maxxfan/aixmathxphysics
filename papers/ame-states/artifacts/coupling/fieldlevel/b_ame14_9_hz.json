@@ -1,0 +1,90 @@
+{
+ "id": "b_ame14_9_hz",
+ "n": 14,
+ "local_dim": 9,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 81,
+  "p": 3,
+  "m": 4,
+  "modulus": [2, 1, 0, 0, 1],
+  "modulus_str": "x^4 + x + 2",
+  "encoding": "F_81 = F_3[x]/(x^4 + x + 2); the int e = sum_{i<4} c_i 3^i (0 <= c_i < 3) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 9,
+  "conjugation": "z -> z^9"
+ },
+ "q": 9,
+ "generator": "[I_7 | A] over F_81, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [30, 48, 77, 26, 48, 77, 26],
+  [34, 46, 25, 74, 18, 33, 7],
+  [57, 47, 79, 25, 63, 69, 33],
+  [14, 23, 34, 51, 75, 76, 23],
+  [34, 18, 33, 7, 46, 25, 74],
+  [57, 63, 69, 33, 47, 79, 25],
+  [14, 75, 76, 23, 23, 34, 51]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1, 43],
+  "trace_dual_basis_gamma": [77, 42],
+  "normal_element_w": 3,
+  "w_to_the_q": 39,
+  "xi": 3
+ },
+ "structure": {
+  "type": "hz_kernel_submatrix",
+  "description": "rescaled 7 x 7 submatrix of the Hontarenko-Zyczkowski kernel A_9: A = diag(Lambda) P diag(D), P = K[rows][cols]",
+  "kernel": "K = A_9 (9 x 9), rows {0} u F_9^*, columns {inf} u F_9^*: K[0][0] = -b/conj(b), K[0][c+1] = K[c+1][0] = b, K[a+1][c+1] = 2y(y + g x)/(gam x^2 - y^2) with x = gam^a, y = gam^c, g = x (int 3, primitive), gam = g^(q+1) = g^10, b = g^j with gam^j = 2 (work/mds/mdslib.hz_matrix)",
+  "kernel_params": {
+   "g": 3,
+   "gam": 43,
+   "b": 7,
+   "j": 4
+  },
+  "kernel_matrix": [
+   [13, 7, 7, 7, 7, 7, 7, 7, 7],
+   [7, 58, 33, 56, 16, 20, 11, 21, 29],
+   [7, 29, 58, 33, 56, 16, 20, 11, 21],
+   [7, 21, 29, 58, 33, 56, 16, 20, 11],
+   [7, 11, 21, 29, 58, 33, 56, 16, 20],
+   [7, 20, 11, 21, 29, 58, 33, 56, 16],
+   [7, 16, 20, 11, 21, 29, 58, 33, 56],
+   [7, 56, 16, 20, 11, 21, 29, 58, 33],
+   [7, 33, 56, 16, 20, 11, 21, 29, 58]
+  ],
+  "rows": [0, 1, 2, 3, 5, 6, 7],
+  "cols": [0, 1, 2, 3, 5, 6, 7],
+  "Lambda": [11, 29, 12, 36, 29, 12, 36],
+  "D": [1, 63, 53, 48, 63, 53, 48],
+  "normalisation": "D[0] = 1 (Lambda and D are unique up to Lambda -> c Lambda, D -> D / c)"
+ },
+ "claimed_property": {
+  "statement": "AME(14,9)",
+  "uniformity_k": 7,
+  "n": 14,
+  "d": 9
+ },
+ "used_as": "G_b (AME(14,9))",
+ "code": {
+  "params": "[14,7,8]_81",
+  "field_order": 81,
+  "length": 14,
+  "dimension": 7,
+  "distance": 8,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^9 (MDS)"
+ },
+ "stabilizer_code": "[[14,0,8]]_9",
+ "used_in": [
+  "AME(13,36)"
+ ],
+ "source": {
+  "script": "work/couple/batch13b.py (hzsub.py 9 7)",
+  "note": "AME(14,9) HZ-kernel submatrix (hzsub.py 9 7)",
+  "builder": "work/couple/hzsub.py 9 7 (work/couple/ing/hz_q9_m7.json), loaded by batch13b.py",
+  "board_posts": [622, 624]
+ },
+ "canonical_file": "../ingredients/b_ame14_9_hz.json"
+}

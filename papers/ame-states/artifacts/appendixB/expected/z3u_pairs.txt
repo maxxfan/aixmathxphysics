@@ -1,0 +1,13 @@
+# Table VI, row "3 | (3^2,1^2), h = 1" -- pairs' implementation (board #138): "Enumerated ALL of them by DFS on images of an
+#   F_4-basis (work/pairs/scan_z3.py): 77760 = |GU(4,2)| ... For EVERY one of the 77760 phi, S_nf alone has minimum party
+#   weight exactly 4 (9, 18 or 45 words of weight <= 4: 32400 / 43200 / 2160 phi), checked twice (C scan_z3.c and
+#   independent Python z3_check.py)."  Original log work/pairs/z3_scan.log: "anti-isometries phi found: 77760",
+#   "R=414 M=77760 phi passing S_nf alone: 0", "DONE R=414 tested=0 NSOL=0".
+# This numpy-free variant runs scan_z3 with an empty list of AME(4,4) representatives (R = 0): the S_nf-alone count does not
+# depend on them.  The run with the 414 representatives (needs numpy for classes_z3.py) is check z3u_pairs_reps.
+anti-isometries phi found: 77760 (expect 77760)
+wrote z3_in.txt: R=0 M=77760
+R=0 M=77760 phi passing S_nf alone: 0
+DONE R=0 tested=0 NSOL=0
+M = 77760 min party weight of S_nf over all phi: {4: 77760}
+number of words of weight <= 4 in S_nf (value: #phi): {9: 32400, 18: 43200, 45: 2160}

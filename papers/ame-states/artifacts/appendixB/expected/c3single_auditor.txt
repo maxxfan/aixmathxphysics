@@ -1,0 +1,3 @@
+# Table VI row (3,1^5), any twists: "Counting over all 3^5 twist patterns: none survives."  auditor/b3audit.py (board #184,
+# argument.md 5.6); pairs derived it by hand (#175).
+243 twist patterns u in {0,2,4}^5; survivors of (i)+(ii): 0

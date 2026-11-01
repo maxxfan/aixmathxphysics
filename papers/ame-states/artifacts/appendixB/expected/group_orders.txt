@@ -1,0 +1,25 @@
+# Group facts: Prop. prop:loc "|GL(4,2)| = 2^6 3^2 5 7, it suffices to exclude a local Omega != 1 of prime order";
+# Prop. prop:aut (b) "Because Sp(4,2) = S_6 has no element of order 7, h = 1 when l = 7"; argument.md 5: "|Sp| = 720 ... 40
+# fixed-point-free (one conjugacy class, centralizer of order 18 = |GU(2,2)|) and 40 with a fixed 2-space" (board #87).
+# Prop. prop:aut (c): the prime-order cycle types of S_8 and the twist classes enumerate the sectors of Table VI.
+# First block: auditor/sp42_classes.py (original); second block: extra/group_orders.py (written for the release).
+|Sp(4,2)| = 720
+elements of order 3: 80
+  fixed-point-free: 40  with fixed 2-space: 40
+  conjugacy class sizes of fpf order-3 elements: [40]
+  centralizer order of an fpf order-3 element: 18 (GU(2,2) has order 18)
+  g^2+g+1 == 0: True
+|GL(4,2)| = 20160 = 2^6 * 3^2 * 5 * 7
+element orders in GL(4,2): {1: 1, 2: 315, 3: 1232, 4: 3780, 5: 1344, 6: 5040, 7: 5760, 15: 2688}
+|Sp(4,2)| = 720 = 2^4 * 3^2 * 5
+element orders in Sp(4,2): {1: 1, 2: 75, 3: 80, 4: 180, 5: 144, 6: 240}
+Sp(4,2) has an element of order 7: False
+order-3 elements of Sp(4,2) by number of fixed vectors: {1: 40, 4: 40}  (1 = fixed-point-free, 4 = 2-dim fixed space)
+order-5 elements of Sp(4,2) by number of fixed vectors: {1: 144}
+prime divisors of |GL(4,2) wr S_8| = 20160^8 * 8!: [2, 3, 5, 7]
+prime order 2 permutations of 8 parties, cycle types: (2,2,2,2), (2,2,2,1,1), (2,2,1,1,1,1), (2,1,1,1,1,1,1)
+prime order 3 permutations of 8 parties, cycle types: (3,3,1,1), (3,1,1,1,1,1)
+prime order 5 permutations of 8 parties, cycle types: (5,1,1,1)
+prime order 7 permutations of 8 parties, cycle types: (7,1)
+involutions of Sp(4,2) by rank of 1 + h: {1: 15, 2: 60}
+order-3 twists: h = 1, h with 2-dim fixed space (40), h fixed-point-free (40); order-5 twists: fixed-point-free (144)

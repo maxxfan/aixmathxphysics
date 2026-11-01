@@ -1,0 +1,1 @@
+n=19 q=9: circulants tested 48427561, AME hits 0

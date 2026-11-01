@@ -1,0 +1,2 @@
+class=9 orbit=1344 nodes=1,2,1700,20 nsol=20
+TOTAL classes=1 nodes=1,2,1700,20 nsol=20

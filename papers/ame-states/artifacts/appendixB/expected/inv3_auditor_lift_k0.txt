@@ -1,0 +1,13 @@
+# inv3_auditor_lift_k0 -- quick subset of inv3_auditor_lift: unreduced K 0, 1, 2 (argument.md 5.7: "consecutive unreduced
+# K (0, 1, 2) repeat the profile of representative 0").
+# Expected lines = the original log work/auditor/t3lift_5_0_3.log (wall-clock times removed) plus the two lines
+# "centralizer ..." / "orbit representatives ..." that the final version of t3lift.py always prints (they appear in
+# work/auditor/t3lift_5_0_720.log, written by the same final version).
+15-class involutions found: 15 (expect 15)
+K_0 basis ok; isometries K/K_0 -> L6+L7: 720 (expect 720)
+centralizer of l0 in Sp(4,2): 48 induced permutations of L: 6
+orbit representatives of the 720 isometries under C(l0)^2 x swap: 10 orbit sizes sum 720
+K 0: nsol 0 survivors per level [152, 6504, 37944, 6048, 576, 0, 0, 0] done
+K 1: nsol 0 survivors per level [152, 6504, 37944, 6048, 576, 0, 0, 0] done
+K 2: nsol 0 survivors per level [152, 6504, 37944, 6048, 576, 0, 0, 0] done
+done: K processed up to 2, total solutions 0, total surviving nodes 153672

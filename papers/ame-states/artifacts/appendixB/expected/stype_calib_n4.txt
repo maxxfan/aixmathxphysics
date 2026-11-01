@@ -1,0 +1,7 @@
+# Prop. prop:loc: "The searches were calibrated on n = 4 and n = 6, where they reproduce independent brute-force counts".
+# For the H type the brute-force count is hform.py's 34992 (check htype_calib_n4).  For the S type the run had only a sampling
+# calibration at n = 4 (hsdfs h=2: N_norm = 2 vs sampling 2.01 +- 0.01, board #99); this brute-force count over all of Sp(4,4)
+# was written for the release (extra/symplectic44.py) and agrees: 432000 = 2 * 60^3.
+matrices M over F_4 with M J M^T = J: 979200   |Sp(4,4)| = 4^4 (4^2-1)(4^4-1) = 979200
+with all party block minors nonsingular (S-type AME(4,4) in systematic form): 432000
+normalised count 432000 / 60^3 = 2.0   (auditor/hsdfs.c 2: N_norm = 2)

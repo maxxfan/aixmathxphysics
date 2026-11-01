@@ -1,0 +1,7711 @@
+{
+"meta": {
+"built_by": "data/build_status.py",
+"sources": [
+"sources/huber_wyderka_table_2026-06-08.html",
+"sources/codetables_k0_2026-10-10.json",
+"arXiv:2608.01011",
+"arXiv:2608.05781",
+"arXiv:2609.11796"
+],
+"dmax": 11,
+"note": "status of AME(n,d) for 2 <= d <= 11 and n up to Scott's bound; cells outside are not in the snapshot"
+},
+"cells": [
+{
+"n": 2,
+"d": 2,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 2,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 2,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 5,
+"d": 2,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 2,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 2,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 8,
+"d": 2,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 9,
+"d": 2,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 10,
+"d": 2,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 11,
+"d": 2,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 2,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,OA,CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 5,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 8,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 9,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 10,
+"d": 3,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 11,
+"d": 3,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: unknown",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 12,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 13,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 14,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+6,
+7
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 15,
+"d": 3,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+6,
+8
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 16,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+7,
+8
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 17,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+7,
+8
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 18,
+"d": 3,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 19,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 20,
+"d": 3,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+8,
+10
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 21,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+8,
+10
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 22,
+"d": 3,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+9,
+10
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 23,
+"d": 3,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 2,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 5,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 8,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 9,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 10,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 11,
+"d": 4,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 12,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 13,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+6,
+7
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 14,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+7,
+8
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 15,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+7,
+8
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 16,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 17,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 18,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 19,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 20,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+9,
+10
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 21,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 22,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 23,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 24,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 25,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 26,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 27,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 28,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 29,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 30,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 31,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 32,
+"d": 4,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 33,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 34,
+"d": 4,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 35,
+"d": 4,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 36,
+"d": 4,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 37,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 38,
+"d": 4,
+"status": "nonexistent",
+"source": "Scott bound",
+"codetables": [
+14,
+19
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 39,
+"d": 4,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+14,
+19
+],
+"stabilizer_Fq_linear": "excluded"
+},
+{
+"n": 2,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 5,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 8,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 9,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 10,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 11,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 12,
+"d": 5,
+"status": "exists",
+"source": "arXiv:2608.05781 (Bevins, Bidav 2026): Hermitian self-dual MDS codes",
+"codetables": [
+6,
+7
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 13,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+7,
+7
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 14,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 15,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 16,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 17,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+9,
+9
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 18,
+"d": 5,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+10,
+10
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 19,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 20,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 21,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 22,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 23,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 24,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 25,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 26,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 27,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 28,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 29,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 30,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 31,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 32,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 33,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 34,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 35,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 36,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+14,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 37,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 38,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 39,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 40,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+15,
+21
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 41,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+21
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 42,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+22
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 43,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+22
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 44,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)",
+"codetables": [
+16,
+23
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 45,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+17,
+23
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 46,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+18,
+24
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 47,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 5,
+"status": "nonexistent",
+"source": "Huber-Wyderka 2026-06-08: No (Shadow)"
+},
+{
+"n": 49,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 5,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 51,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 5,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 53,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 5,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 55,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 5,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 57,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 5,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 59,
+"d": 5,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 6,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)"
+},
+{
+"n": 3,
+"d": 6,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)"
+},
+{
+"n": 4,
+"d": 6,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 5,
+"d": 6,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 6,
+"d": 6,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 7,
+"d": 6,
+"status": "exists",
+"source": "arXiv:2608.01011 (Shi, Zhang, Zhao, Li 2026): AME(7,d) for all d >= 3"
+},
+{
+"n": 8,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: unknown"
+},
+{
+"n": 9,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 10,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 11,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 12,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 13,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 14,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 15,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 16,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 17,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 18,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 19,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 20,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 21,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 22,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 23,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 24,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 25,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 26,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 27,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 28,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 29,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 30,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 31,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 32,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 33,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 34,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 35,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 36,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 37,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 38,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 39,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 40,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 41,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 42,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 43,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 73,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 75,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 77,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 79,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 81,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 6,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 83,
+"d": 6,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 5,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 8,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 9,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 10,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 11,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 12,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+7,
+7
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 13,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+7,
+7
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 14,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 15,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 16,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 17,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+9,
+9
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 18,
+"d": 7,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)",
+"codetables": [
+10,
+10
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 19,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 20,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 21,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 22,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 23,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 24,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 25,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 26,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 27,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 28,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 29,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 30,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 31,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 32,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 33,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 34,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 35,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 36,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 37,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 38,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 39,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 40,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+21
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 41,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 42,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 43,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 73,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 75,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 77,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 79,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 81,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 83,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 84,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 85,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 86,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 87,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 88,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 89,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 90,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 91,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 92,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 93,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 94,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 95,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 96,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 97,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 98,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 99,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 100,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 101,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 102,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 103,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 104,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 105,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 106,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 107,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 108,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 109,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 110,
+"d": 7,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 111,
+"d": 7,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 3,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+2,
+2
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 4,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 5,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+3,
+3
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 6,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 7,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+4,
+4
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 8,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 9,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)",
+"codetables": [
+5,
+5
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 10,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 11,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+6,
+6
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 12,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+7,
+7
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 13,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+7,
+7
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 14,
+"d": 8,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)",
+"codetables": [
+8,
+8
+],
+"stabilizer_Fq_linear": "exists"
+},
+{
+"n": 15,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+7,
+8
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 16,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 17,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+8,
+9
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 18,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 19,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+10
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 20,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 21,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+9,
+11
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 22,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 23,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+10,
+12
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 24,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 25,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+13
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 26,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 27,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+11,
+14
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 28,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 29,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+12,
+15
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 30,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 31,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+16
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 32,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 33,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+13,
+17
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 34,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 35,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+14,
+18
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 36,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 37,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+15,
+19
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 38,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 39,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+20
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 40,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+17,
+21
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 41,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+16,
+21
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 42,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank",
+"codetables": [
+17,
+22
+],
+"stabilizer_Fq_linear": "open"
+},
+{
+"n": 43,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 73,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 75,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 77,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 79,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 81,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 83,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 84,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 85,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 86,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 87,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 88,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 89,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 90,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 91,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 92,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 93,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 94,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 95,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 96,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 97,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 98,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 99,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 100,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 101,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 102,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 103,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 104,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 105,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 106,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 107,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 108,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 109,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 110,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 111,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 112,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 113,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 114,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 115,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 116,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 117,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 118,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 119,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 120,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 121,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 122,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 123,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 124,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 125,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 126,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 127,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 128,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 129,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 130,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 131,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 132,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 133,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 134,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 135,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 136,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 137,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 138,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 139,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 140,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 141,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 142,
+"d": 8,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 143,
+"d": 8,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)"
+},
+{
+"n": 3,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)"
+},
+{
+"n": 4,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab)"
+},
+{
+"n": 5,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)"
+},
+{
+"n": 6,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)"
+},
+{
+"n": 7,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 8,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 9,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 10,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 11,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 12,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 13,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 14,
+"d": 9,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 15,
+"d": 9,
+"status": "exists",
+"source": "arXiv:2609.11796 Table 1: projection AME(15,9)"
+},
+{
+"n": 16,
+"d": 9,
+"status": "exists",
+"source": "arXiv:2609.11796 Table 1: explicit parent AME(16,9)"
+},
+{
+"n": 17,
+"d": 9,
+"status": "exists",
+"source": "arXiv:2609.11796 (Hontarenko, Zyczkowski 2026): AME(2q-1,q) by projection"
+},
+{
+"n": 18,
+"d": 9,
+"status": "exists",
+"source": "arXiv:2609.11796 (Hontarenko, Zyczkowski 2026): AME(2q,q), odd prime power q"
+},
+{
+"n": 19,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 20,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 21,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 22,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 23,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 24,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 25,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 26,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 27,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 28,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 29,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 30,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 31,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 32,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 33,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 34,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 35,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 36,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 37,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 38,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 39,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 40,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 41,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 42,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 43,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 73,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 75,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 77,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 79,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 81,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 83,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 84,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 85,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 86,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 87,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 88,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 89,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 90,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 91,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 92,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 93,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 94,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 95,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 96,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 97,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 98,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 99,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 100,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 101,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 102,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 103,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 104,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 105,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 106,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 107,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 108,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 109,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 110,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 111,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 112,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 113,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 114,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 115,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 116,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 117,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 118,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 119,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 120,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 121,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 122,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 123,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 124,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 125,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 126,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 127,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 128,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 129,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 130,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 131,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 132,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 133,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 134,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 135,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 136,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 137,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 138,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 139,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 140,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 141,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 142,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 143,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 144,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 145,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 146,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 147,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 148,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 149,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 150,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 151,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 152,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 153,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 154,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 155,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 156,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 157,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 158,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 159,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 160,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 161,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 162,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 163,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 164,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 165,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 166,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 167,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 168,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 169,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 170,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 171,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 172,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 173,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 174,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 175,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 176,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 177,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 178,
+"d": 9,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 179,
+"d": 9,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 10,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)"
+},
+{
+"n": 3,
+"d": 10,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: Stab,CMDS)"
+},
+{
+"n": 4,
+"d": 10,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 5,
+"d": 10,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)"
+},
+{
+"n": 6,
+"d": 10,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: CMDS)"
+},
+{
+"n": 7,
+"d": 10,
+"status": "exists",
+"source": "arXiv:2608.01011 (Shi, Zhang, Zhao, Li 2026): AME(7,d) for all d >= 3"
+},
+{
+"n": 8,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 9,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 10,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 11,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 12,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 13,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 14,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 15,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 16,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 17,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 18,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 19,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 20,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 21,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 22,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 23,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 24,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 25,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 26,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 27,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 28,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 29,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 30,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 31,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 32,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 33,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 34,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 35,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 36,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 37,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 38,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 39,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 40,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 41,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 42,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 43,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 73,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 75,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 77,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 79,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 81,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 83,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 84,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 85,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 86,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 87,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 88,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 89,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 90,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 91,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 92,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 93,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 94,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 95,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 96,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 97,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 98,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 99,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 100,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 101,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 102,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 103,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 104,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 105,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 106,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 107,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 108,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 109,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 110,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 111,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 112,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 113,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 114,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 115,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 116,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 117,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 118,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 119,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 120,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 121,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 122,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 123,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 124,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 125,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 126,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 127,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 128,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 129,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 130,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 131,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 132,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 133,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 134,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 135,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 136,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 137,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 138,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 139,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 140,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 141,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 142,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 143,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 144,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 145,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 146,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 147,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 148,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 149,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 150,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 151,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 152,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 153,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 154,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 155,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 156,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 157,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 158,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 159,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 160,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 161,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 162,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 163,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 164,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 165,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 166,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 167,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 168,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 169,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 170,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 171,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 172,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 173,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 174,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 175,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 176,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 177,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 178,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 179,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 180,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 181,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 182,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 183,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 184,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 185,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 186,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 187,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 188,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 189,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 190,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 191,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 192,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 193,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 194,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 195,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 196,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 197,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 198,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 199,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 200,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 201,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 202,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 203,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 204,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 205,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 206,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 207,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 208,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 209,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 210,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 211,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 212,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 213,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 214,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 215,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 216,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 217,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 218,
+"d": 10,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 219,
+"d": 10,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 2,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 3,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 4,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 5,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 6,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 7,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 8,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 9,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 10,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 11,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 12,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 13,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 14,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 15,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 16,
+"d": 11,
+"status": "exists",
+"source": "Huber-Wyderka 2026-06-08 (constructions: not listed)"
+},
+{
+"n": 17,
+"d": 11,
+"status": "exists",
+"source": "arXiv:2608.05781 (Bevins, Bidav 2026): Hermitian self-dual MDS codes"
+},
+{
+"n": 18,
+"d": 11,
+"status": "exists",
+"source": "arXiv:2608.05781 (Bevins, Bidav 2026): Hermitian self-dual MDS codes"
+},
+{
+"n": 19,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 20,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 21,
+"d": 11,
+"status": "exists",
+"source": "arXiv:2609.11796 (Hontarenko, Zyczkowski 2026): AME(2q-1,q) by projection"
+},
+{
+"n": 22,
+"d": 11,
+"status": "exists",
+"source": "arXiv:2609.11796 (Hontarenko, Zyczkowski 2026): AME(2q,q), odd prime power q"
+},
+{
+"n": 23,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 24,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 25,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 26,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 27,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 28,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 29,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 30,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 31,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 32,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 33,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 34,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 35,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 36,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 37,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 38,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 39,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 40,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 41,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 42,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 43,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 44,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 45,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 46,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 47,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 48,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 49,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 50,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 51,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 52,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 53,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 54,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 55,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 56,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 57,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 58,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 59,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 60,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 61,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 62,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 63,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 64,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 65,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 66,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 67,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 68,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 69,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 70,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 71,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 72,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 73,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 74,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 75,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 76,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 77,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 78,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 79,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 80,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 81,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 82,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 83,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 84,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 85,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 86,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 87,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 88,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 89,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 90,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 91,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 92,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 93,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 94,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 95,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 96,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 97,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 98,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 99,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 100,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 101,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 102,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 103,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 104,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 105,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 106,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 107,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 108,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 109,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 110,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 111,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 112,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 113,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 114,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 115,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 116,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 117,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 118,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 119,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 120,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 121,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 122,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 123,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 124,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 125,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 126,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 127,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 128,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 129,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 130,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 131,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 132,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 133,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 134,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 135,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 136,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 137,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 138,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 139,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 140,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 141,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 142,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 143,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 144,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 145,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 146,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 147,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 148,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 149,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 150,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 151,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 152,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 153,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 154,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 155,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 156,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 157,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 158,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 159,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 160,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 161,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 162,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 163,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 164,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 165,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 166,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 167,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 168,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 169,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 170,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 171,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 172,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 173,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 174,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 175,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 176,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 177,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 178,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 179,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 180,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 181,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 182,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 183,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 184,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 185,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 186,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 187,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 188,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 189,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 190,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 191,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 192,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 193,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 194,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 195,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 196,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 197,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 198,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 199,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 200,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 201,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 202,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 203,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 204,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 205,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 206,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 207,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 208,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 209,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 210,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 211,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 212,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 213,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 214,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 215,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 216,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 217,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 218,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 219,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 220,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 221,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 222,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 223,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 224,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 225,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 226,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 227,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 228,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 229,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 230,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 231,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 232,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 233,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 234,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 235,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 236,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 237,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 238,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 239,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 240,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 241,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 242,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 243,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 244,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 245,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 246,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 247,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 248,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 249,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 250,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 251,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 252,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 253,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 254,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 255,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 256,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 257,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 258,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 259,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 260,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 261,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+},
+{
+"n": 262,
+"d": 11,
+"status": "nonexistent",
+"source": "Scott bound"
+},
+{
+"n": 263,
+"d": 11,
+"status": "open",
+"source": "Huber-Wyderka 2026-06-08: blank"
+}
+]
+}

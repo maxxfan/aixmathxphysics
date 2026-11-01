@@ -1,0 +1,38 @@
+# inv4_auditor_dfs -- Table VI, l = 2, sigma = (2^4), auditor implementation (inv4dfs.c), quick subset (argument.md 5.4,
+# board #132). Lines 1-3: the first 3 records of the original log work/auditor/inv4c_21.log (random AME(4,4) graph codes,
+# all 2^36 symmetric beta, 0 solutions; wall-clock fields removed) and the DONE record for 3 samples.
+# Then: the header and first 20 records of work/auditor/inv4h_6.log (F_16-Hermitian MDS codes) and the DONE record for 20.
+# Last 5 lines: inv4_validate.py 5, identical to the auditor's run in runs/auditor (shift transcript): random beta give an
+# isotropic rank-16 S whose directly enumerated min party weight equals the formula minimum (argument.md 5.4: "5/5 trials,
+# bad_cuts 16-24").
+{"sample": 0, "wdist": [0, 0, 0, 60, 195], "frac_good": 0.8952, "nodes": 68455360, "sols": 0}
+{"sample": 1, "wdist": [0, 0, 0, 60, 195], "frac_good": 0.8952, "nodes": 116026304, "sols": 0}
+{"sample": 2, "wdist": [0, 0, 0, 60, 195], "frac_good": 0.8952, "nodes": 101285184, "sols": 0}
+{"DONE": 3, "weight_distribution_classes": {"(0, 0, 0, 60, 195)": 3}}
+{"n_hermitian_mds_codes": 250}
+{"sample": 0, "abcd": [13, 6, 14, 13], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 1, "abcd": [2, 14, 5, 13], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 2, "abcd": [2, 4, 5, 3], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 3, "abcd": [2, 9, 5, 2], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 4, "abcd": [11, 9, 6, 11], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 5, "abcd": [9, 11, 3, 4], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 6, "abcd": [6, 2, 11, 5], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 7, "abcd": [5, 7, 3, 14], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 8, "abcd": [3, 6, 5, 3], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 9, "abcd": [7, 9, 4, 2], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 10, "abcd": [13, 6, 6, 11], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 11, "abcd": [14, 3, 2, 9], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 12, "abcd": [3, 4, 5, 2], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 13, "abcd": [6, 13, 3, 4], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 14, "abcd": [4, 3, 3, 14], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 15, "abcd": [3, 4, 4, 7], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 16, "abcd": [6, 11, 13, 6], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 17, "abcd": [9, 13, 11, 14], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 18, "abcd": [2, 5, 9, 2], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"sample": 19, "abcd": [14, 3, 3, 4], "frac_good": 0.8952, "nodes": 5723968, "sols": 0}
+{"DONE": 20}
+trial 0 isotropic True rank 16 direct min party weight 4 formula min (w != 0 part) 4 bad_cuts 16
+trial 1 isotropic True rank 16 direct min party weight 4 formula min (w != 0 part) 4 bad_cuts 22
+trial 2 isotropic True rank 16 direct min party weight 3 formula min (w != 0 part) 3 bad_cuts 24
+trial 3 isotropic True rank 16 direct min party weight 4 formula min (w != 0 part) 4 bad_cuts 16
+trial 4 isotropic True rank 16 direct min party weight 4 formula min (w != 0 part) 4 bad_cuts 16

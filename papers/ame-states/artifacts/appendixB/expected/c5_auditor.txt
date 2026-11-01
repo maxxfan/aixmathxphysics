@@ -1,0 +1,21 @@
+# Table VI, row "5 | (5,1^3), order-5 h" -- auditor's independent implementation (no code shared with pairs), board #184,
+# results/argument.md 5.6; original logs work/auditor/c5graph_0_0.log (c5audit.py output was posted, not logged).
+# (1) c5audit.py 5: "enumerates all 2^24 vectors and finds exactly 15*279825 isotropic vectors (279825 = (q^6-1)(q^5+1)/(q^2-1),
+#     q = 4: model correct); 4155 isotropic F_16-lines contain a word of weight <= 4" (4155 = 20 + 180 + 3955 below).
+#     NOTE: c5audit.py's own Lagrangian search (triples of good lines) is not completed -- the script stops with
+#     "too many lines" and exit code 1 at T = 5; its role is the model check.  The exhaustive search is c5graph.py.
+# (2) c5graph.py 0 0: "brute force over (u1, u2) in W^2 per w gives exactly 300 = |U(2,4)| solutions for each of the
+#     1105 w, 331 500 Lagrangians, min-party-weight histogram {2: 4500, 3: 54000, 4: 273000}, max over L of min weight = 4,
+#     identical to pairs".
+V_nf built; isotropic nonzero vectors = 4197375 (expected 15 * 279825 = 4197375)
+T=5: good isotropic vectors 4135050  -> lines 275670 (lines of all 7 weights: min-weight histogram of isotropic lines below)
+  min-weight histogram over isotropic nonzero vectors (value = min over 15 multiples): {2: 20, 3: 180, 4: 3955, 5: 47580, 6: 148890, 7: 79200} lines
+distinct good isotropic lines: 275670
+too many lines for the quadratic orthogonality pass; stop
+c5audit exit code: 1
+h5=(0, 10, 4, 14, 7, 13, 3, 9, 2, 8, 6, 12, 5, 15, 1, 11) h6=(0, 10, 4, 14, 7, 13, 3, 9, 2, 8, 6, 12, 5, 15, 1, 11); dim C=16 dim W=8
+isotropic nonzero vectors in C: 16575 -> lines 1105 (expected 1105)
+solutions-per-w histogram (expect {300: 1105}): {300: 1105}
+total graph-type Lagrangians: 331500 (expected 1105*300 = 331500)
+min-party-weight histogram over all graph-type L (pairs: {2: 4500, 3: 54000, 4: 273000}): {2: 4500, 3: 54000, 4: 273000}
+max over L of min weight: 4

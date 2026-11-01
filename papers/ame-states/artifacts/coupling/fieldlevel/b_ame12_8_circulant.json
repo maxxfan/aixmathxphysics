@@ -1,0 +1,78 @@
+{
+ "id": "b_ame12_8_circulant",
+ "n": 12,
+ "local_dim": 8,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 64,
+  "p": 2,
+  "m": 6,
+  "modulus": [1, 1, 0, 0, 0, 0, 1],
+  "modulus_str": "x^6 + x + 1",
+  "encoding": "F_64 = F_2[x]/(x^6 + x + 1); the int e = sum_{i<6} c_i 2^i (0 <= c_i < 2) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 8,
+  "conjugation": "z -> z^8"
+ },
+ "q": 8,
+ "generator": "[I_6 | A] over F_64, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [45, 46, 45, 28, 6, 57],
+  [45, 45, 46, 57, 28, 6],
+  [46, 45, 45, 6, 57, 28],
+  [42, 51, 43, 24, 24, 60],
+  [43, 42, 51, 60, 24, 24],
+  [51, 43, 42, 24, 60, 24]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1, 14, 23],
+  "trace_dual_basis_gamma": [1, 23, 14],
+  "normal_element_w": 2,
+  "w_to_the_q": 12,
+  "xi": 2
+ },
+ "structure": {
+  "type": "block_circulant",
+  "block_size": 3,
+  "blocks_first_rows": [
+   [
+    [45, 46, 45],
+    [28, 6, 57]
+   ],
+   [
+    [42, 51, 43],
+    [24, 24, 60]
+   ]
+  ],
+  "rule": "A[b*r + x][b*s + y] = blocks_first_rows[r][s][(y - x) mod b]  (b = block_size)",
+  "description": "Z_3-block circulant: 2 x 2 blocks, each a 3 x 3 circulant"
+ },
+ "claimed_property": {
+  "statement": "AME(12,8)",
+  "uniformity_k": 6,
+  "n": 12,
+  "d": 8
+ },
+ "used_as": "G_b (AME(12,8))",
+ "code": {
+  "params": "[12,6,7]_64",
+  "field_order": 64,
+  "length": 12,
+  "dimension": 6,
+  "distance": 7,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^8 (MDS)"
+ },
+ "stabilizer_code": "[[12,0,7]]_8",
+ "used_in": [
+  "AME(11,24)"
+ ],
+ "source": {
+  "script": "work/couple/batch11c.py (ame12_8.py 1)",
+  "note": "AME(12,8) Z3-block circulant [12,6,7]_64 (ame12_8.py seed 1)",
+  "builder": "work/couple/ame12_8.py 1 (random Fourier sampling of unitary Z_3-block circulants)",
+  "board_posts": [610, 616]
+ },
+ "canonical_file": "../ingredients/b_ame12_8_circulant.json"
+}

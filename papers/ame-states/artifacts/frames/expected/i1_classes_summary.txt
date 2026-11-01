@@ -1,0 +1,3 @@
+m=2 classes=1 valid_tuples=336
+m=3 classes=5 valid_tuples=9856
+m=4 classes=10 valid_tuples=268800

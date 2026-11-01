@@ -1,0 +1,78 @@
+{
+ "id": "b_ame16_9_hz",
+ "n": 16,
+ "local_dim": 9,
+ "kind": "hermitian_systematic",
+ "field": {
+  "Q": 81,
+  "p": 3,
+  "m": 4,
+  "modulus": [2, 1, 0, 0, 1],
+  "modulus_str": "x^4 + x + 2",
+  "encoding": "F_81 = F_3[x]/(x^4 + x + 2); the int e = sum_{i<4} c_i 3^i (0 <= c_i < 3) is the element sum_i c_i x^i",
+  "x_is_primitive": true,
+  "modulus_choice": "lexicographically first primitive monic polynomial of degree m over F_p (qlib GF)",
+  "q": 9,
+  "conjugation": "z -> z^9"
+ },
+ "q": 9,
+ "generator": "[I_8 | A] over F_81, rows = basis of the Hermitian self-dual code C",
+ "A": [
+  [1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 53, 68, 80, 9, 2, 19, 41],
+  [1, 41, 53, 68, 80, 9, 2, 19],
+  [1, 19, 41, 53, 68, 80, 9, 2],
+  [1, 2, 19, 41, 53, 68, 80, 9],
+  [1, 9, 2, 19, 41, 53, 68, 80],
+  [1, 80, 9, 2, 19, 41, 53, 68],
+  [1, 68, 80, 9, 2, 19, 41, 53]
+ ],
+ "converter": {
+  "function": "canonical_from_hermitian",
+  "subfield_basis_beta": [1, 43],
+  "trace_dual_basis_gamma": [77, 42],
+  "normal_element_w": 3,
+  "w_to_the_q": 39,
+  "xi": 3
+ },
+ "structure": {
+  "type": "bordered_circulant",
+  "c": 7,
+  "corner_alpha": 1,
+  "row_border_beta": 1,
+  "column_border_gamma": 1,
+  "core_first_row": [53, 68, 80, 9, 2, 19, 41],
+  "rule": "A[0][0] = alpha; A[0][j] = beta and A[j][0] = gamma (1 <= j <= c); A[1+i][1+j] = core_first_row[(j - i) mod c] (0 <= i, j < c)",
+  "description": "Hontarenko-Zyczkowski parent M_{16,9} = B_7(1, 1; [29,21,37,2,40,57,76]_g)",
+  "g": 3,
+  "core_exponents": [29, 21, 37, 2, 40, 57, 76],
+  "exponent_rule": "core_first_row[t] = g^core_exponents[t], g = x = int 3 (root of x^4 + x + 2, order 80)"
+ },
+ "claimed_property": {
+  "statement": "AME(16,9)",
+  "uniformity_k": 8,
+  "n": 16,
+  "d": 9
+ },
+ "used_as": "G_b (AME(16,9))",
+ "code": {
+  "params": "[16,8,9]_81",
+  "field_order": 81,
+  "length": 16,
+  "dimension": 8,
+  "distance": 9,
+  "duality": "Hermitian self-dual: <u,v> = sum_i u_i v_i^9 (MDS)"
+ },
+ "stabilizer_code": "[[16,0,9]]_9",
+ "used_in": [
+  "AME(15,36)"
+ ],
+ "source": {
+  "script": "work/couple/ame16_9.py",
+  "note": "AME(16,9) HZ parent M_{16,9} = B_7(1,1;[29,21,37,2,40,57,76]_g) over F_81 (arXiv:2609.11796 suppl.)",
+  "builder": "work/couple/ame16_9.py (HZ parent, arXiv:2609.11796 supplement)",
+  "board_posts": [637, 644],
+  "transcription": "work/auditor/hz_parent_16_9.txt (auditor, #637)"
+ },
+ "canonical_file": "../ingredients/b_ame16_9_hz.json"
+}

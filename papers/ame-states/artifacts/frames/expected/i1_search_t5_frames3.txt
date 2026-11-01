@@ -1,0 +1,11 @@
+class=0 orbit=80640 nodes=1,26556,0,0 nsol=0 hist=L1{32:1} L2{16:26556} L3{}
+class=1 orbit=60480 nodes=1,24128,0,0 nsol=0 hist=L1{32:1} L2{16:24128} L3{}
+class=2 orbit=40320 nodes=1,24128,0,0 nsol=0 hist=L1{32:1} L2{16:24128} L3{}
+class=3 orbit=20160 nodes=1,28960,0,0 nsol=0 hist=L1{32:1} L2{16:28960} L3{}
+class=4 orbit=20160 nodes=1,24488,0,0 nsol=0 hist=L1{32:1} L2{16:24488} L3{}
+class=5 orbit=20160 nodes=1,28960,0,0 nsol=0 hist=L1{32:1} L2{16:28960} L3{}
+class=6 orbit=13440 nodes=1,24488,0,0 nsol=0 hist=L1{32:1} L2{16:24488} L3{}
+class=7 orbit=10080 nodes=1,28960,0,0 nsol=0 hist=L1{32:1} L2{16:28960} L3{}
+class=8 orbit=2016 nodes=1,28656,0,0 nsol=0 hist=L1{32:1} L2{16:28656} L3{}
+class=9 orbit=1344 nodes=1,28656,0,0 nsol=0 hist=L1{32:1} L2{16:28656} L3{}
+TOTAL classes=10 nodes=10,267980,0,0 nsol=0

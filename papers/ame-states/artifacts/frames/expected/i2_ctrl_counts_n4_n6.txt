@@ -1,0 +1,4 @@
+n4 admissible_forms=12/28 ordered_pairs=8640 N4=4478976000
+n6 sp_orbits=11
+n6 t_per_orbit_rep=[2272, 288, 368, 288, 288, 64, 112, 368, 112, 368, 112]
+n6 sum_orb_t=54400 ordered_triples=28200960000 N6=10525951918080000000

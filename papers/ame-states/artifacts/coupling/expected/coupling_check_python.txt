@@ -1,0 +1,85 @@
+  AME_11_10.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_10.json : b (AME(12,5))               n=12 d= 5 (F_5, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_10.json: AME(11,10) by coupling (k=5, a=2 <= b=5): PASS
+  AME_11_14.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_14.json : b (AME(12,7))               n=12 d= 7 (F_7, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_14.json: AME(11,14) by coupling (k=5, a=2 <= b=7): PASS
+  AME_11_15.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_15.json : b (AME(12,5))               n=12 d= 5 (F_5, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_15.json: AME(11,15) by coupling (k=5, a=3 <= b=5): PASS
+  AME_11_18.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_18.json : b (AME(12,9))               n=12 d= 9 (F_3, m=2, N=24) k=6: isotropic=yes rank=24/24 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_18.json: AME(11,18) by coupling (k=5, a=2 <= b=9): PASS
+  AME_11_21.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_21.json : b (AME(12,7))               n=12 d= 7 (F_7, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_21.json: AME(11,21) by coupling (k=5, a=3 <= b=7): PASS
+  AME_11_22.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_22.json : b (AME(12,11))              n=12 d=11 (F_11, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_22.json: AME(11,22) by coupling (k=5, a=2 <= b=11): PASS
+  AME_11_24.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_24.json : b (AME(12,8))               n=12 d= 8 (F_2, m=3, N=36) k=6: isotropic=yes rank=36/36 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_24.json: AME(11,24) by coupling (k=5, a=3 <= b=8): PASS
+  AME_11_26.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_26.json : b (AME(12,13))              n=12 d=13 (F_13, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_26.json: AME(11,26) by coupling (k=5, a=2 <= b=13): PASS
+  AME_11_33.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_33.json : b (AME(12,11))              n=12 d=11 (F_11, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_33.json: AME(11,33) by coupling (k=5, a=3 <= b=11): PASS
+  AME_11_34.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_34.json : b (AME(12,17))              n=12 d=17 (F_17, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_34.json: AME(11,34) by coupling (k=5, a=2 <= b=17): PASS
+  AME_11_38.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_38.json : b (AME(12,19))              n=12 d=19 (F_19, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_38.json: AME(11,38) by coupling (k=5, a=2 <= b=19): PASS
+  AME_11_39.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_39.json : b (AME(12,13))              n=12 d=13 (F_13, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_39.json: AME(11,39) by coupling (k=5, a=3 <= b=13): PASS
+  AME_11_46.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_46.json : b (AME(12,23))              n=12 d=23 (F_23, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_46.json: AME(11,46) by coupling (k=5, a=2 <= b=23): PASS
+  AME_11_48.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_48.json : b (AME(12,16))              n=12 d=16 (F_2, m=4, N=48) k=6: isotropic=yes rank=48/48 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_48.json: AME(11,48) by coupling (k=5, a=3 <= b=16): PASS
+  AME_11_51.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_51.json : b (AME(12,17))              n=12 d=17 (F_17, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_51.json: AME(11,51) by coupling (k=5, a=3 <= b=17): PASS
+  AME_11_54.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_54.json : b (AME(12,27))              n=12 d=27 (F_3, m=3, N=36) k=6: isotropic=yes rank=36/36 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_54.json: AME(11,54) by coupling (k=5, a=2 <= b=27): PASS
+  AME_11_57.json : a (5-uniform)               n=12 d= 3 (F_3, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_57.json : b (AME(12,19))              n=12 d=19 (F_19, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_57.json: AME(11,57) by coupling (k=5, a=3 <= b=19): PASS
+  AME_11_58.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_58.json : b (AME(12,29))              n=12 d=29 (F_29, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_58.json: AME(11,58) by coupling (k=5, a=2 <= b=29): PASS
+  AME_11_62.json : a (5-uniform)               n=12 d= 2 (F_2, m=1, N=12) k=5: isotropic=yes rank=12/12 sets of 7 parties: 792, full rank 792, deficient 0 [python exhaustive] -> PASS
+  AME_11_62.json : b (AME(12,31))              n=12 d=31 (F_31, m=1, N=12) k=6: isotropic=yes rank=12/12 sets of 6 parties: 924, full rank 924, deficient 0 [python exhaustive] -> PASS
+  => AME_11_62.json: AME(11,62) by coupling (k=5, a=2 <= b=31): PASS
+  AME_13_20.json : a (6-uniform)               n=14 d= 4 (F_2, m=2, N=28) k=6: isotropic=yes rank=28/28 sets of 8 parties: 3003, full rank 3003, deficient 0 [python exhaustive] -> PASS
+  AME_13_20.json : b (AME(14,5))               n=14 d= 5 (F_5, m=1, N=14) k=7: isotropic=yes rank=14/14 sets of 7 parties: 3432, full rank 3432, deficient 0 [python exhaustive] -> PASS
+  => AME_13_20.json: AME(13,20) by coupling (k=6, a=4 <= b=5): PASS
+  AME_13_28.json : a (6-uniform)               n=14 d= 4 (F_2, m=2, N=28) k=6: isotropic=yes rank=28/28 sets of 8 parties: 3003, full rank 3003, deficient 0 [python exhaustive] -> PASS
+  AME_13_28.json : b (AME(14,7))               n=14 d= 7 (F_7, m=1, N=14) k=7: isotropic=yes rank=14/14 sets of 7 parties: 3432, full rank 3432, deficient 0 [python exhaustive] -> PASS
+  => AME_13_28.json: AME(13,28) by coupling (k=6, a=4 <= b=7): PASS
+  AME_13_36.json : a (6-uniform)               n=14 d= 4 (F_2, m=2, N=28) k=6: isotropic=yes rank=28/28 sets of 8 parties: 3003, full rank 3003, deficient 0 [python exhaustive] -> PASS
+  AME_13_36.json : b (AME(14,9))               n=14 d= 9 (F_3, m=2, N=28) k=7: isotropic=yes rank=28/28 sets of 7 parties: 3432, full rank 3432, deficient 0 [python exhaustive] -> PASS
+  => AME_13_36.json: AME(13,36) by coupling (k=6, a=4 <= b=9): PASS
+  AME_13_44.json : a (6-uniform)               n=14 d= 4 (F_2, m=2, N=28) k=6: isotropic=yes rank=28/28 sets of 8 parties: 3003, full rank 3003, deficient 0 [python exhaustive] -> PASS
+  AME_13_44.json : b (AME(14,11))              n=14 d=11 (F_11, m=1, N=14) k=7: isotropic=yes rank=14/14 sets of 7 parties: 3432, full rank 3432, deficient 0 [python exhaustive] -> PASS
+  => AME_13_44.json: AME(13,44) by coupling (k=6, a=4 <= b=11): PASS
+  AME_13_52.json : a (6-uniform)               n=14 d= 4 (F_2, m=2, N=28) k=6: isotropic=yes rank=28/28 sets of 8 parties: 3003, full rank 3003, deficient 0 [python exhaustive] -> PASS
+  AME_13_52.json : b (AME(14,13))              n=14 d=13 (F_13, m=1, N=14) k=7: isotropic=yes rank=14/14 sets of 7 parties: 3432, full rank 3432, deficient 0 [python exhaustive] -> PASS
+  => AME_13_52.json: AME(13,52) by coupling (k=6, a=4 <= b=13): PASS
+  AME_15_36.json : a (7-uniform)               n=16 d= 4 (F_2, m=2, N=32) k=7: isotropic=yes rank=32/32 sets of 9 parties: 11440, full rank 11440, deficient 0 [python exhaustive] -> PASS
+  AME_15_36.json : b (AME(16,9))               n=16 d= 9 (F_3, m=2, N=32) k=8: isotropic=yes rank=32/32 sets of 8 parties: 12870, full rank 12870, deficient 0 [python exhaustive] -> PASS
+  => AME_15_36.json: AME(15,36) by coupling (k=7, a=4 <= b=9): PASS
+  AME_15_44.json : a (7-uniform)               n=16 d= 4 (F_2, m=2, N=32) k=7: isotropic=yes rank=32/32 sets of 9 parties: 11440, full rank 11440, deficient 0 [python exhaustive] -> PASS
+  AME_15_44.json : b (AME(16,11))              n=16 d=11 (F_11, m=1, N=16) k=8: isotropic=yes rank=16/16 sets of 8 parties: 12870, full rank 12870, deficient 0 [python exhaustive] -> PASS
+  => AME_15_44.json: AME(15,44) by coupling (k=7, a=4 <= b=11): PASS
+  AME_15_52.json : a (7-uniform)               n=16 d= 4 (F_2, m=2, N=32) k=7: isotropic=yes rank=32/32 sets of 9 parties: 11440, full rank 11440, deficient 0 [python exhaustive] -> PASS
+  AME_15_52.json : b (AME(16,13))              n=16 d=13 (F_13, m=1, N=16) k=8: isotropic=yes rank=16/16 sets of 8 parties: 12870, full rank 12870, deficient 0 [python exhaustive] -> PASS
+  => AME_15_52.json: AME(15,52) by coupling (k=7, a=4 <= b=13): PASS
+  AME_5_10.json : a (2-uniform)                n= 6 d= 2 (F_2, m=1, N=6) k=2: isotropic=yes rank=6/6 sets of 4 parties: 15, full rank 15, deficient 0 [python exhaustive] -> PASS
+  AME_5_10.json : b (AME(6,5))                 n= 6 d= 5 (F_5, m=1, N=6) k=3: isotropic=yes rank=6/6 sets of 3 parties: 20, full rank 20, deficient 0 [python exhaustive] -> PASS
+  => AME_5_10.json: AME(5,10) by coupling (k=2, a=2 <= b=5): PASS
+OVERALL PASS

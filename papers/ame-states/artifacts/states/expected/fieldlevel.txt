@@ -1,0 +1,13 @@
+PASS  AME(15,8): graph over GF(8), 6435 sets of 7 parties in 429 rotation orbits; rank-deficient orbits 0
+PASS  AME(15,8): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_15_8.json
+PASS  AME(17,8): graph over GF(8), 24310 sets of 8 parties in 1430 rotation orbits; rank-deficient orbits 0
+PASS  AME(17,8): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_17_8.json
+PASS  AME(19,16): graph over GF(16), 92378 sets of 9 parties in 4862 rotation orbits; rank-deficient orbits 0
+PASS  AME(19,16): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_19_16.json
+PASS  AME(21,16): graph over GF(16), 352716 sets of 10 parties in 16796 rotation orbits; rank-deficient orbits 0; twist c_(8j) = c_j^4: holds
+PASS  AME(21,16): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_21_16.json
+PASS  AME(18,16): Hermitian [I|A] over GF(256): A conj(A)^T = I holds; 48620 selections of 9 columns, singular 0
+PASS  AME(18,16): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_18_16.json
+PASS  AME(20,16): Hermitian [I|A] over GF(256): A conj(A)^T = I holds; 184756 selections of 10 columns, singular 0
+PASS  AME(20,16): printed data -> canonical F_2 rows (qlib_ame.py) equal to candidates/AME_20_16.json
+STATES FIELD-LEVEL PASS

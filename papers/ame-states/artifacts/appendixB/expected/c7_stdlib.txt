@@ -1,0 +1,14 @@
+# Table VI, row "7 | (7,1)": "all 5917 such L give minimum weight <= 4" -- numpy-free replay with the release-written stdlib port
+# extra/c7sym_stdlib.py of the auditor's c7sym.py (argument.md 5.4: 1 + 585 + 4745 + 585 + 1 = 5917 subspaces, none passes,
+# best minimum party weight 4; ame.bad_cuts on sampled lines = 7..35 of 35).  Same numbers as check c7_auditor; the bad_cuts
+# sequence of the 40 sampled r = 2 subspaces equals the one printed by the numpy c7sym.py when replayed for this release
+# (identical random.Random(7) draws); the original run recorded only its range, 7..35.
+# This is a port, not an independent second implementation: the l = 7 row has ONE implementation (as the paper states).
+r=0 subspaces 1 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=1 subspaces 585 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=2 subspaces 4745 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=2 crosscheck: 40 sampled lines, rank 16 and isotropic: 40, bad_cuts min 7 max 35 (of 35), formula-pass: 0
+r=2 crosscheck bad_cuts sequence: 14 14 35 28 14 21 14 35 28 28 35 28 35 14 14 14 14 28 7 14 35 14 21 14 28 35 14 14 14 28 7 28 7 35 35 35 35 21 14 35
+r=3 subspaces 585 pass_weight5 0 pass_both 0 best_min_party_weight 4
+r=4 subspaces 1 pass_weight5 0 pass_both 0 best_min_party_weight 4
+total subspaces 5917

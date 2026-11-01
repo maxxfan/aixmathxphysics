@@ -1,0 +1,11 @@
+# Table VI row (2,1^6): "Counting forces equal twist ranks r <= 2. r = 0 and r = 1 fail by weight counting. r = 2 would need
+# an OA(16,6,4,2), which violates the Bose-Bush bound."  HAND DERIVATION (pairs #165, re-derived by the auditor #169); this
+# check runs extra/inv_t1.py (written for the release): the counting chain over all 729 rank patterns and the two code
+# nonexistence checks it ends with.
+rank patterns (r_2..r_7) in {0,1,2}^6: 729; surviving the counting chain (i)-(v): 3
+  survivor r = 000000  (d = 12, dim NS_0 = 0)
+  survivor r = 111111  (d = 10, dim NS_0 = 2)
+  survivor r = 222222  (d = 8, dim NS_0 = 4)
+r = 0: NS inside {(w,w)} on the swapped pair has party weight <= 2 < 5 => NS = 0 => d = 16 > 12: excluded
+r = 1: binary [6,2,>=5] code needed; A(6,5) = 2 < 4: excluded
+r = 2: additive MDS (n,k) = (6,2) over F_2^2 [OA(16,6,4,2), index 1]: 0 codes (control (5,2): 2): excluded

@@ -1,0 +1,12 @@
+# Prop. prop:loc: "The best H-type state has one bad cut out of 35."  auditor/hdfs.c 4 - 2 2 (k <= 2 minors at party 2);
+# expected = original log work/auditor/hdfs_h4_-.log (rc/time dropped); board #87, argument.md 5: "322608 normalised
+# near-solutions ... failing 4-party sets (of 70, complementary pairs) number 2 (273072 nodes), 4 (28800), 6 (20736)".
+# 2 failing 4-sets of 70 = 1 bad cut of 35; no node has 0.
+invertible Hermitian 2x2: 10
+h=4 starts=624 N_norm=0  (all solutions = N_norm*18^7)
+  party 1: candidates 36900864 passed-minors 778584
+  party 2: candidates 186860160 passed-minors 322608
+  party 3: candidates 0 passed-minors 0
+  bad-set histogram: 2 failing party sets (of 70) : 273072 nodes
+  bad-set histogram: 4 failing party sets (of 70) : 28800 nodes
+  bad-set histogram: 6 failing party sets (of 70) : 20736 nodes

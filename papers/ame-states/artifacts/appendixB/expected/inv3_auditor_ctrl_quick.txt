@@ -1,0 +1,11 @@
+# inv3_auditor_ctrl_quick -- quick version of the t = 3 positive control (full version: inv3_auditor_ctrl reproduces the
+# paper's 1.4x10^6). Threshold 4 on K 0, deterministic cap of 1000 solutions (T3_MAXSOL; the DFS order is fixed, so the
+# capped profile is reproducible). The first solution is rebuilt directly: rank 16, isotropic, Omega-invariant, min weight 4,
+# as in the original threshold-4 run (work/auditor/t3lift_4_0_2.log). The first level count 252 equals the original's.
+15-class involutions found: 15 (expect 15)
+K_0 basis ok; isometries K/K_0 -> L6+L7: 720 (expect 720)
+centralizer of l0 in Sp(4,2): 48 induced permutations of L: 6
+orbit representatives of the 720 isometries under C(l0)^2 x swap: 10 orbit sizes sum 720
+K 0: nsol 1000 survivors per level [252, 124, 61, 28, 48, 200, 696, 1002] stopped at solution cap 1000
+   SOLUTION: rank 16 isotropic True Omega-invariant True min weight 4
+done: K processed up to 0, total solutions 1000, total surviving nodes 2411

@@ -1,0 +1,14 @@
+# Table VI, row "3 | (3^2,1^2), h = 1": "S_nf is the graph of one of the |GU(4,2)| = 77,760 F_4-isometries; all have
+#   weight-4 words."
+# Auditor's independent code auditor/z3_audit.py, board #146: "W has 45 weight-2 and 210 weight-3 vectors; DFS over images of
+#   an F_4-basis finds exactly 77760 = |GU(4,2)| sigma-equivariant isometries phi; for EVERY phi the graph word set
+#   {(a, phi a)} has minimum party weight exactly 4, with 9 / 18 / 45 words of weight at most 4 for 32400 / 43200 / 2160 phi
+#   (identical to pairs' numbers)."  argument.md 5.5(b).
+# Positive control: none with a relaxed threshold (the result IS the min-weight distribution; weight 4 is attained).
+weights in W: {0: 1, 2: 45, 3: 210}
+weight-2 vectors: 45
+F4 basis E = [272, 544, 1088, 2176]
+number of sigma-equivariant isometries: 77760 (|GU(4,2)| = 77760)
+phi count by #words of party weight <=4: {9: 32400, 18: 43200, 45: 2160}
+min party weight over all phi: 4  distribution of minw: {4: 77760}
+spot checks (isometry, equivariance, linearity) ok

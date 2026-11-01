@@ -1,0 +1,31 @@
+# inv3_pairs_lift -- Table VI, l = 2, sigma = (2^3,1^2), pairs implementation (board #161: "12 K_0; ... 720 K per K_0, 8640 K
+# total. Generic lift search work/pairs/qdfs.c + invtw.py ... ALL 8640 K have NSOL 0 (levels die at depth 5-6;
+# enum_t3f2.py 1 1 1, 212 s)").
+# The "K#" lines and the TOTAL line are identical to the original output in runs/pairs/shift-04.jsonl (that run filtered out
+# the per-K_0 "K0 forms" lines, whose K counts 720 also appear in its enum_t3f2.py 1 1 0 run); wall-clock times removed.
+forms 28 J (0, 1, 0, 0, 1, 0)
+L6 [2, 1] L7 [2, 1]
+  K# 1 NSOL 0 nodes 152 6784 37944 6048 576 0 0 0
+  K# 2 NSOL 0 nodes 152 6784 37944 6048 576 0 0 0
+  K# 3 NSOL 0 nodes 152 6784 37944 6048 576 0 0 0
+K0 forms (0, 0, 1, 1, 1, 0) (0, 1, 1, 1, 0, 0) cands [15, 15, 15, 15] K count 720
+  K# 1000 NSOL 0 nodes 144 6016 37056 6048 576 0 0 0
+K0 forms (0, 0, 1, 1, 1, 1) (0, 1, 1, 1, 0, 1) cands [15, 15, 15, 15] K count 720
+  K# 2000 NSOL 0 nodes 144 6016 37056 6048 576 0 0 0
+K0 forms (0, 1, 1, 1, 0, 0) (0, 0, 1, 1, 1, 0) cands [15, 15, 15, 15] K count 720
+K0 forms (0, 1, 1, 1, 0, 1) (0, 0, 1, 1, 1, 1) cands [15, 15, 15, 15] K count 720
+  K# 3000 NSOL 0 nodes 144 6256 37944 6048 576 0 0 0
+K0 forms (1, 0, 0, 0, 1, 1) (1, 1, 0, 0, 0, 1) cands [15, 15, 15, 15] K count 720
+  K# 4000 NSOL 0 nodes 152 6504 37944 6048 576 0 0 0
+K0 forms (1, 0, 1, 0, 1, 1) (1, 1, 1, 0, 0, 1) cands [15, 15, 15, 15] K count 720
+  K# 5000 NSOL 0 nodes 144 5968 37056 6048 576 0 0 0
+K0 forms (1, 0, 0, 1, 1, 1) (1, 1, 0, 1, 0, 1) cands [15, 15, 15, 15] K count 720
+K0 forms (1, 0, 1, 1, 1, 0) (1, 1, 1, 1, 0, 0) cands [15, 15, 15, 15] K count 720
+  K# 6000 NSOL 0 nodes 152 6256 37056 6048 576 0 0 0
+K0 forms (1, 1, 0, 0, 0, 1) (1, 0, 0, 0, 1, 1) cands [15, 15, 15, 15] K count 720
+  K# 7000 NSOL 0 nodes 144 5968 37944 6048 576 0 0 0
+K0 forms (1, 1, 1, 0, 0, 1) (1, 0, 1, 0, 1, 1) cands [15, 15, 15, 15] K count 720
+K0 forms (1, 1, 0, 1, 0, 1) (1, 0, 0, 1, 1, 1) cands [15, 15, 15, 15] K count 720
+  K# 8000 NSOL 0 nodes 152 6504 37944 6048 576 0 0 0
+K0 forms (1, 1, 1, 1, 0, 0) (1, 0, 1, 1, 1, 0) cands [15, 15, 15, 15] K count 720
+TOTAL K0 12 K 8640 ran 8640 nsol_total 0
