@@ -1,0 +1,373 @@
+{
+ "audits": {
+  "k3_n56": {
+   "file": "results/certificates/cert_k3_n56.json",
+   "sha256": "4e7b13c491b620ae",
+   "k": 3,
+   "n": 56,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "BELOW_RECORD",
+    "beats_prior_explicit": false,
+    "margins": [
+     0.0024349473856075357,
+     0.002442102140530431
+    ],
+    "seconds": 0.0
+   },
+   "independent": {
+    "constant": 0.5165863013822943,
+    "beats_7265": false,
+    "margins": [
+     0.0024349473856075357,
+     0.002442102140530431
+    ],
+    "seconds": 0.0
+   },
+   "float_grid_min": [
+    0.004893273976548207,
+    0.004893273976547596
+   ],
+   "agree": true,
+   "date": "2026-10-29 04:07"
+  },
+  "k4_n605": {
+   "file": "results/certificates/cert_k4_n605.json",
+   "sha256": "9317d0f67ad8e9d8",
+   "k": 4,
+   "n": 605,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "BELOW_RECORD",
+    "beats_prior_explicit": false,
+    "margins": [
+     4.2889217077855835e-05,
+     4.281262901089207e-05,
+     4.3246344536862574e-05
+    ],
+    "seconds": 0.0
+   },
+   "independent": {
+    "constant": 0.43286336161257827,
+    "beats_7265": false,
+    "margins": [
+     4.2889217077855835e-05,
+     4.281262901089207e-05,
+     4.3246344536862574e-05
+    ],
+    "seconds": 0.0
+   },
+   "float_grid_min": [
+    8.668867795336155e-05,
+    8.665831471255103e-05,
+    8.6767472569943e-05
+   ],
+   "agree": true,
+   "date": "2026-10-29 04:07"
+  },
+  "k5_n5000": {
+   "file": "results/certificates/cert_k5_n5000.json.gz",
+   "sha256": "edf000878e993bf9",
+   "k": 5,
+   "n": 5000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "BELOW_RECORD",
+    "beats_prior_explicit": false,
+    "margins": [
+     9.986931536207664e-05,
+     9.995293590801512e-05,
+     9.979015410612903e-05,
+     0.00012002364082227259
+    ],
+    "seconds": 0.2
+   },
+   "independent": {
+    "constant": 0.4069105660644812,
+    "beats_7265": false,
+    "margins": [
+     9.986931536207664e-05,
+     9.995293590801512e-05,
+     9.979015410612903e-05,
+     0.00012002364082227259
+    ],
+    "seconds": 0.0
+   },
+   "float_grid_min": [
+    0.00019981452091244467,
+    0.00020128257614260292,
+    0.00019959137753744471,
+    0.00024040177315876043
+   ],
+   "agree": true,
+   "date": "2026-10-29 04:07"
+  },
+  "k6_n45000": {
+   "file": "results/certificates/cert_k6_n45000.json.gz",
+   "sha256": "33d11ce57b3a2af0",
+   "k": 6,
+   "n": 45000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "BELOW_RECORD",
+    "beats_prior_explicit": true,
+    "margins": [
+     1.0957145519696479e-05,
+     7.143368896769837e-05,
+     0.00023875265987741793,
+     0.00015673770758585016,
+     0.00014678209852793977
+    ],
+    "seconds": 5.5
+   },
+   "independent": {
+    "constant": 0.3881576370382574,
+    "beats_7265": true,
+    "margins": [
+     1.0957145519696479e-05,
+     7.143368896769837e-05,
+     0.00023875265987741793,
+     0.00015673770758585016,
+     0.00014678209852793977
+    ],
+    "seconds": 0.5
+   },
+   "float_grid_min": [
+    2.2221677754771796e-05,
+    0.00014288290791729039,
+    0.0004789531463984531,
+    0.0003137258048220848,
+    0.00029458861865017116
+   ],
+   "agree": true,
+   "date": "2026-10-29 04:07"
+  },
+  "k6_n80000": {
+   "file": "results/certificates/cert_k6_n80000.json.gz",
+   "sha256": "36dd61ff9c86049c",
+   "k": 6,
+   "n": 80000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "BELOW_RECORD",
+    "beats_prior_explicit": true,
+    "margins": [
+     6.1303398369750184e-06,
+     3.89273884904576e-05,
+     8.734308394040095e-06,
+     8.499763426524298e-06,
+     1.8643418377897164e-05
+    ],
+    "seconds": 13.4
+   },
+   "independent": {
+    "constant": 0.36837585660792294,
+    "beats_7265": true,
+    "margins": [
+     6.1303398369750184e-06,
+     3.89273884904576e-05,
+     8.734308394040095e-06,
+     8.499763426524298e-06,
+     1.8643418377897164e-05
+    ],
+    "seconds": 1.0
+   },
+   "float_grid_min": [
+    1.2501198106588257e-05,
+    7.847242498842943e-05,
+    1.7524150500408675e-05,
+    1.7025551693639063e-05,
+    3.74912992078813e-05
+   ],
+   "agree": true,
+   "date": "2026-10-29 04:07"
+  },
+  "k7_n650000": {
+   "file": "results/certificates/cert_k7_n650000.json.gz",
+   "sha256": "52fdb8b3da99ec23",
+   "k": 7,
+   "n": 650000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "IMPROVEMENT",
+    "beats_prior_explicit": true,
+    "margins": [
+     7.546236859334728e-07,
+     3.44758970436477e-06,
+     2.8037340620335104e-06,
+     0.0027564694109385064,
+     0.0001519204360479196,
+     4.5333028294155025e-05
+    ],
+    "seconds": 425.2
+   },
+   "independent": {
+    "constant": 0.36250496788151854,
+    "beats_7265": true,
+    "margins": [
+     7.546236859334728e-07,
+     3.44758970436477e-06,
+     2.8037340620335104e-06,
+     0.0027564694109385064,
+     0.0001519204360479196,
+     4.5333028294155025e-05
+    ],
+    "seconds": 11.8
+   },
+   "float_grid_min": [
+    1.5230565137281781e-06,
+    6.903262486652664e-06,
+    5.690270328034298e-06,
+    0.005515303348309519,
+    0.0003072891743693684,
+    9.097458372070433e-05
+   ],
+   "agree": true,
+   "date": "2026-10-30 18:47"
+  },
+  "k6_n90000": {
+   "file": "results/certificates/cert_k6_n90000.json.gz",
+   "sha256": "1d5ce189e5a3e4d2",
+   "k": 6,
+   "n": 90000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "MATCHES_RECORD",
+    "beats_prior_explicit": true,
+    "margins": [
+     3.5810924079524254e-06,
+     2.8732390935789768e-05,
+     9.27365009120331e-06,
+     1.7428019797005597e-06,
+     2.4934881972362788e-06
+    ],
+    "seconds": 18.0
+   },
+   "independent": {
+    "constant": 0.3645723782278663,
+    "beats_7265": true,
+    "margins": [
+     3.5810924079524254e-06,
+     2.8732390935789768e-05,
+     9.27365009120331e-06,
+     1.7428019797005597e-06,
+     2.4934881972362788e-06
+    ],
+    "seconds": 1.4
+   },
+   "float_grid_min": [
+    7.177429466766975e-06,
+    5.8454000649077464e-05,
+    1.8861900374478324e-05,
+    3.5524859810336096e-06,
+    6.078909495110807e-06
+   ],
+   "agree": true,
+   "date": "2026-10-31 08:57"
+  },
+  "k6_n91000": {
+   "file": "results/certificates/cert_k6_n91000.json.gz",
+   "sha256": "22ea403fbe8e193c",
+   "k": 6,
+   "n": 91000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "IMPROVEMENT",
+    "beats_prior_explicit": true,
+    "margins": [
+     3.5134474562816405e-06,
+     1.67718293747253e-05,
+     1.3520659861125067e-06,
+     9.254828894579044e-07,
+     1.8895031425421458e-06
+    ],
+    "seconds": 20.5
+   },
+   "independent": {
+    "constant": 0.36421958017545397,
+    "beats_7265": true,
+    "margins": [
+     3.5134474562816405e-06,
+     1.67718293747253e-05,
+     1.3520659861125067e-06,
+     9.254828894579044e-07,
+     1.8895031425421458e-06
+    ],
+    "seconds": 1.6
+   },
+   "float_grid_min": [
+    7.035586207381969e-06,
+    3.3879012481530246e-05,
+    2.7085933951565e-06,
+    1.851738473668263e-06,
+    3.8141420047876906e-06
+   ],
+   "agree": true,
+   "date": "2026-10-31 11:30"
+  },
+  "k7_n700000": {
+   "file": "results/certificates/cert_k7_n700000.json.gz",
+   "sha256": "5047e1f18dd64482",
+   "k": 7,
+   "n": 700000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "IMPROVEMENT",
+    "beats_prior_explicit": true,
+    "margins": [
+     7.142604201081013e-07,
+     1.8926702200823308e-06,
+     2.1665231976603004e-06,
+     0.0006257272429070734,
+     0.0001556589901410907,
+     2.3267984498621565e-05
+    ],
+    "seconds": 601.2
+   },
+   "independent": {
+    "constant": 0.3605089179381376,
+    "beats_7265": true,
+    "margins": [
+     7.142604201081013e-07,
+     1.8926702200823308e-06,
+     2.1665231976603004e-06,
+     0.0006257272429070734,
+     0.0001556589901410907,
+     2.3267984498621565e-05
+    ],
+    "seconds": 18.9
+   },
+   "float_grid_min": [
+    1.4285713763051433e-06,
+    3.7928785052293714e-06,
+    4.333208783430242e-06,
+    0.0012518969984220314,
+    0.00031137534210462503,
+    4.69111809043854e-05
+   ],
+   "agree": true,
+   "date": "2026-10-31 19:07"
+  }
+ },
+ "events": [
+  "2026-10-29 04:07 audited results/certificates/cert_k3_n56.json: BELOW_RECORD: exact ordered search with 3 queries for n=56: 0.516586 log2 N (record 0.364572, k=6, n=90000); min certified margin 2.43e-03",
+  "2026-10-29 04:07 audited results/certificates/cert_k4_n605.json: BELOW_RECORD: exact ordered search with 4 queries for n=605: 0.432863 log2 N (record 0.364572, k=6, n=90000); min certified margin 4.28e-05",
+  "2026-10-29 04:07 audited results/certificates/cert_k5_n5000.json.gz: BELOW_RECORD: exact ordered search with 5 queries for n=5000: 0.406911 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.98e-05",
+  "2026-10-29 04:07 audited results/certificates/cert_k6_n45000.json.gz: BELOW_RECORD: exact ordered search with 6 queries for n=45000: 0.388158 log2 N (record 0.364572, k=6, n=90000); min certified margin 1.10e-05",
+  "2026-10-29 04:07 audited results/certificates/cert_k6_n80000.json.gz: BELOW_RECORD: exact ordered search with 6 queries for n=80000: 0.368376 log2 N (record 0.364572, k=6, n=90000); min certified margin 6.13e-06",
+  "2026-10-30 18:47 audited results/certificates/cert_k7_n650000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=650000: 0.362505 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.55e-07",
+  "2026-10-31 08:57 audited results/certificates/cert_k6_n90000.json.gz: MATCHES_RECORD: exact ordered search with 6 queries for n=90000: 0.364572 log2 N (record 0.364572, k=6, n=90000); min certified margin 1.74e-06",
+  "2026-10-31 11:30 audited results/certificates/cert_k6_n91000.json.gz: IMPROVEMENT: exact ordered search with 6 queries for n=91000: 0.364220 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.25e-07",
+  "2026-10-31 19:07 audited results/certificates/cert_k7_n700000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07"
+ ],
+ "next_steps": []
+}
