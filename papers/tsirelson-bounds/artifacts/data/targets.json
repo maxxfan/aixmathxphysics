@@ -1,0 +1,244 @@
+{
+ "meta": {
+  "source": "Pal & Vertesi, PRA 79, 022120 (2009), arXiv:0810.1615v4, updated by Pal & Vertesi, PRA 82, 022116 (2010), arXiv:1006.3032 Table I; coefficients from PV2009 Table I and Brunner & Gisin, PLA 372, 3162 (2008)",
+  "snapshot": "2026-10-11 (2010 overlay 23:55; phase-1 overlay 2026-10-12 23:00)",
+  "delta": "0.000001",
+  "note": "A-list cases (A14, A21, A47, A62, A64, A68, A80, A82, A84, A89 open in PV2010; A65, A67 closed there) need the Ito-Imai-Avis coefficients (web list offline at setup); not targets yet. I4422_20 and J34 are closed numerically in PV2010 (gap 0 at L3 + 1/4 aabb)."
+ },
+ "targets": [
+  {
+   "id": "A14:lower",
+   "band": "A14",
+   "inequality": "A14",
+   "side": "lower",
+   "record": "0.4759513",
+   "score": 0.000862,
+   "display": "raise the lower bound; current window [0.4759513, 0.4768133] gap 0.0008620; PV strategy real^20, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A14:upper",
+   "band": "A14",
+   "inequality": "A14",
+   "side": "upper",
+   "record": "0.4768133",
+   "score": 0.000862,
+   "display": "lower the upper bound; current window [0.4759513, 0.4768133] gap 0.0008620; PV strategy real^20, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A21:lower",
+   "band": "A21",
+   "inequality": "A21",
+   "side": "lower",
+   "record": "0.3260601",
+   "score": 5.3e-06,
+   "display": "raise the lower bound; current window [0.3260601, 0.3260654] gap 0.0000053; PV strategy real^10, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A21:upper",
+   "band": "A21",
+   "inequality": "A21",
+   "side": "upper",
+   "record": "0.3260654",
+   "score": 5.3e-06,
+   "display": "lower the upper bound; current window [0.3260601, 0.3260654] gap 0.0000053; PV strategy real^10, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A47:lower",
+   "band": "A47",
+   "inequality": "A47",
+   "side": "lower",
+   "record": "0.4608544",
+   "score": 0.0007078,
+   "display": "raise the lower bound; current window [0.4608544, 0.4615622] gap 0.0007078; PV strategy complex^2, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A47:upper",
+   "band": "A47",
+   "inequality": "A47",
+   "side": "upper",
+   "record": "0.4615622",
+   "score": 0.0007078,
+   "display": "lower the upper bound; current window [0.4608544, 0.4615622] gap 0.0007078; PV strategy complex^2, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A62:lower",
+   "band": "A62",
+   "inequality": "A62",
+   "side": "lower",
+   "record": "0.4065268",
+   "score": 0.000146,
+   "display": "raise the lower bound; current window [0.4065268, 0.4066728] gap 0.0001460; PV strategy real^15, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A62:upper",
+   "band": "A62",
+   "inequality": "A62",
+   "side": "upper",
+   "record": "0.4066728",
+   "score": 0.000146,
+   "display": "lower the upper bound; current window [0.4065268, 0.4066728] gap 0.0001460; PV strategy real^15, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A64:lower",
+   "band": "A64",
+   "inequality": "A64",
+   "side": "lower",
+   "record": "0.3900890",
+   "score": 0.0004184,
+   "display": "raise the lower bound; current window [0.3900890, 0.3905074] gap 0.0004184; PV strategy real^3, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A64:upper",
+   "band": "A64",
+   "inequality": "A64",
+   "side": "upper",
+   "record": "0.3905074",
+   "score": 0.0004184,
+   "display": "lower the upper bound; current window [0.3900890, 0.3905074] gap 0.0004184; PV strategy real^3, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A68:lower",
+   "band": "A68",
+   "inequality": "A68",
+   "side": "lower",
+   "record": "0.4025522",
+   "score": 0.0024772,
+   "display": "raise the lower bound; current window [0.4025522, 0.4050294] gap 0.0024772; PV strategy real^18, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A68:upper",
+   "band": "A68",
+   "inequality": "A68",
+   "side": "upper",
+   "record": "0.4050294",
+   "score": 0.0024772,
+   "display": "lower the upper bound; current window [0.4025522, 0.4050294] gap 0.0024772; PV strategy real^18, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A82:lower",
+   "band": "A82",
+   "inequality": "A82",
+   "side": "lower",
+   "record": "0.4708838",
+   "score": 3.34e-05,
+   "display": "raise the lower bound; current window [0.4708838, 0.4709172] gap 0.0000334; PV strategy real^20, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A82:upper",
+   "band": "A82",
+   "inequality": "A82",
+   "side": "upper",
+   "record": "0.4709172",
+   "score": 3.34e-05,
+   "display": "lower the upper bound; current window [0.4708838, 0.4709172] gap 0.0000334; PV strategy real^20, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A84:lower",
+   "band": "A84",
+   "inequality": "A84",
+   "side": "lower",
+   "record": "0.6352087",
+   "score": 2e-06,
+   "display": "raise the lower bound; current window [0.6352087, 0.6352107] gap 0.0000020; PV strategy real^18, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A84:upper",
+   "band": "A84",
+   "inequality": "A84",
+   "side": "upper",
+   "record": "0.6352107",
+   "score": 2e-06,
+   "display": "lower the upper bound; current window [0.6352087, 0.6352107] gap 0.0000020; PV strategy real^18, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A89:lower",
+   "band": "A89",
+   "inequality": "A89",
+   "side": "lower",
+   "record": "0.3035637",
+   "score": 0.0018873,
+   "display": "raise the lower bound; current window [0.3035637, 0.3054510] gap 0.0018873; PV strategy real^17, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "A89:upper",
+   "band": "A89",
+   "inequality": "A89",
+   "side": "upper",
+   "record": "0.3054510",
+   "score": 0.0018873,
+   "display": "lower the upper bound; current window [0.3035637, 0.3054510] gap 0.0018873; PV strategy real^17, upper at 4 (Naceur et al.)"
+  },
+  {
+   "id": "J30:lower",
+   "band": "J30",
+   "inequality": "J30",
+   "side": "lower",
+   "record": "0.4363842",
+   "score": 0.0002907762,
+   "display": "raise the lower bound; current window [0.4363842, 0.4366749762] gap 0.0002908; PV strategy real^17, upper at L3"
+  },
+  {
+   "id": "J30:upper",
+   "band": "J30",
+   "inequality": "J30",
+   "side": "upper",
+   "record": "0.4366749762",
+   "score": 0.0002907762,
+   "display": "lower the upper bound; current window [0.4363842, 0.4366749762] gap 0.0002908; PV strategy real^17, upper at L3"
+  },
+  {
+   "id": "J48:lower",
+   "band": "J48",
+   "inequality": "J48",
+   "side": "lower",
+   "record": "0.7516220",
+   "score": 9.2469e-06,
+   "display": "raise the lower bound; current window [0.7516220, 0.7516312469] gap 0.0000092; PV strategy real^12, upper at L3+aabb"
+  },
+  {
+   "id": "J48:upper",
+   "band": "J48",
+   "inequality": "J48",
+   "side": "upper",
+   "record": "0.7516312469",
+   "score": 9.2469e-06,
+   "display": "lower the upper bound; current window [0.7516220, 0.7516312469] gap 0.0000092; PV strategy real^12, upper at L3+aabb"
+  },
+  {
+   "id": "J62:lower",
+   "band": "J62",
+   "inequality": "J62",
+   "side": "lower",
+   "record": "0.7500885544",
+   "score": 1.5291e-06,
+   "display": "raise the lower bound; current window [0.7500885544, 0.7500900835] gap 0.0000015; PV strategy real^6, upper at L3"
+  },
+  {
+   "id": "J62:upper",
+   "band": "J62",
+   "inequality": "J62",
+   "side": "upper",
+   "record": "0.7500900835",
+   "score": 1.5291e-06,
+   "display": "lower the upper bound; current window [0.7500885544, 0.7500900835] gap 0.0000015; PV strategy real^6, upper at L3"
+  },
+  {
+   "id": "J73:lower",
+   "band": "J73",
+   "inequality": "J73",
+   "side": "lower",
+   "record": "1.1223870369",
+   "score": 4.55728e-05,
+   "display": "raise the lower bound; current window [1.1223870369, 1.1224326097] gap 0.0000456; PV strategy real^20, upper at L3"
+  },
+  {
+   "id": "J73:upper",
+   "band": "J73",
+   "inequality": "J73",
+   "side": "upper",
+   "record": "1.1224326097",
+   "score": 4.55728e-05,
+   "display": "lower the upper bound; current window [1.1223870369, 1.1224326097] gap 0.0000456; PV strategy real^20, upper at L3"
+  }
+ ]
+}

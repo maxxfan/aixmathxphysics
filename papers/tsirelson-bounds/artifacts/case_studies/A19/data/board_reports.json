@@ -1,0 +1,160 @@
+{
+ "certificates/A19/lower.json": {
+  "board_id": 544,
+  "board_file": "candidates/20261013-022643_certify_7c180200c99bb416.json",
+  "report": {
+   "verifier": "p05-tsirelson-bounds/1",
+   "pins": "ok",
+   "hash": "20c3e31e16775e29",
+   "type": "strategy",
+   "inequality": "A19",
+   "side": "lower",
+   "target": "A19:lower",
+   "dims": [
+    4,
+    4
+   ],
+   "field": "real",
+   "ranks": [
+    [
+     2,
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2,
+     2,
+     2
+    ]
+   ],
+   "recheck": "kron",
+   "violation": "0.6226304433",
+   "violation_exact": null,
+   "value_float": 0.6226304433539611,
+   "record": {
+    "lower": "0.6226300",
+    "upper": "0.6226300",
+    "status": "matched"
+   },
+   "gain": 4.43353961134855e-07,
+   "verdict": "MATCHES_RECORD",
+   "summary": "MATCHES_RECORD: A19 quantum max >= 0.6226304433 (record lower 0.6226300, window [0.6226300, 0.6226300], gain +4.43e-07)",
+   "seconds": 0.06
+  }
+ },
+ "certificates/A19/upper.json": {
+  "board_id": 543,
+  "board_file": "candidates/20261013-022411_certify_45257ecf396526a9.json",
+  "report": {
+   "verifier": "p05-tsirelson-bounds/1",
+   "pins": "ok",
+   "hash": "653024e7fc382740",
+   "type": "sos",
+   "inequality": "A19",
+   "side": "upper",
+   "target": "A19:upper",
+   "n_words": 318,
+   "tau": 2.7659476078847244e-13,
+   "penalty": 8.795713393073423e-11,
+   "lambda": "0.6226304479",
+   "bound": "0.6226304480",
+   "bound_exact": "6166233289564333151748674337/9903520314283042199192993792",
+   "value_float": 0.6226304479500361,
+   "sigma": 0.0,
+   "residual_bound": 2.7659476078847244e-13,
+   "psd_runs": 1,
+   "exact_pd_crosscheck": null,
+   "record": {
+    "lower": "0.6226300",
+    "upper": "0.6226300",
+    "status": "matched"
+   },
+   "gain": -4.47950036128989e-07,
+   "verdict": "MATCHES_RECORD",
+   "summary": "MATCHES_RECORD: A19 quantum max <= 0.6226304480 (record upper 0.6226300, window [0.6226300, 0.6226300], gain -4.48e-07)",
+   "seconds": 0.45
+  }
+ },
+ "case_studies/A19/data/complex_qubit_lower.json": {
+  "board_id": 403,
+  "board_file": "candidates/20261013-003441_certify_bf15394840d8bfac.json",
+  "report": {
+   "verifier": "p05-tsirelson-bounds/1",
+   "pins": "ok",
+   "hash": "55dea38ef164e6c0",
+   "type": "strategy",
+   "inequality": "A19",
+   "side": "lower",
+   "target": "A19:lower",
+   "dims": [
+    2,
+    2
+   ],
+   "field": "complex",
+   "ranks": [
+    [
+     1,
+     1,
+     1,
+     1
+    ],
+    [
+     1,
+     1,
+     1,
+     1,
+     1
+    ]
+   ],
+   "recheck": "kron",
+   "violation": "0.6226299743",
+   "violation_exact": null,
+   "value_float": 0.6226299743832201,
+   "record": {
+    "lower": "0.6226300",
+    "upper": "0.6226300",
+    "status": "matched"
+   },
+   "gain": -2.5616779943069873e-08,
+   "verdict": "MATCHES_RECORD",
+   "summary": "MATCHES_RECORD: A19 quantum max >= 0.6226299743 (record lower 0.6226300, window [0.6226300, 0.6226300], gain -2.56e-08)",
+   "seconds": 0.01
+  }
+ },
+ "case_studies/A19/data/upper_N202.json": {
+  "board_id": 466,
+  "board_file": "candidates/20261013-005508_certify_a64acd3b91866969.json",
+  "report": {
+   "verifier": "p05-tsirelson-bounds/1",
+   "pins": "ok",
+   "hash": "c37afc27cde8d6be",
+   "type": "sos",
+   "inequality": "A19",
+   "side": "upper",
+   "target": "A19:upper",
+   "n_words": 202,
+   "tau": 5.8024769039467304e-11,
+   "penalty": 1.1721003345972396e-08,
+   "lambda": "0.6226304435",
+   "bound": "0.6226304553",
+   "bound_exact": "1541558340368110818713669515/2475880078570760549798248448",
+   "value_float": 0.6226304552108998,
+   "sigma": 5.789330598686549e-11,
+   "residual_bound": 1.314630526018157e-13,
+   "psd_runs": 23,
+   "exact_pd_crosscheck": null,
+   "record": {
+    "lower": "0.6226300",
+    "upper": "0.6226300",
+    "status": "matched"
+   },
+   "gain": -4.5521089972507803e-07,
+   "verdict": "MATCHES_RECORD",
+   "summary": "MATCHES_RECORD: A19 quantum max <= 0.6226304553 (record upper 0.6226300, window [0.6226300, 0.6226300], gain -4.55e-07)",
+   "seconds": 0.59
+  }
+ }
+}

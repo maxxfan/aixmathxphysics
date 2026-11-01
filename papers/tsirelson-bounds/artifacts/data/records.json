@@ -1,0 +1,3461 @@
+{
+ "meta": {
+  "source": "Pal & Vertesi, PRA 79, 022120 (2009), arXiv:0810.1615v4, updated by Pal & Vertesi, PRA 82, 022116 (2010), arXiv:1006.3032 Table I; coefficients from PV2009 Table I and Brunner & Gisin, PLA 372, 3162 (2008)",
+  "snapshot": "2026-10-11 (2010 overlay 23:55; phase-1 overlay 2026-10-12 23:00)",
+  "delta": "0.000001",
+  "note": "A-list cases (A14, A21, A47, A62, A64, A68, A80, A82, A84, A89 open in PV2010; A65, A67 closed there) need the Ito-Imai-Avis coefficients (web list offline at setup); not targets yet. I4422_20 and J34 are closed numerically in PV2010 (gap 0 at L3 + 1/4 aabb)."
+ },
+ "records": {
+  "CHSH": {
+   "lower": "0.2071068",
+   "upper": "0.2071068",
+   "status": "closed",
+   "note": "Tsirelson: (sqrt2-1)/2",
+   "source": "Tsirelson 1980"
+  },
+  "I3322": {
+   "lower": "0.2508754",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "111",
+    "111"
+   ],
+   "pv_level": "no",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "gaps_by_level": [
+    "0.0009397",
+    "0.0008863",
+    "0.0008760",
+    "0.0008756",
+    "0.0008756",
+    "0.0008754"
+   ],
+   "upper": "0.2508754",
+   "status": "superseded",
+   "note": "NPA Q4=Q5 match the infinite-dimensional value 0.25087538451 to 1e-16 (Pal-Vertesi 2010); excluded from the targets"
+  },
+  "I4422_1": {
+   "lower": "0.2878683",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.2878683",
+   "status": "matched"
+  },
+  "I4422_2": {
+   "lower": "0.6213712",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6213712",
+   "status": "matched"
+  },
+  "A5": {
+   "lower": "0.4353342",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4353342",
+   "status": "matched"
+  },
+  "A6": {
+   "lower": "0.3003638",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "1222",
+    "1222"
+   ],
+   "pv_level": "3",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.3003638",
+   "status": "matched"
+  },
+  "AS1": {
+   "lower": "0.5412415",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5412415",
+   "status": "matched"
+  },
+  "AS2": {
+   "lower": "0.8784928",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8784928",
+   "status": "matched"
+  },
+  "AII1": {
+   "lower": "0.6055543",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6055543",
+   "status": "matched"
+  },
+  "AII2": {
+   "lower": "0.5000000",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5000000",
+   "status": "matched"
+  },
+  "I4422_3": {
+   "lower": "0.4142136",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "2111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4142136",
+   "status": "matched"
+  },
+  "I4422_4": {
+   "lower": "0.4142136",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1100",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4142136",
+   "status": "matched"
+  },
+  "I4422_5": {
+   "lower": "0.4364917",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4364917",
+   "status": "matched"
+  },
+  "I4422_6": {
+   "lower": "0.4494897",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4494897",
+   "status": "matched"
+  },
+  "I4422_7": {
+   "lower": "0.4548373",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4548373",
+   "status": "matched"
+  },
+  "I4422_8": {
+   "lower": "0.4877681",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2121",
+    "2112"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4877681",
+   "status": "matched"
+  },
+  "I4422_9": {
+   "lower": "0.4616842",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4616842",
+   "status": "matched"
+  },
+  "I4422_10": {
+   "lower": "0.6139456",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6139456",
+   "status": "matched"
+  },
+  "I4422_11": {
+   "lower": "0.6383543",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6383543",
+   "status": "matched"
+  },
+  "I4422_12": {
+   "lower": "0.6188142",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6188142",
+   "status": "matched"
+  },
+  "I4422_13": {
+   "lower": "0.4348553",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1112",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4348553",
+   "status": "matched"
+  },
+  "I4422_14": {
+   "lower": "0.4794103",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1110",
+    "1110"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4794103",
+   "status": "matched"
+  },
+  "I4422_15": {
+   "lower": "0.4348553",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1011",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4348553",
+   "status": "matched"
+  },
+  "I4422_16": {
+   "lower": "0.4142136",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1011",
+    "1011"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4142136",
+   "status": "matched"
+  },
+  "I4422_17": {
+   "lower": "0.6714085",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6714085",
+   "status": "matched"
+  },
+  "I4422_18": {
+   "lower": "0.6429670",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6429670",
+   "status": "matched"
+  },
+  "I4422_19": {
+   "lower": "0.4971707",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2112",
+    "2122"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4971707",
+   "status": "matched"
+  },
+  "I4422_20": {
+   "lower": "0.4676794",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2223",
+    "2223"
+   ],
+   "pv_level": "L3+aabb",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009)",
+   "gaps_by_level": [
+    "0.0393814",
+    "0.0111147",
+    "0.0040799",
+    "0.0000784"
+   ],
+   "upper": "0.4676794",
+   "status": "closed_numerically",
+   "pv2009": {
+    "lower": "0.4676794",
+    "upper": "0.4677578"
+   }
+  },
+  "J1": {
+   "lower": "0.4554438",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2122",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4554438",
+   "status": "matched"
+  },
+  "J44": {
+   "lower": "0.4144533",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4144533",
+   "status": "matched"
+  },
+  "J87": {
+   "lower": "0.6848726",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6848726",
+   "status": "matched"
+  },
+  "J2": {
+   "lower": "0.6140029",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6140029",
+   "status": "matched"
+  },
+  "J45": {
+   "lower": "0.7705600",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1121",
+    "1110"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7705600",
+   "status": "matched"
+  },
+  "J88": {
+   "lower": "0.6159879",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6159879",
+   "status": "matched"
+  },
+  "J3": {
+   "lower": "0.8106306",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8106306",
+   "status": "matched"
+  },
+  "J46": {
+   "lower": "0.9716836",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9716836",
+   "status": "matched"
+  },
+  "J89": {
+   "lower": "1.0035502",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0035502",
+   "status": "matched"
+  },
+  "J4": {
+   "lower": "0.6861985",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6861985",
+   "status": "matched"
+  },
+  "J47": {
+   "lower": "0.7644749",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7644749",
+   "status": "matched"
+  },
+  "J90": {
+   "lower": "0.8398157",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8398157",
+   "status": "matched"
+  },
+  "J5": {
+   "lower": "0.6520359",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1011",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6520359",
+   "status": "matched"
+  },
+  "J48": {
+   "lower": "0.7516220",
+   "pv_field": "real",
+   "pv_dim": 12,
+   "pv_proj_ranks": [
+    "3334",
+    "3433"
+   ],
+   "pv_level": "L3+aabb",
+   "source": "Pal-Vertesi 2010, Table I, improved by p05 phase 1 (data/sources/p05_phase1.json)",
+   "gaps_by_level": [
+    "0.0294613",
+    "0.0014661",
+    "0.0008068",
+    "0.0006361"
+   ],
+   "upper": "0.7516312469",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.7510516",
+    "upper": "0.7516877"
+   },
+   "pv2010": {
+    "lower": "0.7516220",
+    "upper": "0.7516340"
+   },
+   "phase1": {
+    "upper": {
+     "value": "0.7516312469",
+     "file": "candidates/20261012-030625_lower1_18467041a009d0ef.json",
+     "detail": "N=323"
+    }
+   }
+  },
+  "J91": {
+   "lower": "1.2992769",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.2992769",
+   "status": "matched"
+  },
+  "J6": {
+   "lower": "0.4461508",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1011",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4461508",
+   "status": "matched"
+  },
+  "J49": {
+   "lower": "0.8156923",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "3222",
+    "2232"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8156923",
+   "status": "matched"
+  },
+  "J92": {
+   "lower": "1.0648162",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0648162",
+   "status": "matched"
+  },
+  "J7": {
+   "lower": "0.6057263",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6057263",
+   "status": "matched"
+  },
+  "J50": {
+   "lower": "0.8555932",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8555932",
+   "status": "matched"
+  },
+  "J93": {
+   "lower": "0.9627261",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9627261",
+   "status": "matched"
+  },
+  "J8": {
+   "lower": "0.4772413",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1211",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4772413",
+   "status": "matched"
+  },
+  "J51": {
+   "lower": "0.6750341",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1121",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6750341",
+   "status": "matched"
+  },
+  "J94": {
+   "lower": "0.5944550",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5944550",
+   "status": "matched"
+  },
+  "J9": {
+   "lower": "0.5000000",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1011"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5000000",
+   "status": "matched"
+  },
+  "J52": {
+   "lower": "1.0999033",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0999033",
+   "status": "matched"
+  },
+  "J95": {
+   "lower": "1.0014114",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0014114",
+   "status": "matched"
+  },
+  "J10": {
+   "lower": "0.6938425",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2222",
+    "2121"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6938425",
+   "status": "matched"
+  },
+  "J53": {
+   "lower": "0.8093253",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1101"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8093253",
+   "status": "matched"
+  },
+  "J96": {
+   "lower": "0.9416515",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9416515",
+   "status": "matched"
+  },
+  "J11": {
+   "lower": "0.4684758",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2222",
+    "2121"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4684758",
+   "status": "matched"
+  },
+  "J54": {
+   "lower": "0.5194497",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2121",
+    "1221"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5194497",
+   "status": "matched"
+  },
+  "J97": {
+   "lower": "1.1583625533",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "L3",
+   "source": "Pal-Vertesi 2010, Table I, improved by p05 phase 1 (data/sources/p05_phase1.json)",
+   "gaps_by_level": [
+    "0.0392054",
+    "0.0018759",
+    "0.0005867",
+    "0.0001425"
+   ],
+   "upper": "1.1583625755",
+   "status": "closed",
+   "pv2009": {
+    "lower": "1.1583626",
+    "upper": "1.1585051"
+   },
+   "note": "PV2010: an L3+aabb run (Borchers' code, reduced accuracy) gave a value below the lower bound; published reliable upper bound is L3 Closed by p05 phase 1: certified window narrower than delta.",
+   "pv2010": {
+    "lower": "1.1583626",
+    "upper": "1.1585051"
+   },
+   "phase1": {
+    "lower": {
+     "value": "1.1583625533",
+     "file": "verifier/tests/fixtures/J97_lower.json",
+     "detail": "exact real-qubit strategy (PV's printed 1.1583626 is rounded up by 4.7e-8)"
+    },
+    "upper": {
+     "value": "1.1583625755",
+     "file": "candidates/20261012-025441_upper_61719bb75257e88a.json",
+     "detail": "N=300"
+    }
+   }
+  },
+  "J12": {
+   "lower": "0.7261971",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2322",
+    "2322"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7261971",
+   "status": "matched"
+  },
+  "J55": {
+   "lower": "0.8283881",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "2111",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8283881",
+   "status": "matched"
+  },
+  "J98": {
+   "lower": "1.1496911",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.1496911",
+   "status": "matched"
+  },
+  "J13": {
+   "lower": "0.6926870",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "1121",
+    "1111"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6926870",
+   "status": "matched"
+  },
+  "J56": {
+   "lower": "0.8192037",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2111",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8192037",
+   "status": "matched"
+  },
+  "J99": {
+   "lower": "0.8990726",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8990726",
+   "status": "matched"
+  },
+  "J14": {
+   "lower": "0.6317469",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6317469",
+   "status": "matched"
+  },
+  "J57": {
+   "lower": "0.8609885",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1101"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8609885",
+   "status": "matched"
+  },
+  "J100": {
+   "lower": "1.2675376",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.2675376",
+   "status": "matched"
+  },
+  "J15": {
+   "lower": "0.7808500",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7808500",
+   "status": "matched"
+  },
+  "J58": {
+   "lower": "0.8814481",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8814481",
+   "status": "matched"
+  },
+  "J101": {
+   "lower": "1.0296105",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0296105",
+   "status": "matched"
+  },
+  "J16": {
+   "lower": "0.5674133",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5674133",
+   "status": "matched"
+  },
+  "J59": {
+   "lower": "0.6379629",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "1101"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6379629",
+   "status": "matched"
+  },
+  "J102": {
+   "lower": "0.6650865",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6650865",
+   "status": "matched"
+  },
+  "J17": {
+   "lower": "0.6379629",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "2111",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6379629",
+   "status": "matched"
+  },
+  "J60": {
+   "lower": "0.5922714",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5922714",
+   "status": "matched"
+  },
+  "J103": {
+   "lower": "1.0520136",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0520136",
+   "status": "matched"
+  },
+  "J18": {
+   "lower": "1.0130080",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1101",
+    "1101"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0130080",
+   "status": "matched"
+  },
+  "J61": {
+   "lower": "0.8175538",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8175538",
+   "status": "matched"
+  },
+  "J104": {
+   "lower": "1.5875885",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.5875885",
+   "status": "matched"
+  },
+  "J19": {
+   "lower": "0.6742346",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6742346",
+   "status": "matched"
+  },
+  "J62": {
+   "lower": "0.7500885544",
+   "pv_field": "real",
+   "pv_dim": 6,
+   "pv_proj_ranks": [
+    "3333",
+    "3333"
+   ],
+   "pv_level": "L3",
+   "source": "Pal-Vertesi 2010, Table I, improved by p05 phase 1 (data/sources/p05_phase1.json)",
+   "gaps_by_level": [
+    "0.0022695",
+    "0.0000194",
+    "0.0000178",
+    "0.0000167"
+   ],
+   "upper": "0.7500900835",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.7500754",
+    "upper": "0.7500921"
+   },
+   "pv2010": {
+    "lower": "0.7500755",
+    "upper": "0.7500921"
+   },
+   "phase1": {
+    "lower": {
+     "value": "0.7500885544",
+     "file": "candidates/20261012-005904_lower1_1ec313e892189238.json",
+     "detail": "real [32, 32]"
+    },
+    "upper": {
+     "value": "0.7500900835",
+     "file": "candidates/20261012-032513_lower1_d13eda39396af467.json",
+     "detail": "N=311"
+    }
+   }
+  },
+  "J105": {
+   "lower": "1.0742228",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0742228",
+   "status": "matched"
+  },
+  "J20": {
+   "lower": "0.5932470",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1110",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5932470",
+   "status": "matched"
+  },
+  "J63": {
+   "lower": "0.6078543",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2222",
+    "2212"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6078543",
+   "status": "matched"
+  },
+  "J106": {
+   "lower": "0.8382498",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8382498",
+   "status": "matched"
+  },
+  "J21": {
+   "lower": "0.7017468",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2221",
+    "2212"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7017468",
+   "status": "matched"
+  },
+  "J64": {
+   "lower": "0.9167082",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9167082",
+   "status": "matched"
+  },
+  "J107": {
+   "lower": "0.9339703",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9339703",
+   "status": "matched"
+  },
+  "J22": {
+   "lower": "0.8156179",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8156179",
+   "status": "matched"
+  },
+  "J65": {
+   "lower": "1.1110314",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.1110314",
+   "status": "matched"
+  },
+  "J108": {
+   "lower": "0.9676411",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9676411",
+   "status": "matched"
+  },
+  "J23": {
+   "lower": "0.6090289",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6090289",
+   "status": "matched"
+  },
+  "J66": {
+   "lower": "0.6186278",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6186278",
+   "status": "matched"
+  },
+  "J109": {
+   "lower": "1.7260512",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.7260512",
+   "status": "matched"
+  },
+  "J24": {
+   "lower": "0.6942505",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6942505",
+   "status": "matched"
+  },
+  "J67": {
+   "lower": "0.7212948",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1110"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7212948",
+   "status": "matched"
+  },
+  "J110": {
+   "lower": "0.9457465",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9457465",
+   "status": "matched"
+  },
+  "J25": {
+   "lower": "0.5147829",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5147829",
+   "status": "matched"
+  },
+  "J68": {
+   "lower": "1.0178506",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0178506",
+   "status": "matched"
+  },
+  "J111": {
+   "lower": "0.7575890",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7575890",
+   "status": "matched"
+  },
+  "J26": {
+   "lower": "0.6402494",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6402494",
+   "status": "matched"
+  },
+  "J69": {
+   "lower": "0.5081419",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1211"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5081419",
+   "status": "matched"
+  },
+  "J112": {
+   "lower": "0.6247585",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6247585",
+   "status": "matched"
+  },
+  "J27": {
+   "lower": "0.9642857",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9642857",
+   "status": "matched"
+  },
+  "J70": {
+   "lower": "0.9538824",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9538824",
+   "status": "matched"
+  },
+  "J113": {
+   "lower": "0.8483764",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1112",
+    "1111"
+   ],
+   "pv_level": "3",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8483764",
+   "status": "matched"
+  },
+  "J28": {
+   "lower": "0.7500000",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7500000",
+   "status": "matched"
+  },
+  "J71": {
+   "lower": "0.5822872",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5822872",
+   "status": "matched"
+  },
+  "J114": {
+   "lower": "1.0653155",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0653155",
+   "status": "matched"
+  },
+  "J29": {
+   "lower": "1.0245760",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0245760",
+   "status": "matched"
+  },
+  "J72": {
+   "lower": "0.7878251",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7878251",
+   "status": "matched"
+  },
+  "J115": {
+   "lower": "1.0098044",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1101"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0098044",
+   "status": "matched"
+  },
+  "J30": {
+   "lower": "0.4363842",
+   "pv_field": "real",
+   "pv_dim": 17,
+   "pv_proj_ranks": [
+    "3231",
+    "2323"
+   ],
+   "pv_level": "L3",
+   "source": "Pal-Vertesi 2010, Table I, improved by p05 phase 1 (data/sources/p05_phase1.json)",
+   "gaps_by_level": [
+    "0.0401921",
+    "0.0109109",
+    "0.0042758",
+    "0.0010680"
+   ],
+   "upper": "0.4366749762",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4361950",
+    "upper": "0.4372630"
+   },
+   "pv2010": {
+    "lower": "0.4363842",
+    "upper": "0.4372629"
+   },
+   "phase1": {
+    "upper": {
+     "value": "0.4366749762",
+     "file": "candidates/20261012-032648_upper_91924aa66cf68856.json",
+     "detail": "N=318"
+    }
+   }
+  },
+  "J73": {
+   "lower": "1.1223870369",
+   "pv_field": "real",
+   "pv_dim": 20,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "L3",
+   "source": "Pal-Vertesi 2010, Table I, improved by p05 phase 1 (data/sources/p05_phase1.json)",
+   "gaps_by_level": [
+    "0.0329957",
+    "0.0030318",
+    "0.0023042",
+    "0.0020987"
+   ],
+   "upper": "1.1224326097",
+   "status": "open",
+   "pv2009": {
+    "lower": "1.1204592",
+    "upper": "1.1225579"
+   },
+   "pv2010": {
+    "lower": "1.1223170",
+    "upper": "1.1225579"
+   },
+   "phase1": {
+    "lower": {
+     "value": "1.1223870369",
+     "file": "candidates/20261012-005539_lower1_b293425d8b11e00d.json",
+     "detail": "real [32, 32]"
+    },
+    "upper": {
+     "value": "1.1224326097",
+     "file": "candidates/20261012-033613_lower1_53550c8893616645.json",
+     "detail": "N=302"
+    }
+   }
+  },
+  "J116": {
+   "lower": "0.7651941",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7651941",
+   "status": "matched"
+  },
+  "J31": {
+   "lower": "0.4772413",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1211",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4772413",
+   "status": "matched"
+  },
+  "J74": {
+   "lower": "0.4348553",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "2111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4348553",
+   "status": "matched"
+  },
+  "J117": {
+   "lower": "0.9721185",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9721185",
+   "status": "matched"
+  },
+  "J32": {
+   "lower": "0.5901592",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5901592",
+   "status": "matched"
+  },
+  "J75": {
+   "lower": "0.6270262",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6270262",
+   "status": "matched"
+  },
+  "J118": {
+   "lower": "0.5283248",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5283248",
+   "status": "matched"
+  },
+  "J33": {
+   "lower": "0.6150642",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6150642",
+   "status": "matched"
+  },
+  "J76": {
+   "lower": "0.8291077",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8291077",
+   "status": "matched"
+  },
+  "J119": {
+   "lower": "0.8986088",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1112"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8986088",
+   "status": "matched"
+  },
+  "J34": {
+   "lower": "0.4492657",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2222",
+    "2312"
+   ],
+   "pv_level": "L3+aabb",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009)",
+   "gaps_by_level": [
+    "0.0240714",
+    "0.0064382",
+    "0.0023265",
+    "0.0001503"
+   ],
+   "upper": "0.4492657",
+   "status": "closed_numerically",
+   "pv2009": {
+    "lower": "0.4492657",
+    "upper": "0.4494160"
+   }
+  },
+  "J77": {
+   "lower": "0.8406242",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8406242",
+   "status": "matched"
+  },
+  "J120": {
+   "lower": "0.9333181",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1121",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9333181",
+   "status": "matched"
+  },
+  "J35": {
+   "lower": "0.6932503",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6932503",
+   "status": "matched"
+  },
+  "J78": {
+   "lower": "0.8937709",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1110"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8937709",
+   "status": "matched"
+  },
+  "J121": {
+   "lower": "0.5970802",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5970802",
+   "status": "matched"
+  },
+  "J36": {
+   "lower": "0.6706462",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6706462",
+   "status": "matched"
+  },
+  "J79": {
+   "lower": "1.0156152",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0156152",
+   "status": "matched"
+  },
+  "J122": {
+   "lower": "0.7931031",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1101"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7931031",
+   "status": "matched"
+  },
+  "J37": {
+   "lower": "0.4864826",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "1121",
+    "1112"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4864826",
+   "status": "matched"
+  },
+  "J80": {
+   "lower": "0.9051257",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9051257",
+   "status": "matched"
+  },
+  "J123": {
+   "lower": "1.0640930",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0640930",
+   "status": "matched"
+  },
+  "J38": {
+   "lower": "0.9295153",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9295153",
+   "status": "matched"
+  },
+  "J81": {
+   "lower": "0.5995871",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5995871",
+   "status": "matched"
+  },
+  "J124": {
+   "lower": "0.9409648",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9409648",
+   "status": "matched"
+  },
+  "J39": {
+   "lower": "0.8264535",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8264535",
+   "status": "matched"
+  },
+  "J82": {
+   "lower": "0.7308078",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7308078",
+   "status": "matched"
+  },
+  "J125": {
+   "lower": "1.0000000",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0000000",
+   "status": "matched"
+  },
+  "J40": {
+   "lower": "0.9208907",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "2212",
+    "2221"
+   ],
+   "pv_level": "3",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9208907",
+   "status": "matched"
+  },
+  "J83": {
+   "lower": "0.6691786",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6691786",
+   "status": "matched"
+  },
+  "J126": {
+   "lower": "0.8023577",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8023577",
+   "status": "matched"
+  },
+  "J41": {
+   "lower": "0.7596044",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7596044",
+   "status": "matched"
+  },
+  "J84": {
+   "lower": "1.0669560",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0669560",
+   "status": "matched"
+  },
+  "J127": {
+   "lower": "0.6718972",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "1222",
+    "2121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6718972",
+   "status": "matched"
+  },
+  "J42": {
+   "lower": "0.6722257",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1121"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6722257",
+   "status": "matched"
+  },
+  "J85": {
+   "lower": "0.9762793",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.9762793",
+   "status": "matched"
+  },
+  "J128": {
+   "lower": "1.0096066",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0096066",
+   "status": "matched"
+  },
+  "J43": {
+   "lower": "0.4685939",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "2221",
+    "2212"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4685939",
+   "status": "matched"
+  },
+  "J86": {
+   "lower": "0.7558762",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1112",
+    "1111"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7558762",
+   "status": "matched"
+  },
+  "J129": {
+   "lower": "1.0522569",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "1111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "1.0522569",
+   "status": "matched"
+  },
+  "A8": {
+   "lower": "0.5916501",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5916501",
+   "status": "matched"
+  },
+  "A9": {
+   "lower": "0.4652428",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4652428",
+   "status": "matched"
+  },
+  "A10": {
+   "lower": "0.4158004",
+   "pv_field": "real",
+   "pv_dim": 5,
+   "pv_proj_ranks": [
+    "3233",
+    "23333"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4158004",
+   "status": "matched"
+  },
+  "A11": {
+   "lower": "0.4561079",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4561079",
+   "status": "matched"
+  },
+  "A12": {
+   "lower": "0.4877093",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4877093",
+   "status": "matched"
+  },
+  "A13": {
+   "lower": "0.4252330",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "1222",
+    "12222"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4252330",
+   "status": "matched"
+  },
+  "A14": {
+   "lower": "0.4759513",
+   "pv_field": "real",
+   "pv_dim": 20,
+   "pv_proj_ranks": [
+    "3322",
+    "22232"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0274655",
+    "0.0057079",
+    "0.0031815",
+    "0.0025615"
+   ],
+   "upper": "0.4768133",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4758457",
+    "upper": "0.4784072"
+   },
+   "pv2010": {
+    "lower": "0.4759513",
+    "upper": "0.4778466"
+   },
+   "naceur2025": {
+    "order3": "0.4778466",
+    "order4": "0.4768133",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A15": {
+   "lower": "0.4496279",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4496279",
+   "status": "matched"
+  },
+  "A16": {
+   "lower": "0.4571068",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "0111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4571068",
+   "status": "matched"
+  },
+  "A17": {
+   "lower": "0.3754473",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "01111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.3754473",
+   "status": "matched"
+  },
+  "A18": {
+   "lower": "0.3843551",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "01111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.3843551",
+   "status": "matched"
+  },
+  "A19": {
+   "lower": "0.6226300",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6226300",
+   "status": "matched"
+  },
+  "A20": {
+   "lower": "0.6022398",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6022398",
+   "status": "matched"
+  },
+  "A21": {
+   "lower": "0.3260601",
+   "pv_field": "real",
+   "pv_dim": 10,
+   "pv_proj_ranks": [
+    "2242",
+    "22323"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0048537",
+    "0.0007595",
+    "0.0005165",
+    "0.0003840"
+   ],
+   "upper": "0.3260654",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.3258362",
+    "upper": "0.3262202"
+   },
+   "pv2010": {
+    "lower": "0.3260601",
+    "upper": "0.3261777"
+   },
+   "naceur2025": {
+    "order3": "0.3261777",
+    "order4": "0.3260654",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A22": {
+   "lower": "0.6234571",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "1111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6234571",
+   "status": "matched"
+  },
+  "A23": {
+   "lower": "0.5460735",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5460735",
+   "status": "matched"
+  },
+  "A24": {
+   "lower": "0.6047986",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6047986",
+   "status": "matched"
+  },
+  "A25": {
+   "lower": "0.6033789",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6033789",
+   "status": "matched"
+  },
+  "A26": {
+   "lower": "0.5275550",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5275550",
+   "status": "matched"
+  },
+  "A27": {
+   "lower": "0.6483073",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6483073",
+   "status": "matched"
+  },
+  "A28": {
+   "lower": "0.6403143",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6403143",
+   "status": "matched"
+  },
+  "A29": {
+   "lower": "0.4920635",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4920635",
+   "status": "matched"
+  },
+  "A30": {
+   "lower": "0.5698209",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5698209",
+   "status": "matched"
+  },
+  "A31": {
+   "lower": "0.5738173",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5738173",
+   "status": "matched"
+  },
+  "A32": {
+   "lower": "0.4135530",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4135530",
+   "status": "matched"
+  },
+  "A33": {
+   "lower": "0.6226313",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6226313",
+   "status": "matched"
+  },
+  "A34": {
+   "lower": "0.5350117",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11211",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5350117",
+   "status": "matched"
+  },
+  "A35": {
+   "lower": "0.6249079",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6249079",
+   "status": "matched"
+  },
+  "A36": {
+   "lower": "0.4388685",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4388685",
+   "status": "matched"
+  },
+  "A37": {
+   "lower": "0.4868868",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4868868",
+   "status": "matched"
+  },
+  "A38": {
+   "lower": "0.4699126",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4699126",
+   "status": "matched"
+  },
+  "A39": {
+   "lower": "0.6172035",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6172035",
+   "status": "matched"
+  },
+  "A40": {
+   "lower": "0.6078638",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6078638",
+   "status": "matched"
+  },
+  "A41": {
+   "lower": "0.4785634",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4785634",
+   "status": "matched"
+  },
+  "A42": {
+   "lower": "0.6198655",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6198655",
+   "status": "matched"
+  },
+  "A43": {
+   "lower": "0.6107654",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6107654",
+   "status": "matched"
+  },
+  "A44": {
+   "lower": "0.5364942",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11211",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5364942",
+   "status": "matched"
+  },
+  "A45": {
+   "lower": "0.5372394",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "10111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5372394",
+   "status": "matched"
+  },
+  "A46": {
+   "lower": "0.4590108",
+   "pv_field": "real",
+   "pv_dim": 5,
+   "pv_proj_ranks": [
+    "23333",
+    "22233"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4590108",
+   "status": "matched"
+  },
+  "A47": {
+   "lower": "0.4608544",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0202626",
+    "0.0050055",
+    "0.0026688"
+   ],
+   "upper": "0.4615622",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4608544",
+    "upper": "0.4635232"
+   },
+   "pv2010": {
+    "lower": "0.4608544",
+    "upper": "0.4629391"
+   },
+   "naceur2025": {
+    "order3": "0.4616077",
+    "order4": "0.4615622",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A48": {
+   "lower": "0.4631707",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "11222",
+    "22221"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4631707",
+   "status": "matched"
+  },
+  "A49": {
+   "lower": "0.4666943",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4666943",
+   "status": "matched"
+  },
+  "A50": {
+   "lower": "0.5182900",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5182900",
+   "status": "matched"
+  },
+  "A51": {
+   "lower": "0.6607809",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6607809",
+   "status": "matched"
+  },
+  "A52": {
+   "lower": "0.6218611",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6218611",
+   "status": "matched"
+  },
+  "A53": {
+   "lower": "0.6386102",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6386102",
+   "status": "matched"
+  },
+  "A54": {
+   "lower": "0.5936813",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.5936813",
+   "status": "matched"
+  },
+  "A55": {
+   "lower": "0.6213203",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "01111",
+    "11111"
+   ],
+   "pv_level": "1a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6213203",
+   "status": "matched"
+  },
+  "A56": {
+   "lower": "0.6893124",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11201",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6893124",
+   "status": "matched"
+  },
+  "A57": {
+   "lower": "0.6603444",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6603444",
+   "status": "matched"
+  },
+  "A58": {
+   "lower": "0.6488905",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6488905",
+   "status": "matched"
+  },
+  "A59": {
+   "lower": "0.4488256",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "01111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4488256",
+   "status": "matched"
+  },
+  "A60": {
+   "lower": "0.3940032",
+   "pv_field": "real",
+   "pv_dim": 5,
+   "pv_proj_ranks": [
+    "22242",
+    "22243"
+   ],
+   "pv_level": "2b",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.3940032",
+   "status": "matched"
+  },
+  "A61": {
+   "lower": "0.4019248",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "01111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4019248",
+   "status": "matched"
+  },
+  "A62": {
+   "lower": "0.4065268",
+   "pv_field": "real",
+   "pv_dim": 15,
+   "pv_proj_ranks": [
+    "22332",
+    "13233"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0133913",
+    "0.0031907",
+    "0.0025556"
+   ],
+   "upper": "0.4066728",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4043897",
+    "upper": "0.4069453"
+   },
+   "pv2010": {
+    "lower": "0.4065268",
+    "upper": "0.4068725"
+   },
+   "naceur2025": {
+    "order3": "0.4067133",
+    "order4": "0.4066728",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A63": {
+   "lower": "0.4894164",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "11222",
+    "11222"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4894164",
+   "status": "matched"
+  },
+  "A64": {
+   "lower": "0.3900890",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "12122",
+    "11222"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0164779",
+    "0.0032730",
+    "0.0016572"
+   ],
+   "upper": "0.3905074",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.3900890",
+    "upper": "0.3917462"
+   },
+   "pv2010": {
+    "lower": "0.3900890",
+    "upper": "0.3914768"
+   },
+   "naceur2025": {
+    "order3": "0.3906267",
+    "order4": "0.3905074",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A65": {
+   "lower": "0.3688996",
+   "pv_field": "real",
+   "pv_dim": 5,
+   "pv_proj_ranks": [
+    "12333",
+    "12333"
+   ],
+   "pv_level": "L2+aab+abb",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009)",
+   "gaps_by_level": [
+    "0.0175447",
+    "0.0014105",
+    "0.0000806"
+   ],
+   "upper": "0.3688996",
+   "status": "closed_numerically",
+   "pv2009": {
+    "lower": "0.3688702",
+    "upper": "0.3689508"
+   }
+  },
+  "A66": {
+   "lower": "0.4877093",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "01111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4877093",
+   "status": "matched"
+  },
+  "A67": {
+   "lower": "0.3990671",
+   "pv_field": "real",
+   "pv_dim": 5,
+   "pv_proj_ranks": [
+    "22333",
+    "23332"
+   ],
+   "pv_level": "L3",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009)",
+   "gaps_by_level": [
+    "0.0135307",
+    "0.0019890",
+    "0.0006118"
+   ],
+   "upper": "0.3990671",
+   "status": "closed_numerically",
+   "pv2009": {
+    "lower": "0.3990671",
+    "upper": "0.3996789"
+   }
+  },
+  "A68": {
+   "lower": "0.4025522",
+   "pv_field": "real",
+   "pv_dim": 18,
+   "pv_proj_ranks": [
+    "22333",
+    "23332"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0073408",
+    "0.0039257",
+    "0.0038884"
+   ],
+   "upper": "0.4050294",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4011462",
+    "upper": "0.4050346"
+   },
+   "pv2010": {
+    "lower": "0.4025522",
+    "upper": "0.4050329"
+   },
+   "naceur2025": {
+    "order3": "0.4050299",
+    "order4": "0.4050294",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A69": {
+   "lower": "0.6096103",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "01111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6096103",
+   "status": "matched"
+  },
+  "A70": {
+   "lower": "0.6052228",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "01111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6052228",
+   "status": "matched"
+  },
+  "A71": {
+   "lower": "0.4490163",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "01111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4490163",
+   "status": "matched"
+  },
+  "A72": {
+   "lower": "0.6962822",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6962822",
+   "status": "matched"
+  },
+  "A73": {
+   "lower": "0.8831381",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11011"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8831381",
+   "status": "matched"
+  },
+  "A74": {
+   "lower": "0.6890694",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6890694",
+   "status": "matched"
+  },
+  "A75": {
+   "lower": "0.6051510",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11011"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6051510",
+   "status": "matched"
+  },
+  "A76": {
+   "lower": "0.4898631",
+   "pv_field": "real",
+   "pv_dim": 3,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4898631",
+   "status": "matched"
+  },
+  "A77": {
+   "lower": "0.6655582",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6655582",
+   "status": "matched"
+  },
+  "A78": {
+   "lower": "0.8927018",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8927018",
+   "status": "matched"
+  },
+  "A79": {
+   "lower": "0.6243153",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6243153",
+   "status": "matched"
+  },
+  "A80": {
+   "lower": "0.3769863",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "12212",
+    "21232"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0161885",
+    "0.0026707",
+    "0.0006052"
+   ],
+   "upper": "0.3769863",
+   "status": "closed_numerically",
+   "pv2009": {
+    "lower": "0.3769863",
+    "upper": "0.3775915"
+   },
+   "pv2010": {
+    "lower": "0.3769863",
+    "upper": "0.3772420"
+   },
+   "naceur2025": {
+    "order3": "0.3769863",
+    "order4": "0.3769863",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A81": {
+   "lower": "0.6690099",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6690099",
+   "status": "matched"
+  },
+  "A82": {
+   "lower": "0.4708838",
+   "pv_field": "real",
+   "pv_dim": 20,
+   "pv_proj_ranks": [
+    "21222",
+    "11222"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0082846",
+    "0.0065568",
+    "0.0064928"
+   ],
+   "upper": "0.4709172",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.4644255",
+    "upper": "0.4709183"
+   },
+   "pv2010": {
+    "lower": "0.4708838",
+    "upper": "0.4709179"
+   },
+   "naceur2025": {
+    "order3": "0.4709172",
+    "order4": "0.4709172",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A83": {
+   "lower": "0.6961664",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6961664",
+   "status": "matched"
+  },
+  "A84": {
+   "lower": "0.6352087",
+   "pv_field": "real",
+   "pv_dim": 18,
+   "pv_proj_ranks": [
+    "23222",
+    "22212"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0271831",
+    "0.0040203",
+    "0.0021524"
+   ],
+   "upper": "0.6352107",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.6332967",
+    "upper": "0.6354491"
+   },
+   "pv2010": {
+    "lower": "0.6352087",
+    "upper": "0.6352834"
+   },
+   "naceur2025": {
+    "order3": "0.6352108",
+    "order4": "0.6352107",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  },
+  "A85": {
+   "lower": "0.6411408",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.6411408",
+   "status": "matched"
+  },
+  "A86": {
+   "lower": "0.8004425",
+   "pv_field": "complex",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.8004425",
+   "status": "matched"
+  },
+  "A87": {
+   "lower": "0.7562471",
+   "pv_field": "real",
+   "pv_dim": 4,
+   "pv_proj_ranks": [
+    "11111",
+    "11111"
+   ],
+   "pv_level": "2a",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.7562471",
+   "status": "matched"
+  },
+  "A88": {
+   "lower": "0.4142136",
+   "pv_field": "real",
+   "pv_dim": 2,
+   "pv_proj_ranks": [
+    "00111",
+    "11111"
+   ],
+   "pv_level": "2",
+   "source": "Pal-Vertesi 2009, Tables II-IV",
+   "upper": "0.4142136",
+   "status": "matched"
+  },
+  "A89": {
+   "lower": "0.3035637",
+   "pv_field": "real",
+   "pv_dim": 17,
+   "pv_proj_ranks": [
+    "22343",
+    "22343"
+   ],
+   "pv_level": "4 (Naceur et al.)",
+   "source": "Pal-Vertesi 2010, Table I (supersedes 2009); upper: Naceur et al. 2025 repository, NPA order 4",
+   "gaps_by_level": [
+    "0.0104965",
+    "0.0043258",
+    "0.0033485"
+   ],
+   "upper": "0.3054510",
+   "status": "open",
+   "pv2009": {
+    "lower": "0.3025898",
+    "upper": "0.3059383"
+   },
+   "pv2010": {
+    "lower": "0.3035637",
+    "upper": "0.3058212"
+   },
+   "naceur2025": {
+    "order3": "0.3056390",
+    "order4": "0.3054510",
+    "note": "numerical NPA order 4 from the repository's maximal_violations_exact.txt (not in the paper)"
+   }
+  }
+ }
+}

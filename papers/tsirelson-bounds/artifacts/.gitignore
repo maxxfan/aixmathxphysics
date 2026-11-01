@@ -1,0 +1,4 @@
+__pycache__/
+verifier/rescheck
+verifier/.heavy.lock
+replay_report.json

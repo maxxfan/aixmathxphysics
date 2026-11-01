@@ -1,0 +1,76 @@
+% Excerpt from K. F. Pal and T. Vertesi, 'Maximal violation of a bipartite three-setting, two-outcome
+% Bell inequality using infinite-dimensional quantum systems', Phys. Rev. A 82, 022116 (2010),
+% arXiv:1006.3032v1 (source I3322inf.tex), Section 'Other examples': Table I and the text discussing it.
+% Supersedes the 2009 windows (found by the auditor agent on 2026-10-11 23:49).
+
+\begin{table*}[t]
+\caption{Results for the $19$ Bell inequalities for which the tightness of
+the quantum bound has not been proven. The local Hilbert space necessary to achieve the best
+lower bound is denoted by $\cal H$, column 'New' tells if this lower bound is an improvement
+over our previous result, and column 'Level' is the level to derive the upper bound.}
+\vskip 0.2truecm
+\centering
+\begin{tabular}{l c l l c l}
+\hline\hline
+
+Case\hphantom{W}&Lower bound&$\cal H$&New&Upper bound-&\hphantom{ww}Level\\
+&&&&lower bound&\\
+ \hline
+$I^{20}_{4422}$&0.4676794&$\RR^{4}$&no&0.0000000&$L3+aa'bb'$\\
+$J^{30}_{4422}$&0.4363842&$\RR^{17}$&yes&0.0008787&$L3$\\
+$J^{34}_{4422}$&0.4492657&$\RR^{4}$&no&0.0000000&$L3+aa'bb'$\\
+$J^{48}_{4422}$&0.7516220&$\RR^{12}$&yes&0.0000120&$L3+aa'bb'$\\
+$J^{62}_{4422}$&0.7500755&$\RR^{6}$&no&0.0000166&$L3$\\
+$J^{73}_{4422}$&1.1223170&$\RR^{20}$&yes&0.0002409&$L3$\\
+$J^{97}_{4422}$&1.1583626&$\RR^{2}$&no&0.0001425&$L3$\\
+$A_{14}$&0.4759513&$\RR^{20}$&yes&0.0018953&$L3$\\
+$A_{21}$&0.3260601&$\RR^{10}$&yes&0.0001176&$L3$\\
+$A_{47}$&0.4608544&$\CC^{2}$&no&0.0020847&$L2+aa'b+abb'$\\
+$A_{62}$&0.4065268&$\RR^{15}$&yes&0.0003457&$L2+aa'b+abb'$\\
+$A_{64}$&0.3900890&$\RR^{3}$&no&0.0013878&$L2+aa'b+abb'$\\
+$A_{65}$&0.3688996&$\RR^{5}$&yes&0.0000000&$L2+aa'b+abb$\\
+$A_{67}$&0.3990671&$\RR^{5}$&no&0.0000000&$L3$\\
+$A_{68}$&0.4025522&$\RR^{18}$&yes&0.0024807&$L2+aa'b+abb'$\\
+$A_{80}$&0.3769863&$\RR^{4}$&no&0.0002557&$L2+aa'b+abb'$\\
+$A_{82}$&0.4708838&$\RR^{20}$&yes&0.0000341&$L2+aa'b+abb'$\\
+$A_{84}$&0.6352087&$\RR^{18}$&yes&0.0000747&$L2+aa'b+abb'$\\
+$A_{89}$&0.3035637&$\RR^{17}$&yes&0.0022575&$L2+aa'b+abb'$\\
+ \hline
+ \end{tabular}
+ \label{table:highlowdiff}
+ \end{table*}
+
+In Ref.~\cite{PV09} we calculated both lower and upper bounds for all known tight binary bipartite Bell
+inequalities with up to five measurement settings per party. For most cases we managed to
+find explicit solutions saturating the upper bound. There were 20 exceptions. The case of
+$I_{3322}$ was discussed in the previous chapter. Now we have applied the iterative algorithm
+with up to 25 dimensional component spaces for the remaining 19 problems.
+In 11 cases we have found better solution than the ones we reported in Ref.~\cite{PV09}. The solution for $A_{65}$ could have been found by our previous methods, but we missed it. All the other ones involve larger Hilbert spaces than those methods could handle. We have also
+made the upper bound tighter by going to higher levels by using a computer with larger
+memory. As previously, the calculations have been done with Borcher's code CSDP for
+semidefinite programming~\cite{CSDP}.
+For cases with five measurement settings per party we could do the calculation on level
+two plus $aa'b$ plus $abb'$. For the smaller cases we could afford to go up to level
+three, except for $I_{3322}$, where we did level four. The notion of levels and partial levels,
+and their notation is explained in Ref.~\cite{NPA2}, and also in Ref~\cite{PV09}. This way the two bounds met for $A_{65}$. We sent $A_{67}$ at level three, and $J^{48}_{4422}$ and $J^{97}_{4422}$ at
+level three plus $aa'bb'$ to Brian Borchers, as test cases for his new code which requires
+much less memory than CSDP for very large cases. For $A_{67}$ this new upper bound does
+agree with the lower one. Unfortunately, for $J^{48}_{4422}$ there remained a difference of
+$0.000012$, significantly less than the level three value of $0.0000657$, but more than numerical
+uncertainty. At an even higher level it would probably disappear, but it is not sure. Therefore,
+we can not state that our solution with 12-dimensional component spaces is already the optimum one.
+The case $J^{97}_{4422}$ at level three plus $aa'bb'$ seems to be a difficult case for the new
+code, it could solve it only at a reduced accuracy, and the value it has given for the
+upper bound turned out to be lower than the lower bound. Therefore, very probably the
+solution with a pair of real qubits we found the best so far is actually the optimum.
+If we added to level three just one quarter of the $aa'bb'$ type terms, we could use CSDP.
+In the cases of $I^{20}_{4422}$ and $J^{34}_{4422}$ this was already enough to reach
+the lower bound. By looking at the dependence of the upper bound on the level it has been
+calculated, we are almost sure that for $J^{30}_{4422}$, $J^{62}_{4422}$, $A_{47}$,
+$A_{62}$, $A_{64}$, $A_{82}$ and $A_{89}$ the present lower bound will not be reached,
+therefore we do not yet have the optimum solution. Probably $I_{3322}$  is not the only
+inequality requiring infinite dimensional Hilbert spaces for maximum violation. Actually, the
+difference in the cases of $J^{62}_{4422}$ and $A_{82}$ is very small, but it does not
+change much with increasing level. For $A_{80}$ and $A_{84}$ the upper bound would more
+probably converge to our solution, while for the rest of the cases we can not tell from the
+present results.

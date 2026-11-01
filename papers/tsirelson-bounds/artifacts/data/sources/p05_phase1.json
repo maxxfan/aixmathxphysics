@@ -1,0 +1,56 @@
+{
+ "meta": {
+  "source": "p05 phase 1 (2026-10-11 23:43 to 2026-10-12 03:43): best certified bounds from the board (verdict IMPROVEMENT, pins ok); lower values rounded down and upper values rounded up to 10 decimals (the verifier's display rounding), so they are valid bounds",
+  "audits": "results/audits.json"
+ },
+ "best": {
+  "J30:upper": {
+   "value": "0.4366749762",
+   "file": "candidates/20261012-032648_upper_91924aa66cf68856.json",
+   "author": "upper",
+   "detail": "N=318"
+  },
+  "J48:upper": {
+   "value": "0.7516312469",
+   "file": "candidates/20261012-030625_lower1_18467041a009d0ef.json",
+   "author": "lower1",
+   "detail": "N=323"
+  },
+  "J62:lower": {
+   "value": "0.7500885544",
+   "file": "candidates/20261012-005904_lower1_1ec313e892189238.json",
+   "author": "lower1",
+   "detail": "real [32, 32]"
+  },
+  "J62:upper": {
+   "value": "0.7500900835",
+   "file": "candidates/20261012-032513_lower1_d13eda39396af467.json",
+   "author": "lower1",
+   "detail": "N=311"
+  },
+  "J73:lower": {
+   "value": "1.1223870369",
+   "file": "candidates/20261012-005539_lower1_b293425d8b11e00d.json",
+   "author": "lower1",
+   "detail": "real [32, 32]"
+  },
+  "J73:upper": {
+   "value": "1.1224326097",
+   "file": "candidates/20261012-033613_lower1_53550c8893616645.json",
+   "author": "lower1",
+   "detail": "N=302"
+  },
+  "J97:lower": {
+   "value": "1.1583625533",
+   "file": "verifier/tests/fixtures/J97_lower.json",
+   "author": "coordinator/auditor",
+   "detail": "exact real-qubit strategy (PV's printed 1.1583626 is rounded up by 4.7e-8)"
+  },
+  "J97:upper": {
+   "value": "1.1583625755",
+   "file": "candidates/20261012-025441_upper_61719bb75257e88a.json",
+   "author": "upper",
+   "detail": "N=300"
+  }
+ }
+}

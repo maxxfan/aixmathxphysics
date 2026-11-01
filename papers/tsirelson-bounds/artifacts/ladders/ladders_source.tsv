@@ -1,0 +1,50 @@
+inequality	construction	rung	local_dim	active_rank	value	status	source	board_file
+J73	bulk-cell insertion	6 pairs	12		1.1217769903	numerical	lower1 notebook shift 2 (bh.py real d=12)	
+J73	bulk-cell insertion	7 pairs	14		1.1220655	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	8 pairs	16		1.1222149	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	9 pairs	18		1.1222941	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	10 pairs	20		1.1223367271	certified	board #11	candidates/20261012-005431_lower1_a8b4c52a5841f632.json
+J73	bulk-cell insertion	11 pairs	22		1.1223600	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	12 pairs	24		1.1223727	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	13 pairs	26		1.1223798	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	14 pairs	28		1.1223837	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	15 pairs	30		1.1223858	numerical	lower1 notebook shift 2	
+J73	bulk-cell insertion	16 pairs	32		1.1223870369	certified	board #12	candidates/20261012-005539_lower1_b293425d8b11e00d.json
+J62	bulk-cell insertion	3 pairs (PV R^6 optimum)	6		0.7500755575	numerical	lower1 notebook shift 1	
+J62	bulk-cell insertion	4 pairs	8		0.7500820287	certified	board #5	candidates/20261012-003913_lower1_d563739ff8862746.json
+J62	bulk-cell insertion	5 pairs	10		0.7500851064	numerical	lower1 notebook shift 2	
+J62	bulk-cell insertion	6 pairs	12		0.7500866993	certified	board #8	candidates/20261012-004649_lower1_245bd73de603f4a2.json
+J62	bulk-cell insertion	8 pairs	16		0.7500880076	numerical	lower1 notebook shift 2	
+J62	bulk-cell insertion (several pairs at once from 8)	16 pairs, 14 active	32	28	0.7500885544	certified	board #14	candidates/20261012-005904_lower1_1ec313e892189238.json
+J48	bulk-cell insertion	3 pairs	6		0.7510569752	certified	board #2	candidates/20261011-235029_lower1_6e6fcd216e7552cd.json
+J48	bulk-cell insertion	4 pairs	8		0.7514976	numerical	lower1 notebook shift 1	
+J48	bulk-cell insertion	5 pairs	10		0.7516041	numerical	lower1 notebook shift 1	
+J48	bulk-cell insertion	6 pairs (= PV R^12)	12		0.7516219860	certified	board #520	candidates/20261013-014308_auditor_0b17cfcef6f29d59.json
+J48	bulk-cell insertion	7 pairs (value decreases)	14		0.7516181849	numerical	lower1 notebook shift 2	
+J48	bulk-cell insertion	8 pairs (value decreases)	16		0.7516113249	numerical	lower1 notebook shift 2	
+J30	complex seesaw	C^5 optimum	5		0.4362366392	certified	board #1	candidates/20261011-234552_lower2_a694b26e58481dd5.json
+J30	ancilla doubling	R^7 optimum	7		0.4363440430	certified	board #521	candidates/20261013-014400_auditor_51a7ddd2008bfaf1.json
+J30	ancilla doubling	m=2 from R^7	14	12	0.4363836926	numerical	lower1 notebook shift 13	
+J30	ancilla doubling	m=2 again, run at n=24 (= PV R^17)	17	17	0.4363842240	certified	board #522 (compressed to the active rank)	candidates/20261013-014453_auditor_3dd6ab25d6d1ce2a.json
+J30	partial doubling of the 8 smallest levels	n=25	25		0.4363842241	numerical	lower1 notebook shift 13 (no gain)	
+A68	seesaw	d=6 optimum	6		0.4011462	numerical	lower1 notebook	
+A68	ancilla doubling	m=2	12	8	0.4013311	numerical	lower1 notebook	
+A68	ancilla doubling	m=2	16	13	0.4022601	numerical	lower1 notebook	
+A68	ancilla doubling	m=2	26	26	0.4028002584	certified	board #215	candidates/20261012-234436_lower1_e15aac057cb649bc.json
+A89	Schmidt-form iteration (pvit)	n=5	5		0.3015259	numerical	lower1 notebook	
+A89	ancilla doubling	m=2	10		0.3026898	numerical	lower1 notebook	
+A89	ancilla doubling	m=2	18	15	0.3034364	numerical	lower1 notebook	
+A89	ancilla doubling	m=2 (polished at rank 29)	29	29	0.3037924016	certified	board #277	candidates/20261012-235213_lower1_743f580e180ca978.json
+A89	partial doubling (--dbl 3)	n=32, rank 30	30	30	0.3039151553	certified	board #470	candidates/20261013-005759_lower1_547c54209a0949b7.json
+A89	partial doubling (--dbl 2)	n=32, rank 31	31	31	0.3039223061	certified	board #477	candidates/20261013-010850_lower1_8f85555006bb2935.json
+A89	partial doubling (--dbl 1)	n=32, rank 32	32	32	0.3039229329	numerical	lower1 notebook (+6.3e-7, not submitted)	
+A62	Schmidt-form iteration (pvit)	n=5, rank 4	5	4	0.4019240	numerical	lower1 notebook	
+A62	ancilla doubling	m=2	8		0.4055756	numerical	lower1 notebook	
+A62	ancilla doubling	m=2	14	13	0.4064660	numerical	lower1 notebook	
+A62	ancilla doubling	m=2 (compressed)	24	24	0.4065615967	certified	board #301	candidates/20261012-235913_lower1_e134970fabef4fd4.json
+A62	partial doubling (--dbl 8)	n=32, rank 27	27	27	0.4065717137	certified	board #472	candidates/20261013-010135_lower1_afa82a2861392d23.json
+A82	Schmidt-form iteration (pvit)	n=5, rank 4	5	4	0.4644254	numerical	lower1 notebook	
+A82	ancilla doubling	m=2	8		0.4694415	numerical	lower1 notebook	
+A82	ancilla doubling	m=2	16		0.4706849	numerical	lower1 notebook	
+A82	ancilla doubling (compressed)	m=2, rank 22	22	22	0.4708971852	certified	board #454	candidates/20261013-004218_lower1_a0a476e7fa7f5ca7.json
+A82	ancilla doubling, other seed	14 -> 28, rank 26	26	26	0.4709112502	certified	board #545	candidates/20261013-023549_lower1_ef40128ea48aacbf.json

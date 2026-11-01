@@ -1,0 +1,50 @@
+inequality	construction	rung	local_dim	active_rank	value	status	source	board_file	certificate	sha256
+J73	bulk-cell insertion	6 pairs	12		1.1217769903	numerical	lower1 notebook shift 2 (bh.py real d=12)			
+J73	bulk-cell insertion	7 pairs	14		1.1220655	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	8 pairs	16		1.1222149	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	9 pairs	18		1.1222941	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	10 pairs	20		1.1223367271	certified	board #11	candidates/20261012-005431_lower1_a8b4c52a5841f632.json	ladders/certificates/J73_d20.json	a8b4c52a5841f63216e8b61e9bd2f1d4f2d1e6fcdb979a01051b94a06575c4d4
+J73	bulk-cell insertion	11 pairs	22		1.1223600	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	12 pairs	24		1.1223727	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	13 pairs	26		1.1223798	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	14 pairs	28		1.1223837	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	15 pairs	30		1.1223858	numerical	lower1 notebook shift 2			
+J73	bulk-cell insertion	16 pairs	32		1.1223870369	certified	board #12	candidates/20261012-005539_lower1_b293425d8b11e00d.json	certificates/J73/lower.json	b293425d8b11e00d5cd5eb58f01d6cb82d5523a4d70d6d751774b80d204a6507
+J62	bulk-cell insertion	3 pairs (PV R^6 optimum)	6		0.7500755575	numerical	lower1 notebook shift 1			
+J62	bulk-cell insertion	4 pairs	8		0.7500820287	certified	board #5	candidates/20261012-003913_lower1_d563739ff8862746.json	ladders/certificates/J62_d8.json	d563739ff88627461cc191c617e3736e91fb0fb660e1cc65371ac12b5e220b78
+J62	bulk-cell insertion	5 pairs	10		0.7500851064	numerical	lower1 notebook shift 2			
+J62	bulk-cell insertion	6 pairs	12		0.7500866993	certified	board #8	candidates/20261012-004649_lower1_245bd73de603f4a2.json	ladders/certificates/J62_d12.json	245bd73de603f4a2ac3233e42f4508b12ffb44a0a88479ff2fd420fd7bf54391
+J62	bulk-cell insertion	8 pairs	16		0.7500880076	numerical	lower1 notebook shift 2			
+J62	bulk-cell insertion (several pairs at once from 8)	16 pairs, 14 active	32	28	0.7500885544	certified	board #14	candidates/20261012-005904_lower1_1ec313e892189238.json	certificates/J62/lower.json	1ec313e892189238c4d4faa0a3c236f5b9a130da381f95890460cff5db3c9355
+J48	bulk-cell insertion	3 pairs	6		0.7510569752	certified	board #2	candidates/20261011-235029_lower1_6e6fcd216e7552cd.json	ladders/certificates/J48_d6.json	6e6fcd216e7552cd1e0ac447a6cf74cc8702d5bba193789de096f2a967ee0b43
+J48	bulk-cell insertion	4 pairs	8		0.7514976	numerical	lower1 notebook shift 1			
+J48	bulk-cell insertion	5 pairs	10		0.7516041	numerical	lower1 notebook shift 1			
+J48	bulk-cell insertion	6 pairs (= PV R^12)	12		0.7516219860	certified	board #520	candidates/20261013-014308_auditor_0b17cfcef6f29d59.json	certificates/J48/lower.json	0b17cfcef6f29d5969beace3db22a99d945338ed17ce1491669452d1d3c4574b
+J48	bulk-cell insertion	7 pairs (value decreases)	14		0.7516181849	numerical	lower1 notebook shift 2			
+J48	bulk-cell insertion	8 pairs (value decreases)	16		0.7516113249	numerical	lower1 notebook shift 2			
+J30	complex seesaw	C^5 optimum	5		0.4362366392	certified	board #1	candidates/20261011-234552_lower2_a694b26e58481dd5.json	ladders/certificates/J30_d5.json	a694b26e58481dd553b5a1baf0904b442388d760cbff385c9aa76ded2ddfb51a
+J30	ancilla doubling	R^7 optimum	7		0.4363440430	certified	board #521	candidates/20261013-014400_auditor_51a7ddd2008bfaf1.json	ladders/certificates/J30_d7.json	51a7ddd2008bfaf15a88fd8b0988c08eacdd1b5c67f9805f31a527863cb415f6
+J30	ancilla doubling	m=2 from R^7	14	12	0.4363836926	numerical	lower1 notebook shift 13			
+J30	ancilla doubling	m=2 again, run at n=24 (= PV R^17)	17	17	0.4363842240	certified	board #522 (compressed to the active rank)	candidates/20261013-014453_auditor_3dd6ab25d6d1ce2a.json	certificates/J30/lower.json	3dd6ab25d6d1ce2a609b513be64a231b911ee3e5869b81bf6002222ae8bb0e95
+J30	partial doubling of the 8 smallest levels	n=25	25		0.4363842241	numerical	lower1 notebook shift 13 (no gain)			
+A68	seesaw	d=6 optimum	6		0.4011462	numerical	lower1 notebook			
+A68	ancilla doubling	m=2	12	8	0.4013311	numerical	lower1 notebook			
+A68	ancilla doubling	m=2	16	13	0.4022601	numerical	lower1 notebook			
+A68	ancilla doubling	m=2	26	26	0.4028002584	certified	board #215	candidates/20261012-234436_lower1_e15aac057cb649bc.json	certificates/A68/lower.json	e15aac057cb649bcd934d44be647866b3a59037a8f2667c4367062fc65059b76
+A89	Schmidt-form iteration (pvit)	n=5	5		0.3015259	numerical	lower1 notebook			
+A89	ancilla doubling	m=2	10		0.3026898	numerical	lower1 notebook			
+A89	ancilla doubling	m=2	18	15	0.3034364	numerical	lower1 notebook			
+A89	ancilla doubling	m=2 (polished at rank 29)	29	29	0.3037924016	certified	board #277	candidates/20261012-235213_lower1_743f580e180ca978.json	ladders/certificates/A89_d29.json	743f580e180ca97822fc5e1b0ecd2956a88f619aac0c10f44e3d16a71d0eaab5
+A89	partial doubling (--dbl 3)	n=32, rank 30	30	30	0.3039151553	certified	board #470	candidates/20261013-005759_lower1_547c54209a0949b7.json	ladders/certificates/A89_d30.json	547c54209a0949b792ee83906ce358231312dfc7c8bbf3649896da4210419536
+A89	partial doubling (--dbl 2)	n=32, rank 31	31	31	0.3039223061	certified	board #477	candidates/20261013-010850_lower1_8f85555006bb2935.json	certificates/A89/lower.json	8f85555006bb29351d3da7ebfb3b9fbf6c01c278050b53a15b15aa7028b79fb5
+A89	partial doubling (--dbl 1)	n=32, rank 32	32	32	0.3039229329	numerical	lower1 notebook (+6.3e-7, not submitted)			
+A62	Schmidt-form iteration (pvit)	n=5, rank 4	5	4	0.4019240	numerical	lower1 notebook			
+A62	ancilla doubling	m=2	8		0.4055756	numerical	lower1 notebook			
+A62	ancilla doubling	m=2	14	13	0.4064660	numerical	lower1 notebook			
+A62	ancilla doubling	m=2 (compressed)	24	24	0.4065615967	certified	board #301	candidates/20261012-235913_lower1_e134970fabef4fd4.json	ladders/certificates/A62_d24.json	e134970fabef4fd43fb06cedf9ee447936d625a4d28f1ad993a9f7ce03735c86
+A62	partial doubling (--dbl 8)	n=32, rank 27	27	27	0.4065717137	certified	board #472	candidates/20261013-010135_lower1_afa82a2861392d23.json	certificates/A62/lower.json	afa82a2861392d23ead1aadfd38843b43e28df872347b8e42c7f916ce169865d
+A82	Schmidt-form iteration (pvit)	n=5, rank 4	5	4	0.4644254	numerical	lower1 notebook			
+A82	ancilla doubling	m=2	8		0.4694415	numerical	lower1 notebook			
+A82	ancilla doubling	m=2	16		0.4706849	numerical	lower1 notebook			
+A82	ancilla doubling (compressed)	m=2, rank 22	22	22	0.4708971852	certified	board #454	candidates/20261013-004218_lower1_a0a476e7fa7f5ca7.json	ladders/certificates/A82_d22.json	a0a476e7fa7f5ca761daa1155dbd2f5a641be58ceeb77d4ee9f57d7b0ba796b1
+A82	ancilla doubling, other seed	14 -> 28, rank 26	26	26	0.4709112502	certified	board #545	candidates/20261013-023549_lower1_ef40128ea48aacbf.json	certificates/A82/lower.json	ef40128ea48aacbf1af66fc43d7aa221e9463488bcb32772c3506edcb5abe621
