@@ -1,7 +1,8 @@
-# Certificates and checkers: exact quantum ordered search (version 2)
+# Certificates and checkers: exact quantum ordered search (version 3)
 
-Release for the paper *Exact certificates for quantum ordered search: seven queries for 700,000 elements and six for
-91,000* (`../ordered-search.pdf`). This revision answers the external review of 31 October 2026. Each certificate is
+Release for the paper *Exact certificates for quantum ordered search: seven queries for 775,000 elements and six for
+91,000* (`../ordered-search.pdf`). Version 3 adds the seven-query certificate for 775,000 elements; the verifier and
+both checkers are unchanged from version 2, which answered the external review of 31 October 2026. Each certificate is
 an exact feasibility certificate for a pair (k, n). It is an explicit chain of symmetric Laurent polynomials with
 integer coefficients that, through the Farhi–Goldstone–Gutmann–Sipser characterization, proves that an exact k-query
 algorithm for ordered search on n elements exists. The unitaries are not constructed. Applied recursively, such an
@@ -20,15 +21,16 @@ algorithm searches N elements with k⌈log_n N⌉ ≤ (k / log2 n)·log2 N + k q
 | 6 | 91000 | 0.364220·log2 N + 6 | `cert_k6_n91000.json.gz` | `results/certificates/` |
 | 7 | 650000 | 0.362505·log2 N + 7 | `cert_k7_n650000.json.gz` (64,438,009 bytes) | release asset |
 | 7 | 700000 | 0.360509·log2 N + 7 | `cert_k7_n700000.json.gz` (68,811,411 bytes) | release asset |
+| 7 | 775000 | 0.357804·log2 N + 7 | `cert_k7_n775000.json.gz` (75,503,378 bytes) | release asset |
 
-The coefficients are rounded up. The two seven-query certificates are too large for the repository. Download them
-from the assets of <https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v2> into
+The coefficients are rounded up. The three seven-query certificates are too large for the repository. Download them
+from the assets of <https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v3> into
 `results/certificates/`.
 
 ## Checking the files
 
-`MANIFEST.sha256` pins all 23 released files: every checker, test, fixture and data file, and all nine certificates.
-With the two assets in place, from this folder:
+`MANIFEST.sha256` pins all 24 released files: every checker, test, fixture and data file, and all ten certificates.
+With the three assets in place, from this folder:
 
 ```bash
 shasum -a 256 -c MANIFEST.sha256
@@ -37,11 +39,12 @@ shasum -a 256 -c MANIFEST.sha256
 ## Re-checking the certificates
 
 The frozen verifier (`verifier/verify.py`, version 1.1, pin `7d6fc293c48a7479` in `verifier/PINS.json`) uses only the
-Python standard library and exact integer arithmetic. The two seven-query certificates take about 8 minutes each.
+Python standard library and exact integer arithmetic. The seven-query certificates take about 8 minutes each for
+650,000 and 700,000 elements and about 12 minutes for 775,000.
 
 ```bash
 python3 verifier/tests/test_verifier.py
-python3 verifier/verify.py results/certificates/cert_k7_n700000.json.gz
+python3 verifier/verify.py results/certificates/cert_k7_n775000.json.gz
 ```
 
 The independent checker shares no code with the verifier, and it checks every condition by a different route in
@@ -51,8 +54,8 @@ input.
 
 ```bash
 python3 results/test_check_independent.py
-python3 results/check_independent.py results/certificates/cert_k7_n700000.json.gz
+python3 results/check_independent.py results/certificates/cert_k7_n775000.json.gz
 ```
 
-`results/audits.json` records the audits of every certificate. Version 1 of this release is kept at tag
-`ordered-search-v1`.
+`results/audits.json` records the audits of every certificate. Versions 1 and 2 of this release are kept at tags
+`ordered-search-v1` and `ordered-search-v2`.

@@ -1,5 +1,5 @@
 {
- "snapshot": "2026-10-31",
+ "snapshot": "2026-11-01",
  "problem": "exact quantum query complexity of n-element ordered search (Table 8 item 9)",
  "record": {
   "k": 6,
@@ -111,7 +111,7 @@
    "constant": 0.36250496788151854,
    "file": "results/certificates/cert_k7_n650000.json.gz",
    "verdict": "IMPROVEMENT",
-   "note": "first 7-query exact algorithm; beats the numerical (6, 90000) constant 0.364572; exact certificate (sha256 52fdb8b3da99ec23...)"
+   "note": "first 7-query exact algorithm; beats the numerical (6, 90000) constant 0.364573; exact certificate (sha256 52fdb8b3da99ec23...)"
   },
   {
    "k": 7,
@@ -120,13 +120,21 @@
    "file": "results/certificates/cert_k7_n700000.json.gz",
    "verdict": "IMPROVEMENT",
    "note": "warm start from the (7, 650000) chain; 1.11% below the numerical (6, 90000); exact certificate (sha256 5047e1f18dd64482...) (2026-10-31)"
+  },
+  {
+   "k": 7,
+   "n": 775000,
+   "constant": 0.35780302590901447,
+   "file": "results/certificates/cert_k7_n775000.json.gz",
+   "verdict": "IMPROVEMENT",
+   "note": "warm start from the (7, 700000) chain; 1.86% below the numerical (6, 90000); exact certificate (sha256 49b56a77c5c76976...) (2026-11-01)"
   }
  ],
  "best_certified": {
   "k": 7,
-  "n": 700000,
-  "constant": 0.3605089179381376,
-  "source": "p09 (this repo), 2026-10-31: results/certificates/cert_k7_n700000.json.gz",
+  "n": 775000,
+  "constant": 0.35780302590901447,
+  "source": "p09 (this repo), 2026-11-01: results/certificates/cert_k7_n775000.json.gz",
   "note": "best explicit exact ordered-search algorithm known to us; the external 'record' above stays the published claim the frozen verifier compares against"
  }
 }

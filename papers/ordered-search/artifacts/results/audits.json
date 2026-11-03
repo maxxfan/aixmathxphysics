@@ -356,6 +356,50 @@
    ],
    "agree": true,
    "date": "2026-10-31 19:07"
+  },
+  "k7_n775000": {
+   "file": "results/certificates/cert_k7_n775000.json.gz",
+   "sha256": "49b56a77c5c76976",
+   "k": 7,
+   "n": 775000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "IMPROVEMENT",
+    "beats_prior_explicit": true,
+    "margins": [
+     6.450999891901627e-07,
+     1.476896678267086e-06,
+     4.966342057287107e-06,
+     0.0012965092149680411,
+     7.93891839949497e-05,
+     9.606654290166816e-06
+    ],
+    "seconds": 730.4
+   },
+   "independent": {
+    "constant": 0.35780302590901447,
+    "beats_7265": true,
+    "margins": [
+     6.450999891901627e-07,
+     1.476896678267086e-06,
+     4.966342057287107e-06,
+     0.0012965092149680411,
+     7.93891839949497e-05,
+     9.606654290166816e-06
+    ],
+    "seconds": 22.7
+   },
+   "float_grid_min": [
+    1.2903230395266974e-06,
+    2.9758834308255683e-06,
+    9.933090377778342e-06,
+    0.002596872635842677,
+    0.00016238562612420904,
+    1.9279532253890785e-05
+   ],
+   "agree": true,
+   "date": "2026-11-01 13:28"
   }
  },
  "events": [
@@ -368,7 +412,8 @@
   "2026-10-31 08:57 audited results/certificates/cert_k6_n90000.json.gz: MATCHES_RECORD: exact ordered search with 6 queries for n=90000: 0.364572 log2 N (record 0.364572, k=6, n=90000); min certified margin 1.74e-06",
   "2026-10-31 11:30 audited results/certificates/cert_k6_n91000.json.gz: IMPROVEMENT: exact ordered search with 6 queries for n=91000: 0.364220 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.25e-07",
   "2026-10-31 19:07 audited results/certificates/cert_k7_n700000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07",
-  "2026-10-31 22:35 results/check_independent.py hardened after the external review (explicit Rejected exceptions instead of assert, exact-integer and positive-denominator checks, output key beats_prior_explicit; tests in results/test_check_independent.py, 42 checks incl. python -O); re-run under python -O on all nine certificates: every margin identical to the recorded one"
+  "2026-10-31 22:35 results/check_independent.py hardened after the external review (explicit Rejected exceptions instead of assert, exact-integer and positive-denominator checks, output key beats_prior_explicit; tests in results/test_check_independent.py, 42 checks incl. python -O); re-run under python -O on all nine certificates: every margin identical to the recorded one",
+  "2026-11-01 13:28 audited results/certificates/cert_k7_n775000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=775000: 0.357803 log2 N (record 0.364572, k=6, n=90000); min certified margin 6.45e-07"
  ],
  "next_steps": []
 }
