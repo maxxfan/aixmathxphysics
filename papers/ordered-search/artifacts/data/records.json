@@ -1,5 +1,5 @@
 {
- "snapshot": "2026-11-01",
+ "snapshot": "2026-11-02",
  "problem": "exact quantum query complexity of n-element ordered search (Table 8 item 9)",
  "record": {
   "k": 6,
@@ -128,13 +128,21 @@
    "file": "results/certificates/cert_k7_n775000.json.gz",
    "verdict": "IMPROVEMENT",
    "note": "warm start from the (7, 700000) chain; 1.86% below the numerical (6, 90000); exact certificate (sha256 49b56a77c5c76976...) (2026-11-01)"
+  },
+  {
+   "k": 7,
+   "n": 850000,
+   "constant": 0.3553822045714237,
+   "file": "results/certificates/cert_k7_n850000.json.gz",
+   "verdict": "IMPROVEMENT",
+   "note": "warm start from the (7, 775000) chain; 2.52% below the numerical (6, 90000); h_6 by cepstral steps from h = 1 (qlib/certify.py cepstral_factor); exact certificate (sha256 3575ae904059ab94...) (2026-11-02)"
   }
  ],
  "best_certified": {
   "k": 7,
-  "n": 775000,
-  "constant": 0.35780302590901447,
-  "source": "p09 (this repo), 2026-11-01: results/certificates/cert_k7_n775000.json.gz",
+  "n": 850000,
+  "constant": 0.3553822045714237,
+  "source": "p09 (this repo), 2026-11-02: results/certificates/cert_k7_n850000.json.gz",
   "note": "best explicit exact ordered-search algorithm known to us; the external 'record' above stays the published claim the frozen verifier compares against"
  }
 }

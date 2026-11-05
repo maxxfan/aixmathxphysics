@@ -400,6 +400,50 @@
    ],
    "agree": true,
    "date": "2026-11-01 13:28"
+  },
+  "k7_n850000": {
+   "file": "results/certificates/cert_k7_n850000.json.gz",
+   "sha256": "3575ae904059ab94",
+   "k": 7,
+   "n": 850000,
+   "verifier": {
+    "version": "p09-verify-1.1",
+    "pins": "ok",
+    "verdict": "IMPROVEMENT",
+    "beats_prior_explicit": true,
+    "margins": [
+     5.882355509150647e-07,
+     1.268586351372599e-06,
+     3.9147537619926325e-06,
+     0.0009408465407391905,
+     5.224305499436585e-05,
+     4.13762194574043e-06
+    ],
+    "seconds": 718.7
+   },
+   "independent": {
+    "constant": 0.3553822045714237,
+    "beats_7265": true,
+    "margins": [
+     5.882355509150647e-07,
+     1.268586351372599e-06,
+     3.9147537619926325e-06,
+     0.0009408465407391905,
+     5.224305499436585e-05,
+     4.13762194574043e-06
+    ],
+    "seconds": 15.7
+   },
+   "float_grid_min": [
+    1.1764714855644343e-06,
+    2.5389888981073444e-06,
+    7.899318174069137e-06,
+    0.0018890529277826307,
+    0.00010726740357090703,
+    1.0808220902491783e-05
+   ],
+   "agree": true,
+   "date": "2026-11-02 16:49"
   }
  },
  "events": [
@@ -413,7 +457,8 @@
   "2026-10-31 11:30 audited results/certificates/cert_k6_n91000.json.gz: IMPROVEMENT: exact ordered search with 6 queries for n=91000: 0.364220 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.25e-07",
   "2026-10-31 19:07 audited results/certificates/cert_k7_n700000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07",
   "2026-10-31 22:35 results/check_independent.py hardened after the external review (explicit Rejected exceptions instead of assert, exact-integer and positive-denominator checks, output key beats_prior_explicit; tests in results/test_check_independent.py, 42 checks incl. python -O); re-run under python -O on all nine certificates: every margin identical to the recorded one",
-  "2026-11-01 13:28 audited results/certificates/cert_k7_n775000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=775000: 0.357803 log2 N (record 0.364572, k=6, n=90000); min certified margin 6.45e-07"
+  "2026-11-01 13:28 audited results/certificates/cert_k7_n775000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=775000: 0.357803 log2 N (record 0.364572, k=6, n=90000); min certified margin 6.45e-07",
+  "2026-11-02 16:49 audited results/certificates/cert_k7_n850000.json.gz: IMPROVEMENT: exact ordered search with 7 queries for n=850000: 0.355382 log2 N (record 0.364572, k=6, n=90000); min certified margin 5.88e-07"
  ],
  "next_steps": []
 }
