@@ -4,7 +4,7 @@
 #   $PYTHON_NUMPY, or python3 if it imports numpy; without numpy they are skipped and the verdict is INCOMPLETE.
 # Usage: ./replay.sh [quick|full]
 #   quick: about 40 CPU-minutes; JOBS=4 ./replay.sh quick took 14.6 minutes of wall time (JOBS=1: about 45 minutes)
-#   full:  about 2.5 CPU-hours, about 1 hour with JOBS=4
+#   full:  about 2.5 CPU-hours; JOBS=4 ./replay.sh full took 39 minutes of wall time
 #   frames/ and appendixB/ run JOBS checks in parallel (frames/ defaults to 4, appendixB/ to 1)
 # Each part can also be run on its own: states/run.sh, coupling/run.sh, frames/run.sh, appendixB/run.sh, ancillary/run.sh.
 # Exit status: 0 all PASS, 1 a FAIL, 2 no FAIL but appendixB skipped its numpy checks.

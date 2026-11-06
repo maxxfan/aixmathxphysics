@@ -1,8 +1,8 @@
-# Release for "Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists" (revision 4)
+# Release for "Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists" (revision 4.1)
 
 This folder holds the data and the checkers behind every computational claim of the paper, in a form that runs from a
 fresh copy with no network access. Published copy:
-https://github.com/maxxfan/aixmathxphysics/tree/ame-states-v4/papers/ame-states/artifacts
+https://github.com/maxxfan/aixmathxphysics/tree/ame-states-v4.1/papers/ame-states/artifacts
 
 ```bash
 shasum -a 256 -c SHA256SUMS      # or: sha256sum -c SHA256SUMS
@@ -23,8 +23,10 @@ and expected outputs.
 * quick: about 40 minutes of CPU. `JOBS=4 ./replay.sh quick` took 14.6 minutes of wall time from a fresh copy
   (states 54 s, coupling 9 s, frames 410 s, appendixB 310 s, ancillary 94 s; 10-core laptop shared with other jobs);
   with `JOBS=1` expect about 45 minutes. `frames/` runs 4 checks in parallel unless `JOBS` is set.
-* full: about 2.5 hours of CPU (appendixB full alone is about 100 minutes), so about an hour with `JOBS=4`; not timed
-  as a whole (appendixB full took 30 minutes of wall time with `JOBS=4`).
+* full: about 2.5 hours of CPU (appendixB full alone is about 100 minutes). `JOBS=4 ./replay.sh full` took 39 minutes
+  of wall time from a fresh copy (states 40 s, coupling 57 s, frames 326 s, appendixB 1419 s, ancillary 475 s).
+* Both modes of this release were then replayed from a fresh copy with `JOBS=4`, on the same laptop under heavier load
+  from other jobs: `RELEASE: PASS` in 65 minutes (`full`) and 22 minutes (`quick`).
 * Memory: below 1.5 GB per process.
 
 Measured times are in the part READMEs; they were taken on a 10-core Apple-silicon laptop shared with other jobs.
@@ -65,8 +67,15 @@ d = p^m): N = m n qudits over F_p, party j = qudits jm, ..., jm+m-1, N rows (a |
   nice-error-basis model (F_2-linear stabilizers with two qubits per party, which include the F_4-linear ones).
   Non-stabilizer AME(8,4) states are not covered.
 
+## Changes since tag ame-states-v4
+
+Tag `ame-states-v4` lacked `ancillary/circulants/expected/hits_full.txt`, so `./replay.sh full` ended in
+`RELEASE: FAIL` on every machine, although the run itself re-checked all 336 and 48 hits with 0 failures. This release
+adds that file, records the measured time of the full mode and points to the new tag. No state, certificate, search,
+checker or result changed.
+
 ## Provenance
 
 All files were copied or generated from the project repository (quantum-information, `problems/p10-ame-states/`) at
-revision 4 of the paper. Scripts copied from the original runs are marked as such in each part, with every change marked
+revision 4.1 of the paper. Scripts copied from the original runs are marked as such in each part, with every change marked
 `# [release]`; scripts written for the release say so in their header or in the part README.
