@@ -1,0 +1,52 @@
+  q_1: grid min 1.429e-06, gamma 7.143e-07, budget 5.1e-13
+    M=2^26: err 2.03e-08 (tol 2.6e-14)
+    102 spikes narrower than the grid (closest root distance 1.27e-08)
+    refine 0: max residual 2.03e-08 (tol 2.6e-14)
+    refine 1: max residual 2.94e-11 (tol 2.6e-14)
+    refine 2: max residual 5.56e-17 (tol 2.6e-14)
+  q_2: grid min 3.793e-06, gamma 1.896e-06, budget 1.4e-12
+    M=2^26: err 4.35e-13 (tol 6.8e-14)
+    290953 spikes narrower than the grid (closest root distance 2.51e-08)
+    refine 0: max residual 4.35e-13 (tol 6.8e-14)
+    refine 1: max residual 4.32e-15 (tol 6.8e-14)
+  q_3: grid min 4.333e-06, gamma 2.167e-06, budget 1.5e-12
+    M=2^26: err 2.47e-11 (tol 7.7e-14)
+    148616 spikes narrower than the grid (closest root distance 1.98e-08)
+    refine 0: max residual 2.47e-11 (tol 7.7e-14)
+    refine 1: max residual 3.50e-13 (tol 7.7e-14)
+    refine 2: max residual 5.95e-17 (tol 7.7e-14)
+  q_4: grid min 1.252e-03, gamma 6.259e-04, budget 4.5e-10
+    M=2^26: err 2.84e-12 (tol 2.2e-11)
+  q_5: grid min 3.114e-04, gamma 1.557e-04, budget 1.1e-10
+    M=2^26: err 4.99e-06 (tol 5.6e-12)
+    20711 spikes narrower than the grid (closest root distance 1.39e-08)
+    refine 0: max residual 4.99e-06 (tol 5.6e-12)
+    refine 1: max residual 1.56e-07 (tol 5.6e-12)
+    refine 2: max residual 1.07e-08 (tol 5.6e-12)
+    refine 3: max residual 2.01e-09 (tol 5.6e-12)
+    refine 4: max residual 2.99e-10 (tol 5.6e-12)
+    refine 5: max residual 1.76e-11 (tol 5.6e-12)
+    refine 6: max residual 8.65e-14 (tol 5.6e-12)
+  q_6: grid min 4.654e-05, gamma 2.327e-05, budget 1.7e-11
+    M=2^26: err 1.20e-05 (tol 8.3e-13)
+    70223 spikes narrower than the grid (closest root distance 8.70e-09)
+    refine 0: max residual 1.20e-05 (tol 8.3e-13)
+    refine 1: max residual 1.66e-01 (tol 8.3e-13)
+    refine 2: max residual 4.14e-02 (tol 8.3e-13)
+    refine 3: max residual 1.03e-02 (tol 8.3e-13)
+    refine 4: max residual 2.59e-03 (tol 8.3e-13)
+    refine 5: max residual 6.47e-04 (tol 8.3e-13)
+    refine 6: max residual 1.62e-04 (tol 8.3e-13)
+    refine 7: max residual 4.05e-05 (tol 8.3e-13)
+    refine 8: max residual 1.03e-05 (tol 8.3e-13)
+    refine 9: max residual 3.04e-06 (tol 8.3e-13)
+    refine 10: max residual 1.69e-06 (tol 8.3e-13)
+{'t': 1, 'grid_min': 1.4285715965733914e-06, 'gamma': 7.142857982866957e-07, 'factor_err': 5.562449414160391e-17, 'budget': 5.10204141633354e-13, 'M': 67108864}
+{'t': 2, 'grid_min': 3.792664312949126e-06, 'gamma': 1.896332156474563e-06, 'factor_err': 4.3181949678113346e-15, 'budget': 1.3545229689104022e-12, 'M': 67108864}
+{'t': 3, 'grid_min': 4.333048955279528e-06, 'gamma': 2.166524477639764e-06, 'factor_err': 5.951845032868183e-17, 'budget': 1.547517484028403e-12, 'M': 67108864}
+{'t': 4, 'grid_min': 0.0012518969984199116, 'gamma': 0.0006259484992099558, 'factor_err': 2.8370449435891065e-12, 'budget': 4.4710607086425416e-10, 'M': 67108864}
+{'t': 5, 'grid_min': 0.0003113753421105786, 'gamma': 0.0001556876710552893, 'factor_err': 8.651397170834329e-14, 'budget': 1.1120547932520664e-10, 'M': 67108864}
+{'t': 6, 'grid_min': 4.653618519095959e-05, 'gamma': 2.3268092595479795e-05, 'factor_err': 1.6902385949101006e-06, 'budget': 1.6620066139628426e-11, 'M': 67108864}
+wrote out/cert_k7_n700000.json.gz (69.4 MB) in 3622s
+verifier (482.0s): INVALID: q_6: residual q - |h|^2 not diagonally dominant (margin -3.290e-01)  margins=None
+independent: out/cert_k7_n700000.json.gz REJECTED: q_6 residual not diagonally dominant 

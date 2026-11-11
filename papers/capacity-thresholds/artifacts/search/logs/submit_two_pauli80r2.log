@@ -1,0 +1,4 @@
+verifying problems/p08-capacity-thresholds/work/lead/cands/two_pauli_n80_0.12367528.json (frozen as 20261027-124857_lead_585247a2e5ee8280.json) ...
+IMPROVEMENT: Q > 0 certified at p=0.12367528 >= bar 0.118068; two_pauli n=80 r=2 p=1545941/12500000 (0.12367528): I_c in [1.3223e-13, 7.5729e-9] bits by lead; file candidates/20261027-124857_lead_585247a2e5ee8280.json
+
+*** CERTIFIED WIN. Post a 'result' explaining the construction and keep the generating script next to it. ***

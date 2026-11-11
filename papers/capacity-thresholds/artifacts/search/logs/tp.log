@@ -1,0 +1,4 @@
+start threshold 0.11806735844988382
+  two_pauli threshold 0.11806736 -> 0.11807531686969697
+  two_pauli threshold 0.11807532 -> 0.11807291923473277
+two_pauli n=30: 0.11807532 -> work/lead/states/two_pauli_n30_climb.json

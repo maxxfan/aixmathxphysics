@@ -13,14 +13,15 @@ Run it from any directory; it reads and writes nothing outside the release excep
  4. For each of the 239 inequalities in manifest.json, every certificate is checked twice:
       a. by the frozen verifier (verifier/verify.py; exact strategy value computed two ways; exact SOS
          identity; rigorous shift tau from the residual kernel verifier/rescheck.c), and
-      b. by replay/exactcheck.py, written independently: its own exact strategy evaluation, its own word
+      b. by replay/exactcheck.py, written separately (no shared code): its own exact strategy evaluation, its own word
          reduction and identity check, and positive semidefiniteness of Y + tau I proven AT THE STATED
          SHIFT in exact integer arithmetic (plus exact Bareiss elimination for N <= 120).
     and compared with the manifest: exact violation / lambda / N / shift, and the printed window
     (printed lower <= exact violation, exact bound <= printed upper).
- 5. Aggregates: the counts in the paper (229 two-sided, 223 below 1e-7, 146 below 1e-8), no certified lower
-    bound above a certified upper bound, Appendix A (appendix_A.tex, the LaTeX of the paper) and Table I
-    (table_I.tsv) regenerated from the manifest, the ladder certificates, and the A19 case study.
+ 5. Aggregates: the counts in the paper (238 two-sided, 225 below 1e-7, 147 below 1e-8), no certified lower
+    bound above a certified upper bound, Appendix A (appendix_A.tex, the LaTeX of the paper) regenerated from
+    the manifest, the certified columns and the width of Table I (table_I.tsv) against the manifest, the ladder
+    certificates, and the A19 case study.
  6. --tests runs the verifier's own test suite; --controls runs the negative controls (replay/controls.py),
     each of which must be rejected.
 Exit status 0 iff every check passes.
@@ -211,8 +212,8 @@ def check_aggregates(man):
     for k in ("inequalities", "both", "width_below_1e-7", "width_below_1e-8"):
         if counts[k] != man["counts"][k]:
             bad.append(f"count {k}: {counts[k]} != manifest {man['counts'][k]}")
-    if (counts["inequalities"], counts["both"], counts["width_below_1e-7"], counts["width_below_1e-8"]) != (239, 229, 223, 146):
-        bad.append("counts differ from the paper (239, 229, 223, 146)")
+    if (counts["inequalities"], counts["both"], counts["width_below_1e-7"], counts["width_below_1e-8"]) != (239, 238, 225, 147):
+        bad.append("counts differ from the paper (239, 238, 225, 147)")
     if counts["negative_widths"]:
         bad.append("a certified lower bound exceeds a certified upper bound")
     import make_appendix
@@ -221,14 +222,18 @@ def check_aggregates(man):
         bad.append("appendix_A.tex/.tsv do not match the manifest")
     byname = {e["name"]: e for e in es}
     rows = (ROOT / "table_I.tsv").read_text().splitlines()[1:]
-    for r in rows:
-        n, lo0, up0, lo, up, cl, cu = r.split("\t")
-        if cl == "yes" and lo != byname[n]["window"]["lower"]:
-            bad.append(f"Table I {n}: lower {lo} is not the certified {byname[n]['window']['lower']}")
-        if cu == "yes" and up != byname[n]["window"]["upper"]:
-            bad.append(f"Table I {n}: upper {up} is not the certified {byname[n]['window']['upper']}")
-        if cl == cu == "yes" and Q(lo) > Q(up):  # mixed rows pair a certified value with a rounded literature one
-            bad.append(f"Table I {n}: certified lower exceeds certified upper")
+    for r in rows:  # the certified columns of Table I are the manifest windows; the width uses certified values only
+        n, lo0, up0, o4, lo, up, width = r.split("\t")
+        w = byname[n]["window"]
+        if lo != (w["lower"] or "") or up != (w["upper"] or ""):
+            bad.append(f"Table I {n}: certified window [{lo}, {up}] is not the manifest window")
+        if lo and up:
+            if Q(lo) > Q(up):
+                bad.append(f"Table I {n}: certified lower exceeds certified upper")
+            if Q(width) != Q(up) - Q(lo):
+                bad.append(f"Table I {n}: width is not certified upper - certified lower")
+        elif width:
+            bad.append(f"Table I {n}: a width is printed without a two-sided certificate")
     return {"counts": counts, "table_I_rows": len(rows), "problems": bad}
 
 

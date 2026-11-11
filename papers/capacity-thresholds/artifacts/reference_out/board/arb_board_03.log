@@ -1,0 +1,9 @@
+file      certificates/board/20261026-210926_lead_c9b944ed9a6f8a4a.json
+family    independent_xz  n 48  rank 2  p 0.12179852 (= 0.12179852)  frame rot  complex  prec 128 bits
+series    Poisson mu 13.400689, 94 terms; Taylor 0 terms; trace-norm tail <= 1.44e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 5.8e-36; eigenvalue intervals clipped at 0: 0
+I_c       [1.007173441281908e-8, 1.007173441281908e-8] bits  (width 3.58e-32)
+I_c exact [10071734412819077943724, 10071734412819077943725] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 9.8 s (channel 3.2, spectra 6.5; 2 processes)

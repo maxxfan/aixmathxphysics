@@ -1,0 +1,58 @@
+ok   INVALID: garbage
+ok   INVALID: not a dict
+ok   INVALID: unknown target
+ok   INVALID: p as float
+ok   INVALID: p out of range
+ok   INVALID: p zero
+ok   INVALID: p huge denominator
+ok   INVALID: ragged rows
+ok   INVALID: rank 5
+ok   INVALID: zero state
+ok   INVALID: nan amplitude
+ok   INVALID: n too large
+ok   INVALID: bad payload rank
+ok   report has pins field
+ok   brute force inside enclosure: depolarizing n=1 r=2 p=143/1000 path 0
+ok   brute force inside enclosure: depolarizing n=1 r=2 p=143/1000 path 1
+ok   brute force inside enclosure: two_pauli n=1 r=2 p=49/1000 path 1
+ok   brute force inside enclosure: independent_xz n=1 r=2 p=9/200 path 1
+ok   brute force inside enclosure: depolarizing n=1 r=3 p=43/1000 path 0
+ok   brute force inside enclosure: depolarizing n=1 r=3 p=43/1000 path 1
+ok   brute force inside enclosure: two_pauli n=1 r=3 p=161/1000 path 1
+ok   brute force inside enclosure: independent_xz n=1 r=3 p=3/25 path 1
+ok   brute force inside enclosure: depolarizing n=2 r=2 p=103/1000 path 0
+ok   brute force inside enclosure: depolarizing n=2 r=2 p=103/1000 path 1
+ok   brute force inside enclosure: two_pauli n=2 r=2 p=47/250 path 1
+ok   brute force inside enclosure: independent_xz n=2 r=2 p=153/1000 path 1
+ok   brute force inside enclosure: depolarizing n=2 r=3 p=159/1000 path 0
+ok   brute force inside enclosure: depolarizing n=2 r=3 p=159/1000 path 1
+ok   brute force inside enclosure: two_pauli n=2 r=3 p=7/50 path 1
+ok   brute force inside enclosure: independent_xz n=2 r=3 p=19/250 path 1
+ok   brute force inside enclosure: depolarizing n=3 r=2 p=31/1000 path 0
+ok   brute force inside enclosure: depolarizing n=3 r=2 p=31/1000 path 1
+ok   brute force inside enclosure: two_pauli n=3 r=2 p=39/1000 path 1
+ok   brute force inside enclosure: independent_xz n=3 r=2 p=19/200 path 1
+ok   brute force inside enclosure: depolarizing n=3 r=3 p=91/1000 path 0
+ok   brute force inside enclosure: depolarizing n=3 r=3 p=91/1000 path 1
+ok   brute force inside enclosure: two_pauli n=3 r=3 p=9/125 path 1
+ok   brute force inside enclosure: independent_xz n=3 r=3 p=111/1000 path 1
+ok   brute force inside enclosure: depolarizing n=4 r=2 p=99/1000 path 0
+ok   brute force inside enclosure: depolarizing n=4 r=2 p=99/1000 path 1
+ok   brute force inside enclosure: two_pauli n=4 r=2 p=7/50 path 1
+     (widest enclosure 1.87e-12 bits)
+ok   KG2026 A at 16239/250000: MATCHES_RECORD, sign +1
+ok   KG2026 A enclosure matches the paper (8.4e-8 .. 8.7e-8 bits)
+ok   KG2026 A at 203/3125: BELOW_RECORD, sign -1
+ok   KG2026 R at 4057/62500: BELOW_RECORD, sign +1
+ok   KG2026 R at 16229/250000: BELOW_RECORD, sign -1
+ok   IMPROVEMENT when the bar is below a certified point (doctored records)
+ok   VERIFIER_ALARM when I_c > 0 is certified where Q = 0 (doctored bound)
+ok   UNDECIDED for a pure input (I_c = 0 exactly)
+ok   SCREEN_ONLY in quick mode
+ok   VERIFIER_ALARM when the two engine paths disagree
+ok   VERIFIER_ALARM on a certified negative eigenvalue
+ok   VERIFIER_ALARM on an output trace that differs from the input trace
+ok   hash ignores notes
+skip AKLLSSS2026 states (run data/fetch_public_states.py)
+
+0 failure(s)

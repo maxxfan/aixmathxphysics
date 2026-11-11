@@ -1,0 +1,15 @@
+  CROSS depolarizing    n=150 claimed p=0.0662949400  zero crossing p*=0.0663514902 (I_c there +4.5e-16)  p*-p=5.66e-05  slope dI_c/dp=-3.518e-05 bits
+        p*-1e-6 = 0.0663504902: I_c = +3.5364e-11
+        p*+1e-6 = 0.0663524902: I_c = -3.5364e-11
+  CROSS depolarizing    n=240 claimed p=0.0664603900  zero crossing p*=0.0665306379 (I_c there -4.3e-16)  p*-p=7.02e-05  slope dI_c/dp=-5.682e-05 bits
+        p*-1e-6 = 0.0665296379: I_c = +5.6936e-11
+        p*+1e-6 = 0.0665316379: I_c = -5.6938e-11
+  CROSS independent_xz  n= 48 claimed p=0.1217985200  zero crossing p*=0.1217989603 (I_c there +9.7e-13)  p*-p=4.40e-07  slope dI_c/dp=-2.287e-02 bits
+        p*-1e-6 = 0.1217979603: I_c = +2.2873e-08
+        p*+1e-6 = 0.1217999603: I_c = -2.2871e-08
+  CROSS two_pauli       n= 48 claimed p=0.1208686700  zero crossing p*=0.1208691038 (I_c there +6.8e-14)  p*-p=4.34e-07  slope dI_c/dp=-2.316e-02 bits
+        p*-1e-6 = 0.1208681038: I_c = +2.3165e-08
+        p*+1e-6 = 0.1208701038: I_c = -2.3165e-08
+  CROSS depolarizing    n= 45 claimed p=0.0649700000  zero crossing p*=0.0649703065 (I_c there -4.3e-13)  p*-p=3.06e-07  slope dI_c/dp=-1.744e-02 bits
+        p*-1e-6 = 0.0649693065: I_c = +1.7441e-08
+        p*+1e-6 = 0.0649713065: I_c = -1.7442e-08

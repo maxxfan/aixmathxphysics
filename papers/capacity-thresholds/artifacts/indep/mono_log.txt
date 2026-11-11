@@ -1,0 +1,12 @@
+   MONO depolarizing n=150 p=0.0640      I_c=+8.3943292154e-08  
+   MONO depolarizing n=150 p=0.0650      I_c=+4.8021237678e-08  decreasing
+   MONO depolarizing n=150 p=0.0655      I_c=+3.0195662743e-08  decreasing
+   MONO depolarizing n=150 p=0.0660      I_c=+1.2442998257e-08  decreasing
+   MONO depolarizing n=150 p=0.0662      I_c=+5.3594923975e-09  decreasing
+   MONO depolarizing n=150 p=0.06628     I_c=+2.5286041887e-09  decreasing
+   MONO depolarizing n=150 p=0.06629494  I_c=+2.0000894943e-09  decreasing
+   MONO depolarizing n=150 p=0.06630     I_c=+1.8210977392e-09  decreasing
+   MONO depolarizing n=150 p=0.0664      I_c=-1.7151873089e-09  decreasing
+   MONO depolarizing n=150 p=0.0666      I_c=-8.7818380329e-09  decreasing
+   MONO depolarizing n=150 p=0.0670      I_c=-2.2894217543e-08  decreasing
+   MONO depolarizing n=150 p=0.0680      I_c=-5.8089512447e-08  decreasing

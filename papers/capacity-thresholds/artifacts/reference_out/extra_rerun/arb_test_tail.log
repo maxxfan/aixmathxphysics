@@ -1,0 +1,37 @@
+== (a) 50-digit brute force inside the enclosure at every tail target ==
+ok   depolarizing    n 5 r 2 p 0.0625  tail 1e-45:  39 Poisson,   0 Taylor terms, bound 3.3e-46, width 1.6e-34, 50-digit value inside: True
+ok   depolarizing    n 5 r 2 p 0.0625  tail 1e-30:  29 Poisson,   0 Taylor terms, bound 3.6e-31, width 2.2e-28, 50-digit value inside: True
+ok   depolarizing    n 5 r 2 p 0.0625  tail 1e-20:  22 Poisson,   0 Taylor terms, bound 1.7e-21, width 1.0e-18, 50-digit value inside: True
+ok   depolarizing    n 5 r 2 p 0.0625  tail 1e-12:  15 Poisson,   0 Taylor terms, bound 8.7e-13, width 5.4e-10, 50-digit value inside: True
+ok   depolarizing    n 5 r 2 p 0.0625  tail 1e-06:  10 Poisson,   0 Taylor terms, bound 2.2e-07, width 1.4e-04, 50-digit value inside: True
+ok   depolarizing    n 4 r 3 p 0.0625  tail 1e-45:  37 Poisson,   0 Taylor terms, bound 1.3e-46, width 2.9e-34, 50-digit value inside: True
+ok   depolarizing    n 4 r 3 p 0.0625  tail 1e-30:  27 Poisson,   0 Taylor terms, bound 7.5e-31, width 8.0e-28, 50-digit value inside: True
+ok   depolarizing    n 4 r 3 p 0.0625  tail 1e-20:  20 Poisson,   0 Taylor terms, bound 9.5e-21, width 1.0e-17, 50-digit value inside: True
+ok   depolarizing    n 4 r 3 p 0.0625  tail 1e-12:  14 Poisson,   0 Taylor terms, bound 6.5e-13, width 7.0e-10, 50-digit value inside: True
+ok   depolarizing    n 4 r 3 p 0.0625  tail 1e-06:   9 Poisson,   0 Taylor terms, bound 3.4e-07, width 3.6e-04, 50-digit value inside: True
+ok   independent_xz  n 5 r 2 p 0.1183  tail 1e-45:  42 Poisson,   0 Taylor terms, bound 5.7e-47, width 4.1e-34, 50-digit value inside: True
+ok   independent_xz  n 5 r 2 p 0.1183  tail 1e-30:  31 Poisson,   0 Taylor terms, bound 3.6e-31, width 2.2e-28, 50-digit value inside: True
+ok   independent_xz  n 5 r 2 p 0.1183  tail 1e-20:  24 Poisson,   0 Taylor terms, bound 5.9e-22, width 3.6e-19, 50-digit value inside: True
+ok   independent_xz  n 5 r 2 p 0.1183  tail 1e-12:  17 Poisson,   0 Taylor terms, bound 1.3e-13, width 8.0e-11, 50-digit value inside: True
+ok   independent_xz  n 5 r 2 p 0.1183  tail 1e-06:  11 Poisson,   0 Taylor terms, bound 2.0e-07, width 1.2e-04, 50-digit value inside: True
+ok   independent_xz  n 4 r 3 p 0.1183  tail 1e-45:  39 Poisson,   0 Taylor terms, bound 3.4e-46, width 3.4e-34, 50-digit value inside: True
+ok   independent_xz  n 4 r 3 p 0.1183  tail 1e-30:  29 Poisson,   0 Taylor terms, bound 3.7e-31, width 3.8e-28, 50-digit value inside: True
+ok   independent_xz  n 4 r 3 p 0.1183  tail 1e-20:  22 Poisson,   0 Taylor terms, bound 1.7e-21, width 1.8e-18, 50-digit value inside: True
+ok   independent_xz  n 4 r 3 p 0.1183  tail 1e-12:  15 Poisson,   0 Taylor terms, bound 8.8e-13, width 9.1e-10, 50-digit value inside: True
+ok   independent_xz  n 4 r 3 p 0.1183  tail 1e-06:  10 Poisson,   0 Taylor terms, bound 2.2e-07, width 2.3e-04, 50-digit value inside: True
+ok   two_pauli       n 5 r 2 p 0.118   tail 1e-45:  44 Poisson,  27 Taylor terms, bound 1.4e-46, width 9.1e-34, 50-digit value inside: True
+ok   two_pauli       n 5 r 2 p 0.118   tail 1e-30:  33 Poisson,  19 Taylor terms, bound 5.6e-31, width 4.5e-28, 50-digit value inside: True
+ok   two_pauli       n 5 r 2 p 0.118   tail 1e-20:  25 Poisson,  14 Taylor terms, bound 2.9e-21, width 2.1e-18, 50-digit value inside: True
+ok   two_pauli       n 5 r 2 p 0.118   tail 1e-12:  18 Poisson,   9 Taylor terms, bound 4.8e-13, width 3.2e-10, 50-digit value inside: True
+ok   two_pauli       n 5 r 2 p 0.118   tail 1e-06:  12 Poisson,   5 Taylor terms, bound 5.3e-07, width 3.4e-04, 50-digit value inside: True
+ok   two_pauli       n 4 r 3 p 0.118   tail 1e-45:  41 Poisson,  26 Taylor terms, bound 2.5e-46, width 1.3e-33, 50-digit value inside: True
+ok   two_pauli       n 4 r 3 p 0.118   tail 1e-30:  31 Poisson,  18 Taylor terms, bound 5.4e-31, width 9.7e-28, 50-digit value inside: True
+ok   two_pauli       n 4 r 3 p 0.118   tail 1e-20:  23 Poisson,  13 Taylor terms, bound 5.9e-21, width 8.7e-18, 50-digit value inside: True
+ok   two_pauli       n 4 r 3 p 0.118   tail 1e-12:  16 Poisson,   9 Taylor terms, bound 9.1e-13, width 1.1e-09, 50-digit value inside: True
+ok   two_pauli       n 4 r 3 p 0.118   tail 1e-06:  11 Poisson,   5 Taylor terms, bound 2.3e-07, width 2.5e-04, 50-digit value inside: True
+== (b) n = 80 board records: loose-tail enclosure contains the default one ==
+ok   two_pauli       n 80 p 0.12367528 tail 1e-20:  89 Poisson,  38 Taylor terms, bound 7.8e-19, I_c in [4.6877197e-9, 4.6882570e-9], contains the default enclosure: True
+ok   two_pauli       n 80 p 0.12367528 tail 1e-10:  68 Poisson,  26 Taylor terms, bound 4.2e-09, I_c in [-0.00080246609, 0.00042708943], contains the default enclosure: True
+ok   independent_xz  n 80 p 0.12464123 tail 1e-20:  81 Poisson,   0 Taylor terms, bound 4.2e-21, I_c in [1.6050672e-9, 1.6050702e-9], contains the default enclosure: True
+ok   independent_xz  n 80 p 0.12464123 tail 1e-10:  60 Poisson,   0 Taylor terms, bound 9.0e-11, I_c in [-2.1204441e-5, 1.1671216e-5], contains the default enclosure: True
+tail test: 34 cases, 0 failures

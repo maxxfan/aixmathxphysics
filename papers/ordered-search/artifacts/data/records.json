@@ -1,5 +1,6 @@
 {
  "snapshot": "2026-11-02",
+ "constant_note": "every 'constant' in this file is the unrounded float k / log2(n). The paper, RESULTS.md and PROBLEM.md quote it rounded UP in the sixth decimal (e.g. 0.3578030... -> 0.357804, 0.3553822... -> 0.355383), so that k*ceil(log_n N) <= c*log2(N) + k holds for all N; the frozen verifier prints it rounded to nearest (0.357803, 0.355382). The (k, n) pairs are explicit finite instances; arXiv:2609.34293 (see 'asymptotic') proves exact algorithms with a smaller coefficient for all sufficiently large n, without an explicit threshold or finite instance.",
  "problem": "exact quantum query complexity of n-element ordered search (Table 8 item 9)",
  "record": {
   "k": 6,
@@ -143,6 +144,6 @@
   "n": 850000,
   "constant": 0.3553822045714237,
   "source": "p09 (this repo), 2026-11-02: results/certificates/cert_k7_n850000.json.gz",
-  "note": "best explicit exact ordered-search algorithm known to us; the external 'record' above stays the published claim the frozen verifier compares against"
+  "note": "best explicit finite (k, n) pair known to us (smallest coefficient with explicit constants valid for all N; not a claim against the asymptotic algorithms of arXiv:2609.34293); the external 'record' above stays the published claim the frozen verifier compares against"
  }
 }

@@ -1,0 +1,2 @@
+independent_xz n=80 -> 240: zero crossing 0.12738956, margin-1e-08 threshold 0.12733178, dI_c/dp -1.731e-04
+independent_xz n=80 -> 320: zero crossing 0.12771564, margin-1e-08 threshold 0.12765756, dI_c/dp -1.721e-04

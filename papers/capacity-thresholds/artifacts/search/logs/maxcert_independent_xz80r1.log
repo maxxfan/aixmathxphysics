@@ -1,0 +1,11 @@
+independent_xz n=80: float zero crossing 0.1246398653, dI_c/dp -1.954e-04 bits, margin-1e-08 threshold 0.1245886845
+  IMPROVEMENT: Q > 0 certified at p=0.12458868 >= bar 0.118372; independent_xz n=80 r=2 p=3114717/25000000 (0.12458868): I_c in [8.4372e-9, 1.1001e-8] bits  (204.73 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12461427 >= bar 0.118372; independent_xz n=80 r=2 p=12461427/100000000 (0.12461427): I_c in [3.3983e-9, 6.0247e-9] bits  (405.34 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12462706 >= bar 0.118372; independent_xz n=80 r=2 p=6231353/50000000 (0.12462706): I_c in [9.0572e-10, 3.5227e-9] bits  (406.35 s)
+  UNDECIDED: enclosure contains 0; independent_xz n=80 r=2 p=6231673/50000000 (0.12463346): I_c in [-3.4456e-10, 2.2720e-9] bits  (405.69 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12463026 >= bar 0.118372; independent_xz n=80 r=2 p=6231513/50000000 (0.12463026): I_c in [2.8613e-10, 2.8935e-9] bits  (405.72 s)
+  UNDECIDED: enclosure contains 0; independent_xz n=80 r=2 p=6231593/50000000 (0.12463186): I_c in [-1.6525e-11, 2.5743e-9] bits  (406.51 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12463106 >= bar 0.118372; independent_xz n=80 r=2 p=6231553/50000000 (0.12463106): I_c in [1.2933e-10, 2.7378e-9] bits  (406.48 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12463146 >= bar 0.118372; independent_xz n=80 r=2 p=6231573/50000000 (0.12463146): I_c in [3.8469e-11, 2.6675e-9] bits  (405.94 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12463166 >= bar 0.118372; independent_xz n=80 r=2 p=6231583/50000000 (0.12463166): I_c in [3.2608e-12, 2.6262e-9] bits  (405.94 s)
+best certified p = 0.12463166: work/lead/cands/independent_xz_n80_0.12463166.json

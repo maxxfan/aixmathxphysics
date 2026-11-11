@@ -1,0 +1,2 @@
+k=6 n=70000: 744 variables, grid 560001 points per q
+  [0] mu=1: softmin -8.8421, min over grid+extra -1.2087, 3000 its (507s)

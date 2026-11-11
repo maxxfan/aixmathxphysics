@@ -1,0 +1,3 @@
+RESULT rec28_xz_n80 independent_xz n=80 p=0.12464123 float64 I_c=1.605066843126e-09
+RESULT rec27_2p_n80 two_pauli n=80 p=0.12367528 float64 I_c=4.688001217992e-09
+RESULT rec20_dep_n240 depolarizing n=240 p=0.0666847 float64 I_c=1.312979042323e-09

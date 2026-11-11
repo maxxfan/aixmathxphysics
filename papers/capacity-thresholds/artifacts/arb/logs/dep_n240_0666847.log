@@ -1,0 +1,150 @@
+setup {'file': 'candidates/20261027-053852_lead_9e078e22e51cd14b.json', 'target': 'depolarizing', 'n': 240, 'rank': 2, 'p': '0.0666847', 'p_float': 0.0666847, 'frame': 'plain', 'prec': 128, 'complex': False, 'mu': 55.84559342008012, 'poisson_terms': 192, 'taylor_terms': 0, 'tail_bound': 5.841989894019255e-46, 'g_xy': 0.07756332419455572, 'g_z': 0.07756332419455572, 'stencil_time': 0.27234721183776855}
+channel phase 230.0 s
+  block 5 d 231 time 30.3 eig eig
+  block 4 d 233 time 30.7 eig eig
+  block 3 d 235 time 32.4 eig eig
+  block 1 d 239 time 33.0 eig eig
+  block 0 d 241 time 33.5 eig eig
+  block 2 d 237 time 38.6 eig eig
+  block 6 d 229 time 35.9 eig eig
+  block 8 d 225 time 35.1 eig eig
+  block 10 d 221 time 34.3 eig eig
+  block 9 d 223 time 35.0 eig eig
+  block 7 d 227 time 41.3 eig eig
+  block 11 d 219 time 33.7 eig eig
+  block 15 d 211 time 34.4 eig eig
+  block 12 d 217 time 37.3 eig eig
+  block 14 d 213 time 36.1 eig eig
+  block 13 d 215 time 36.7 eig eig
+  block 17 d 207 time 34.3 eig eig
+  block 16 d 209 time 34.8 eig eig
+  block 19 d 203 time 31.9 eig eig
+  block 21 d 199 time 32.1 eig eig
+  block 22 d 197 time 30.8 eig eig
+  block 18 d 205 time 35.4 eig eig
+  block 23 d 195 time 31.1 eig eig
+  block 20 d 201 time 34.4 eig eig
+  block 24 d 193 time 29.0 eig eig
+  block 25 d 191 time 28.2 eig eig
+  block 29 d 183 time 26.5 eig eig
+  block 28 d 185 time 27.4 eig eig
+  block 27 d 187 time 27.6 eig eig
+  block 26 d 189 time 28.9 eig eig
+  block 34 d 173 time 24.0 eig eig
+  block 35 d 171 time 23.4 eig eig
+  block 33 d 175 time 24.5 eig eig
+  block 32 d 177 time 25.4 eig eig
+  block 31 d 179 time 26.3 eig eig
+  block 30 d 181 time 27.1 eig eig
+  block 41 d 159 time 15.6 eig eig
+  block 40 d 161 time 18.3 eig eig
+  block 39 d 163 time 19.5 eig eig
+  block 38 d 165 time 19.9 eig eig
+  block 36 d 169 time 20.6 eig eig
+  block 37 d 167 time 20.3 eig eig
+  block 42 d 157 time 16.3 eig eig
+  block 47 d 147 time 14.1 eig eig
+  block 45 d 151 time 14.6 eig eig
+  block 46 d 149 time 14.5 eig eig
+  block 44 d 153 time 15.1 eig eig
+  block 43 d 155 time 15.6 eig eig
+  block 51 d 139 time 10.6 eig eig
+  block 53 d 135 time 11.2 eig eig
+  block 52 d 137 time 11.7 eig eig
+  block 49 d 143 time 12.5 eig eig
+  block 48 d 145 time 13.3 eig eig
+  block 50 d 141 time 12.7 eig eig
+  block 54 d 133 time 10.0 eig eig
+  block 58 d 125 time 9.0 eig eig
+  block 55 d 131 time 10.0 eig eig
+  block 59 d 123 time 9.6 eig eig
+  block 57 d 127 time 10.5 eig eig
+  block 56 d 129 time 10.8 eig eig
+  block 60 d 121 time 9.2 eig eig
+  block 62 d 117 time 8.4 eig eig
+  block 61 d 119 time 9.0 eig eig
+  block 63 d 115 time 8.3 eig eig
+  block 64 d 113 time 7.8 eig eig
+  block 65 d 111 time 7.8 eig eig
+  block 71 d 99 time 5.9 eig eig
+  block 69 d 103 time 6.3 eig eig
+  block 70 d 101 time 6.4 eig eig
+  block 67 d 107 time 7.1 eig eig
+  block 66 d 109 time 7.4 eig eig
+  block 68 d 105 time 7.0 eig eig
+  block 77 d 87 time 3.8 eig eig
+  block 75 d 91 time 4.1 eig eig
+  block 72 d 97 time 4.9 eig eig
+  block 74 d 93 time 4.4 eig eig
+  block 73 d 95 time 4.5 eig eig
+  block 76 d 89 time 4.2 eig eig
+  block 83 d 75 time 2.2 eig eig
+  block 82 d 77 time 2.4 eig eig
+  block 81 d 79 time 2.5 eig eig
+  block 80 d 81 time 2.8 eig eig
+  block 78 d 85 time 3.2 eig eig
+  block 79 d 83 time 3.2 eig eig
+  block 84 d 73 time 1.9 eig eig
+  block 85 d 71 time 2.0 eig eig
+  block 88 d 65 time 1.4 eig eig
+  block 89 d 63 time 1.4 eig eig
+  block 86 d 69 time 2.1 eig eig
+  block 87 d 67 time 2.0 eig eig
+  block 94 d 53 time 0.8 eig eig
+  block 95 d 51 time 0.6 eig eig
+  block 92 d 57 time 1.0 eig eig
+  block 90 d 61 time 1.3 eig eig
+  block 93 d 55 time 1.0 eig eig
+  block 91 d 59 time 1.2 eig eig
+  block 101 d 39 time 0.2 eig eig
+  block 100 d 41 time 0.3 eig eig
+  block 99 d 43 time 0.4 eig eig
+  block 97 d 47 time 0.5 eig eig
+  block 105 d 31 time 0.0 tiny-trace tiny-trace
+  block 106 d 29 time 0.0 tiny-trace tiny-trace
+  block 107 d 27 time 0.0 tiny-trace tiny-trace
+  block 108 d 25 time 0.0 tiny-trace tiny-trace
+  block 109 d 23 time 0.0 tiny-trace tiny-trace
+  block 110 d 21 time 0.0 tiny-trace tiny-trace
+  block 111 d 19 time 0.0 tiny-trace tiny-trace
+  block 112 d 17 time 0.0 tiny-trace tiny-trace
+  block 113 d 15 time 0.0 tiny-trace tiny-trace
+  block 114 d 13 time 0.0 tiny-trace tiny-trace
+  block 115 d 11 time 0.0 tiny-trace tiny-trace
+  block 116 d 9 time 0.0 tiny-trace tiny-trace
+  block 117 d 7 time 0.0 tiny-trace tiny-trace
+  block 118 d 5 time 0.0 tiny-trace tiny-trace
+  block 119 d 3 time 0.0 tiny-trace tiny-trace
+  block 120 d 1 time 0.0 tiny-trace tiny-trace
+  block 98 d 45 time 0.5 eig eig
+  block 103 d 35 time 0.2 eig eig
+  block 104 d 33 time 0.1 eig eig
+  block 102 d 37 time 0.2 eig eig
+  block 96 d 49 time 0.7 eig eig
+file      candidates/20261027-053852_lead_9e078e22e51cd14b.json
+family    depolarizing  n 240  rank 2  p 0.0666847 (= 0.0666847)  frame plain  real  prec 128 bits
+series    Poisson mu 55.845593, 192 terms; Taylor 0 terms; trace-norm tail <= 5.84e-46
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 5.9e-38; eigenvalue intervals clipped at 0: 0
+I_c       [1.312979763222851e-9, 1.312979763222851e-9] bits  (width 5.76e-29)
+I_c exact [1312979763222851481978, 1312979763222851482036] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 502.1 s (channel 230.0, spectra 271.8; 6 processes)
+      502.37 real      2247.38 user        56.50 sys
+           385056768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             9434633  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                5305  voluntary context switches
+             5186918  involuntary context switches
+         12037949979  instructions retired
+          3860688962  cycles elapsed
+           476087136  peak memory footprint

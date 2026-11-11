@@ -38196,10 +38196,13 @@
  },
  "comparison": {
   "reported": 3729,
-  "reported_by": "Fisher et al. Table I, Vandaele start: not released; the released n=64 start not a GF(2^n) multiplication tensor",
-  "reported_invalid": true,
+  "reported_by": "Fisher et al. Table I, Vandaele start: final matrix not released, value unverified; the released n=64 start of the same pipeline is not a GF(2^n) multiplication tensor",
+  "reported_status": "unverified",
   "checked": null,
-  "checked_by": null
+  "checked_by": null,
+  "reported_invalid": false,
+  "vandaele2025_table3": 3817,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "FastTODD (ftoddw192, seed 1, 60s) of n64_curve.json",
  "construction_script": "work/reducer/reduce_json.py",

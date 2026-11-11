@@ -1,0 +1,126 @@
+{
+ "arb_negative_p": {
+  "forbid": [
+   "POSITIVE +\\d+s"
+  ],
+  "require": [
+   [
+    "NEGATIVE +\\d+s ok \\(not POSITIVE\\)$",
+    3
+   ]
+  ],
+  "says": "three inputs just above their zero crossing: NEGATIVE"
+ },
+ "arb_test_eig": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^ALL OK$",
+    1
+   ]
+  ],
+  "says": "spectral unit test: ALL OK"
+ },
+ "arb_test_tail": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^tail test: 34 cases, 0 failures$",
+    1
+   ]
+  ],
+  "says": "series-tail bound: 30 small cases and 4 early-truncation runs at n = 80 pass"
+ },
+ "arb_test_tail_small": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^tail test: 30 cases, 0 failures$",
+    1
+   ]
+  ],
+  "says": "series-tail bound: 30 early-truncation cases contain the 50-digit value"
+ },
+ "arb_validate_brute": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^float: 252 tests, 0 failures",
+    1
+   ],
+   [
+    "^hp: 26 tests, 0 outside the enclosure",
+    1
+   ]
+  ],
+  "says": "252 brute-force cases enclosed, 26 fifty-digit cases enclosed"
+ },
+ "arb_validate_brute_extra": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^hp: 9 tests, 0 outside the enclosure",
+    1
+   ]
+  ],
+  "says": "9 further fifty-digit cases enclosed (n = 6, 7)"
+ },
+ "arb_validate_kg": {
+  "forbid": [
+   "MISMATCH"
+  ],
+  "require": [
+   [
+    "inside KG cert: True",
+    1
+   ],
+   [
+    "overlap True; ours inside KG True",
+    1
+   ],
+   [
+    "POSITIVE +\\d+s ok$",
+    2
+   ],
+   [
+    "NEGATIVE +\\d+s ok$",
+    2
+   ]
+  ],
+  "says": "inside both Krohn-Grimberghe intervals; four signs reproduced"
+ },
+ "second_validate": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^kernel validation: 142 cases, 0 failures",
+    1
+   ]
+  ],
+  "says": "kernel evaluator: 142 cases, 0 failures"
+ },
+ "verifier_tests": {
+  "forbid": [
+   "^FAIL"
+  ],
+  "require": [
+   [
+    "^0 failure\\(s\\)$",
+    1
+   ]
+  ],
+  "says": "verifier tests: 0 failures"
+ }
+}

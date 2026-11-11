@@ -28,60 +28,66 @@
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum error correction</p>
-        <h2><a href="papers/qudit-circulant-codes/qudit-circulant-codes.pdf">Improved zero-dimensional qudit stabilizer codes of odd length from circulant graphs</a></h2>
+        <h2><a href="papers/qudit-circulant-codes/qudit-circulant-codes.pdf?v=2">Zero-dimensional qudit stabilizer codes of odd length from circulant graphs</a></h2>
         <p>Four circulant graph codes, $\code{19}{0}{9}{5}$, $\code{25}{0}{11}{5}$, $\code{29}{0}{12}{5}$
-        and $\code{21}{0}{10}{7}$, each raise the best known lower bound in Grassl’s qudit code tables by
-        one. They were found by an autonomous multi-agent language-model search working against a
-        frozen, test-validated verifier, and every minimum distance is certified exactly.</p>
+        and $\code{21}{0}{10}{7}$, each exceeded by one the lower bound in Grassl’s qudit code tables when
+        they were found on 11 October 2026. The tables have since listed the same bounds, on pages last
+        modified on 21 and 22 October, with codes inequivalent to these, so the claim is a dated comparison.
+        Every minimum distance is certified exactly by two independent methods. The codes were found by an
+        autonomous multi-agent language-model search working against a frozen, test-validated verifier.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum circuits</p>
-        <h2><a href="papers/tcount-gf2-multipliers/tcount-gf2-multipliers.pdf?v=4">Certified low-T-count multipliers for binary fields from Chinese remaindering</a></h2>
+        <h2><a href="papers/tcount-gf2-multipliers/tcount-gf2-multipliers.pdf?v=5">Certified low-T-count multipliers for binary fields from Chinese remaindering</a></h2>
         <p>Ancilla-free Clifford+T circuits for multiplication in GF($2^n$) for thirteen field sizes,
         $n = 5$–8, 10–16, 32 and 64, released as explicit gate lists with a standalone checker. Where a
         published decomposition with correct released data exists, they use fewer T gates, for example
-        113 against 123 at $n = 8$ and 151 against 157 at $n = 10$. For $n \ge 11$ the only reported values
-        come from decompositions that, as the paper shows, do not decompose GF($2^n$) multiplication.
+        113 against 123 at $n = 8$ and 151 against 157 at $n = 10$. For $n \ge 11$ the lowest reported values
+        come from decompositions that, as the paper shows, do not decompose GF($2^n$) multiplication; against
+        Vandaele’s values for $n = 16$, 32 and 64, for which no circuits are released, they use 267 against 425,
+        571 against 1255 and 1255 against 3817.
         The circuits come from one composition principle: if the product can be computed by Chinese
         remaindering in small algebras $A_i$ (subfields, local rings or the points of an algebraic
-        curve), the T-count is at most $\sum_i \mathcal{T}(A_i)$.
-        <a href="https://github.com/maxxfan/aixmathxphysics/tree/tcount-gf2-v3/papers/tcount-gf2-multipliers/artifacts">Proof objects and checker</a>.</p>
+        curve), the T-count is at most $\sum_i \mathcal{T}(A_i)$. An exact enumeration of the small cases is
+        included in the release.
+        <a href="https://github.com/maxxfan/aixmathxphysics/tree/tcount-gf2-v4/papers/tcount-gf2-multipliers/artifacts">Proof objects and checker</a>.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum nonlocality</p>
-        <h2><a href="papers/tsirelson-bounds/tsirelson-bounds.pdf?v=2">Certified Tsirelson bounds for 229 tight bipartite Bell inequalities</a></h2>
+        <h2><a href="papers/tsirelson-bounds/tsirelson-bounds.pdf?v=3">Certified Tsirelson bounds for 238 tight bipartite Bell inequalities</a></h2>
         <p>The maximal quantum violations of the tight bipartite Bell inequalities with up to five binary
         settings per party were tabulated from floating-point computations, and rational upper-bound
-        certificates existed only for the Ito–Imai–Avis list. This paper certifies windows for 229 of the
+        certificates existed only for the Ito–Imai–Avis list. This paper certifies windows for 238 of the
         239 catalogued inequalities, each pairing an exact quantum strategy with an exact sum-of-squares
-        certificate, and 223 of them are narrower than $10^{-7}$. It closes $J^{97}_{4422}$ to a tolerance
+        certificate, and 225 of them are narrower than $10^{-7}$. It closes $J^{97}_{4422}$ to a tolerance
         of $2.2\times10^{-8}$ (optimality of its two-qubit value is not proved), closes three more
-        rigorously to within $5\times10^{-9}$, and finds that the published maximum of $A_{19}$ is
-        $4.4\times10^{-7}$ too low. All 467 certificates are released with an exact replay script.
-        <a href="https://github.com/maxxfan/aixmathxphysics/tree/tsirelson-bounds-v2/papers/tsirelson-bounds/artifacts">Certificates and checkers</a>.</p>
+        rigorously to within $5\times10^{-9}$ and two to within $7\times10^{-8}$, and finds that the published maximum of $A_{19}$ is
+        $4.4\times10^{-7}$ too low. All 476 certificates are released with an exact replay script.
+        <a href="https://github.com/maxxfan/aixmathxphysics/tree/tsirelson-bounds-v3/papers/tsirelson-bounds/artifacts">Certificates and checkers</a>.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum nonlocality</p>
-        <h2><a href="papers/grothendieck-kg3/grothendieck-kg3.pdf?v=2">An improved upper bound on the Grothendieck constant of order three from symmetric local models</a></h2>
+        <h2><a href="papers/grothendieck-kg3/grothendieck-kg3.pdf?v=3">An improved upper bound on the Grothendieck constant of order three from symmetric local models</a></h2>
         <p>The Grothendieck constant $K_G(3)$ is the inverse of the critical visibility below which the
         two-qubit Werner state has a local hidden-variable model for all projective measurements. This
         paper proves $K_G(3)\le 1.44942$, improving the bound 1.4546 of Designolle <em>et al.</em> (2023)
         and shrinking the known window for $K_G(3)$ by 29%. The proof is an explicit local model for 721
         measurement directions, extended to all directions by a shrinking argument and verified in exact
         rational arithmetic. The certificate is released with a standalone exact checker that shares no
-        code with the project verifier.
-        <a href="https://github.com/maxxfan/aixmathxphysics/tree/grothendieck-kg3-v2/papers/grothendieck-kg3/artifacts">Proof objects and checker</a>.</p>
+        code with the project verifier, together with all 41 certificates of the paper.
+        <a href="https://github.com/maxxfan/aixmathxphysics/tree/grothendieck-kg3-v3/papers/grothendieck-kg3/artifacts">Proof objects and checker</a>.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum entanglement</p>
-        <h2><a href="papers/ame-states/ame-states.pdf?v=5">Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists</a></h2>
+        <h2><a href="papers/ame-states/ame-states.pdf?v=6">Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists</a></h2>
         <p>An $n$-party state is absolutely maximally entangled, $\mathrm{AME}(n,d)$, if every set of
         $\lfloor n/2\rfloor$ parties is maximally mixed. This paper constructs $\mathrm{AME}(15,8)$ and
-        $\mathrm{AME}(17,8)$, two cells left blank in the Huber–Wyderka table, and, beyond that table,
+        $\mathrm{AME}(17,8)$, blank in the Huber–Wyderka table; since 21 October 2026 the code tables list codes
+        with the same parameters, so it claims no priority for those two cells. Beyond that table it constructs
         $\mathrm{AME}(n,16)$ for $n = 18$–21. A coupling rule combines a $k$-uniform state of dimension $a$ with
         an $\mathrm{AME}(2k+2,b)$ state, $a \le b$, into an $\mathrm{AME}(2k+1,ab)$ state. With explicit
         ingredients it gives 26 further cells with composite $d \le 62$ that the published constructions in
@@ -89,34 +95,37 @@
         that a stabilizer state for a group-type nice error basis would have to be a qubit-pair stabilizer
         state, and it confirms, with two independent exhaustive searches, Ball, Moreno and Simoens's theorem
         that no such state exists. The ingredients, searches and checkers are released with a replay script.
-        <a href="https://github.com/maxxfan/aixmathxphysics/tree/ame-states-v4.1/papers/ame-states/artifacts">Certificates and checkers</a>.</p>
+        <a href="https://github.com/maxxfan/aixmathxphysics/tree/ame-states-v5/papers/ame-states/artifacts">Certificates and checkers</a>.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum channels</p>
-        <h2><a href="papers/capacity-thresholds/capacity-thresholds.pdf">Certified thresholds for positive quantum capacity of the depolarizing, independent X–Z and two-Pauli channels</a></h2>
+        <h2><a href="papers/capacity-thresholds/capacity-thresholds.pdf?v=2">Certified thresholds for positive quantum capacity of the depolarizing, independent X–Z and two-Pauli channels</a></h2>
         <p>Explicit rank-two permutation-symmetric inputs on up to 480 qubits prove that the depolarizing
-        channel has positive quantum capacity up to $p = 0.066882$ per Pauli, a total error of 20.06%,
-        above the certified value 0.064956 of Krohn-Grimberghe (2026). For the independent X–Z and two-Pauli
+        channel has positive quantum capacity for every $p \le 0.066882$ per Pauli, a total error of 20.06%. This
+        is the largest value certified at an explicit finite number of channel uses; Ahmed <em>et al.</em> claim
+        a larger bound, 0.0676387, from an asymptotic Gaussian argument with one numerical step. For the independent X–Z and two-Pauli
         channels, where only numerical thresholds near 0.118 were known, they certify $Q > 0$ up to
         $p = 0.127705$ and at $p = 0.126774$. A frozen interval-arithmetic verifier certifies the board
         records, and an independent 128-bit ball-arithmetic evaluator certifies the larger values beyond the
         verifier's size limits.
-        <a href="https://github.com/maxxfan/aixmathxphysics/tree/capacity-thresholds-v1/papers/capacity-thresholds/artifacts">Certificates and checkers</a>.</p>
+        <a href="https://github.com/maxxfan/aixmathxphysics/tree/capacity-thresholds-v2/papers/capacity-thresholds/artifacts">Certificates and checkers</a>.</p>
       </article>
 
       <article class="entry">
         <p class="meta label">October 2026 · Quantum algorithms</p>
-        <h2><a href="papers/ordered-search/ordered-search.pdf?v=4">Exact certificates for quantum ordered search: seven queries for 850,000 elements and six for 91,000</a></h2>
+        <h2><a href="papers/ordered-search/ordered-search.pdf?v=5">Exact certificates for quantum ordered search: seven queries for 850,000 elements and six for 91,000</a></h2>
         <p>Exact integer feasibility certificates prove that eleven quantum algorithms for searching an
         ordered list exist. Each is checked by a standard-library verifier and by an independent checker
         built on FLINT. Seven queries search 850,000 elements, so ordered search on $N$ elements needs at
-        most $0.355383\log_2 N + 7$ queries. The coefficient improves on the numerical six-query algorithm
+        most $0.355383\log_2 N + 7$ queries, the best bound with explicit constants for all $N$; the
+        asymptotically optimal algorithms of Carolan and Childs have a smaller coefficient, but only for
+        sufficiently large lists with no explicit threshold. The coefficient improves on the numerical six-query algorithm
         for 90,000 elements of Wu <em>et al.</em> ($0.364573$). Six queries search 91,000 elements, so the
         largest list that six queries can search exactly satisfies $91000 \le N^*(6) &lt; 94000$. Each
         certificate is a chain of symmetric Laurent polynomials in the characterization of Farhi, Goldstone,
         Gutmann and Sipser, found by a smoothed max–min optimization.
-        <a href="https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v4">Certificates and checkers</a>.</p>
+        <a href="https://github.com/maxxfan/aixmathxphysics/releases/tag/ordered-search-v5">Certificates and checkers</a>.</p>
       </article>
     </section>
   </main>

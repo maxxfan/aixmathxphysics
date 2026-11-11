@@ -1,0 +1,13 @@
+file     work/lead/cands/independent_xz_n80_0.12437928.json
+family   independent_xz   n 80   rank 2   p 0.12437928 (= 0.12437928)   frame rot
+rates    gamma_X,Y,Z = 0.143014093770199 0.143014093770199 0
+method   uniform  {'poisson_mu': 22.882255003231823, 'poisson_terms': 81, 'poisson_tail': 3.6298112053922364e-21}
+I_c      1.564439259943e-09 bits
+diag     trace-1 -2.1e-15  herm-defect 1.5e-33  min-eig/max -2.7e-16
+         |evd - evr| 4.4e-15   |random-rotation probe| 1.1e-14
+check    expm: I_c 1.564443759631e-09   |diff| 4.5e-15   (1.4 s)
+error    empirical 1.1e-13 bits (10 x max of the differences above)
+         first-order bound 6.0e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  4.6e-11 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [1.5178e-09, 1.6110e-09])
+time     total 1.2 s (superop 0.0, channel 0.2, entropy 0.8)

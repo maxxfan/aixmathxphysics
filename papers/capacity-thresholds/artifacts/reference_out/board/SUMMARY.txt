@@ -1,0 +1,23 @@
+=== replay board, 2026-11-10 19:06:21 UTC ===
+# First run of this mode (NPROC=2, shared machine).  expected/arb.json had no entries for these 17 records yet, so the
+# run itself reported "no expected entry" for each step.  The reference enclosures were then taken from these logs,
+# and the lines below are check_outputs.py on the same logs.  "identical" is therefore true by construction here; the
+# independent content of each line is the sign and "inside the verifier enclosure" (the board post of October 2026).
+arb_board_02              370s  PASS identical   arb board_02: depolarizing n=150 p=0.06629494 sign POSITIVE I_c in [2000107082113891185657, 2000107082113891185660]e-30 bits; inside the verifier enclosure [1.5821e-9, 2.1906e-9]
+arb_board_03               10s  PASS identical   arb board_03: independent_xz n=48 p=0.12179852 sign POSITIVE I_c in [10071734412819077943724, 10071734412819077943725]e-30 bits; inside the verifier enclosure [9.9207e-9, 1.0197e-8]
+arb_board_04               11s  PASS identical   arb board_04: two_pauli n=48 p=0.12086867 sign POSITIVE I_c in [10048934101754280784698, 10048934101754280784699]e-30 bits; inside the verifier enclosure [9.8282e-9, 1.0237e-8]
+arb_board_06             2280s  PASS identical   arb board_06: depolarizing n=240 p=0.06646039 sign POSITIVE I_c in [4000581326659857294174, 4000581326659857294396]e-30 bits; inside the verifier enclosure [2.9994e-9, 4.4447e-9]
+arb_board_09               34s  PASS identical   arb board_09: independent_xz n=64 p=0.12331552 sign POSITIVE I_c in [10006403806167761854561, 10006403806167761854562]e-30 bits; inside the verifier enclosure [9.5442e-9, 1.0323e-8]
+arb_board_10               36s  PASS identical   arb board_10: two_pauli n=64 p=0.12235314 sign POSITIVE I_c in [10003009704728350723426, 10003009704728350723428]e-30 bits; inside the verifier enclosure [9.0366e-9, 1.0657e-8]
+arb_board_11             2562s  PASS identical   arb board_11: depolarizing n=240 p=0.06651279 sign POSITIVE I_c in [1016281377588855093823, 1016281377588855094061]e-30 bits; inside the verifier enclosure [1.0198e-11, 1.4597e-9]
+arb_board_12               34s  PASS identical   arb board_12: independent_xz n=64 p=0.12332757 sign POSITIVE I_c in [478274802522144315490, 478274802522144315492]e-30 bits; inside the verifier enclosure [2.4427e-11, 7.8861e-10]
+arb_board_13               39s  PASS identical   arb board_13: two_pauli n=64 p=0.12236279 sign POSITIVE I_c in [1102874964264010306289, 1102874964264010306291]e-30 bits; inside the verifier enclosure [1.3766e-10, 1.7557e-9]
+arb_board_15             1742s  PASS identical   arb board_15: depolarizing n=240 p=0.06662756 sign POSITIVE I_c in [1313041821797202792912, 1313041821797202792967]e-30 bits; inside the verifier enclosure [4.0998e-12, 2.1039e-9]
+arb_board_16              166s  PASS identical   arb board_16: two_pauli n=80 p=0.1233958 sign POSITIVE I_c in [4533145859173828592586, 4533145859173828592592]e-30 bits; inside the verifier enclosure [5.1234e-11, 7.1850e-9]
+arb_board_17              158s  PASS identical   arb board_17: independent_xz n=80 p=0.12437928 sign POSITIVE I_c in [1564457900421901566720, 1564457900421901566721]e-30 bits; inside the verifier enclosure [8.7420e-12, 2.4725e-9]
+arb_board_18             1931s  PASS identical   arb board_18: depolarizing n=240 p=0.06667253 sign POSITIVE I_c in [1344762899556426361306, 1344762899556426361363]e-30 bits; inside the verifier enclosure [9.7537e-12, 2.1687e-9]
+arb_board_21              104s  PASS identical   arb board_21: two_pauli n=80 p=0.1236419 sign POSITIVE I_c in [4612437972082579989123, 4612437972082579989130]e-30 bits; inside the verifier enclosure [6.1335e-11, 7.6129e-9]
+arb_board_22               87s  PASS identical   arb board_22: independent_xz n=80 p=0.12459005 sign POSITIVE I_c in [1563813073998616051544, 1563813073998616051545]e-30 bits; inside the verifier enclosure [2.2419e-11, 2.6302e-9]
+arb_board_24               93s  PASS identical   arb board_24: independent_xz n=80 p=0.12463166 sign POSITIVE I_c in [1603092761710253192566, 1603092761710253192568]e-30 bits; inside the verifier enclosure [3.2608e-12, 2.6262e-9]
+arb_board_25              109s  PASS identical   arb board_25: two_pauli n=80 p=0.12367023 sign POSITIVE I_c in [4688527159203557451761, 4688527159203557451768]e-30 bits; inside the verifier enclosure [2.2868e-12, 7.5983e-9]
+RELEASE (board): PASS

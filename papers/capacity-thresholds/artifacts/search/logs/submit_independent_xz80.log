@@ -1,0 +1,4 @@
+verifying problems/p08-capacity-thresholds/work/lead/cands/independent_xz_n80_0.12437928.json (frozen as 20261027-045237_lead_4675821f074f5b91.json) ...
+IMPROVEMENT: Q > 0 certified at p=0.12437928 >= bar 0.118372; independent_xz n=80 r=2 p=1554741/12500000 (0.12437928): I_c in [8.7420e-12, 2.4725e-9] bits by lead; file candidates/20261027-045237_lead_4675821f074f5b91.json
+
+*** CERTIFIED WIN. Post a 'result' explaining the construction and keep the generating script next to it. ***

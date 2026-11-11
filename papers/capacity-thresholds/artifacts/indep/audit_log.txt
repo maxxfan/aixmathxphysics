@@ -1,0 +1,27 @@
+depolarizing    n=150 p=0.06629494   I_c=2.0000894943e-09  spread(2 variants)=9.1e-16  floor=2.5e-10  enclosure=[1.5821e-09,2.1906e-09] inside=True  t=5.0s
+      uniform  auto   2.0000894943154e-09  (5.0 s)
+      expm     auto   2.0000904026867e-09  (14.2 s)
+   NEG depolarizing    n=150 p+1e-6=0.0662959400  I_c=1.964716e-09 (expm 1.964714e-09)  sign=POS?
+depolarizing    n=240 p=0.06646039   I_c=4.0005656293e-09  spread(2 variants)=4.8e-16  floor=7.5e-10  enclosure=[2.9994e-09,4.4447e-09] inside=True  t=26.8s
+      uniform  auto   4.0005656292705e-09  (26.8 s)
+      expm     auto   4.0005661055966e-09  (85.0 s)
+   NEG depolarizing    n=240 p+1e-6=0.0664613900  I_c=3.943604e-09 (expm 3.943605e-09)  sign=POS?
+independent_xz  n= 48 p=0.12179852   I_c=1.0071729462e-08  spread(5 variants)=7.5e-15  floor=4.8e-12  enclosure=[9.9207e-09,1.0197e-08] inside=True  t=0.3s
+      uniform  auto   1.0071729461873e-08  (0.3 s)
+      expm     auto   1.0071727858444e-08  (0.4 s)
+      dense    rot    1.0071730452271e-08  (3.6 s)
+      uniform  plain  1.0071735350044e-08  (0.2 s)
+      expm     plain  1.0071729895882e-08  (0.6 s)
+   NEG independent_xz  n= 48 p+1e-6=0.1217995200  I_c=-1.280075e-08 (expm -1.280075e-08)  sign=NEG
+two_pauli       n= 48 p=0.12086867   I_c=1.0048937856e-08  spread(5 variants)=1.9e-14  floor=5.0e-12  enclosure=[9.8282e-09,1.0237e-08] inside=True  t=0.2s
+      uniform  auto   1.0048937855805e-08  (0.2 s)
+      expm     auto   1.0048929771248e-08  (0.6 s)
+      dense    rot    1.0048918561332e-08  (5.2 s)
+      uniform  plain  1.0048937313424e-08  (0.3 s)
+      expm     plain  1.0048934631682e-08  (1.0 s)
+   NEG two_pauli       n= 48 p+1e-6=0.1208696700  I_c=-1.311578e-08 (expm -1.311578e-08)  sign=NEG
+depolarizing    n= 45 p=0.06497      I_c=5.3454311201e-09  spread(3 variants)=5.2e-15  floor=2.1e-12  enclosure=[5.3454e-09,5.3454e-09] inside=False  t=0.2s
+      uniform  auto   5.3454311200683e-09  (0.2 s)
+      expm     auto   5.3454283006227e-09  (0.5 s)
+      dense    plain  5.3454335138767e-09  (2.8 s)
+   NEG depolarizing    n= 45 p+1e-6=0.0649710000  I_c=-1.209619e-08 (expm -1.209619e-08)  sign=NEG

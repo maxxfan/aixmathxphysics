@@ -1,0 +1,11 @@
+invariant: for each of the 5,005 nine-sets B, the number of collinear triples among the nine points S_{B-i} of PG(2,8)
+profile = {number of collinear triples: number of sets B}
+class 1, scan orbits [1, 2, 3, 6, 14, 27, 28]: {3: 30, 4: 90, 5: 270, 6: 780, 7: 840, 8: 900, 9: 630, 10: 430, 11: 510, 12: 135, 13: 120, 14: 105, 15: 60, 16: 60, 20: 15, 36: 30}
+class 2, scan orbits [4, 5, 11, 17, 21, 25, 26]: {4: 150, 5: 360, 6: 600, 7: 660, 8: 840, 9: 900, 10: 370, 11: 270, 12: 210, 13: 210, 14: 300, 15: 60, 16: 30, 20: 30, 36: 15} <- Theorem 1 (scan orbit 4)
+class 3, scan orbits [7, 10, 13, 18, 19, 22, 23]: {4: 165, 5: 240, 6: 885, 7: 540, 8: 1155, 9: 750, 10: 400, 11: 300, 12: 120, 13: 150, 14: 180, 15: 30, 16: 45, 22: 30, 36: 15}
+class 4, scan orbits [8, 9, 12, 15, 16, 20, 24]: {4: 30, 5: 150, 6: 645, 7: 630, 8: 1335, 9: 750, 10: 535, 11: 330, 12: 120, 13: 120, 14: 195, 16: 45, 20: 60, 23: 30, 36: 30} <- codetables.de [[15,0,8]]_8 (scan orbits [8, 9, 12, 15, 16, 20, 24])
+profile constant on each class (7 orbits each): True
+Theorem 1 and all graph forms of the table code have the profile of their class: True
+the 4 class profiles are pairwise different: True
+the codetables.de [[15,0,8]]_8 code and the state of Theorem 1 are NOT equal up to local Clifford operations and party permutations (profiles differ)
+INVARIANT DONE

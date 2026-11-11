@@ -1,0 +1,29 @@
+loaded (5s); q_6: gamma 4.138e-06, tol 1.2e-13; 130228 spikes at 2^27; start one, max |r_j| 3.418e-01
+    cepstral step: max |r_j| 3.42e-01, F on grid in [-1.000e+00, 2.184e+01]
+    exp series: max |E_k| 7.729e-01, finite True
+  cepstral step 1: max |r_j| 1.574e-11 (822s)
+    cepstral step: max |r_j| 1.57e-11, F on grid in [-2.344e-07, 3.436e-06]
+    exp series: max |E_k| 1.000e+00, finite True
+  cepstral step 2: max |r_j| 5.667e-17 (1635s)
+factor err 5.667e-17 (tol 1.2e-13) (1635s)
+wrote out/cert_k7_n850000_fix.json.gz (1647s)
+verifier (720.3s): IMPROVEMENT: exact ordered search with 7 queries for n=850000: 0.355382 log2 N (record 0.364572, k=6, n=90000); min certified margin 5.88e-07  margins=[5.882355509150647e-07, 1.268586351372599e-06, 3.9147537619926325e-06, 0.0009408465407391905, 5.224305499436585e-05, 4.13762194574043e-06]
+independent: out/cert_k7_n850000_fix.json.gz {"k": 7, "n": 850000, "constant": 0.3553822045714237, "beats_prior_explicit": true, "margins": [5.882355509150647e-07, 1.268586351372599e-06, 3.9147537619926325e-06, 0.0009408465407391905, 5.224305499436585e-05, 4.13762194574043e-06]} 
+     2384.31 real      2368.23 user        17.57 sys
+          6132088832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3846034  page reclaims
+                 155  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 308  voluntary context switches
+              236141  involuntary context switches
+      38919952113629  instructions retired
+       9605059810154  cycles elapsed
+          9181076608  peak memory footprint

@@ -1,0 +1,7 @@
+# Versions of the reference run: Python 3.14.3 on macOS 26.5 (arm64), Apple clang 21.0.0.
+# python-flint 0.9.0 bundles FLINT 3.6.0 (Arb).  It did not install on Python 3.9 in the
+# 2026-10-31 review; use a recent Python.
+python-flint==0.9.0
+numpy==2.5.4
+mpmath==1.4.1
+scipy==1.18.1

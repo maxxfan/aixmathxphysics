@@ -1019,9 +1019,12 @@
  "comparison": {
   "reported": 157,
   "reported_by": "Fisher et al. (Khoruzhii start)",
-  "reported_invalid": false,
+  "reported_status": "ok",
   "checked": 157,
-  "checked_by": "Fisher et al. (Khoruzhii start)"
+  "checked_by": "Fisher et al. (Khoruzhii start)",
+  "reported_invalid": false,
+  "vandaele2025_table3": 207,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "ftodd4_w10 (seed 1, 240s) on work/base4/k10.json",
  "construction_script": "work/base4/red.py",

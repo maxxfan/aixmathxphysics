@@ -1,0 +1,29 @@
+depolarizing n=240: float zero crossing 0.0665306379, dI_c/dp -5.694e-05 bits, margin-4e-09 threshold 0.0664603999
+  IMPROVEMENT: Q > 0 certified at p=0.06646039 >= bar 0.06496; depolarizing n=240 r=2 p=6646039/100000000 (0.06646039): I_c in [3.0002e-9, 4.4446e-9] bits  (35.39 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06649551 >= bar 0.06496; depolarizing n=240 r=2 p=6649551/100000000 (0.06649551): I_c in [1.0002e-9, 2.4443e-9] bits  (31.84 s)
+  UNDECIDED: enclosure contains 0; depolarizing n=240 r=2 p=6651307/100000000 (0.06651307): I_c in [-2.1695e-13, 1.4455e-9] bits  (34.2 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06650429 >= bar 0.06496; depolarizing n=240 r=2 p=6650429/100000000 (0.06650429): I_c in [4.9661e-10, 1.9441e-9] bits  (34.64 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06650868 >= bar 0.06496; depolarizing n=240 r=2 p=1662717/25000000 (0.06650868): I_c in [2.4916e-10, 1.6939e-9] bits  (34.16 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06651087 >= bar 0.06496; depolarizing n=240 r=2 p=6651087/100000000 (0.06651087): I_c in [1.2291e-10, 1.5691e-9] bits  (33.2 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06651197 >= bar 0.06496; depolarizing n=240 r=2 p=6651197/100000000 (0.06651197): I_c in [6.2813e-11, 1.5066e-9] bits  (33.17 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06651252 >= bar 0.06496; depolarizing n=240 r=2 p=1662813/25000000 (0.06651252): I_c in [2.9716e-11, 1.4752e-9] bits  (31.27 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06651279 >= bar 0.06496; depolarizing n=240 r=2 p=6651279/100000000 (0.06651279): I_c in [1.0198e-11, 1.4597e-9] bits  (33.37 s)
+best certified p = 0.06651279: work/lead/cands/depolarizing_n240_0.06651279.json
+independent_xz n=64: float zero crossing 0.1233281749, dI_c/dp -7.907e-04 bits, margin-1e-08 threshold 0.1233155281
+  IMPROVEMENT: Q > 0 certified at p=0.12331552 >= bar 0.118372; independent_xz n=64 r=2 p=385361/3125000 (0.12331552): I_c in [9.5453e-9, 1.0322e-8] bits  (80.39 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12332184 >= bar 0.118372; independent_xz n=64 r=2 p=1541523/12500000 (0.12332184): I_c in [4.5514e-9, 5.3225e-9] bits  (78.97 s)
+  IMPROVEMENT: Q > 0 certified at p=0.123325 >= bar 0.118372; independent_xz n=64 r=2 p=4933/40000 (0.123325): I_c in [2.0510e-9, 2.8245e-9] bits  (79.17 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12332658 >= bar 0.118372; independent_xz n=64 r=2 p=6166329/50000000 (0.12332658): I_c in [8.0185e-10, 1.5751e-9] bits  (79.19 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12332737 >= bar 0.118372; independent_xz n=64 r=2 p=12332737/100000000 (0.12332737): I_c in [1.7935e-10, 9.4889e-10] bits  (79.87 s)
+  UNDECIDED: enclosure contains 0; independent_xz n=64 r=2 p=12332777/100000000 (0.12332777): I_c in [-1.4087e-10, 6.3548e-10] bits  (78.17 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12332757 >= bar 0.118372; independent_xz n=64 r=2 p=12332757/100000000 (0.12332757): I_c in [2.4427e-11, 7.8861e-10] bits  (76.99 s)
+best certified p = 0.12332757: work/lead/cands/independent_xz_n64_0.12332757.json
+two_pauli n=64: float zero crossing 0.1223639858, dI_c/dp -9.223e-04 bits, margin-1e-08 threshold 0.1223531433
+  IMPROVEMENT: Q > 0 certified at p=0.12235314 >= bar 0.118068; two_pauli n=64 r=2 p=6117657/50000000 (0.12235314): I_c in [9.0367e-9, 1.0657e-8] bits  (78.52 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12235856 >= bar 0.118068; two_pauli n=64 r=2 p=764741/6250000 (0.12235856): I_c in [4.0362e-9, 5.6588e-9] bits  (78.58 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12236127 >= bar 0.118068; two_pauli n=64 r=2 p=12236127/100000000 (0.12236127): I_c in [1.5278e-9, 3.1655e-9] bits  (78.9 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12236262 >= bar 0.118068; two_pauli n=64 r=2 p=6118131/50000000 (0.12236262): I_c in [2.8446e-10, 1.9194e-9] bits  (78.78 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=64 r=2 p=1223633/10000000 (0.1223633): I_c in [-3.4129e-10, 1.2912e-9] bits  (77.57 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=64 r=2 p=1529537/12500000 (0.12236296): I_c in [-2.9574e-11, 1.6062e-9] bits  (79.12 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12236279 >= bar 0.118068; two_pauli n=64 r=2 p=12236279/100000000 (0.12236279): I_c in [1.3766e-10, 1.7557e-9] bits  (78.12 s)
+best certified p = 0.12236279: work/lead/cands/two_pauli_n64_0.12236279.json

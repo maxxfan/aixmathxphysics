@@ -1,0 +1,23 @@
+{
+ "verifier": "p08-capacity-thresholds/2",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "4f007e83056ea3a1",
+  "icball.c": "00b09294b432e40a",
+  "records.json": "3901d412c50f84f7",
+  "icball": "a0b8880a608f8574"
+ },
+ "hash": "b7078688015064a3",
+ "target": "two_pauli",
+ "p": "1545941/12500000",
+ "n": 80,
+ "rank": 2,
+ "I_c_lo": "1.322331458264256811522160417577798294777E-13",
+ "I_c_hi": "7.572911788553220324322273192010092412822E-9",
+ "delta_max": 1.1185179302208962e-13,
+ "engine_seconds": 249.23,
+ "certified_p": 0.12367528,
+ "verdict": "IMPROVEMENT",
+ "summary": "IMPROVEMENT: Q > 0 certified at p=0.12367528 >= bar 0.118068; two_pauli n=80 r=2 p=1545941/12500000 (0.12367528): I_c in [1.3223e-13, 7.5729e-9] bits",
+ "seconds": 249.23
+}

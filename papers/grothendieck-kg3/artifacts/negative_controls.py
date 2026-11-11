@@ -3,7 +3,8 @@
 checker to reject every one.   usage: python3 -I negative_controls.py [BUNDLE_DIR]      (about 3-4 minutes)
 
 Cheap controls fail in parsing; the others change the local model, the target or the shrinking data only slightly
-and must fail the exact residual test (the certificate's margin is about 1e-9).
+and must fail the exact residual test (the certificate's margin is about 1e-9). The last two controls corrupt an
+entry of all_certificates/INDEX.json (file hash; bound) and must be rejected by the all-certificates mode.
 """
 import copy
 import json
@@ -130,7 +131,19 @@ def main():
             print("NOT REJECTED  README.md changed after the manifest", flush=True)
         except cr.Fail as e:
             print(f"rejected      README.md changed after the manifest: {e}", flush=True)
-    n = len(CONTROLS) + 1
+        # the all-certificates mode (--all): a wrong file hash or a wrong bound in the index must be rejected
+        entry = next(e for e in cr.load_index(bundle) if e["table2"])        # post 35, the smallest of Table II
+        for name, key, value in (
+                ("index: SHA-256 of a certificate changed", "sha256", "0" * 64),
+                ("index: bound of a certificate lowered by 1e-10", "kg3_upper",
+                 f"{entry['kg3_upper'][:2]}{int(entry['kg3_upper'][2:]) - 1:010d}")):
+            try:
+                cr.check_indexed(bundle, dict(entry, **{key: value}))
+                bad += 1
+                print(f"NOT REJECTED  {name}", flush=True)
+            except cr.Fail as e:
+                print(f"rejected      {name}: {e}", flush=True)
+    n = len(CONTROLS) + 3
     print(f"{n - bad} of {n} corruptions rejected" + ("" if bad == 0 else f"; {bad} NOT REJECTED"))
     sys.exit(1 if bad else 0)
 

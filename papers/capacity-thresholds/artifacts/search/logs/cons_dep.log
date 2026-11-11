@@ -1,0 +1,11 @@
+depolarizing n=240: float zero crossing 0.0667112061, dI_c/dp -4.953e-05 bits, margin-4e-09 threshold 0.0666304697
+  IMPROVEMENT: Q > 0 certified at p=0.06663046 >= bar 0.06496; depolarizing n=240 r=2 p=3331523/50000000 (0.06663046): I_c in [2.6989e-9, 4.7964e-9] bits  (30.98 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06667083 >= bar 0.06496; depolarizing n=240 r=2 p=6667083/100000000 (0.06667083): I_c in [6.9113e-10, 2.7991e-9] bits  (34.46 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06665064 >= bar 0.06496; depolarizing n=240 r=2 p=833133/12500000 (0.06665064): I_c in [1.6947e-9, 3.7978e-9] bits  (46.69 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666073 >= bar 0.06496; depolarizing n=240 r=2 p=6666073/100000000 (0.06666073): I_c in [1.2015e-9, 3.2939e-9] bits  (53.65 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666578 >= bar 0.06496; depolarizing n=240 r=2 p=3333289/50000000 (0.06666578): I_c in [9.4656e-10, 3.0466e-9] bits  (46.74 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666325 >= bar 0.06496; depolarizing n=240 r=2 p=266653/4000000 (0.06666325): I_c in [1.0723e-9, 3.1725e-9] bits  (42.61 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666451 >= bar 0.06496; depolarizing n=240 r=2 p=6666451/100000000 (0.06666451): I_c in [1.0115e-9, 3.1086e-9] bits  (58.82 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666514 >= bar 0.06496; depolarizing n=240 r=2 p=3333257/50000000 (0.06666514): I_c in [9.7671e-10, 3.0797e-9] bits  (52.11 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06666482 >= bar 0.06496; depolarizing n=240 r=2 p=3333241/50000000 (0.06666482): I_c in [9.9746e-10, 3.0932e-9] bits  (44.14 s)
+best certified p = 0.06666451: work/lead/cands/depolarizing_n240_0.06666451.json

@@ -1,19 +1,20 @@
 $ python3 -I check_release.py .
 manifest: ok
-records (n, T-count; reported value, best checked published value): irreducible | tensor criterion | exact circuit identity | simulation
-  GF(2^5 )  T=57    (   49*,   59)  ok | ok | ok | ok (all 2^15 inputs)
-  GF(2^6 )  T=69    (    77,   77)  ok | ok | ok | ok (all 2^18 inputs)
-  GF(2^7 )  T=97    (   101,  104)  ok | ok | ok | ok (all 2^21 inputs)
-  GF(2^8 )  T=113   (   123,  123)  ok | ok | ok | ok (all 2^24 inputs)
-  GF(2^10)  T=151   (   157,  157)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^11)  T=179   (  215*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^12)  T=191   (  243*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^13)  T=219   (  293*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^14)  T=229   (  319*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^15)  T=253   (  363*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^16)  T=267   (  383*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^32)  T=571   ( 1177*,    -)  ok | ok | ok | ok (2048 random inputs)
-  GF(2^64)  T=1255  ( 3729*,    -)  ok | ok | ok | ok (2048 random inputs)
+records (n, T-count; lowest reported value, best checked published value, Vandaele 2025 Table 3): irreducible | tensor criterion | exact circuit identity | simulation
+  (* the released data behind the reported value is not a GF(2^n) multiplication tensor; ? not released, unverified; the comparison values are not certified by this checker)
+  GF(2^5 )  T=57    (   49*,   59,   61)  ok | ok | ok | ok (all 2^15 inputs)
+  GF(2^6 )  T=69    (    77,   77,   83)  ok | ok | ok | ok (all 2^18 inputs)
+  GF(2^7 )  T=97    (   101,  104,  111)  ok | ok | ok | ok (all 2^21 inputs)
+  GF(2^8 )  T=113   (   123,  123,  135)  ok | ok | ok | ok (all 2^24 inputs)
+  GF(2^10)  T=151   (   157,  157,  207)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^11)  T=179   (  215*,    -,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^12)  T=191   (  243*,    -,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^13)  T=219   (  293*,    -,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^14)  T=229   (  319*,    -,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^15)  T=253   (  363*,    -,    -)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^16)  T=267   (  383*,    -,  425)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^32)  T=571   ( 1177*,    -, 1255)  ok | ok | ok | ok (2048 random inputs)
+  GF(2^64)  T=1255  ( 3729?,    -, 3817)  ok | ok | ok | ok (2048 random inputs)
 blocks (algebra, T-count): factor count, distinct, modulus, tensor criterion
   GF(4)                                    T=17   ok
   GF(8)                                    T=29   ok
@@ -22,6 +23,10 @@ blocks (algebra, T-count): factor count, distinct, modulus, tensor criterion
   F2[y]/(y^2)                              T=15   ok
   F2[y]/(y^3)                              T=25   ok
 genus-2 construction data: ok (33 rational points, Q of degree 16 on the curve, identity a*b = sum_k l_k(a) l_k(b) w_k on 20 random pairs)
+exact minima, 2-dimensional algebras (all 2^22 decompositions on 6 variables): minimum T-count, minimizers, next weights
+  GF(4)        min T=17  (1008 minimizers; next 18: 2576, 21: 24816)  ok
+  F2[y]/(y^2)  min T=15  (112 minimizers; next 16: 336, 19: 5600)  ok
+  F2 x F2      min T=13  (14 minimizers; next 14: 50, 17: 882)  ok
 ALL CHECKS PASSED
 
 $ python3 -I negative_controls.py .
@@ -60,3 +65,20 @@ singles odd: 0, pairs odd: 0, triple mismatches: 0
 VALID decomposition of GF(2^64) multiplication
 raw network: 1287 factors, sha256 016f80bccaad1af1... matches curve64.json
 REGENERATION OK
+
+$ python3 -I exact/enumerate_small.py .
+GF(4) = F2[x]/(x^2+x+1): N = 6, 41 equations, code dimension 22, coset size 2^22 = 4194304
+  minimum weight 17, attained by 1008 decompositions
+  weight distribution: 17: 1008, 18: 2576, 21: 24816, 22: 47376, 25: 222768, 26: 325584, 29: 690480, 30: 782544, 33: 782544, 34: 690480, 37: 325584, 38: 222768, 41: 47376, 42: 24816, 45: 2576, 46: 1008
+  a minimizer (vectors as integers, bit i = variable i): 2 5 6 8 9 17 18 20 21 24 26 32 33 36 38 41 42   [re-checked against the 41 equations: ok]
+  released block blocks/block_alpha_n2.json: 17 vectors, in the coset and of minimum weight: ok
+F2[y]/(y^2): N = 6, 41 equations, code dimension 22, coset size 2^22 = 4194304
+  minimum weight 15, attained by 112 decompositions
+  weight distribution: 15: 112, 16: 336, 19: 5600, 20: 12320, 23: 85344, 24: 142240, 27: 445536, 28: 572832, 31: 832832, 32: 832832, 35: 572832, 36: 445536, 39: 142240, 40: 85344, 43: 12320, 44: 5600, 47: 336, 48: 112
+  a minimizer (vectors as integers, bit i = variable i): 2 5 6 8 9 16 17 20 21 33 34 36 38 40 41   [re-checked against the 41 equations: ok]
+  released block blocks/block_ring_e2.json: 15 vectors, in the coset and of minimum weight: ok
+F2 x F2 = F2[x]/(x^2+x): N = 6, 41 equations, code dimension 22, coset size 2^22 = 4194304
+  minimum weight 13, attained by 14 decompositions
+  weight distribution: 13: 14, 14: 50, 17: 882, 18: 2254, 21: 25256, 22: 48216, 25: 222040, 26: 324520, 29: 690900, 30: 783020, 33: 783020, 34: 690900, 37: 324520, 38: 222040, 41: 48216, 42: 25256, 45: 2254, 46: 882, 49: 50, 50: 14
+  a minimizer (vectors as integers, bit i = variable i): 3 12 15 26 27 30 31 32 35 42 43 44 46   [re-checked against the 41 equations: ok]
+EXACT ENUMERATION OK

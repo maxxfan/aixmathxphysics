@@ -1,0 +1,770 @@
+{
+ "meta": {
+  "source": "https://codetables.de (M. Grassl, Bounds on the minimum distance of additive quantum codes)",
+  "fetched": "2026-11-10",
+  "fetched_by": "urllib (plain GET), one request per page",
+  "note": "The query parameter q is the size of the field F_{q^2} of the additive code, so the local dimension is its square root: q=64 is local dimension 8, q=16 is local dimension 4, q=9 is local dimension 3. Pages for q=81, 121, 169, 256 (local dimensions 9, 11, 13, 16) answer 'currently not available'."
+ },
+ "pages": [
+  {
+   "file": "qecc_q121_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=121&n=14&k=0",
+   "table_parameter_q": 121,
+   "local_dimension": 11,
+   "n": 14,
+   "k": 0,
+   "sha256": "cec4a80f677a7dc2e1a9a4a4fc30a33c99c45fae701928f6e7448f2704b14972",
+   "available": false
+  },
+  {
+   "file": "qecc_q121_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=121&n=16&k=0",
+   "table_parameter_q": 121,
+   "local_dimension": 11,
+   "n": 16,
+   "k": 0,
+   "sha256": "cec4a80f677a7dc2e1a9a4a4fc30a33c99c45fae701928f6e7448f2704b14972",
+   "available": false
+  },
+  {
+   "file": "qecc_q169_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=169&n=16&k=0",
+   "table_parameter_q": 169,
+   "local_dimension": 13,
+   "n": 16,
+   "k": 0,
+   "sha256": "6432fc51aece2fd57252c72daf9be49b440b629b5870cced2a2ebfac18147f32",
+   "available": false
+  },
+  {
+   "file": "qecc_q16_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=12&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 12,
+   "k": 0,
+   "sha256": "cae26a5bb0a3b4a642796c727ef58cc66bc1f6b72685b5397607fc44d6723fd9",
+   "available": true,
+   "lower": 6,
+   "upper": 6,
+   "construction_type": "linear",
+   "last_modified": [
+    "2010-05-11"
+   ],
+   "construction": [
+    "Construction of a [[12,0,6]] quantum code:",
+    "[1]:  [[12, 0, 6]] self-dual quantum code over GF(2^4)",
+    "QuasiCyclicCode of length 12 with generating polynomials: 1,  w^4*x^5 + w^7*x^4 + w^14*x^3 + w^13*x^2 + w^8*x + w^5"
+   ]
+  },
+  {
+   "file": "qecc_q16_n13_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=13&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 13,
+   "k": 0,
+   "sha256": "e1cb8733864d10c7a48023fa57d52417735674902e6cb0798bf2685f31e11a3f",
+   "available": true,
+   "lower": 6,
+   "upper": 7,
+   "construction_type": null,
+   "last_modified": [
+    "2010-05-06"
+   ],
+   "construction": [
+    "Construction of a [[13,0,6]] quantum code:",
+    "[1]:  [[13, 0, 6]] self-dual quantum code over GF(2^4)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q16_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=14&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 14,
+   "k": 0,
+   "sha256": "1569e41bb9bdd0c1399425c46c9596ed5fe7e9008a60009d44f87ff3dfe73f36",
+   "available": true,
+   "lower": 7,
+   "upper": 8,
+   "construction_type": null,
+   "last_modified": [
+    "2010-05-11"
+   ],
+   "construction": [
+    "Construction of a [[14,0,7]] quantum code:",
+    "[1]:  [[14, 0, 7]] self-dual quantum code over GF(2^4)",
+    "QuasiCyclicCode of length 14 with generating polynomials: 1,  w*x^6 + w*x^4 + w^5*x^3 + w^10*x^2 + x + w^12"
+   ]
+  },
+  {
+   "file": "qecc_q16_n15_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=15&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 15,
+   "k": 0,
+   "sha256": "4da7014c44327598944c4a7911ded402082bb8934fb201ae3b45da0165e26a54",
+   "available": true,
+   "lower": 7,
+   "upper": 8,
+   "construction_type": null,
+   "last_modified": [
+    "2010-05-11"
+   ],
+   "construction": [
+    "Construction of a [[15,0,7]] quantum code:",
+    "[1]:  [[15, 0, 7]] self-dual quantum code over GF(2^4)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q16_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=16&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 16,
+   "k": 0,
+   "sha256": "96bb5f8d54db22f968e1c98548b300961877d8abb317ac233e6a3c77a5a693de",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": null,
+   "last_modified": [
+    "2010-05-11"
+   ],
+   "construction": [
+    "Construction of a [[16,0,8]] quantum code:",
+    "[1]:  [[16, 0, 8]] self-dual quantum code over GF(2^4)",
+    "QuasiCyclicCode of length 16 with generating polynomials: 1,  w^8*x^7 + w^14*x^6 + w^4*x^5 + w^11*x^4 + w^9*x^3 + x^2 + w^8*x + w^8"
+   ]
+  },
+  {
+   "file": "qecc_q16_n18_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=18&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 18,
+   "k": 0,
+   "sha256": "ce2bbfade994abc69d25a60379f9c8e4e597db215542d561a4989bb143bfce7e",
+   "available": true,
+   "lower": 8,
+   "upper": 10,
+   "construction_type": "linear",
+   "last_modified": [
+    "2010-05-11"
+   ],
+   "construction": [
+    "Construction of a [[18,0,8]] quantum code:",
+    "[1]:  [[18, 0, 8]] self-dual quantum code over GF(2^4)",
+    "QuasiCyclicCode of length 18 with generating polynomials: 1,  w^5*x^8 + w^6*x^7 + w^5*x^6 + w^12*x^5 + w^2*x^4 + w^8*x^2 + w^8*x + w^7"
+   ]
+  },
+  {
+   "file": "qecc_q16_n8_k0.html",
+   "url": "https://codetables.de/QECC.php?q=16&n=8&k=0",
+   "table_parameter_q": 16,
+   "local_dimension": 4,
+   "n": 8,
+   "k": 0,
+   "sha256": "ed8842a408af7058ca7602c934fffa7a5140f9eef5be87ec67184a442014a3fd",
+   "available": true,
+   "lower": 4,
+   "upper": 4,
+   "construction_type": null,
+   "last_modified": [
+    "2024-06-07"
+   ],
+   "construction": [
+    "Construction of a [[8,0,4]] quantum code:",
+    "[1]:  [[8, 0, 4]] self-dual quantum code over GF(2^4)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q256_n18_k0.html",
+   "url": "https://codetables.de/QECC.php?q=256&n=18&k=0",
+   "table_parameter_q": 256,
+   "local_dimension": 16,
+   "n": 18,
+   "k": 0,
+   "sha256": "6537ab7e4443a40feff34cb0e770d74d2e1a69da64325edaf09887bd7f3990a7",
+   "available": false
+  },
+  {
+   "file": "qecc_q256_n19_k0.html",
+   "url": "https://codetables.de/QECC.php?q=256&n=19&k=0",
+   "table_parameter_q": 256,
+   "local_dimension": 16,
+   "n": 19,
+   "k": 0,
+   "sha256": "6537ab7e4443a40feff34cb0e770d74d2e1a69da64325edaf09887bd7f3990a7",
+   "available": false
+  },
+  {
+   "file": "qecc_q256_n20_k0.html",
+   "url": "https://codetables.de/QECC.php?q=256&n=20&k=0",
+   "table_parameter_q": 256,
+   "local_dimension": 16,
+   "n": 20,
+   "k": 0,
+   "sha256": "6537ab7e4443a40feff34cb0e770d74d2e1a69da64325edaf09887bd7f3990a7",
+   "available": false
+  },
+  {
+   "file": "qecc_q256_n21_k0.html",
+   "url": "https://codetables.de/QECC.php?q=256&n=21&k=0",
+   "table_parameter_q": 256,
+   "local_dimension": 16,
+   "n": 21,
+   "k": 0,
+   "sha256": "6537ab7e4443a40feff34cb0e770d74d2e1a69da64325edaf09887bd7f3990a7",
+   "available": false
+  },
+  {
+   "file": "qecc_q256_n22_k0.html",
+   "url": "https://codetables.de/QECC.php?q=256&n=22&k=0",
+   "table_parameter_q": 256,
+   "local_dimension": 16,
+   "n": 22,
+   "k": 0,
+   "sha256": "6537ab7e4443a40feff34cb0e770d74d2e1a69da64325edaf09887bd7f3990a7",
+   "available": false
+  },
+  {
+   "file": "qecc_q25_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=25&n=12&k=0",
+   "table_parameter_q": 25,
+   "local_dimension": 5,
+   "n": 12,
+   "k": 0,
+   "sha256": "134ec6608e63db63ac61715a4a03f7621ed9b533e9339d5de8ff3041a6cd559b",
+   "available": true,
+   "lower": 6,
+   "upper": 7,
+   "construction_type": "linear",
+   "last_modified": [
+    "2014-10-16"
+   ],
+   "construction": [
+    "Construction of a [[12,0,6]] quantum code:",
+    "[1]:  [[12, 0, 6]] self-dual quantum code over GF(5^2)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q25_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=25&n=14&k=0",
+   "table_parameter_q": 25,
+   "local_dimension": 5,
+   "n": 14,
+   "k": 0,
+   "sha256": "f7b42023bc0a7150aaa924a1d0ae7f0942e9b6853b3a731e537219995fe2392c",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": "Ball",
+   "last_modified": [
+    "2024-05-23"
+   ],
+   "construction": [
+    "Construction of a [[14,0,8]] quantum code:",
+    "[1]:  [[14, 0, 8]] self-dual quantum code over GF(5^2)",
+    "QuasiCyclicCode of length 14 with generating polynomials: 1,  x^6 + 3*x^5 + w^4*x^4 + w^4*x^3 + 3*x^2 + x + w^21"
+   ]
+  },
+  {
+   "file": "qecc_q49_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=49&n=12&k=0",
+   "table_parameter_q": 49,
+   "local_dimension": 7,
+   "n": 12,
+   "k": 0,
+   "sha256": "d8b7eb2747d05f7b54f42cfb807ebea310c06107d83f7ddc397bd0686db85e22",
+   "available": true,
+   "lower": 7,
+   "upper": 7,
+   "construction_type": "linear",
+   "last_modified": [
+    "2014-10-23"
+   ],
+   "construction": [
+    "Construction of a [[12,0,7]] quantum code:",
+    "[1]:  [[12, 0, 7]] self-dual quantum code over GF(7^2)",
+    "QuasiCyclicCode of length 12 with generating polynomials: 1,  w^7*x^5 + w^42*x^4 + w^30*x^3 + w^19*x^2 + w^15*x + w^27"
+   ]
+  },
+  {
+   "file": "qecc_q49_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=49&n=14&k=0",
+   "table_parameter_q": 49,
+   "local_dimension": 7,
+   "n": 14,
+   "k": 0,
+   "sha256": "5c8f0b12faabc8f095ee3fe56cef31cf0fa77635b01609149c93e19bf7fde3c3",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": "linear",
+   "last_modified": [
+    "2014-10-23"
+   ],
+   "construction": [
+    "Construction of a [[14,0,8]] quantum code:",
+    "[1]:  [[14, 0, 8]] self-dual quantum code over GF(7^2)",
+    "QuasiCyclicCode of length 14 with generating polynomials: x^5,  w^42*x^6 + w^27*x^5 + w^11*x^4 + w^45*x^3 + w^20*x^2 + w^22*x + w^43"
+   ]
+  },
+  {
+   "file": "qecc_q4_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=4&n=12&k=0",
+   "table_parameter_q": 4,
+   "local_dimension": 2,
+   "n": 12,
+   "k": 0,
+   "sha256": "2a9a39023076246fb8d7833761c53419083334211f7807262bd80f5be99112bc",
+   "available": true,
+   "lower": 6,
+   "upper": 6,
+   "construction_type": null,
+   "last_modified": [
+    "2005-06-27"
+   ],
+   "construction": [
+    "Construction of a [[12,0,6]] quantum code:",
+    "[1]:  [[12, 0, 6]] self-dual quantum code over GF(2^2)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q64_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=12&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 12,
+   "k": 0,
+   "sha256": "2049f9ffdb57f4ddb3f2b2dfa6ec64fa2bcc65fa3d7f2e609a87023ac11a37f4",
+   "available": true,
+   "lower": 7,
+   "upper": 7,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-06"
+   ],
+   "construction": [
+    "Construction of a [[12,0,7]] quantum code:",
+    "[1]:  [[12, 0, 7]] self-dual quantum code over GF(2^6)",
+    "QuasiCyclicCode of length 12 with generating polynomials: 1,  u^7*x^5 + u^17*x^4 + u^15*x^3 + u^56*x^2 + u^32*x + u^18"
+   ]
+  },
+  {
+   "file": "qecc_q64_n13_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=13&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 13,
+   "k": 0,
+   "sha256": "aeef29e79ddd585a8f703dc812581ca3365ca6c720dbb35cfbf8075a15557b2e",
+   "available": true,
+   "lower": 7,
+   "upper": 7,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[13,0,7]] quantum code:",
+    "[1]:  [[14, 0, 8]] self-dual quantum code over GF(2^6)",
+    "QuasiCyclicCode of length 14 with generating polynomials: 1,  u^6*x^6 + u^60*x^5 + u^19*x^4 + u^33*x^3 + u^41*x^2 + u^4*x + u^28",
+    "[2]:  [[13, 1, 7]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 14 }",
+    "[3]:  [[13, 0, 7]] self-dual quantum code over GF(2^6)",
+    "Subcode of [2]"
+   ]
+  },
+  {
+   "file": "qecc_q64_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=14&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 14,
+   "k": 0,
+   "sha256": "ef2005b88624ebc3f3f9f3b549380b235bb9c41d170dd130440a9bd1188ab4f2",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-06"
+   ],
+   "construction": [
+    "Construction of a [[14,0,8]] quantum code:",
+    "[1]:  [[14, 0, 8]] self-dual quantum code over GF(2^6)",
+    "QuasiCyclicCode of length 14 with generating polynomials: 1,  u^6*x^6 + u^60*x^5 + u^19*x^4 + u^33*x^3 + u^41*x^2 + u^4*x + u^28"
+   ]
+  },
+  {
+   "file": "qecc_q64_n14_k1.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=14&k=1",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 14,
+   "k": 1,
+   "sha256": "4236ed5485c41af6d8f85c89e162b7d1f13e5f83153d293ff3e262a1dfa202fa",
+   "available": true,
+   "lower": 7,
+   "upper": 7,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[14,1,7]] quantum code:",
+    "[1]:  [[14, 0, 8]] self-dual quantum code over GF(2^6)",
+    "QuasiCyclicCode of length 14 with generating polynomials: 1,  u^6*x^6 + u^60*x^5 + u^19*x^4 + u^33*x^3 + u^41*x^2 + u^4*x + u^28",
+    "[2]:  [[13, 1, 7]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 14 }",
+    "[3]:  [[14, 1, 7]] quantum code over GF(2^6)",
+    "ExtendCode [2] by 1"
+   ]
+  },
+  {
+   "file": "qecc_q64_n15_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=15&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 15,
+   "k": 0,
+   "sha256": "35ed359f06d2fabe92b7fa443d3dd741a165fab6bcc6dbc4b0676f2a40da002b",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": "Gra",
+   "last_modified": [
+    "2026-10-21"
+   ],
+   "construction": [
+    "Construction of a [[15,0,8]] quantum code:",
+    "[1]:  [[15, 0, 8]] self-dual quantum code over GF(2^6)",
+    "cyclic code of length 15 with generating polynomial u^18*x^14 + u^27*x^13 + u^27*x^11 + u^36*x^10 + u^9*x^9 + x^8 + x^7 + u^9*x^6 + u^36*x^5 + u^27*x^4 + u^27*x^2 + u^18*x + u"
+   ]
+  },
+  {
+   "file": "qecc_q64_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=16&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 16,
+   "k": 0,
+   "sha256": "ce8a0128ae53df09a3ac005c8a9fbadc5215c19692dc3c0393734a212ce971ad",
+   "available": true,
+   "lower": 8,
+   "upper": 9,
+   "construction_type": "linear",
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[16,0,8]] quantum code:",
+    "[1]:  [[16, 0, 8]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q64_n16_k1.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=16&k=1",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 16,
+   "k": 1,
+   "sha256": "d18ac19d4f019b36066b06a8d82aeac8608ab479785df710a021415ce16fa1eb",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": null,
+   "last_modified": [
+    "2026-10-21"
+   ],
+   "construction": [
+    "Construction of a [[16,1,8]] quantum code:",
+    "[1]:  [[17, 0, 9]] self-dual quantum code over GF(2^6)",
+    "cyclic code of length 17 with generating polynomial x^16 + u^9*x^15 + u^54*x^14 + x^13 + u^54*x^12 + u^9*x^11 + u^9*x^10 + u^9*x^9 + u^9*x^8 + u^9*x^7 + u^9*x^6 + u^54*x^5 + x^4 + u^54*x^3 + u^9*x^2 + x + u",
+    "[2]:  [[16, 1, 8]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 17 }"
+   ]
+  },
+  {
+   "file": "qecc_q64_n17_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=17&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 17,
+   "k": 0,
+   "sha256": "c4599ed91f57e540a0d8d5d9102ec16f762b2b833e24e42f66e81d5a0a2350c6",
+   "available": true,
+   "lower": 9,
+   "upper": 9,
+   "construction_type": "Gajewski",
+   "last_modified": [
+    "2026-10-21"
+   ],
+   "construction": [
+    "Construction of a [[17,0,9]] quantum code:",
+    "[1]:  [[17, 0, 9]] self-dual quantum code over GF(2^6)",
+    "cyclic code of length 17 with generating polynomial x^16 + u^9*x^15 + u^54*x^14 + x^13 + u^54*x^12 + u^9*x^11 + u^9*x^10 + u^9*x^9 + u^9*x^8 + u^9*x^7 + u^9*x^6 + u^54*x^5 + x^4 + u^54*x^3 + u^9*x^2 + x + u"
+   ]
+  },
+  {
+   "file": "qecc_q64_n18_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=18&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 18,
+   "k": 0,
+   "sha256": "3958492f234abd7ebb12a22a2e20e2bda30ea6f9662b8b4f8d128a593a6633d1",
+   "available": true,
+   "lower": 9,
+   "upper": 10,
+   "construction_type": "linear",
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[18,0,9]] quantum code:",
+    "[1]:  [[18, 0, 9]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q64_n18_k1.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=18&k=1",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 18,
+   "k": 1,
+   "sha256": "1df83b2aa04987f180f6fe76a2e9eee2dc33b3c5be64aff6ee489176c874a2e3",
+   "available": true,
+   "lower": 8,
+   "upper": 9,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[18,1,8]] quantum code:",
+    "[1]:  [[18, 0, 9]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix",
+    "[2]:  [[17, 1, 8]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 18 }",
+    "[3]:  [[18, 1, 8]] quantum code over GF(2^6)",
+    "ExtendCode [2] by 1"
+   ]
+  },
+  {
+   "file": "qecc_q64_n19_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=19&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 19,
+   "k": 0,
+   "sha256": "ae8fae6b2266685b8f492b970b3556f4aca8c6ce63ae87d62bb63bd760beb19d",
+   "available": true,
+   "lower": 9,
+   "upper": 10,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[19,0,9]] quantum code:",
+    "[1]:  [[20, 0, 10]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix",
+    "[2]:  [[19, 1, 9]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 20 }",
+    "[3]:  [[19, 0, 9]] self-dual quantum code over GF(2^6)",
+    "Subcode of [2]"
+   ]
+  },
+  {
+   "file": "qecc_q64_n19_k1.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=19&k=1",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 19,
+   "k": 1,
+   "sha256": "7e593a494fc7245f231a09f3420eaba00c128e623a6d7cfec4749e0a6b1908a2",
+   "available": true,
+   "lower": 9,
+   "upper": 10,
+   "construction_type": null,
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[19,1,9]] quantum code:",
+    "[1]:  [[20, 0, 10]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix",
+    "[2]:  [[19, 1, 9]] quantum code over GF(2^6)",
+    "Shortening of the stabilizer code of [1] at { 20 }"
+   ]
+  },
+  {
+   "file": "qecc_q64_n20_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=20&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 20,
+   "k": 0,
+   "sha256": "9490c6d745d1feba4c230ac92af0a905329efa2ed8cd87a812345024581c38c4",
+   "available": true,
+   "lower": 10,
+   "upper": 11,
+   "construction_type": "linear",
+   "last_modified": [
+    "2015-02-09"
+   ],
+   "construction": [
+    "Construction of a [[20,0,10]] quantum code:",
+    "[1]:  [[20, 0, 10]] self-dual quantum code over GF(2^6)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q64_n21_k0.html",
+   "url": "https://codetables.de/QECC.php?q=64&n=21&k=0",
+   "table_parameter_q": 64,
+   "local_dimension": 8,
+   "n": 21,
+   "k": 0,
+   "sha256": "082985e668f6ce059333c91676ec4e11e78886c90fa0bf358824e5019365c5ae",
+   "available": true,
+   "lower": 10,
+   "upper": 11,
+   "construction_type": "Gra",
+   "last_modified": [
+    "2026-10-21"
+   ],
+   "construction": [
+    "Construction of a [[21,0,10]] quantum code:",
+    "[1]:  [[21, 0, 10]] self-dual quantum code over GF(2^6)",
+    "cyclic code of length 21 with generating polynomial u^27*x^20 + u^9*x^19 + u^18*x^18 + u^27*x^16 + u^9*x^14 + u^36*x^12 + u^27*x^11 + u^27*x^10 + u^36*x^9 + u^9*x^7 + u^27*x^5 + u^18*x^3 + u^9*x^2 + u^27*x + u"
+   ]
+  },
+  {
+   "file": "qecc_q81_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=81&n=12&k=0",
+   "table_parameter_q": 81,
+   "local_dimension": 9,
+   "n": 12,
+   "k": 0,
+   "sha256": "d3b9e8d2d932209fad7ccbb545ec3b11c42737746e462f1f58fa2f93129bba6b",
+   "available": false
+  },
+  {
+   "file": "qecc_q81_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=81&n=14&k=0",
+   "table_parameter_q": 81,
+   "local_dimension": 9,
+   "n": 14,
+   "k": 0,
+   "sha256": "d3b9e8d2d932209fad7ccbb545ec3b11c42737746e462f1f58fa2f93129bba6b",
+   "available": false
+  },
+  {
+   "file": "qecc_q81_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=81&n=16&k=0",
+   "table_parameter_q": 81,
+   "local_dimension": 9,
+   "n": 16,
+   "k": 0,
+   "sha256": "d3b9e8d2d932209fad7ccbb545ec3b11c42737746e462f1f58fa2f93129bba6b",
+   "available": false
+  },
+  {
+   "file": "qecc_q9_n12_k0.html",
+   "url": "https://codetables.de/QECC.php?q=9&n=12&k=0",
+   "table_parameter_q": 9,
+   "local_dimension": 3,
+   "n": 12,
+   "k": 0,
+   "sha256": "dd3f6bd591e53e5e8693850f552843c893e77c7916b0461856fd0c0b18a0bac3",
+   "available": true,
+   "lower": 6,
+   "upper": 6,
+   "construction_type": "linear",
+   "last_modified": [
+    "2020-11-16"
+   ],
+   "construction": [
+    "Construction of a [[12,0,6]] quantum code:",
+    "[1]:  [[12, 0, 6]] self-dual quantum code over GF(3^2)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q9_n14_k0.html",
+   "url": "https://codetables.de/QECC.php?q=9&n=14&k=0",
+   "table_parameter_q": 9,
+   "local_dimension": 3,
+   "n": 14,
+   "k": 0,
+   "sha256": "c8f083d7760f39d3c05c3ff8cbad75e803c1b484ba8731d5928397f90147c03b",
+   "available": true,
+   "lower": 6,
+   "upper": 7,
+   "construction_type": null,
+   "last_modified": [
+    "2020-11-16"
+   ],
+   "construction": [
+    "Construction of a [[14,0,6]] quantum code:",
+    "[1]:  [[14, 0, 6]] self-dual quantum code over GF(3^2)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q9_n16_k0.html",
+   "url": "https://codetables.de/QECC.php?q=9&n=16&k=0",
+   "table_parameter_q": 9,
+   "local_dimension": 3,
+   "n": 16,
+   "k": 0,
+   "sha256": "eb3c3d87b579471f8cd2f865981344db31ebeafb309e82c599a45d8c62d9310b",
+   "available": true,
+   "lower": 7,
+   "upper": 8,
+   "construction_type": "linear",
+   "last_modified": [
+    "2020-11-16"
+   ],
+   "construction": [
+    "Construction of a [[16,0,7]] quantum code:",
+    "[1]:  [[16, 0, 7]] self-dual quantum code over GF(3^2)",
+    "Construction from a stored generator matrix"
+   ]
+  },
+  {
+   "file": "qecc_q9_n18_k0.html",
+   "url": "https://codetables.de/QECC.php?q=9&n=18&k=0",
+   "table_parameter_q": 9,
+   "local_dimension": 3,
+   "n": 18,
+   "k": 0,
+   "sha256": "5589ee9bf041bd40442cd77dd5a083cf5fbdc055620eeb831807f3f4862410b8",
+   "available": true,
+   "lower": 8,
+   "upper": 8,
+   "construction_type": "linear",
+   "last_modified": [
+    "2020-11-16"
+   ],
+   "construction": [
+    "Construction of a [[18,0,8]] quantum code:",
+    "[1]:  [[18, 0, 8]] self-dual quantum code over GF(3^2)",
+    "Construction from a stored generator matrix"
+   ]
+  }
+ ]
+}

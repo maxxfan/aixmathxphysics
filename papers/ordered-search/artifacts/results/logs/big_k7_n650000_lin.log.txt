@@ -1,0 +1,3 @@
+k=7 n=650000: 1158 variables, grid 5200001 points per q, 8 fft workers
+  [0] mu=1: softmin -800.92, min over grid+extra -800.1, 1000 its (2384s)
+  [0] mu=0.3: softmin -567.71, min over grid+extra -567.54, 1000 its (4126s)

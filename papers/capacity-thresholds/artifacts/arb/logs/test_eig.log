@@ -1,0 +1,11 @@
+ok   d  20 gauss     real    exact 2.300272923855147340527522  enclosure width 9.2e-34  components 18 (largest 3), clipped 0
+ok   d  20 gauss     complex exact 2.300272923855147340527522  enclosure width 9.4e-34  components 18 (largest 3), clipped 0
+ok   d  40 gauss     real    exact 2.300272923855147340766759  enclosure width 6.0e-33  components 26 (largest 13), clipped 13
+ok   d  40 gauss     complex exact 2.300272923855147340766759  enclosure width 5.6e-33  components 26 (largest 13), clipped 13
+ok   d  20 clusters  real    exact 2.881629006209610368068011  enclosure width 2.3e-33  components 8 (largest 7), clipped 7
+ok   d  20 clusters  complex exact 2.881629006209610368068011  enclosure width 2.3e-33  components 8 (largest 7), clipped 7
+ok   d  30 clusters  real    exact 2.881629006209610368068011  enclosure width 5.3e-33  components 8 (largest 17), clipped 17
+ok   d  30 clusters  complex exact 2.881629006209610368068011  enclosure width 5.3e-33  components 8 (largest 17), clipped 17
+ok   d  25 random    real    exact 4.442093342474166984367873  enclosure width 2.4e-34  components 25 (largest 1), clipped 0
+ok   d  25 random    complex exact 4.442093342474166984367873  enclosure width 2.4e-34  components 25 (largest 1), clipped 0
+ALL OK

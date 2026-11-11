@@ -1,0 +1,13 @@
+file     work/lead/cands/two_pauli_n80_0.1233958.json
+family   two_pauli   n 80   rank 2   p 0.1233958 (= 0.1233958)   frame rot
+rates    gamma_X,Y,Z = 0.170098808336753 0.170098808336753 -0.0283921434142673
+method   uniform  {'neg_taylor_terms': 35, 'neg_growth_bound': 93.94814172714645, 'poisson_mu': 27.215809333880415, 'poisson_terms': 89, 'poisson_tail': 6.565057793720808e-21}
+I_c      4.533048930188e-09 bits
+diag     trace-1 4.4e-16  herm-defect 3.0e-18  min-eig/max -3.5e-16
+         |evd - evr| 6.4e-15   |random-rotation probe| 2.6e-15
+check    expm: I_c 4.533130049271e-09   |diff| 8.1e-14   (1.5 s)
+error    empirical 8.1e-13 bits (10 x max of the differences above)
+         first-order bound 6.3e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  4.9e-11 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [4.4834e-09, 4.5827e-09])
+time     total 1.5 s (superop 0.1, channel 0.3, entropy 0.9)

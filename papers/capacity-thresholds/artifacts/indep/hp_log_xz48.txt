@@ -1,0 +1,9 @@
+independent_xz n=48 r=2 p=0.12179852 rates [0.13959051446604556, 0.0, 0.13959051446604556]  superops 1s nnz 283465
+  uniformisation: mu=13.4007 90 terms  173s
+  float64 I_c            1.007173535004364e-08
+  hp blocks -> f64 eig   1.007173223911439e-08   diff +3.11e-15
+  max |X_f64 - X_hp| / tr(block) over blocks: 2.99e-15
+  block k=0 (2j=48, dim 49/98): weight 1.5570e-03  min eig sigma 3.21e-16 tau 2.06e-25  dH_sigma(f64-hp) -9.40e-18  dH_tau +2.02e-17  d(Hs-Ht) -2.96e-17  (6s)
+  block k=4 (2j=40, dim 41/82): weight 1.2753e-01  min eig sigma 1.02e-11 tau 5.77e-20  dH_sigma(f64-hp) +6.75e-16  dH_tau +2.90e-16  d(Hs-Ht) +3.84e-16  (4s)
+  block k=10 (2j=28, dim 29/58): weight 4.2691e-02  min eig sigma 9.14e-9 tau 3.75e-15  dH_sigma(f64-hp) +1.85e-16  dH_tau -1.07e-16  d(Hs-Ht) +2.92e-16  (2s)
+  block k=20 (2j=8, dim 9/18): weight 1.8036e-06  min eig sigma 8.67e-10 tau 3.95e-11  dH_sigma(f64-hp) +7.21e-21  dH_tau +2.68e-21  d(Hs-Ht) +4.53e-21  (0s)

@@ -1,0 +1,22 @@
+# 20261027-124857_lead_2a327ea83c2b10f7.json: trace-1 = 1.1e-15, H(out) = 5.959988215995 bits, 0.1 s
+RESULT rec28_xz_n80 independent_xz n=80 p=0.12464123 float64 I_c=1.605070376396e-09
+# 20261027-124857_lead_585247a2e5ee8280.json: trace-1 = 8.9e-16, H(out) = 5.902672289375 bits, 0.1 s
+RESULT rec27_2p_n80 two_pauli n=80 p=0.12367528 float64 I_c=4.688005663366e-09
+# 20261027-053852_lead_9e078e22e51cd14b.json: trace-1 = 2.9e-15, H(out) = 6.881177574937 bits, 2.9 s
+RESULT rec20_dep_n240 depolarizing n=240 p=0.0666847 float64 I_c=1.312977619791e-09
+# independent_xz_n240_0.12737956.json: trace-1 = -5.6e-15, H(out) = 7.212753535647 bits, 3.6 s
+RESULT xz_n240 independent_xz n=240 p=0.12737956 float64 I_c=1.730666119271e-09
+# independent_xz_n320_0.12770564.json: trace-1 = 6.0e-15, H(out) = 7.508280613787 bits, 9.7 s
+RESULT headline_xz_n320 independent_xz n=320 p=0.12770564 float64 I_c=1.722044636045e-09
+# independent_xz_n320_0.12770564.json: trace-1 = 8.4e-15, H(out) = 7.508397109530 bits, 9.6 s
+RESULT headline_xz_n320_above independent_xz n=320 p=0.12771664 float64 I_c=-1.715771784753e-10
+# two_pauli_n320_0.12677472.json: trace-1 = -2.6e-15, H(out) = 7.635499922223 bits, 9.7 s
+RESULT headline_2p_n320 two_pauli n=320 p=0.12677472 float64 I_c=1.189803864463e-09
+# two_pauli_n320_0.12677472.json: trace-1 = 9.8e-15, H(out) = 7.635636703750 bits, 9.6 s
+RESULT headline_2p_n320_above two_pauli n=320 p=0.12678572 float64 I_c=-1.175224437231e-10
+# 20261028-024810_lead_5f09c5df10a5804f.json: trace-1 = 1.5e-14, H(out) = 7.363960537890 bits, 35.5 s
+RESULT rec30_dep_n480 depolarizing n=480 p=0.06679861 float64 I_c=4.532171028231e-09
+# depolarizing_n480_0.06688201.json: trace-1 = 5.8e-15, H(out) = 7.365542548823 bits, 35.4 s
+RESULT headline_dep_n480 depolarizing n=480 p=0.06688201 float64 I_c=4.851870977359e-10
+# depolarizing_n480_0.06688201.json: trace-1 = 1.4e-14, H(out) = 7.365751118216 bits, 35.4 s
+RESULT headline_dep_n480_above depolarizing n=480 p=0.06689301 float64 I_c=-4.844147789412e-11

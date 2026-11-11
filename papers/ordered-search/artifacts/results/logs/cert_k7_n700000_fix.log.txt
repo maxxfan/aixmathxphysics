@@ -1,0 +1,28 @@
+loaded in 1s; q_6: grid min 4.654e-05, gamma 2.327e-05, tol 8.3e-13
+    M=2^27: err 2.60e-11 (tol 8.3e-13)
+    61084 spikes narrower than the grid (closest root distance 8.70e-09) (76s)
+    refine 0: max residual 2.60e-11 (tol 8.3e-13)
+    refine 1: max residual 1.46e-12 (tol 8.3e-13)
+    refine 2: max residual 7.54e-16 (tol 8.3e-13)
+factor err 7.536e-16 (tol 8.3e-13) (380s)
+wrote out/cert_k7_n700000_fix.json.gz (390s)
+verifier (481.0s): IMPROVEMENT: exact ordered search with 7 queries for n=700000: 0.360509 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.14e-07  margins=[7.142604201081013e-07, 1.8926702200823308e-06, 2.1665231976603004e-06, 0.0006257272429070734, 0.0001556589901410907, 2.3267984498621565e-05]
+independent: out/cert_k7_n700000_fix.json.gz {"k": 7, "n": 700000, "constant": 0.3605089179381376, "beats_record": true, "margins": [7.142604201081013e-07, 1.8926702200823308e-06, 2.1665231976603004e-06, 0.0006257272429070734, 0.0001556589901410907, 2.3267984498621565e-05]} 
+      884.83 real       847.12 user        26.92 sys
+          8153382912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            10828717  page reclaims
+                1161  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                8719  voluntary context switches
+              319162  involuntary context switches
+      14772640348325  instructions retired
+       3516082302345  cycles elapsed
+         10885947744  peak memory footprint

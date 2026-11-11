@@ -1,0 +1,2 @@
+two_pauli n=80 -> 240: zero crossing 0.12646389, margin-1e-08 threshold 0.12638014, dI_c/dp -1.194e-04
+two_pauli n=80 -> 320: zero crossing 0.12678472, margin-1e-08 threshold 0.12670059, dI_c/dp -1.189e-04

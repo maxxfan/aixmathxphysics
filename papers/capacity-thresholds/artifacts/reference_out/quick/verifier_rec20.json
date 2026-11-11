@@ -1,0 +1,23 @@
+{
+ "verifier": "p08-capacity-thresholds/2",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "4f007e83056ea3a1",
+  "icball.c": "00b09294b432e40a",
+  "records.json": "3901d412c50f84f7",
+  "icball": "a0b8880a608f8574"
+ },
+ "hash": "27984a2e319e8fc4",
+ "target": "depolarizing",
+ "p": "666847/10000000",
+ "n": 240,
+ "rank": 2,
+ "I_c_lo": "9.391568526205950925496582986087552265743E-12",
+ "I_c_hi": "2.109396026298319053007485896927290157751E-9",
+ "delta_max": 5.163502772241635e-15,
+ "engine_seconds": 29.04,
+ "certified_p": 0.0666847,
+ "verdict": "IMPROVEMENT",
+ "summary": "IMPROVEMENT: Q > 0 certified at p=0.0666847 >= bar 0.06496; depolarizing n=240 r=2 p=666847/10000000 (0.0666847): I_c in [9.3916e-12, 2.1094e-9] bits",
+ "seconds": 29.04
+}

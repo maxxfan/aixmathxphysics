@@ -407,9 +407,12 @@
  "comparison": {
   "reported": 77,
   "reported_by": "AlphaTensor-Quantum; Fisher et al.",
-  "reported_invalid": false,
+  "reported_status": "ok",
   "checked": 77,
-  "checked_by": "AlphaTensor-Quantum"
+  "checked_by": "AlphaTensor-Quantum",
+  "reported_invalid": false,
+  "vandaele2025_table3": 83,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "GF(4)-interp d=3 + FastTODD (79) + search2 SA: 77 -> 71 (cooling T .40->.27) -> 69 (hot cooling T .65->.28, 2e9 it, seed 707, from the 71 state)",
  "construction_script": "work/flipper/search2 work/base3/n6/best71.txt work/base3/n6c/c7.txt 707 2000000000 0.65 0.28 6 1000 80; work/base3/mkcand.py",

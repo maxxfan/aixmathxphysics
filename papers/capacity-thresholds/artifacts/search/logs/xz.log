@@ -1,0 +1,4 @@
+start threshold 0.11837118812382899
+  independent_xz threshold 0.11837119 -> 0.11851792906926215
+  independent_xz threshold 0.11851793 -> 0.11850947988245325
+independent_xz n=30: 0.11851793 -> work/lead/states/independent_xz_n30_climb.json

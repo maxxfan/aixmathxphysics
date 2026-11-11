@@ -1,8 +1,54 @@
 $ python3 -I check_release.py .
-PASS  0 manifest: 12 files match MANIFEST.sha256
-PASS  1-4 format, exact accumulation, residual, hull (a)-(e): m = (721, 721), 19318 orbit atoms x 60 transforms (+ transposition), weight 0.999999998769, ||E||_F <= 2.306e-10, facets (2880, 2880), 18.3 s
+PASS  0 manifest: 53 files match MANIFEST.sha256
+PASS  1-4 format, exact accumulation, residual, hull (a)-(e): m = (721, 721), 19318 orbit atoms x 60 transforms (+ transposition), weight 0.999999998769, ||E||_F <= 2.306e-10, facets (2880, 2880), 47.8 s
 PASS  5 bound: lambda = 3447864100660712344387584/4980863930023830797932435; eta_A^2 >= 0.996691977035244 (exact rational with 388-digit denominator); K_G(3) <= 1.4494177506 (claimed 1.4494177506; published 1.4546336567; proven lower bound 1.4367003433)
-PASS  6 project verifier (separate code): p04-grothendieck-kg3/1.1: MATCHES_RECORD, K_G(3) <= 1.4494177506 (7.0 s)
+PASS  6 project verifier (separate code): p04-grothendieck-kg3/1.1: MATCHES_RECORD, K_G(3) <= 1.4494177506 (16.0 s)
+ALL CHECKS PASSED
+
+$ python3 -I check_release.py . --all        (--table2 prints the eight lines of posts 35, 42, 95, 104, 115, 140, 213, 241)
+PASS  0 manifest: 53 files match MANIFEST.sha256
+PASS  post  19 pol406    : m = 406, 14590 atoms, weight 0.999999998771, ||E||_F <= 2.287e-10, eta^2 >= 0.993522757, lambda >= 0.6919999, v >= 0.6875177476, K_G(3) <= 1.4545079069 (= index), 15.5 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4545079069 (6.5 s)
+PASS  post  23 pol406    : m = 406, 14590 atoms, weight 0.999982519431, ||E||_F <= 1.748e-05, eta^2 >= 0.993522757, lambda >= 0.6923498, v >= 0.6878653810, K_G(3) <= 1.4537728277 (= index), 14.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4537728277 (5.3 s)
+PASS  post  28 pol406    : m = 406, 18035 atoms, weight 0.999977324545, ||E||_F <= 2.267e-05, eta^2 >= 0.993522757, lambda >= 0.6924251, v >= 0.6879401643, K_G(3) <= 1.4536147936 (= index), 14.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4536147936 (5.4 s)
+PASS  post  35 pol406    : m = 406, 11244 atoms, weight 0.999992348330, ||E||_F <= 7.651e-06, eta^2 >= 0.993522757, lambda >= 0.6926171, v >= 0.6881309293, K_G(3) <= 1.4532118198 (= index), 10.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4532118198 (4.4 s)
+PASS  post  42 pol406_1/4: m = 406, 11096 atoms, weight 0.999990379341, ||E||_F <= 9.620e-06, eta^2 >= 0.993612507, lambda >= 0.6926023, v >= 0.6881783740, K_G(3) <= 1.4531116318 (= index), 10.0 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4531116318 (4.5 s)
+PASS  post  45 pol541    : m = 541, 13239 atoms, weight 0.999979117416, ||E||_F <= 2.088e-05, eta^2 >= 0.995337675, lambda >= 0.6914855, v >= 0.6882616093, K_G(3) <= 1.4529358988 (= index), 17.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4529358988 (7.2 s)
+PASS  post  61 pol541    : m = 541, 14933 atoms, weight 0.999970781522, ||E||_F <= 2.922e-05, eta^2 >= 0.995337675, lambda >= 0.6915622, v >= 0.6883379801, K_G(3) <= 1.4527746963 (= index), 18.9 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4527746963 (7.3 s)
+PASS  post  69 geo606    : m = 606, 13028 atoms, weight 0.999609148847, ||E||_F <= 3.909e-04, eta^2 >= 0.995904003, lambda >= 0.6912293, v >= 0.6883980411, K_G(3) <= 1.4526479453 (= index), 22.2 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4526479453 (9.1 s)
+PASS  post  73 pol541    : m = 541, 10000 atoms, weight 0.999976981805, ||E||_F <= 2.302e-05, eta^2 >= 0.995337675, lambda >= 0.6918409, v >= 0.6886153622, K_G(3) <= 1.4521895022 (= index), 16.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4521895022 (6.7 s)
+PASS  post  75 rad541    : m = 541, 10000 atoms, weight 0.999974326139, ||E||_F <= 2.567e-05, eta^2 >= 0.995920092, lambda >= 0.6914947, v >= 0.6886735646, K_G(3) <= 1.4520667720 (= index), 15.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4520667720 (7.8 s)
+PASS  post  79 pol541    : m = 541, 14853 atoms, weight 0.999982270334, ||E||_F <= 1.773e-05, eta^2 >= 0.995337675, lambda >= 0.6922333, v >= 0.6890059117, K_G(3) <= 1.4513663569 (= index), 18.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4513663569 (7.2 s)
+PASS  post  81 rad541    : m = 541, 17411 atoms, weight 0.999979514572, ||E||_F <= 2.048e-05, eta^2 >= 0.995920092, lambda >= 0.6918847, v >= 0.6890618988, K_G(3) <= 1.4512484318 (= index), 19.5 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4512484318 (7.9 s)
+PASS  post  83 geo606    : m = 606, 20000 atoms, weight 0.999999998019, ||E||_F <= 9.808e-10, eta^2 >= 0.995904003, lambda >= 0.6916999, v >= 0.6888667979, K_G(3) <= 1.4516594543 (= index), 25.1 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4516594543 (8.7 s)
+PASS  post  89 pol541    : m = 541, 9735 atoms, weight 0.999985638534, ||E||_F <= 1.436e-05, eta^2 >= 0.995337675, lambda >= 0.6923760, v >= 0.6891479237, K_G(3) <= 1.4510672753 (= index), 13.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4510672753 (5.7 s)
+PASS  post  91 rad541    : m = 541, 9587 atoms, weight 0.999987418689, ||E||_F <= 1.258e-05, eta^2 >= 0.995920092, lambda >= 0.6920564, v >= 0.6892328810, K_G(3) <= 1.4508884117 (= index), 13.4 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4508884117 (6.6 s)
+PASS  post  95 pol541    : m = 541, 16104 atoms, weight 0.999988465427, ||E||_F <= 1.153e-05, eta^2 >= 0.995337675, lambda >= 0.6924063, v >= 0.6891780786, K_G(3) <= 1.4510037842 (= index), 17.2 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4510037842 (6.8 s)
+PASS  post  99 rad541    : m = 541, 9862 atoms, weight 0.999988240802, ||E||_F <= 1.176e-05, eta^2 >= 0.995920092, lambda >= 0.6920890, v >= 0.6892653507, K_G(3) <= 1.4508200637 (= index), 14.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4508200637 (7.2 s)
+PASS  post 104 rad541    : m = 541, 9862 atoms, weight 0.999999998908, ||E||_F <= 9.233e-11, eta^2 >= 0.995920092, lambda >= 0.6920968, v >= 0.6892731700, K_G(3) <= 1.4508036051 (= index), 14.6 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4508036051 (7.2 s)
+PASS  post 115 rad541'   : m = 541, 17059 atoms, weight 0.999999997550, ||E||_F <= 1.450e-09, eta^2 >= 0.996231172, lambda >= 0.6918967, v >= 0.6892891242, K_G(3) <= 1.4507700250 (= index), 19.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4507700250 (7.9 s)
+PASS  post 131 geo606    : m = 606, 8170 atoms, weight 0.999999998901, ||E||_F <= 9.897e-11, eta^2 >= 0.995904003, lambda >= 0.6923676, v >= 0.6895317079, K_G(3) <= 1.4502596307 (= index), 16.0 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4502596307 (7.3 s)
+PASS  post 140 geo606    : m = 606, 12091 atoms, weight 0.999999998793, ||E||_F <= 2.073e-10, eta^2 >= 0.995904003, lambda >= 0.6923879, v >= 0.6895519102, K_G(3) <= 1.4502171412 (= index), 18.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4502171412 (7.7 s)
+PASS  post 167 geo721    : m = 721, 13818 atoms, weight 0.999999998582, ||E||_F <= 4.181e-10, eta^2 >= 0.996560717, lambda >= 0.6921911, v >= 0.6898105199, K_G(3) <= 1.4496734555 (= index), 27.6 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4496734555 (10.9 s)
+PASS  post 175 geo721    : m = 721, 17185 atoms, weight 0.999999997639, ||E||_F <= 1.361e-09, eta^2 >= 0.996560717, lambda >= 0.6920168, v >= 0.6896367705, K_G(3) <= 1.4500386910 (= index), 30.9 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4500386910 (11.5 s)
+PASS  post 179 geo721    : m = 721, 13267 atoms, weight 0.999999998707, ||E||_F <= 2.931e-10, eta^2 >= 0.996560717, lambda >= 0.6922253, v >= 0.6898446046, K_G(3) <= 1.4496018282 (= index), 26.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4496018282 (10.6 s)
+PASS  post 184 geo721    : m = 721, 16047 atoms, weight 0.999999998491, ||E||_F <= 5.090e-10, eta^2 >= 0.996560717, lambda >= 0.6922540, v >= 0.6898732050, K_G(3) <= 1.4495417312 (= index), 29.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4495417312 (11.2 s)
+PASS  post 186 geo721    : m = 721, 17377 atoms, weight 0.999999998654, ||E||_F <= 3.459e-10, eta^2 >= 0.996560717, lambda >= 0.6922613, v >= 0.6898805109, K_G(3) <= 1.4495263805 (= index), 31.1 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4495263805 (11.4 s)
+PASS  post 190 geo721    : m = 721, 17800 atoms, weight 0.999999998666, ||E||_F <= 3.343e-10, eta^2 >= 0.996560717, lambda >= 0.6922623, v >= 0.6898814475, K_G(3) <= 1.4495244125 (= index), 31.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4495244125 (11.5 s)
+PASS  post 195 geo721    : m = 721, 11319 atoms, weight 0.999999998794, ||E||_F <= 2.057e-10, eta^2 >= 0.996560717, lambda >= 0.6922757, v >= 0.6898948148, K_G(3) <= 1.4494963268 (= index), 25.3 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494963268 (10.4 s)
+PASS  post 201 rad721    : m = 721, 11319 atoms, weight 0.999999998806, ||E||_F <= 1.936e-10, eta^2 >= 0.996691977, lambda >= 0.6921853, v >= 0.6898955591, K_G(3) <= 1.4494947630 (= index), 27.0 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494947630 (12.0 s)
+PASS  post 205 rad721    : m = 721, 16000 atoms, weight 0.999999998579, ||E||_F <= 4.206e-10, eta^2 >= 0.996691977, lambda >= 0.6921984, v >= 0.6899086458, K_G(3) <= 1.4494672680 (= index), 31.5 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494672680 (12.2 s)
+PASS  post 207 geo721    : m = 721, 16000 atoms, weight 0.999999997575, ||E||_F <= 1.425e-09, eta^2 >= 0.996560717, lambda >= 0.6922963, v >= 0.6899153434, K_G(3) <= 1.4494531967 (= index), 28.8 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494531967 (11.5 s)
+PASS  post 209 geo721    : m = 721, 10891 atoms, weight 0.999999998831, ||E||_F <= 1.694e-10, eta^2 >= 0.996560717, lambda >= 0.6922901, v >= 0.6899092139, K_G(3) <= 1.4494660745 (= index), 24.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494660745 (10.5 s)
+PASS  post 211 rad721    : m = 721, 16000 atoms, weight 0.999999997570, ||E||_F <= 1.430e-09, eta^2 >= 0.996691977, lambda >= 0.6922061, v >= 0.6899163431, K_G(3) <= 1.4494510964 (= index), 30.6 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494510964 (12.4 s)
+PASS  post 213 geo721    : m = 721, 16000 atoms, weight 0.999999998561, ||E||_F <= 4.385e-10, eta^2 >= 0.996560717, lambda >= 0.6923008, v >= 0.6899198716, K_G(3) <= 1.4494436834 (= index), 30.1 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494436834 (11.2 s)
+PASS  post 216 geo721    : m = 721, 15893 atoms, weight 0.999999998708, ||E||_F <= 2.919e-10, eta^2 >= 0.996560717, lambda >= 0.6922979, v >= 0.6899169482, K_G(3) <= 1.4494498252 (= index), 29.7 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494498252 (11.1 s)
+PASS  post 218 rad721    : m = 721, 17422 atoms, weight 0.999999997605, ||E||_F <= 1.395e-09, eta^2 >= 0.996691977, lambda >= 0.6922107, v >= 0.6899208739, K_G(3) <= 1.4494415778 (= index), 31.9 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494415778 (12.5 s)
+PASS  post 222 rad721    : m = 721, 18292 atoms, weight 0.999999998613, ||E||_F <= 3.869e-10, eta^2 >= 0.996691977, lambda >= 0.6922178, v >= 0.6899279624, K_G(3) <= 1.4494266858 (= index), 32.9 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494266858 (13.2 s)
+PASS  post 224 rad721    : m = 721, 17255 atoms, weight 0.999999998689, ||E||_F <= 3.106e-10, eta^2 >= 0.996691977, lambda >= 0.6922180, v >= 0.6899282019, K_G(3) <= 1.4494261826 (= index), 32.2 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494261826 (12.7 s)
+PASS  post 231 rad721    : m = 721, 16000 atoms, weight 0.999999998814, ||E||_F <= 1.864e-10, eta^2 >= 0.996691977, lambda >= 0.6922210, v >= 0.6899311420, K_G(3) <= 1.4494200059 (= index), 30.4 s; p04-grothendieck-kg3/1.1: BELOW_RECORD, K_G(3) <= 1.4494200059 (12.4 s)
+PASS  post 236 rad721    : m = 721, 18592 atoms, weight 0.999999998800, ||E||_F <= 2.000e-10, eta^2 >= 0.996691977, lambda >= 0.6922218, v >= 0.6899319386, K_G(3) <= 1.4494183326 (= index), 33.3 s; p04-grothendieck-kg3/1.1: MATCHES_RECORD, K_G(3) <= 1.4494183326 (13.5 s)
+PASS  post 241 rad721    : m = 721, 19318 atoms, weight 0.999999998769, ||E||_F <= 2.306e-10, eta^2 >= 0.996691977, lambda >= 0.6922221, v >= 0.6899322156, K_G(3) <= 1.4494177506 (= index), 34.4 s; p04-grothendieck-kg3/1.1: MATCHES_RECORD, K_G(3) <= 1.4494177506 (13.3 s)
+41 of 41 certificates verified; best K_G(3) <= 1.4494177506
 ALL CHECKS PASSED
 
 $ python3 -I negative_controls.py .
@@ -21,6 +67,9 @@ rejected      one transform sign flipped: residual: weight 0.999999998769 + ||E|
 rejected      one direction lengthened by 1e-6: residual: weight 0.999999998769 + ||E||_F 1.521e-05 > 1
 rejected      transposition flag cleared: residual: weight 0.999999998769 + ||E||_F 7.660e-01 > 1
 rejected      README.md changed after the manifest: SHA-256 mismatch: README.md
-15 of 15 corruptions rejected
+rejected      index: SHA-256 of a certificate changed: SHA-256 mismatch: all_certificates/20261014-012235_cg_ccc2834d762dec31.json.xz (uncompressed)
+rejected      index: bound of a certificate lowered by 1e-10: (m, atoms, lambda, v, K_G(3)) = (406, 11244, '0.6926171', '0.6881309293', '1.4532118198') != index (406, 11244, '0.6926171', '0.6881309293', '1.4532118197')
+17 of 17 corruptions rejected
 
-(timings vary by machine; generated 2026-10-18 on an Apple M4, Python 3.9)
+(timings vary by machine; generated 2026-11-10 on an Apple M4, Python 3.9,
+with the modes running in parallel, so the timings here are longer than in a single run)

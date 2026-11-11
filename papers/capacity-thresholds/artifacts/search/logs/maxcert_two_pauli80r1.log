@@ -1,0 +1,12 @@
+two_pauli n=80: float zero crossing 0.1237067357, dI_c/dp -1.284e-04 bits, margin-1e-08 threshold 0.1236288791
+  IMPROVEMENT: Q > 0 certified at p=0.12362887 >= bar 0.118068; two_pauli n=80 r=2 p=12362887/100000000 (0.12362887): I_c in [5.2960e-9, 1.2922e-8] bits  (349.11 s)
+  IMPROVEMENT: Q > 0 certified at p=0.1236678 >= bar 0.118068; two_pauli n=80 r=2 p=618339/5000000 (0.1236678): I_c in [2.9009e-10, 7.9254e-9] bits  (406.27 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=6184363/50000000 (0.12368726): I_c in [-2.1398e-9, 5.3843e-9] bits  (405.44 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=12367753/100000000 (0.12367753): I_c in [-9.3403e-10, 6.6606e-9] bits  (406.0 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=6183633/50000000 (0.12367266): I_c in [-3.3286e-10, 7.3003e-9] bits  (406.36 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12367023 >= bar 0.118068; two_pauli n=80 r=2 p=12367023/100000000 (0.12367023): I_c in [2.2868e-12, 7.5983e-9] bits  (405.95 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=1545893/12500000 (0.12367144): I_c in [-1.0161e-10, 7.4124e-9] bits  (406.25 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=12367083/100000000 (0.12367083): I_c in [-1.4992e-10, 7.5659e-9] bits  (406.03 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=12367053/100000000 (0.12367053): I_c in [-4.5378e-11, 7.5656e-9] bits  (406.33 s)
+  UNDECIDED: enclosure contains 0; two_pauli n=80 r=2 p=6183519/50000000 (0.12367038): I_c in [-3.4739e-11, 7.5895e-9] bits  (203.1 s)
+best certified p = 0.12367023: work/lead/cands/two_pauli_n80_0.12367023.json

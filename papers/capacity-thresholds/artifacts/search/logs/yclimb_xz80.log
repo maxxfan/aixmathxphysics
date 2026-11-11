@@ -1,0 +1,5 @@
+independent_xz n=80 start threshold(margin 1e-08) 0.12433724
+  round 0: 0.12433724 -> 0.12455590420983077  (200 its)
+  round 1: 0.12455590 -> 0.12458868452447613  (200 its)
+  round 2: 0.12458868 -> 0.12459518521070294  (200 its)
+final independent_xz n=80: 0.12459519

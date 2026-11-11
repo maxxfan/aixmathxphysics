@@ -28,12 +28,15 @@ sys.path.insert(0, str(R / "replay"))
 import exactcheck as X  # noqa: E402
 
 GENERATED = ["data", "verifier", "certificates", "search", "ladders/certificates", "ladders/notebooks",
-             "case_studies/A19/data"]
+             "case_studies/A19/data", "provenance"]
 SEARCH = ["qlib/bell.py", "qlib/certs.py", "work/upper/ipm_half_v.py", "work/upper/price2.py",
           "work/upper2/fastpanels.py", "work/certify/batch.py", "work/certify/ipm_half_v.py",
           "work/certify/price2.py", "work/lower1/bh.py", "work/lower1/insert.py", "work/lower1/pvit.py",
           "work/lower1/pvdbl.py", "work/lower1/mkcand.py", "work/lower1/mkcand3.py"]
 VERIFIER = ["verify.py", "qexact.py", "rescheck.c", "PINS.json", "freeze.sh", "tests/test_verifier.py"]
+LOCAL = str(P.parents[1]) + "/"  # absolute path of the project repository
+RELEASE = "tsirelson-bounds-v3"   # candidate; the published tag is still tsirelson-bounds-v2 (see release/README.md)
+PAPER = "Certified Tsirelson bounds for 238 tight bipartite Bell inequalities"
 
 
 def sha256(path):
@@ -85,6 +88,14 @@ def main():
     windows = json.loads((P / "results" / "windows.json").read_text())
     con = sqlite3.connect(P / "board" / "board.db")
     board = {f: (i, json.loads(r)) for i, f, r in con.execute("SELECT id, file, report FROM submissions ORDER BY id")}
+    # certificates computed after the runs (results/postboard/): same frozen verifier, run locally, no board id
+    pb = P / "results" / "postboard" / "index.json"
+    postboard = {}
+    if pb.exists():
+        for ent in json.loads(pb.read_text())["certificates"]:
+            assert ent["file"] not in board
+            board[ent["file"]] = (None, json.loads((P / ent["report"]).read_text()))
+            postboard[ent["file"]] = ent
 
     for p in R.rglob("*"):  # the repository freezes data/ and verifier/ read-only (files and directories)
         p.chmod(0o755 if p.is_dir() else 0o644)
@@ -158,13 +169,18 @@ def main():
                           "tau_stated": float(tau), "penalty": float(n * tau), "bound_exact": str(bound),
                           "bound_up10": dec_up(bound),
                           "verifier_exact_pd_2tau": rep.get("exact_pd_crosscheck")}
+            if t["upper_file"] in postboard:
+                e["upper"]["provenance"] = ("computed after the multi-agent runs (" + postboard[t["upper_file"]]["date"]
+                                            + "), checked by the frozen verifier in a local run; not a board submission")
+                e["upper"]["construction"] = postboard[t["upper_file"]]["construction"]
         entries.append(e)
     counts = table["counts"]
     manifest = {
-        "release": "tsirelson-bounds-v2",
-        "paper": "Certified Tsirelson bounds for 229 tight bipartite Bell inequalities",
+        "release": RELEASE,
+        "paper": PAPER,
         "convention": "violation = <psi|W|psi> - b0 with W = sum_x bA[x] A_x + sum_y bB[y] B_y + "
-                      "sum_xy bAB[x][y] A_x B_y (Collins-Gisin form, projectors A_x, B_y); local bound 0",
+                      "sum_xy bAB[x][y] A_x B_y (Collins-Gisin form, projectors A_x, B_y); b0 is the local bound "
+                      "(0 for every inequality of the catalog except I4422_7, where b0 = 1)",
         "lower_bound": "exact strategy: projectors V (V^dag V)^-1 V^dag from the given spanning vectors, state psi; "
                        "violation_exact is the exact rational value",
         "upper_bound": "sum_ij Y_ij w_i^* w_j = lambda 1 - W in the universal projector algebra and "
@@ -181,16 +197,15 @@ def main():
     if (R / "appendix_A.tex").read_text() != (P / "paper" / "tab_catalog.tex").read_text():
         sys.exit("appendix_A.tex differs from paper/tab_catalog.tex")
 
-    # ---- Table I (open cases)
-    lines = ["inequality\tliterature_lower\tliterature_upper\tlower\tupper\tlower_certified\tupper_certified"]
-    tol = Fraction(1, 10 ** 7)
+    # ---- Table I (open cases): published numerical window, uncertified order-4 value, certified window
+    lines = ["inequality\tpv2010_lower\tpv2010_upper\torder4_numerical_uncertified\tcertified_lower\tcertified_upper"
+             "\tcertified_width"]
     for n in ["J97", "I4422_20", "J34", "A65", "J73", "J62", "J30", "J48", "A68", "A89", "A62", "A82", "A84",
               "A21", "A14", "A47", "A64", "A67", "A80"]:
         w = windows[n]
-        lo0, up0 = w["literature"]
-        cl = w["certified_lower"] is not None and Fraction(w["certified_lower"]) > Fraction(lo0) - tol
-        cu = w["certified_upper"] is not None and Fraction(w["certified_upper"]) < Fraction(up0) + tol
-        lines.append(f"{n}\t{lo0}\t{up0}\t{w['now'][0]}\t{w['now'][1]}\t{'yes' if cl else 'no'}\t{'yes' if cu else 'no'}")
+        assert (w["certified_lower"], w["certified_upper"]) == (table["table"][n]["lower"], table["table"][n]["upper"]), n
+        lines.append("\t".join([n, w["pv2010"][0], w["pv2010"][1], w["order4_numerical"] or "", w["certified_lower"] or "",
+                                w["certified_upper"] or "", w["width"] or ""]))
     (R / "table_I.tsv").write_text("\n".join(lines) + "\n")
 
     # ---- ladders: certified intermediate rungs
@@ -216,6 +231,23 @@ def main():
     for nb in ("lower1", "lower2"):
         shutil.copy2(P / "runs" / nb / "NOTES.md", R / "ladders" / "notebooks" / f"{nb}_NOTES.md")
 
+    # ---- provenance: export of the board's submission table (the run statistics of the paper's Sec. VI)
+    (R / "provenance").mkdir(parents=True, exist_ok=True)
+    rows = ["id\tutc\tagent\ttarget\tfile\tsha16\tboard_status\tverifier_verdict\tinequality\tside\tvalue"]
+    import datetime
+    for i, ts, author, target, f, h, status, r in con.execute(
+            "SELECT id, ts, author, target, file, hash, verdict, report FROM submissions ORDER BY id"):
+        r = json.loads(r)
+        rows.append("\t".join(str(x) for x in (
+            i, datetime.datetime.fromtimestamp(ts, datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), author,
+            target or "", f, h, status or "", r.get("verdict", ""), r.get("inequality", ""), r.get("side", ""),
+            r.get("violation") or r.get("bound") or "")))
+    (R / "provenance" / "board_submissions.tsv").write_text("\n".join(rows) + "\n")
+    if postboard:
+        shutil.copy2(pb, R / "provenance" / "postboard_index.json")
+        for ent in postboard.values():
+            shutil.copy2(P / ent["report"], R / "provenance" / ("postboard_" + pathlib.Path(ent["report"]).name))
+
     # ---- A19 case study inputs
     d = R / "case_studies" / "A19" / "data"
     d.mkdir(parents=True, exist_ok=True)
@@ -238,6 +270,12 @@ def main():
     i = mx.index("A19 ")
     (d / "naceur2025_maximal_violations_A19.txt").write_text(mx[i:mx.index(" A20 ", i)] + "\n")
 
+    # ---- local paths in the copied search programs and notebooks (as in the published copy)
+    for p in R.rglob("*"):
+        if p.is_file() and p.suffix in (".py", ".md", ".txt", ".tsv", ".sh"):
+            t = p.read_text()
+            if LOCAL in t:
+                p.write_text(t.replace(LOCAL, "<quantum-information>/"))
     # ---- SHA256SUMS (permissions normalised first: the frozen submissions are read-only in the repository)
     for p in R.rglob("*"):
         p.chmod(0o755 if p.is_dir() or p.suffix == ".sh" else 0o644)

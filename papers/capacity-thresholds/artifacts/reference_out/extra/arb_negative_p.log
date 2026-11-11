@@ -1,0 +1,5 @@
+== (d) negative controls: p just above the float zero crossing ==
+dep n240 above zero crossing                 p      0.0667122  I_c [-4.926153834715877e-11, -4.926153834715877e-11] w 5.9e-29  NEGATIVE  1093s ok (not POSITIVE)
+xz n80 above zero crossing                   p      0.1246510  I_c [-1.760464339600133e-10, -1.760464339600133e-10] w 2.6e-31  NEGATIVE  48s ok (not POSITIVE)
+2p n80 above zero crossing                   p      0.1237138  I_c [-1.262202454283903e-10, -1.262202454283903e-10] w 7.1e-30  NEGATIVE  56s ok (not POSITIVE)
+total 1198 s

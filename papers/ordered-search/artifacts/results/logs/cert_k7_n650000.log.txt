@@ -1,0 +1,53 @@
+  q_1: grid min 1.536e-06, gamma 7.679e-07, budget 5.9e-13
+    M=2^26: err 7.99e-15 (tol 3.0e-14)
+  q_2: grid min 5.471e-06, gamma 2.736e-06, budget 2.1e-12
+    M=2^26: err 2.66e-14 (tol 1.1e-13)
+  q_3: grid min 2.470e-06, gamma 1.235e-06, budget 9.5e-13
+    M=2^26: err 9.34e-12 (tol 4.8e-14)
+    refine 0: max residual 9.34e-12 (tol 4.8e-14)
+    refine 1: max residual 1.34e-11 (tol 4.8e-14)
+    refine 2: max residual 8.73e-12 (tol 4.8e-14)
+    refine 3: max residual 1.29e-11 (tol 4.8e-14)
+    refine 4: max residual 8.59e-12 (tol 4.8e-14)
+    refine 5: max residual 1.28e-11 (tol 4.8e-14)
+    refine 6: max residual 8.61e-12 (tol 4.8e-14)
+  q_4: grid min 5.343e-03, gamma 2.671e-03, budget 2.1e-09
+    M=2^26: err 6.91e-12 (tol 1.0e-10)
+  q_5: grid min 7.405e-04, gamma 3.703e-04, budget 2.8e-10
+    M=2^26: err 5.98e-12 (tol 1.4e-11)
+  q_6: grid min 4.571e-05, gamma 2.286e-05, budget 1.8e-11
+    M=2^26: err 1.93e-08 (tol 8.8e-13)
+    refine 0: max residual 1.93e-08 (tol 8.8e-13)
+    refine 1: max residual 2.59e-08 (tol 8.8e-13)
+    refine 2: max residual 5.31e-08 (tol 8.8e-13)
+    refine 3: max residual 1.12e-07 (tol 8.8e-13)
+    refine 4: max residual 2.29e-07 (tol 8.8e-13)
+    refine 5: max residual 4.54e-07 (tol 8.8e-13)
+    refine 6: max residual 8.60e-07 (tol 8.8e-13)
+{'t': 1, 'grid_min': 1.5358927290683947e-06, 'gamma': 7.679463645341974e-07, 'factor_err': 7.993605777301127e-15, 'budget': 5.907279727186133e-13, 'M': 67108864}
+{'t': 2, 'grid_min': 5.471082461588829e-06, 'gamma': 2.7355412307944146e-06, 'factor_err': 2.6617597015388128e-14, 'budget': 2.1042624852264727e-12, 'M': 67108864}
+{'t': 3, 'grid_min': 2.4703068241573034e-06, 'gamma': 1.2351534120786517e-06, 'factor_err': 8.61296280119648e-12, 'budget': 9.501180092912705e-13, 'M': 67108864}
+{'t': 4, 'grid_min': 0.005342515810503913, 'gamma': 0.0026712579052519565, 'factor_err': 6.9082239928519584e-12, 'budget': 2.0548137732707357e-09, 'M': 67108864}
+{'t': 5, 'grid_min': 0.0007405355903206678, 'gamma': 0.0003702677951603339, 'factor_err': 5.97732974227938e-12, 'budget': 2.8482138089256454e-10, 'M': 67108864}
+{'t': 6, 'grid_min': 4.571355420046608e-05, 'gamma': 2.285677710023304e-05, 'factor_err': 8.603996637985292e-07, 'budget': 1.7582136230948492e-11, 'M': 67108864}
+wrote out/cert_k7_n650000.json.gz (64.7 MB) in 364s
+verifier (214.6s): INVALID: q_3: residual q - |h|^2 not diagonally dominant (margin -7.661e-07)  margins=None
+independent: out/cert_k7_n650000.json.gz REJECTED: q_3 residual not diagonally dominant 
+      588.80 real       452.11 user        82.28 sys
+          4250091520  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            19885645  page reclaims
+                1063  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               16293  voluntary context switches
+             1028085  involuntary context switches
+       6333253145693  instructions retired
+       2009887974569  cycles elapsed
+          6365287536  peak memory footprint

@@ -1,0 +1,187 @@
+{
+ "indep_final": {
+  "note": "reference = midpoint of the arb_ic.py enclosure",
+  "results": {
+   "rec20_dep_n240": {
+    "n": 240,
+    "p": "0.0666847",
+    "reference": "1.312979763222851482007E-9",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "5e-14"
+   },
+   "rec27_2p_n80": {
+    "n": 80,
+    "p": "0.12367528",
+    "reference": "4.688004925413416462982E-9",
+    "sign": "POSITIVE",
+    "target": "two_pauli",
+    "tolerance": "5e-14"
+   },
+   "rec28_xz_n80": {
+    "n": 80,
+    "p": "0.12464123",
+    "reference": "1.6050687056098156038265E-9",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "5e-14"
+   }
+  }
+ },
+ "second_headline": {
+  "note": "reference = midpoint of the arb_ic.py enclosure; tolerance = double-precision error allowance",
+  "results": {
+   "headline_2p_n320": {
+    "n": 320,
+    "p": "0.12677472",
+    "reference": "1.1898001345434545084855E-9",
+    "sign": "POSITIVE",
+    "target": "two_pauli",
+    "tolerance": "5e-14"
+   },
+   "headline_2p_n320_above": {
+    "n": 320,
+    "p": "0.12678572",
+    "sign": "NEGATIVE",
+    "target": "two_pauli"
+   },
+   "headline_dep_n480": {
+    "n": 480,
+    "p": "0.06688201",
+    "reference": "4.851909912924154091005E-10",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "5e-14"
+   },
+   "headline_dep_n480_above": {
+    "n": 480,
+    "p": "0.06689301",
+    "sign": "NEGATIVE",
+    "target": "depolarizing"
+   },
+   "headline_xz_n320": {
+    "n": 320,
+    "p": "0.12770564",
+    "reference": "1.7220458670455431564765E-9",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "5e-14"
+   },
+   "headline_xz_n320_above": {
+    "n": 320,
+    "p": "0.12771664",
+    "sign": "NEGATIVE",
+    "target": "independent_xz"
+   },
+   "rec20_dep_n240": {
+    "n": 240,
+    "p": "0.0666847",
+    "reference": "1.312979763222851482007E-9",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "5e-14"
+   },
+   "rec27_2p_n80": {
+    "n": 80,
+    "p": "0.12367528",
+    "reference": "4.688004925413416462982E-9",
+    "sign": "POSITIVE",
+    "target": "two_pauli",
+    "tolerance": "5e-14"
+   },
+   "rec28_xz_n80": {
+    "n": 80,
+    "p": "0.12464123",
+    "reference": "1.6050687056098156038265E-9",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "5e-14"
+   },
+   "rec30_dep_n480": {
+    "n": 480,
+    "p": "0.06679861",
+    "reference": "4.532174099133242252305E-9",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "5e-14"
+   },
+   "xz_n240": {
+    "n": 240,
+    "p": "0.12737956",
+    "reference": "1.7306652728725274531505E-9",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "5e-14"
+   }
+  }
+ },
+ "second_mp": {
+  "note": "reference = midpoint of the arb_ic.py enclosure (128 bits); 30-digit mpmath",
+  "results": {
+   "kgA_neg": {
+    "n": 45,
+    "p": "203/3125",
+    "reference": "-4.13385441737049420061595E-8",
+    "sign": "NEGATIVE",
+    "target": "depolarizing",
+    "tolerance": "1e-27"
+   },
+   "kgA_pos": {
+    "n": 45,
+    "p": "16239/250000",
+    "reference": "8.60887680595498144861125E-8",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "1e-27"
+   },
+   "kgR_neg": {
+    "n": 45,
+    "p": "16229/250000",
+    "reference": "-1.341553575387347593032575E-7",
+    "sign": "NEGATIVE",
+    "target": "depolarizing",
+    "tolerance": "1e-27"
+   },
+   "kgR_pos": {
+    "n": 45,
+    "p": "4057/62500",
+    "reference": "6.05918380957210259349715E-8",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "1e-27"
+   },
+   "ours_n45": {
+    "n": 45,
+    "p": "6497/100000",
+    "reference": "5.3454324111101880696745E-9",
+    "sign": "POSITIVE",
+    "target": "depolarizing",
+    "tolerance": "1e-27"
+   },
+   "rec27_2p_n80": {
+    "n": 80,
+    "p": "0.12367528",
+    "reference": "4.688004925413416462982E-9",
+    "sign": "POSITIVE",
+    "target": "two_pauli",
+    "tolerance": "1e-27"
+   },
+   "rec28_xz_n80": {
+    "n": 80,
+    "p": "0.12464123",
+    "reference": "1.6050687056098156038265E-9",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "1e-27"
+   },
+   "xz_n120": {
+    "n": 120,
+    "p": "0.1259",
+    "reference": "2.76016771578134088928995E-8",
+    "sign": "POSITIVE",
+    "target": "independent_xz",
+    "tolerance": "1e-27"
+   }
+  }
+ }
+}

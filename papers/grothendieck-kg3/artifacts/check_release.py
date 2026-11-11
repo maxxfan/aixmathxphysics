@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Standalone checker for the K_G(3) <= 1.4494177506 certificate (Python 3 standard library only).
 
-usage:  python3 -I check_release.py [BUNDLE_DIR] [--cert FILE] [--no-verifier]
+usage:  python3 -I check_release.py [BUNDLE_DIR] [--no-verifier]             the theorem's certificate (steps 0-6)
+        python3 -I check_release.py [BUNDLE_DIR] --all [--no-verifier]       all 41 certificates of the paper
+        python3 -I check_release.py [BUNDLE_DIR] --table2 [--no-verifier]    the eight certificates of Table II
+        python3 -I check_release.py [BUNDLE_DIR] --cert FILE [--claim X]     any certificate (.json or .json.xz)
 
 It shares no code with the project verifier (verifier/verify.py, verifier/hull3.py, verifier/accum.c) and uses
 different algorithms: packed big-integer accumulation instead of C int64, gift wrapping instead of an incremental
@@ -24,6 +27,11 @@ What is checked (paper: Theorem 1, Lemma 1, Appendix A):
   5. the bound K_G(3) <= 1/(lam eta_A eta_B), rounded up to 10 digits, equals the claimed value, lies below the
      published 1.4546336567 (Designolle et al. 2023) and above the proven lower bound 1.4367003433.
   6. (optional) the frozen project verifier, run as a separate program, reports the same bound.
+With --all or --table2, steps 1-4 are run on every certificate listed in all_certificates/INDEX.json (after the
+manifest check and a SHA-256 check of the uncompressed file), and the resulting bound K_G(3) <=, the visibility
+v >= and the scale lambda must equal the index, which holds the values printed in the paper's Tables II and III;
+step 6 is run on each of them unless --no-verifier is given. With --cert, the bound of the given certificate is
+printed and compared with --claim if one is given (default claim for the bundle's own certificate: the theorem's).
 Exit code 0 iff everything passes.
 """
 import hashlib
@@ -34,6 +42,7 @@ import pathlib
 import random
 import subprocess
 import sys
+import tempfile
 import time
 from fractions import Fraction
 
@@ -394,10 +403,29 @@ def up10(q):
     return f"{s[:-10]}.{s[-10:]}"
 
 
+def down10(q):
+    """Decimal string of sqrt(q), rounded DOWN to 10 digits (q a positive rational)."""
+    t = q * 10 ** 20
+    s = str(math.isqrt(t.numerator // t.denominator)).rjust(11, "0")
+    return f"{s[:-10]}.{s[-10:]}"
+
+
+def read_cert(path):
+    """The certificate's JSON text as bytes; *.xz files are LZMA-decompressed (standard library)."""
+    path = pathlib.Path(path)
+    if path.suffix == ".xz":
+        import lzma
+        try:
+            return lzma.decompress(path.read_bytes())
+        except lzma.LZMAError as e:
+            raise Fail(f"{path.name}: not a valid .xz file ({e})")
+    return path.read_bytes()
+
+
 def check(cert_path, seed=2026):
     """Run checks 1-5 on one certificate; return a dict, raise Fail on any failure."""
     t0 = time.time()
-    c = parse(json.loads(pathlib.Path(cert_path).read_text()))
+    c = parse(json.loads(read_cert(cert_path)))
     N = accumulate(c)
     L, Qden = symmetrize(c, N)
     ok, resid, slack = residual_ok(c, L, Qden)
@@ -411,12 +439,70 @@ def check(cert_path, seed=2026):
                 G=len(c["H"]), weight=1 - slack, resid=resid, lam=c["lam"], seconds=round(time.time() - t0, 1))
 
 
+def run_verifier(bundle, cert_json, expect):
+    """Step 6: the frozen project verifier, as a separate program, must certify the bound `expect` (or any, if None)."""
+    r = subprocess.run([sys.executable, "-I", str(bundle / "verifier" / "verify.py"), str(cert_json), "--json",
+                        "--no-lock"], capture_output=True, text=True, timeout=1800)
+    try:
+        rep = json.loads(r.stdout)
+    except json.JSONDecodeError:
+        raise Fail(f"verifier did not run: {r.stderr.strip()[-300:]}")
+    if rep.get("verdict") in (None, "INVALID", "VERIFIER_ALARM") or (expect and rep.get("kg3_upper_str") != expect):
+        raise Fail(f"verifier says {rep.get('verdict')} {rep.get('kg3_upper_str')}: {rep.get('reason')}")
+    return f"{rep['verifier']}: {rep['verdict']}, K_G(3) <= {rep['kg3_upper_str']} ({rep['seconds']} s)"
+
+
+def load_index(bundle):
+    f = bundle / "all_certificates" / "INDEX.json"
+    if not f.is_file():
+        raise Fail("all_certificates/INDEX.json missing")
+    return json.loads(f.read_text())["certificates"]
+
+
+def check_indexed(bundle, e, use_verifier=False):
+    """Check one entry of all_certificates/INDEX.json: file hash, steps 1-4, and bound, visibility and scale equal to
+    the index. Returns a one-line summary; raises Fail otherwise."""
+    path = bundle / e["file"]
+    if not path.is_file():
+        raise Fail(f"missing file {e['file']}")
+    raw = read_cert(path)
+    if hashlib.sha256(raw).hexdigest() != e["sha256"]:
+        raise Fail(f"SHA-256 mismatch: {e['file']} (uncompressed)")
+    with tempfile.TemporaryDirectory(prefix="kg3cert") as td:
+        tmp = pathlib.Path(td) / "cert.json"
+        tmp.write_bytes(raw)
+        res = check(tmp)
+        lam = res["lam"]
+        lam7 = "0." + str(math.floor(lam * 10 ** 7)).rjust(7, "0")
+        v = down10(1 / res["K2"])
+        e9 = "0." + str(math.floor(res["eta2_A"] * 10 ** 9)).rjust(9, "0")
+        got = (res["m"][0], res["atoms"], lam7, v, res["K"])
+        want = (e["m"], e["atoms"], e["lambda_down7"], e["werner_v"], e["kg3_upper"])
+        if got != want:
+            raise Fail(f"(m, atoms, lambda, v, K_G(3)) = {got} != index {want}")
+        if not res["K2"] > PROVEN_LOWER ** 2:
+            raise Fail(f"K_G(3) <= {res['K']} contradicts the proven lower bound 1.4367003433")
+        msg = (f"m = {e['m']}, {res['atoms']} atoms, weight {res['weight']:.12f}, ||E||_F <= {res['resid']:.3e}, "
+               f"eta^2 >= {e9}, lambda >= {lam7}, v >= {v}, K_G(3) <= {res['K']} (= index), {res['seconds']} s")
+        if use_verifier:
+            msg += "; " + run_verifier(bundle, tmp, e["kg3_upper"])
+    return msg
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    opt = lambda name: sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None      # noqa: E731
+    if opt("--cert") in args:
+        args.remove(opt("--cert"))
+    if opt("--claim") in args:
+        args.remove(opt("--claim"))
     bundle = pathlib.Path(args[0] if args else pathlib.Path(__file__).resolve().parent).resolve()
-    cert = bundle / "certificate" / "KG3_upper_1.4494177506_rad721.json"
-    if "--cert" in sys.argv:
-        cert = pathlib.Path(sys.argv[sys.argv.index("--cert") + 1]).resolve()
+    default_cert = bundle / "certificate" / "KG3_upper_1.4494177506_rad721.json"
+    cert, claim = default_cert, CLAIM
+    if opt("--cert"):
+        cert = pathlib.Path(opt("--cert")).resolve()
+        claim = opt("--claim") or (CLAIM if cert == default_cert else None)
+    use_verifier = "--no-verifier" not in sys.argv and (bundle / "verifier" / "verify.py").exists()
     fails = 0
 
     def step(name, fn):
@@ -428,6 +514,22 @@ def main():
             log(f"FAIL  {name}: {e}")
 
     step("0 manifest", lambda: f"{check_manifest(bundle)} files match MANIFEST.sha256")
+    if "--all" in sys.argv or "--table2" in sys.argv:
+        try:
+            entries = load_index(bundle)
+        except Fail as e:
+            log(f"FAIL  index: {e}")
+            sys.exit(1)
+        if "--all" not in sys.argv:
+            entries = [e for e in entries if e["table2"]]
+        done = fails
+        for e in entries:
+            step(f"post {e['post']:>3} {e['set']:<10}", lambda e=e: check_indexed(bundle, e, use_verifier))
+        ok = len(entries) - (fails - done)
+        log(f"{ok} of {len(entries)} certificates verified"
+            + (f"; best K_G(3) <= {min(e['kg3_upper'] for e in entries)}" if ok == len(entries) else ""))
+        log("ALL CHECKS PASSED" if fails == 0 else f"{fails} CHECK(S) FAILED")
+        sys.exit(1 if fails else 0)
     res = {}
 
     def core():
@@ -442,25 +544,24 @@ def main():
             e15 = math.floor(e * 10 ** 15)
             msg = (f"lambda = {lam.numerator}/{lam.denominator}; eta_A^2 >= 0.{str(e15)[-15:]} (exact rational with "
                    f"{len(str(e.denominator))}-digit denominator); K_G(3) <= {res['K']}")
-            if res["K"] != CLAIM:
-                raise Fail(msg + f" != claimed {CLAIM}")
-            if not res["K2"] < PUBLISHED ** 2:
+            if claim is not None and res["K"] != claim:
+                raise Fail(msg + f" != claimed {claim}")
+            if claim == CLAIM and not res["K2"] < PUBLISHED ** 2:
                 raise Fail(msg + " is not below the published 1.4546336567")
             if not res["K2"] > PROVEN_LOWER ** 2:
                 raise Fail(msg + " contradicts the proven lower bound 1.4367003433")
-            return msg + f" (claimed {CLAIM}; published 1.4546336567; proven lower bound 1.4367003433)"
+            if claim is None:
+                return msg + f"; v >= {down10(1 / res['K2'])} (no claim given; proven lower bound 1.4367003433)"
+            return msg + f" (claimed {claim}; published 1.4546336567; proven lower bound 1.4367003433)"
         step("5 bound", bound)
-    if "--no-verifier" not in sys.argv and (bundle / "verifier" / "verify.py").exists():
+    if use_verifier:
         def verifier():
-            r = subprocess.run([sys.executable, "-I", str(bundle / "verifier" / "verify.py"), str(cert), "--json",
-                                "--no-lock"], capture_output=True, text=True, timeout=1800)
-            try:
-                rep = json.loads(r.stdout)
-            except json.JSONDecodeError:
-                raise Fail(f"verifier did not run: {r.stderr.strip()[-300:]}")
-            if rep.get("kg3_upper_str") != CLAIM or rep.get("verdict") in ("INVALID", "VERIFIER_ALARM"):
-                raise Fail(f"verifier says {rep.get('verdict')} {rep.get('kg3_upper_str')}: {rep.get('reason')}")
-            return f"{rep['verifier']}: {rep['verdict']}, K_G(3) <= {rep['kg3_upper_str']} ({rep['seconds']} s)"
+            if cert.suffix != ".xz":
+                return run_verifier(bundle, cert, claim)
+            with tempfile.TemporaryDirectory(prefix="kg3cert") as td:
+                tmp = pathlib.Path(td) / "cert.json"
+                tmp.write_bytes(read_cert(cert))
+                return run_verifier(bundle, tmp, claim)
         step("6 project verifier (separate code)", verifier)
     log("ALL CHECKS PASSED" if fails == 0 else f"{fails} CHECK(S) FAILED")
     sys.exit(1 if fails else 0)

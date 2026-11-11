@@ -1,0 +1,21 @@
+=== replay extra, 2026-11-10 17:49:07 UTC ===
+verifier_rec28            213s  PASS identical   verifier rec28: p08-capacity-thresholds/2 independent_xz n=80 p=12464123/100000000 IMPROVEMENT I_c in [3.5713e-11, 2.6056e-09] bits; engine binary differs from the pinned build (expected on another machine or compiler)
+verifier_rec27            249s  PASS identical   verifier rec27: p08-capacity-thresholds/2 two_pauli n=80 p=1545941/12500000 IMPROVEMENT I_c in [1.3223e-13, 7.5729e-09] bits
+verifier_rec30            428s  PASS identical   verifier rec30: p08-capacity-thresholds/2 depolarizing n=480 p=6679861/100000000 IMPROVEMENT I_c in [2.4950e-11, 6.8873e-09] bits
+verifier_dep480_headline    535s  PASS identical   verifier dep480_headline_undecided: p08-capacity-thresholds/2 depolarizing n=480 p=6688201/100000000 UNDECIDED I_c in [-4.0218e-09, 2.8387e-09] bits
+arb_validate_brute_extra    398s  PASS text arb_validate_brute_extra: 9 further fifty-digit cases enclosed (n = 6, 7)
+arb_negative_p           1198s  PASS text arb_negative_p: three inputs just above their zero crossing: NEGATIVE
+make_perturbed_xz_n80        FAIL regenerated input differs
+make_perturbed_2p_n80        FAIL regenerated input differs
+make_perturbed_dep_n240        FAIL regenerated input differs
+arb_pert_xz_n80            47s  PASS identical   arb pert_xz_n80: independent_xz n=80 p=0.12464123 sign NEGATIVE I_c in [-32231094121708872807693, -32231094121708872807692]e-30 bits
+arb_pert_2p_n80            55s  PASS identical   arb pert_2p_n80: two_pauli n=80 p=0.12367528 sign NEGATIVE I_c in [-33100345096971698705753, -33100345096971698705741]e-30 bits
+arb_pert_dep_n240        1042s  PASS identical   arb pert_dep_n240: depolarizing n=240 p=0.0666847 sign NEGATIVE I_c in [-31428148169146323007293, -31428148169146323007236]e-30 bits
+arb_margin_xz_n80          48s  PASS identical   arb cons_independent_xz_n80_0.12463577: independent_xz n=80 p=0.12463577 sign POSITIVE I_c in [2600475411142379441080, 2600475411142379441081]e-30 bits
+arb_margin_2p_n80          56s  PASS identical   arb cons_two_pauli_n80_0.12366746: two_pauli n=80 p=0.12366746 sign POSITIVE I_c in [5665418663789639437500, 5665418663789639437508]e-30 bits
+arb_margin_dep_n240      1109s  PASS identical   arb cons_depolarizing_n240_0.06666451: depolarizing n=240 p=0.06666451 sign POSITIVE I_c in [2313249372406896121086, 2313249372406896121143]e-30 bits
+arb_rec20                1137s  PASS identical   arb final_dep_n240: depolarizing n=240 p=0.0666847 sign POSITIVE I_c in [1312979763222851481978, 1312979763222851482036]e-30 bits
+arb_xz_n120               435s  PASS identical   arb arb_independent_xz_n120_0.1259_board_path1: independent_xz n=120 p=0.1259 sign POSITIVE I_c in [27601677157813408892899, 27601677157813408892900]e-30 bits
+arb_xz_n240              5363s  PASS identical   arb arb_independent_xz_n240_0.12737956: independent_xz n=240 p=0.12737956 sign POSITIVE I_c in [1730665272872527453149, 1730665272872527453152]e-30 bits
+second_mp                 627s  PASS second second_mp: kgA_neg -4.133854e-8 (ref 4e-31 away), kgA_pos +8.608877e-8 (ref 2e-30 away), kgR_neg -1.341554e-7 (ref 2e-30 away), kgR_pos +6.059184e-8 (ref 6e-31 away), ours_n45 +5.345432e-9 (ref 5e-31 away), rec27_2p_n80 +4.688005e-9 (ref 3e-30 away), rec28_xz_n80 +1.605069e-9 (ref 2e-30 away)
+RELEASE (extra): FAIL

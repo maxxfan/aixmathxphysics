@@ -1,0 +1,16 @@
+# kg2026_A_n45.json: trace-1 = 1.4e-30, 27 s
+RESULT kgA_pos depolarizing n=45 p=16239/250000 mpmath-30 I_c=8.608876805954981448611433e-8
+# kg2026_A_n45.json: trace-1 = -1.3e-30, 27 s
+RESULT kgA_neg depolarizing n=45 p=203/3125 mpmath-30 I_c=-4.133854417370494200615914e-8
+# kg2026_R_n45.json: trace-1 = -1.2e-30, 27 s
+RESULT kgR_pos depolarizing n=45 p=4057/62500 mpmath-30 I_c=6.059183809572102593497206e-8
+# kg2026_R_n45.json: trace-1 = 2.0e-31, 26 s
+RESULT kgR_neg depolarizing n=45 p=16229/250000 mpmath-30 I_c=-0.000000134155357538734759303259
+# depolarizing_n45_0.06497.json: trace-1 = 9.9e-31, 26 s
+RESULT ours_n45 depolarizing n=45 p=6497/100000 mpmath-30 I_c=5.345432411110188069675021e-9
+# 20261027-124857_lead_2a327ea83c2b10f7.json: trace-1 = -2.4e-30, 207 s
+RESULT rec28_xz_n80 independent_xz n=80 p=0.12464123 mpmath-30 I_c=1.605068705609815603824175e-9
+# 20261027-124857_lead_585247a2e5ee8280.json: trace-1 = 3.7e-30, 207 s
+RESULT rec27_2p_n80 two_pauli n=80 p=0.12367528 mpmath-30 I_c=4.688004925413416462979348e-9
+# independent_xz_n120_0.1259_board_path1.json: trace-1 = -2.5e-30, 980 s
+RESULT xz_n120 independent_xz n=120 p=0.1259 mpmath-30 I_c=2.760167715781340889289893e-8

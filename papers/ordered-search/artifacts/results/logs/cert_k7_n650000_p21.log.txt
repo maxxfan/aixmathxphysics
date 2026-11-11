@@ -1,0 +1,53 @@
+  q_1: grid min 1.523e-06, gamma 7.615e-07, budget 5.9e-13
+    M=2^26: err 1.21e-14 (tol 2.9e-14)
+  q_2: grid min 6.903e-06, gamma 3.452e-06, budget 2.7e-12
+    M=2^26: err 5.94e-15 (tol 1.3e-13)
+  q_3: grid min 5.612e-06, gamma 2.806e-06, budget 2.2e-12
+    M=2^26: err 8.97e-14 (tol 1.1e-13)
+  q_4: grid min 5.515e-03, gamma 2.758e-03, budget 2.1e-09
+    M=2^26: err 2.33e-11 (tol 1.1e-10)
+  q_5: grid min 3.039e-04, gamma 1.520e-04, budget 1.2e-10
+    M=2^26: err 2.41e-10 (tol 5.8e-12)
+    18304 spikes narrower than the grid (closest root distance 1.55e-08)
+    refine 0: max residual 2.41e-10 (tol 5.8e-12)
+    refine 1: max residual 3.89e-11 (tol 5.8e-12)
+    refine 2: max residual 1.97e-13 (tol 5.8e-12)
+  q_6: grid min 9.097e-05, gamma 4.549e-05, budget 3.5e-11
+    M=2^26: err 3.69e-06 (tol 1.7e-12)
+    56639 spikes narrower than the grid (closest root distance 1.35e-08)
+    refine 0: max residual 3.69e-06 (tol 1.7e-12)
+    refine 1: max residual 1.68e-06 (tol 1.7e-12)
+    refine 2: max residual 3.87e-07 (tol 1.7e-12)
+    refine 3: max residual 9.32e-08 (tol 1.7e-12)
+    refine 4: max residual 2.16e-08 (tol 1.7e-12)
+    refine 5: max residual 4.53e-09 (tol 1.7e-12)
+    refine 6: max residual 7.45e-10 (tol 1.7e-12)
+    refine 7: max residual 6.28e-11 (tol 1.7e-12)
+    refine 8: max residual 8.89e-13 (tol 1.7e-12)
+{'t': 1, 'grid_min': 1.5230565315180384e-06, 'gamma': 7.615282657590192e-07, 'factor_err': 1.2101430968414206e-14, 'budget': 5.85790973660784e-13, 'M': 67108864}
+{'t': 2, 'grid_min': 6.903049213802248e-06, 'gamma': 3.451524606901124e-06, 'factor_err': 5.9396931817445875e-15, 'budget': 2.65501892838548e-12, 'M': 67108864}
+{'t': 3, 'grid_min': 5.61191670330613e-06, 'gamma': 2.805958351653065e-06, 'factor_err': 8.968867315495288e-14, 'budget': 2.1584295012715885e-12, 'M': 67108864}
+{'t': 4, 'grid_min': 0.005515303348316243, 'gamma': 0.0027576516741581215, 'factor_err': 2.3284390041067304e-11, 'budget': 2.1212705185831706e-09, 'M': 67108864}
+{'t': 5, 'grid_min': 0.00030393547538837273, 'gamma': 0.00015196773769418637, 'factor_err': 1.9657571678715835e-13, 'budget': 1.1689825976475873e-10, 'M': 67108864}
+{'t': 6, 'grid_min': 9.097458372120393e-05, 'gamma': 4.5487291860601964e-05, 'factor_err': 8.890601433885386e-13, 'budget': 3.499022450815536e-11, 'M': 67108864}
+wrote out/cert_k7_n650000.json.gz (64.4 MB) in 1326s
+verifier (426.2s): IMPROVEMENT: exact ordered search with 7 queries for n=650000: 0.362505 log2 N (record 0.364572, k=6, n=90000); min certified margin 7.55e-07  margins=[7.546236859334728e-07, 3.44758970436477e-06, 2.8037340620335104e-06, 0.0027564694109385064, 0.0001519204360479196, 4.5333028294155025e-05]
+independent: out/cert_k7_n650000.json.gz {"k": 7, "n": 650000, "constant": 0.36250496788151854, "beats_record": true, "margins": [7.546236859334728e-07, 3.44758970436477e-06, 2.8037340620335104e-06, 0.0027564694109385064, 0.0001519204360479196, 4.5333028294155025e-05]} 
+     1764.97 real      1739.28 user        23.86 sys
+          6639190016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             7364535  page reclaims
+                 583  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 731  voluntary context switches
+              297337  involuntary context switches
+      30067012729736  instructions retired
+       7078361456888  cycles elapsed
+          8682068880  peak memory footprint

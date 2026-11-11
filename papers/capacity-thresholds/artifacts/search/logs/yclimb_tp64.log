@@ -1,0 +1,2 @@
+two_pauli n=64 start threshold(margin 1e-08) 0.12235314
+  round 0: 0.12235314 -> 0.1225161160089328  (300 its)

@@ -1,0 +1,15 @@
+loaded (2s); n=850000, q_6 grid min 8.2752e-06, gamma 4.1376e-06
+theta=0: q-gamma 2.0298e+01, q'' -6.9676e+12, root distance nan (grid spacing 4.681e-08, edge band 1.498e-06)
+theta=pi: q-gamma 3.3885e-01, q'' 2.3885e+11, root distance 1.684e-06 (grid spacing 4.681e-08, edge band 1.498e-06)
+spikes at 2^27: 130228 kept, 130228 with edge=0; dropped by the edge rule: []
+residual max 1.301e-07 at j=4; max by decile of j: 1.3e-07 8.6e-08 6.8e-08 5.8e-08 5.4e-08 4.7e-08 3.9e-08 4.6e-08 5.3e-08 5.6e-08
+r/(q-gamma) at 130228 spikes: max |.| 2.917e+03; >0.01: 566, >0.1: 407, >0.5: 292
+  theta 7.220396e-01 d 4.77e-09 (q-gamma) 8.215e-06 r -2.396e-02 ratio -2.917e+03
+  theta 8.891947e-01 d 2.92e-09 (q-gamma) 2.698e-06 r -2.979e-03 ratio -1.104e+03
+  theta 8.891208e-01 d 3.34e-09 (q-gamma) 3.531e-06 r -1.712e-03 ratio -4.848e+02
+  theta 8.891134e-01 d 3.48e-09 (q-gamma) 3.828e-06 r -5.982e-04 ratio -1.563e+02
+  theta 7.248042e-01 d 4.29e-09 (q-gamma) 6.630e-06 r -8.540e-04 ratio -1.288e+02
+  theta 7.245751e-01 d 4.28e-09 (q-gamma) 6.603e-06 r -8.403e-04 ratio -1.273e+02
+  theta 7.241907e-01 d 4.29e-09 (q-gamma) 6.629e-06 r -8.356e-04 ratio -1.261e+02
+  theta 7.250334e-01 d 4.31e-09 (q-gamma) 6.692e-06 r -8.403e-04 ratio -1.256e+02
+max |r(theta)| on the 16n grid 2.396e-02 at theta 7.2204e-01 (16s)

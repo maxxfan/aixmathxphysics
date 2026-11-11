@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Write MANIFEST.sha256: the SHA-256 of every released checker, test and data file and of every
-certificate, with paths relative to the p09 folder.  Check with `shasum -a 256 -c MANIFEST.sha256`
+"""Write MANIFEST.sha256: the SHA-256 of every released checker, test and data file, of every
+certificate and (from release ordered-search-v5 on) of the search and certificate-building programs
+and the run logs, with paths relative to the p09 folder.  Check with `shasum -a 256 -c MANIFEST.sha256`
 (or `sha256sum -c`) from that folder.  Run again after any change to a listed file.
 
 usage: python3 results/make_manifest.py
@@ -12,7 +13,8 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 FILES = ["verifier/verify.py", "verifier/PINS.json", "verifier/freeze.sh", "verifier/tests/test_verifier.py",
          "verifier/tests/fixtures/*.json", "results/check_independent.py", "results/test_check_independent.py",
          "results/audit.py", "results/audits.json", "results/make_manifest.py",
-         "results/certificates/SHA256SUMS", "results/certificates/cert_*.json*", "data/*.json"]
+         "results/certificates/SHA256SUMS", "results/certificates/cert_*.json*", "data/*.json",
+         "qlib/*.py", "work/lead/*.py", "results/logs/*.log.txt"]
 
 
 def sha256(p):

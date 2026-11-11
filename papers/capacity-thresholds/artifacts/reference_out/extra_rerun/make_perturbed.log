@@ -1,0 +1,3 @@
+arb/validation/testdata/pert_dep_n240.json NEGATIVE CONTROL: certificates/board/20261027-053852_lead_9e078e22e51cd14b.json with Re v_0[36] 0.27663461658195304 -> 0.27673461658195303
+arb/validation/testdata/pert_xz_n80.json NEGATIVE CONTROL: certificates/board/20261027-124857_lead_2a327ea83c2b10f7.json with Re v_0[74] -0.08356024621995373 -> -0.08346024621995372
+arb/validation/testdata/pert_2p_n80.json NEGATIVE CONTROL: certificates/board/20261027-124857_lead_585247a2e5ee8280.json with Re v_0[6] -0.08176691325162357 -> -0.08166691325162356

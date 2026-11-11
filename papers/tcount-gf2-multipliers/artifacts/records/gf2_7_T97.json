@@ -589,9 +589,12 @@
  "comparison": {
   "reported": 101,
   "reported_by": "Khoruzhii et al.; Fisher et al. (Khoruzhii start), released but not checked by us",
-  "reported_invalid": false,
+  "reported_status": "ok",
   "checked": 104,
-  "checked_by": "AlphaTensor-Quantum"
+  "checked_by": "AlphaTensor-Quantum",
+  "reported_invalid": false,
+  "vandaele2025_table3": 111,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "CRT-places start (crtplace.py --n 7 --places inf:3,x:3,x1:2,f2:1,f3:1, P=x^7+x+1, raw 111) + flipper search2 reheat chain: T=.30 seed 22 (->100), T=.34 seed 71 (->99), T=.32 seed 73 (->97)",
  "construction_script": "work/flipper/search2 work/base5/crt7_b.txt sa7_b.txt 22 800000000 0.30 0.30 6 1000 80 ; search2 sa7_b.txt sa7_reheat_b.txt 71 450000000 0.34 0.34 6 1000 80 ; search2 start99.txt sa7_reheat3.txt 73 700000000 0.32 0.32 6 1000 80 ; validated with work/base5/chk.py",

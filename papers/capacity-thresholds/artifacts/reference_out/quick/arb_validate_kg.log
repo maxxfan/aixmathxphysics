@@ -1,0 +1,12 @@
+== (b) Krohn-Grimberghe certificates ==
+KG state A                                   p   16239/250000  I_c [8.608876805954981e-8, 8.608876805954981e-8] w 1.6e-31  POSITIVE  4s inside KG cert: True; float 8.60887680595e-8 to 11 digits: True
+our n=45 state (KG exact verifier)           p        0.06497  I_c [5.345432411110188e-9, 5.345432411110188e-9] w 1.7e-31  POSITIVE  4s 
+    ours  [534543241111018806967411337108485022875648, 534543241111018806967428147887768395177984] e-50
+    KG    [534543241111018806874081249826800422545285, 534543241111018807060758434297471090811600] e-50
+    overlap True; ours inside KG True
+== (b') the four certified KG signs ==
+kg2026_A_n45.json                            p   16239/250000  I_c [8.608876805954981e-8, 8.608876805954981e-8] w 1.6e-31  POSITIVE  4s ok
+kg2026_A_n45.json                            p       203/3125  I_c [-4.133854417370494e-8, -4.133854417370494e-8] w 1.7e-31  NEGATIVE  4s ok
+kg2026_R_n45.json                            p     4057/62500  I_c [6.059183809572103e-8, 6.059183809572103e-8] w 1.2e-31  POSITIVE  4s ok
+kg2026_R_n45.json                            p   16229/250000  I_c [-1.341553575387348e-7, -1.341553575387348e-7] w 1.2e-31  NEGATIVE  4s ok
+total 23 s

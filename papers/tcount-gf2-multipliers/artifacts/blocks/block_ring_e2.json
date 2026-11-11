@@ -21,6 +21,6 @@
   "001010",
   "000010"
  ],
- "source": "this work; optimal (exhaustive)",
+ "source": "this work; optimal in the phase-polynomial model (exhaustive enumeration, exact/)",
  "variable_order": "a_0..a_{d-1}, b_0..b_{d-1}, c_0..c_{d-1} (polynomial basis of F2[y]/(modulus))"
 }

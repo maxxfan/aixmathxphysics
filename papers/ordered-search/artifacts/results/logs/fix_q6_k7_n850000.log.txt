@@ -1,0 +1,26 @@
+loaded (5s); q_6: gamma 4.138e-06, tol 1.2e-13; 130228 spikes at 2^27; stored factor max |r_j| 1.301e-07
+    cepstral step: max |r_j| 1.30e-07, F on grid in [-9.991e-01, 1.154e+01]
+  cepstral step 1: max |r_j| 2.205e-07 (824s)
+    refine 0: max residual 1.30e-07 (tol 1.2e-13)
+    refine 1: max residual 1.49e-07 (tol 1.2e-13)
+    refine 2: max residual 2.91e-07 (tol 1.2e-13)
+factor err 1.301e-07 (tol 1.2e-13) (1690s)
+not converged; certificate not written
+     1690.51 real      1660.08 user        29.86 sys
+          5675925504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             7488186  page reclaims
+                  62  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  19  voluntary context switches
+              370511  involuntary context switches
+      27272061232490  instructions retired
+       6857961649597  cycles elapsed
+          9764511304  peak memory footprint

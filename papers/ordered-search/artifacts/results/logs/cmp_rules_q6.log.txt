@@ -1,0 +1,8 @@
+q_6 at 2^27: 130228 spikes; max |r_j| 1.30e-07; grid part max |F_k| 5.90e-06 (12s)
+  tan: max |corr| 6.806e-07 (418s)
+  graded: max |corr| 6.806e-07 (807s)
+  ref: max |corr| 6.806e-07 (1648s)
+  tan - ref: max 7.204e-16, rms 1.800e-16; relative to max |F_k + corr| 1.38e-10
+  graded - ref: max 5.201e-16, rms 2.096e-16; relative to max |F_k + corr| 9.97e-11
+     2885.30 real      2854.26 user        36.35 sys
+          7872927864  peak memory footprint

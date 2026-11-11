@@ -1,0 +1,7 @@
+  it 0: LP beta=10 true min~-15319.1 cuts+=5092 -0 rows=(49847, 643) (60s)
+  it 1: LP beta=10 true min~-7656.79 cuts+=5088 -0 rows=(54939, 643) (134s)
+  it 2: LP beta=10 true min~-11540.6 cuts+=4293 -0 rows=(60027, 643) (276s)
+  it 3: LP beta=10 true min~-5880.35 cuts+=3774 -0 rows=(64320, 643) (442s)
+  it 4: LP beta=10 true min~-2387.6 cuts+=3611 -0 rows=(68094, 643) (568s)
+  it 5: LP beta=10 true min~-9603.73 cuts+=4033 -0 rows=(71705, 643) (790s)
+  it 6: LP beta=10 true min~-6177.79 cuts+=3212 -0 rows=(75738, 643) (979s)

@@ -1,0 +1,23 @@
+family   independent_xz   n 64   rank 2   p 0.12331552 (= 0.12331552)   frame rot
+I_c      1.000639519258e-08 bits
+         |evd - evr| 2.1e-15   |random-rotation probe| 3.0e-15
+check    expm: I_c 1.000639718266e-08   |diff| 2.0e-15   (0.6 s)
+error    empirical 3.0e-14 bits (10 x max of the differences above)
+         first-order bound 3.4e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  1.9e-11 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [9.9874e-09, 1.0025e-08])
+time     total 0.6 s (superop 0.0, channel 0.1, entropy 0.4)
+I_c      1.000639682169e-08 bits
+family   two_pauli   n 64   rank 2   p 0.12235314 (= 0.12235314)   frame rot
+method   uniform  {'neg_taylor_terms': 32, 'neg_growth_bound': 34.76737023813513, 'poisson_mu': 21.510187935643422, 'poisson_terms': 78, 'poisson_tail': 4.872752026994316e-21}
+I_c      1.000299145668e-08 bits
+         |evd - evr| 4.7e-16   |random-rotation probe| 1.5e-15
+check    expm: I_c 1.000300481319e-08   |diff| 1.3e-14   (0.8 s)
+error    empirical 1.3e-13 bits (10 x max of the differences above)
+         first-order bound 3.7e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  2.2e-11 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [9.9813e-09, 1.0025e-08])
+time     total 0.7 s (superop 0.0, channel 0.2, entropy 0.3)
+I_c      1.000299533908e-08 bits
+CROSS independent_xz n=64 claimed 0.12331552  zero crossing 0.1233281749 (I_c -2.5e-14)  p*-p 1.27e-05  slope -8.048e-04  I_c(p*+1e-6) -7.907e-10
+CROSS two_pauli n=64 claimed 0.12235314  zero crossing 0.1223639858 (I_c -2.0e-15)  p*-p 1.08e-05  slope -9.223e-04  I_c(p*+1e-6) -9.223e-10

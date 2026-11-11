@@ -1,0 +1,6 @@
+k=7 n=200000: 1038 variables, grid 1600001 points per q, 8 fft workers, param log
+  [0] mu=1: softmin -12.878, min over grid+extra -8.3068, 500 its (220s)
+  [0] mu=0.3: softmin -1.7144, min over grid+extra 0.34208, 500 its (464s)
+  [0] mu=0.1: softmin -0.032307, min over grid+extra 0.39123, 4 its (473s)
+  [0] true min q/omega -36.862; extra points +479 (total 479); best -36.862 (476s)
+k=7 n=200000 nv=1038: true min q/omega -36.862 (best pass; 476s)

@@ -1,0 +1,5 @@
+=== replay headline, 2026-11-10 17:24:44 UTC ===
+headline_dep_n480       12147s  PASS identical   arb arb_depolarizing_n480_0.06688201: depolarizing n=480 p=0.06688201 sign POSITIVE I_c in [485190991292415409011, 485190991292415409190]e-30 bits
+headline_xz_n320         4605s  PASS identical   arb arb_independent_xz_n320_0.12770564: independent_xz n=320 p=0.12770564 sign POSITIVE I_c in [1722045867045543156425, 1722045867045543156528]e-30 bits
+headline_2p_n320         5970s  PASS identical   arb arb_two_pauli_n320_0.12677472: two_pauli n=320 p=0.12677472 sign POSITIVE I_c in [1189800134543454507921, 1189800134543454509050]e-30 bits
+RELEASE (headline): PASS

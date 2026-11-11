@@ -1,0 +1,10 @@
+two_pauli n=48 r=2 p=0.12086867 rates [0.16515774233968725, -0.02679502423340137, 0.16515774233968725]  superops 2s nnz 509257
+  negative-rate Taylor: 48 terms  75s
+  uniformisation: mu=15.8551 97 terms  270s
+  float64 I_c            1.004893731342387e-08
+  hp blocks -> f64 eig   1.004893177199083e-08   diff +5.54e-15
+  max |X_f64 - X_hp| / tr(block) over blocks: 5.58e-14
+  block k=0 (2j=48, dim 49/98): weight 1.4585e-03  min eig sigma 8.85e-17 tau -5.33e-46  dH_sigma(f64-hp) +8.88e-18  dH_tau +1.82e-17  d(Hs-Ht) -9.34e-18  (6s)
+  block k=4 (2j=40, dim 41/82): weight 1.2243e-01  min eig sigma 3.81e-12 tau 8.19e-20  dH_sigma(f64-hp) +3.58e-16  dH_tau +1.52e-16  d(Hs-Ht) +2.05e-16  (3s)
+  block k=10 (2j=28, dim 29/58): weight 4.6566e-02  min eig sigma 3.45e-9 tau 5.51e-15  dH_sigma(f64-hp) +9.27e-16  dH_tau +4.57e-16  d(Hs-Ht) +4.70e-16  (1s)
+  block k=20 (2j=8, dim 9/18): weight 5.8978e-06  min eig sigma 1.45e-9 tau 7.38e-11  dH_sigma(f64-hp) +3.52e-18  dH_tau +3.89e-18  d(Hs-Ht) -3.71e-19  (0s)

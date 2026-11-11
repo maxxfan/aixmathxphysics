@@ -1,0 +1,19 @@
+indep_ic  candidates/20261027-124857_lead_2a327ea83c2b10f7.json  p 0.12464123:  I_c = 1.605066843125856e-09 bits  (0.6 s)
+          |evd-evr| 0.0e+00  |probe| 1.7e-15  first-order bound 5.0e-12  floor 3.3e-11
+arb_ic    [1.605068705609815603826098e-9, 1.605068705609815603826379e-9]  sign POSITIVE
+          indep - arb_ic midpoint = -1.862e-15 bits; inside: False
+indep_ic  candidates/20261027-124857_lead_585247a2e5ee8280.json  p 0.12367528:  I_c = 4.688001217992369e-09 bits  (0.6 s)
+          |evd-evr| 0.0e+00  |probe| 3.1e-15  first-order bound 5.1e-12  floor 3.7e-11
+arb_ic    [4.688004925413416462978434e-9, 4.688004925413416462985573e-9]  sign POSITIVE
+          indep - arb_ic midpoint = -3.707e-15 bits; inside: False
+indep_ic  candidates/20261027-053852_lead_9e078e22e51cd14b.json  p 0.0666847:  I_c = 1.312979042323360e-09 bits  (16.2 s)
+          |evd-evr| 0.0e+00  |probe| 9.3e-16  first-order bound 2.8e-11  floor 3.4e-10
+arb_ic    [1.312979763222851481978186e-9, 1.312979763222851482035800e-9]  sign POSITIVE
+          indep - arb_ic midpoint = -7.209e-16 bits; inside: False
+indep_ic  candidates/20261027-124857_lead_2a327ea83c2b10f7.json  p 0.1246510:  I_c = -1.760455253139631e-10 bits  (0.4 s)
+indep_ic  candidates/20261027-124857_lead_585247a2e5ee8280.json  p 0.1237138:  I_c = -1.263196897710010e-10 bits  (0.5 s)
+indep_ic  candidates/20261027-053852_lead_9e078e22e51cd14b.json  p 0.0667122:  I_c = -4.926253043593689e-11 bits  (12.5 s)
+indep_ic  results/rigorous/testdata/pert_xz_n80.json  p 0.12464123:  I_c = -3.223109218322496e-08 bits  (0.4 s)
+indep_ic  results/rigorous/testdata/pert_2p_n80.json  p 0.12367528:  I_c = -3.310034603767799e-08 bits  (0.5 s)
+indep_ic  results/rigorous/testdata/pert_dep_n240.json  p 0.0666847:  I_c = -3.142814530902795e-08 bits  (11.6 s)
+QUEUE_DONE

@@ -38,6 +38,12 @@ in `manifest.json` and `data/catalog.json`.
   value, so the case is listed as tight. The row is in `data/pv2009_table_row.tex`.
 * The benchmark data of Naceur et al. (`maximal_violations_exact.txt`; the A19 line is in
   `data/naceur2025_maximal_violations_A19.txt`) list the same value, -0.6226300 in their sign convention.
+  The line reads `A19 -0.6226300 -0.6226300 3 0.0000000 ...`. The file has no header. We read the first
+  number as the reference value and the second as a numerical NPA value at relaxation order 3 (for A14 and
+  A21 the second number equals Pál and Vértesi's level-3 value). On that reading the order-3 entry for A19
+  is 4.4e-7 below the certified lower bound given here, so it cannot be a valid upper bound. The
+  *certified* order-3 bound of Naceur et al. for A19 is not published per inequality (their paper shows
+  the benchmark in figures only); it must be at least 0.6226304433.
 
 ## The certificates (all exact)
 

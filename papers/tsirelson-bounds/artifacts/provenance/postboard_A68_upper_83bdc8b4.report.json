@@ -1,0 +1,37 @@
+{
+ "verifier": "p05-tsirelson-bounds/1",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "c850617872d1484b",
+  "qexact.py": "1b2c109a9b861982",
+  "rescheck.c": "02dca579309d519b",
+  "catalog.json": "8554ebd0a1d4bdd1",
+  "records.json": "7a8ddb53a7bab810",
+  "rescheck": "c1a2c81d8440856e"
+ },
+ "hash": "a9843a1b6f7bb0a7",
+ "type": "sos",
+ "inequality": "A68",
+ "side": "upper",
+ "target": "A68:upper",
+ "n_words": 276,
+ "tau": 3.373250185098246e-12,
+ "penalty": 9.310170510871159e-10,
+ "lambda": "0.4050328974",
+ "bound": "0.4050328983",
+ "bound_exact": "8022503072131747378036975541/19807040628566084398385987584",
+ "value_float": 0.4050328982796927,
+ "sigma": 3.3001054825952426e-12,
+ "residual_bound": 7.314470250300323e-14,
+ "psd_runs": 21,
+ "exact_pd_crosscheck": null,
+ "record": {
+  "lower": "0.4025522",
+  "upper": "0.4050294",
+  "status": "open"
+ },
+ "gain": -3.498279692697841e-06,
+ "verdict": "BELOW_RECORD",
+ "summary": "BELOW_RECORD: A68 quantum max <= 0.4050328983 (record upper 0.4050294, window [0.4025522, 0.4050294], gain -3.50e-06)",
+ "seconds": 0.74
+}

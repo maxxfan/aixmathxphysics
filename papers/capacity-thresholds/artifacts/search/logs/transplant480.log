@@ -1,0 +1,2 @@
+transplant n=240 -> 480: threshold(margin 4e-09) 0.06680957
+ansatz (n=240 parameters) at n=480: threshold(margin 4e-09) 0.06662870

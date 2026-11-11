@@ -1,0 +1,30 @@
+payload sha256 1df2e00c06b2614cd04a5bfc7bede040da2d3fc1dd49e7138e201c101aab266f  p = 16239/250000
+block 16 first_row 39 t_ref 220.0s t_all 244.7s out width 2.537e-29 joint width 2.763e-28 gram 7.60e-33 rad_rel 5.20e-31 comps 34/68 maxmult 1/1
+block 17 first_row 40 t_ref 260.1s t_all 287.5s out width 3.023e-29 joint width 3.275e-28 gram 7.99e-33 rad_rel 5.78e-31 comps 36/72 maxmult 1/1
+block 18 first_row 41 t_ref 305.2s t_all 335.8s out width 2.769e-29 joint width 3.122e-28 gram 8.39e-33 rad_rel 6.41e-31 comps 38/76 maxmult 1/1
+block 19 first_row 42 t_ref 353.8s t_all 386.8s out width 1.989e-29 joint width 2.333e-28 gram 8.93e-33 rad_rel 7.18e-31 comps 40/80 maxmult 1/1
+block 20 first_row 43 t_ref 395.6s t_all 432.6s out width 1.027e-29 joint width 1.243e-28 gram 9.33e-33 rad_rel 7.87e-31 comps 42/84 maxmult 1/1
+block 15 first_row 38 t_ref 178.6s t_all 200.8s out width 1.710e-29 joint width 1.839e-28 gram 6.91e-33 rad_rel 4.45e-31 comps 32/64 maxmult 1/1
+block 14 first_row 37 t_ref 141.3s t_all 161.1s out width 1.028e-29 joint width 1.096e-28 gram 6.68e-33 rad_rel 4.03e-31 comps 30/60 maxmult 1/1
+block 13 first_row 36 t_ref 111.1s t_all 129.1s out width 5.210e-30 joint width 5.391e-29 gram 6.25e-33 rad_rel 3.52e-31 comps 28/56 maxmult 1/1
+block 21 first_row 44 t_ref 431.8s t_all 473.0s out width 3.435e-30 joint width 4.236e-29 gram 9.65e-33 rad_rel 8.53e-31 comps 44/88 maxmult 1/1
+block 12 first_row 35 t_ref 85.6s t_all 101.3s out width 2.246e-30 joint width 2.242e-29 gram 5.74e-33 rad_rel 3.00e-31 comps 26/52 maxmult 1/1
+block  9 first_row 32 t_ref 31.7s t_all 42.2s out width 7.724e-32 joint width 7.091e-31 gram 4.46e-33 rad_rel 1.80e-31 comps 20/40 maxmult 1/1
+block  7 first_row 30 t_ref 13.9s t_all 21.6s out width 3.699e-33 joint width 3.422e-32 gram 3.56e-33 rad_rel 1.15e-31 comps 16/32 maxmult 1/1
+block  8 first_row 31 t_ref 21.1s t_all 30.2s out width 1.911e-32 joint width 1.683e-31 gram 4.02e-33 rad_rel 1.46e-31 comps 18/36 maxmult 1/1
+block 10 first_row 33 t_ref 45.7s t_all 57.8s out width 2.781e-31 joint width 2.569e-30 gram 4.86e-33 rad_rel 2.16e-31 comps 22/44 maxmult 1/1
+block  6 first_row 29 t_ref 8.7s t_all 15.3s out width 6.658e-34 joint width 5.699e-33 gram 2.98e-33 rad_rel 8.45e-32 comps 14/28 maxmult 1/1
+block  3 first_row 26 t_ref 1.5s t_all 8.4s out width 1.212e-36 joint width 8.810e-36 gram 1.62e-33 rad_rel 2.65e-32 comps 8/16 maxmult 1/1 self-checked
+block  0 first_row 23 t_ref 0.1s t_all 1.5s out width 2.872e-41 joint width 3.396e-40 gram 4.90e-34 rad_rel 2.15e-33 comps 2/4 maxmult 1/1 self-checked
+block 22 first_row 45 t_ref 460.5s t_all 505.4s out width 5.609e-31 joint width 7.192e-30 gram 1.02e-32 rad_rel 9.46e-31 comps 46/92 maxmult 1/1
+block  4 first_row 27 t_ref 2.8s t_all 11.6s out width 1.382e-35 joint width 9.917e-35 gram 2.12e-33 rad_rel 4.32e-32 comps 10/20 maxmult 1/1 self-checked
+block  1 first_row 24 t_ref 0.3s t_all 3.2s out width 2.603e-39 joint width 2.014e-38 gram 7.23e-34 rad_rel 6.02e-33 comps 4/8 maxmult 1/1 self-checked
+block  5 first_row 28 t_ref 5.0s t_all 15.8s out width 1.067e-34 joint width 8.705e-34 gram 2.67e-33 rad_rel 6.49e-32 comps 12/24 maxmult 1/1 self-checked
+block  2 first_row 25 t_ref 0.7s t_all 4.8s out width 7.394e-38 joint width 6.789e-37 gram 1.42e-33 rad_rel 1.76e-32 comps 6/12 maxmult 1/1 self-checked
+block 11 first_row 34 t_ref 63.5s t_all 76.0s out width 8.104e-31 joint width 8.149e-30 gram 5.30e-33 rad_rel 2.56e-31 comps 24/48 maxmult 1/1
+wrote certs/ours-emit-A-p16239-250000.json (25898533 bytes) in 511s
+classification POS: coherent in [8.608877e-08, 8.608877e-08] bits (scaled [8608876805954981448518384744375585417855136,8608876805954981448704192247726725875156479]x1e-50)
+verify with: python3 -I verify.py certs/ours-emit-A-p16239-250000.json 1df2e00c06b2614cd04a5bfc7bede040da2d3fc1dd49e7138e201c101aab266f 16239/250000
+real 510.91
+user 2740.03
+sys 15.11

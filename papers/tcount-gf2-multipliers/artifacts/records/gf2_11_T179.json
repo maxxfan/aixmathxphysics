@@ -1250,9 +1250,12 @@
  "comparison": {
   "reported": 215,
   "reported_by": "Fisher et al. Table I, Vandaele start: released data not a GF(2^n) multiplication tensor",
-  "reported_invalid": true,
+  "reported_status": "invalid",
   "checked": null,
-  "checked_by": null
+  "checked_by": null,
+  "reported_invalid": true,
+  "vandaele2025_table3": null,
+  "vandaele2025_table3_by": null
  },
  "construction": "FastTODD long run seed 11 900s of raw11.json",
  "construction_script": "work/reducer/longrun.py",

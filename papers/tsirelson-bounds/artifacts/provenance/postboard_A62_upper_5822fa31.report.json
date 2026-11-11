@@ -1,0 +1,37 @@
+{
+ "verifier": "p05-tsirelson-bounds/1",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "c850617872d1484b",
+  "qexact.py": "1b2c109a9b861982",
+  "rescheck.c": "02dca579309d519b",
+  "catalog.json": "8554ebd0a1d4bdd1",
+  "records.json": "7a8ddb53a7bab810",
+  "rescheck": "c1a2c81d8440856e"
+ },
+ "hash": "5893df322588af7c",
+ "type": "sos",
+ "inequality": "A62",
+ "side": "upper",
+ "target": "A62:upper",
+ "n_words": 276,
+ "tau": 1.0905248076430101e-12,
+ "penalty": 3.009848469094708e-10,
+ "lambda": "0.4068725017",
+ "bound": "0.4068725020",
+ "bound_exact": "4029470088166465605161842141/9903520314283042199192993792",
+ "value_float": 0.4068725019279345,
+ "sigma": 1.0135288381169561e-12,
+ "residual_bound": 7.699596952605404e-14,
+ "psd_runs": 21,
+ "exact_pd_crosscheck": null,
+ "record": {
+  "lower": "0.4065268",
+  "upper": "0.4066728",
+  "status": "open"
+ },
+ "gain": -0.0001997019279345033,
+ "verdict": "BELOW_RECORD",
+ "summary": "BELOW_RECORD: A62 quantum max <= 0.4068725020 (record upper 0.4066728, window [0.4065268, 0.4066728], gain -2.00e-04)",
+ "seconds": 0.85
+}

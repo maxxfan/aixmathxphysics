@@ -297,9 +297,12 @@
  "comparison": {
   "reported": 49,
   "reported_by": "Fisher et al. Table I, Vandaele start: released data not a GF(2^n) multiplication tensor",
-  "reported_invalid": true,
+  "reported_status": "invalid",
   "checked": 59,
-  "checked_by": "AlphaTensor-Quantum"
+  "checked_by": "AlphaTensor-Quantum",
+  "reported_invalid": true,
+  "vandaele2025_table3": 61,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "FastTODD (ftodd4, seed 1, 20s) of gf2_5_T58.json",
  "construction_script": "work/reducer/reduce_json.py",

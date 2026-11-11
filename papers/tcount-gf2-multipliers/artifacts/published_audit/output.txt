@@ -46,3 +46,12 @@ gf2_3_320.npy x^s -> ['100', '010', '001', '011', '110']
 gf2_4_410.npy x^s -> ['1000', '0100', '0010', '0001', '1100', '0110', '1011']
 gf2_5_520.npy x^s -> ['10000', '01000', '00100', '00010', '00001', '10100', '11010', '01101', '10010']
 gf_mult_Vandaele_wo_anci gf2_64_644310.npy T=5103 n=64 P=? low-order-even=True equals-mult-mod-P=False depends-on-i+j=True singular a among 4000 random: 2023
+# --- added 2026-11-10, same scripts (audit_npy.py on the n = 128 start; certify_npy.py = map to the polynomial basis with qlib/basis_map.py, then the frozen verifier) ---
+gf_mult_Vandaele_wo_anci gf2_128_1287210.npy T=15309 n=128 P=? low-order-even=True equals-mult-mod-P=n/a depends-on-i+j=True singular a among 4000 random: 2018
+gf2_8_khor_123.npy -> MATCHES_RECORD: GF(2^8) multiplier T-count 123 vs record 123 (ATQ; matched by F26); checks: tensor+circuit
+gf2_8_khor_123.npy    tensor check: True | pins: ok (sources and record table match)
+gf2_9_khor_139.npy -> MATCHES_RECORD: GF(2^9) multiplier T-count 139 vs record 139 (F26 (Khoruzhii branch)); checks: tensor
+gf2_9_khor_139.npy    tensor check: True | pins: ok (sources and record table match)
+gf2_10_khor_157.npy -> MATCHES_RECORD: GF(2^10) multiplier T-count 157 vs record 157 (F26 (Khoruzhii branch)); checks: tensor
+gf2_10_khor_157.npy    tensor check: True | pins: ok (sources and record table match)
+gf2_5_49.npy T=49: no isotopy to GF(2^5) found

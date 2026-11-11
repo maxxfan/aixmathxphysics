@@ -23,6 +23,6 @@
   "010011",
   "001101"
  ],
- "source": "AlphaTensor-Quantum (CC-BY 4.0), mapped to the polynomial basis; optimal (exhaustive)",
+ "source": "AlphaTensor-Quantum (CC-BY 4.0), mapped to the polynomial basis; optimal in the phase-polynomial model (proved by Ruiz et al. with Z3; confirmed by the exhaustive enumeration in exact/)",
  "variable_order": "a_0..a_{d-1}, b_0..b_{d-1}, c_0..c_{d-1} (polynomial basis of F2[y]/(modulus))"
 }

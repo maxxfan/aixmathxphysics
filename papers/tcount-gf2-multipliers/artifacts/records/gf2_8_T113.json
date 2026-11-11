@@ -618,9 +618,12 @@
  "comparison": {
   "reported": 123,
   "reported_by": "AlphaTensor-Quantum; Fisher et al.",
-  "reported_invalid": false,
+  "reported_status": "ok",
   "checked": 123,
-  "checked_by": "AlphaTensor-Quantum; Fisher et al. (Khoruzhii start)"
+  "checked_by": "AlphaTensor-Quantum; Fisher et al. (Khoruzhii start)",
+  "reported_invalid": false,
+  "vandaele2025_table3": 135,
+  "vandaele2025_table3_by": "Vandaele, Quantum 9, 1860 (2025), Table 3, column 'Ref. [61] & FastTODD'; optimized circuit not released, tensor and circuit model not checked by us"
  },
  "construction": "composition 3x39 + FastTODD wide",
  "construction_script": "work/reducer/ftodd.c",

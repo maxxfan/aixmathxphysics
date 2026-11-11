@@ -1,8 +1,10 @@
-# Release for "Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists" (revision 4.1)
+# Release for "Absolutely maximally entangled states with local dimensions 8 and 16, a coupling rule for composite dimensions, and a confirmation that no qubit-pair stabilizer AME(8,4) state exists" (revision 5)
 
 This folder holds the data and the checkers behind every computational claim of the paper, in a form that runs from a
-fresh copy with no network access. Published copy:
+fresh copy with no network access. The last published copy is tag `ame-states-v4.1`,
 https://github.com/maxxfan/aixmathxphysics/tree/ame-states-v4.1/papers/ame-states/artifacts
+**This folder differs from that tag** (see "Changes since tag ame-states-v4.1" below) and has not been tagged or published;
+the paper's Data availability section names the tag `ame-states-v5`, which does not exist until a human creates it.
 
 ```bash
 shasum -a 256 -c SHA256SUMS      # or: sha256sum -c SHA256SUMS
@@ -42,7 +44,9 @@ Measured times are in the part READMEs; they were taken on a 10-core Apple-silic
 | Sec. III, Table II | GF(8) circulant counts (336 / 48 hits, 28 / 4 orbits), first-moment columns (exact denominator q^n+1), zero-hit scans | `ancillary/circulants/` | exhaustive rescans with their own field tables and a symmetry-free Python re-check of the hits |
 | Sec. IV | the shortened [17,8,10]_256 code of AME(18,16) is not GRS (19 vs 21 quadrics) | `ancillary/quadric/` | rank of the quadratic monomials, with a rational-normal-curve control |
 | Sec. IV | the shadow inequality excludes no cell left uncovered by the snapshot | `ancillary/shadow/` | purity-form shadow test, calibrated on the table's exclusions |
-| Secs IV, V, Table I | what "known", "nonexistent" and "not covered by the snapshot" mean | `snapshot/` | the three status files pinned by the verifier (SHA-256 prefixes checked), their sources and the program that built them; status of every source (refereed / preprint / repository / announcement) |
+| Sec. III ("Status in the code tables") | the [[15,0,8]]_8 and [[17,0,9]]_8 codes that codetables.de shows since 2026-10-21 are symmetric circulant graph codes contained in our scan lists; the n = 17 code equals the state of Theorem 1 up to local Cliffords and a party permutation; the n = 15 code does not (it is another of the 4 classes of circulant AME(15,8) states, which are pairwise inequivalent under local Cliffords and permutations); the 4 orbits for n = 17 form one class | `ancillary/codetables/`, `snapshot/sources/codetables_2026-11-10/` | parses the cached pages, own GF(8) arithmetic, every cut re-checked, explicit equivalence map checked row by row; a local-Clifford invariant computed for all 28 orbit representatives |
+| Sec. V (instances of Lemma 3) | the Lean-verified AME(9,10) state of 2026-08-28 is the case K = 4, a = 2, b = 5 of Lemma 3 | `ancillary/ame910/` | both ingredients re-checked (252 cuts mod 5; 127 common stabilizers, minimum weight 5) |
+| Secs IV, V, Table I | what "known", "nonexistent" and "not covered by the snapshot" mean | `snapshot/` | the three status files pinned by the verifier (SHA-256 prefixes checked), their sources and the program that built them; status of every source (refereed / preprint / repository / announcement); what the snapshots miss (AME(9,10); the code-table change of 2026-10-21); the dated prior-art check of 2026-11-10 |
 
 ## Field conventions
 
@@ -67,6 +71,28 @@ d = p^m): N = m n qudits over F_p, party j = qudits jm, ..., jm+m-1, N rows (a |
   nice-error-basis model (F_2-linear stabilizers with two qubits per party, which include the F_4-linear ones).
   Non-stabilizer AME(8,4) states are not covered.
 
+## Changes since tag ame-states-v4.1
+
+Made on 2026-11-10 in answer to the exam of 2026-11-09 (`reviews/exam-20261109.md` in the project repository). **Not
+tagged, not published.** No state, certificate, search, checker or expected count of v4.1 changed; every file of v4.1
+other than those listed under "changed" is byte-identical.
+
+* added `snapshot/sources/codetables_2026-11-10/` (41 pages of codetables.de fetched 2026-11-10, `INDEX.json`),
+  `snapshot/prior_art_check_2026-11-10.md`;
+* added `ancillary/codetables/` (comparison of the code-table codes [[15,0,8]]_8 and [[17,0,9]]_8 with Theorem 1 and the
+  scan lists; an invariant that separates the four classes of n = 15 solutions) and `ancillary/ame910/` (ingredients of the Lean-verified AME(9,10)); both run in `ancillary/run.sh`, in
+  both modes;
+* changed `README.md`, `SHA256SUMS`, `ancillary/README.md`, `ancillary/run.sh`, `snapshot/README.md` (the snapshots are
+  historical: AME(9,10) is known, the code tables changed on 2026-10-21, Ball-Moreno-Simoens is published in IEEE
+  Trans. Inf. Theory);
+* not changed although out of date: `frames/REVIEW.md` (a dated review; it says the journal version of
+  Ball-Moreno-Simoens was "not confirmed by us") and `snapshot/literature_log_2026-10-19.md` (the log of the original
+  run).
+
+The record of the replays of this state of the folder (both modes, from a fresh copy) is kept outside the release, in
+the project repository (`paper/README.md`, revision 5), so that the replayed files are exactly the released files. The
+runtimes quoted above are those measured for v4.1; the three added checks take about 90 s more.
+
 ## Changes since tag ame-states-v4
 
 Tag `ame-states-v4` lacked `ancillary/circulants/expected/hits_full.txt`, so `./replay.sh full` ended in
@@ -77,5 +103,5 @@ checker or result changed.
 ## Provenance
 
 All files were copied or generated from the project repository (quantum-information, `problems/p10-ame-states/`) at
-revision 4.1 of the paper. Scripts copied from the original runs are marked as such in each part, with every change marked
+revision 5 of the paper (the files of tag ame-states-v4.1 at revision 4.1). Scripts copied from the original runs are marked as such in each part, with every change marked
 `# [release]`; scripts written for the release say so in their header or in the part README.

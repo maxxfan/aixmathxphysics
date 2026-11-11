@@ -1,0 +1,8 @@
+work/lead/smooth_big.py:159: RuntimeWarning: overflow encountered in divide
+  est = (vals[i] - d1 * d1 / (8 * np.maximum(d2, 1e-300))) / omega(i * h, n)
+q_1: 387499 minima, min q/omega 0.985 at m=560.98, 0 negative (5.0s)
+q_2: 387499 minima, min q/omega 0.9856 at m=221.69, 0 negative (4.9s)
+q_3: 387499 minima, min q/omega 0.9961 at m=1146.63, 0 negative (4.9s)
+q_4: 387499 minima, min q/omega 0.988 at m=10275.62, 0 negative (4.8s)
+q_5: 387499 minima, min q/omega 1.005 at m=3534.35, 0 negative (4.9s)
+q_6: 387499 minima, min q/omega 0.991 at m=559.01, 0 negative (4.8s)

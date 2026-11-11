@@ -1,0 +1,4 @@
+IMPROVEMENT: Q > 0 certified at p=0.12235314 >= bar 0.118068; two_pauli n=64 r=2 p=6117657/50000000 (0.12235314): I_c in [9.0366e-9, 1.0657e-8] bits
+real 82.61
+user 72.01
+sys 0.60

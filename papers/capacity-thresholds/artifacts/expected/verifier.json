@@ -1,0 +1,47 @@
+{
+ "dep480_headline_undecided": {
+  "hi": "2.8387e-09",
+  "lo": "-4.0218e-09",
+  "n": 480,
+  "p": "0.06688201",
+  "p_fraction": "6688201/100000000",
+  "target": "depolarizing",
+  "verdict": "UNDECIDED"
+ },
+ "rec20": {
+  "hi": "2.1094e-09",
+  "lo": "9.3916e-12",
+  "n": 240,
+  "p": "0.0666847",
+  "p_fraction": "666847/10000000",
+  "target": "depolarizing",
+  "verdict": "IMPROVEMENT"
+ },
+ "rec27": {
+  "hi": "7.5729e-09",
+  "lo": "1.3223e-13",
+  "n": 80,
+  "p": "0.12367528",
+  "p_fraction": "1545941/12500000",
+  "target": "two_pauli",
+  "verdict": "IMPROVEMENT"
+ },
+ "rec28": {
+  "hi": "2.6056e-09",
+  "lo": "3.5713e-11",
+  "n": 80,
+  "p": "0.12464123",
+  "p_fraction": "12464123/100000000",
+  "target": "independent_xz",
+  "verdict": "IMPROVEMENT"
+ },
+ "rec30": {
+  "hi": "6.8873e-09",
+  "lo": "2.4950e-11",
+  "n": 480,
+  "p": "0.06679861",
+  "p_fraction": "6679861/100000000",
+  "target": "depolarizing",
+  "verdict": "IMPROVEMENT"
+ }
+}

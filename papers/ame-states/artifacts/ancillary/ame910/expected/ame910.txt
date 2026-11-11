@@ -1,0 +1,3 @@
+AME(10,5) circulant c=(3,1,1,0,0): 252 cuts, 0 singular
+9-cycle code: nonzero stabilizer elements 127 minimum party weight 5
+AME(9,10) INGREDIENTS OK

@@ -1,0 +1,11 @@
+depolarizing n=240: float zero crossing 0.0667112060, dI_c/dp -4.953e-05 bits, margin-4e-09 threshold 0.0666304695
+  IMPROVEMENT: Q > 0 certified at p=0.06663046 >= bar 0.06496; depolarizing n=240 r=2 p=3331523/50000000 (0.06663046): I_c in [2.6917e-9, 4.7998e-9] bits  (26.11 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06667083 >= bar 0.06496; depolarizing n=240 r=2 p=6667083/100000000 (0.06667083): I_c in [6.9658e-10, 2.7971e-9] bits  (26.2 s)
+  UNDECIDED: enclosure contains 0; depolarizing n=240 r=2 p=6669101/100000000 (0.06669101): I_c in [-2.9754e-10, 1.7946e-9] bits  (26.17 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06668092 >= bar 0.06496; depolarizing n=240 r=2 p=1667023/25000000 (0.06668092): I_c in [1.9676e-10, 2.2969e-9] bits  (25.91 s)
+  UNDECIDED: enclosure contains 0; depolarizing n=240 r=2 p=1667149/25000000 (0.06668596): I_c in [-4.7566e-11, 2.0440e-9] bits  (26.06 s)
+  IMPROVEMENT: Q > 0 certified at p=0.06668344 >= bar 0.06496; depolarizing n=240 r=2 p=833543/12500000 (0.06668344): I_c in [7.1005e-11, 2.1727e-9] bits  (25.91 s)
+  IMPROVEMENT: Q > 0 certified at p=0.0666847 >= bar 0.06496; depolarizing n=240 r=2 p=666847/10000000 (0.0666847): I_c in [9.3916e-12, 2.1094e-9] bits  (25.92 s)
+  UNDECIDED: enclosure contains 0; depolarizing n=240 r=2 p=6668533/100000000 (0.06668533): I_c in [-2.1437e-11, 2.0782e-9] bits  (26.11 s)
+  UNDECIDED: enclosure contains 0; depolarizing n=240 r=2 p=6668501/100000000 (0.06668501): I_c in [-4.0725e-12, 2.0930e-9] bits  (26.18 s)
+best certified p = 0.06668470: work/lead/cands/depolarizing_n240_0.0666847.json

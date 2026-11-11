@@ -1,0 +1,30 @@
+  q_1: grid min 7.036e-06, gamma 3.518e-06, budget 1.9e-11
+    M=2^23: err 6.35e-07 (tol 9.7e-13)
+    M=2^24: err 1.49e-10 (tol 9.7e-13)
+    M=2^25: err 5.41e-14 (tol 9.7e-13)
+  q_2: grid min 3.388e-05, gamma 1.694e-05, budget 9.3e-11
+    M=2^23: err 2.59e-08 (tol 4.7e-12)
+    M=2^24: err 2.68e-12 (tol 4.7e-12)
+  q_3: grid min 2.709e-06, gamma 1.354e-06, budget 7.4e-12
+    M=2^23: err 2.02e-11 (tol 3.7e-13)
+    M=2^24: err 2.64e-14 (tol 3.7e-13)
+  q_4: grid min 1.852e-06, gamma 9.259e-07, budget 5.1e-12
+    M=2^23: err 3.10e-05 (tol 2.5e-13)
+    M=2^24: err 4.44e-11 (tol 2.5e-13)
+    M=2^25: err 4.94e-14 (tol 2.5e-13)
+  q_5: grid min 3.814e-06, gamma 1.907e-06, budget 1.0e-11
+    M=2^23: err 8.94e-05 (tol 5.2e-13)
+    M=2^24: err 7.52e-06 (tol 5.2e-13)
+    M=2^25: err 3.74e-07 (tol 5.2e-13)
+    M=2^26: err 5.32e-12 (tol 5.2e-13)
+    32504 spikes narrower than the grid (closest root distance 1.22e-08)
+    refine 0: max residual 5.32e-12 (tol 5.2e-13)
+    refine 1: max residual 4.51e-13 (tol 5.2e-13)
+{'t': 1, 'grid_min': 7.035586168598323e-06, 'gamma': 3.5177930842991614e-06, 'factor_err': 5.409561687486075e-14, 'budget': 1.9328533430215172e-11, 'M': 33554432}
+{'t': 2, 'grid_min': 3.387901247657376e-05, 'gamma': 1.693950623828688e-05, 'factor_err': 2.6828955723701142e-12, 'budget': 9.307421010047737e-11, 'M': 16777216}
+{'t': 3, 'grid_min': 2.708593397959813e-06, 'gamma': 1.3542966989799066e-06, 'factor_err': 2.6367796834847468e-14, 'budget': 7.441190653735751e-12, 'M': 16777216}
+{'t': 4, 'grid_min': 1.8517384752322246e-06, 'gamma': 9.258692376161123e-07, 'factor_err': 4.9432680171435095e-14, 'budget': 5.087193613275342e-12, 'M': 33554432}
+{'t': 5, 'grid_min': 3.814142004898713e-06, 'gamma': 1.9070710024493565e-06, 'factor_err': 4.5123454526834887e-13, 'budget': 1.047841210137009e-11, 'M': 67108864}
+wrote out/cert_k6_n91000.json.gz (7.7 MB) in 182s
+verifier (20.7s): IMPROVEMENT: exact ordered search with 6 queries for n=91000: 0.364220 log2 N (record 0.364572, k=6, n=90000); min certified margin 9.25e-07  margins=[3.5134474562816405e-06, 1.67718293747253e-05, 1.3520659861125067e-06, 9.254828894579044e-07, 1.8895031425421458e-06]
+independent: out/cert_k6_n91000.json.gz {"k": 6, "n": 91000, "constant": 0.36421958017545397, "beats_record": true, "margins": [3.5134474562816405e-06, 1.67718293747253e-05, 1.3520659861125067e-06, 9.254828894579044e-07, 1.8895031425421458e-06]} 

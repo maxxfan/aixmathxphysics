@@ -1,0 +1,102 @@
+file     candidates/20261026-210916_lead_481ce3870c2d4e21.json
+family   depolarizing   n 150   rank 2   p 0.06629494 (= 0.06629494)   frame plain
+rates    gamma_X,Y,Z = 0.0770323452775852 0.0770323452775852 0.0770323452775852
+method   uniform  {'poisson_mu': 34.66455537491335, 'poisson_terms': 103, 'poisson_tail': 5.406317072947582e-21}
+I_c      2.000089494315e-09 bits
+diag     trace-1 -7.8e-16  herm-defect 8.7e-19  min-eig/max -2.0e-16
+         |evd - evr| 9.2e-16   |random-rotation probe| 4.6e-14
+check    expm: I_c 2.000090402687e-09   |diff| 9.1e-16   (13.7 s)
+error    empirical 4.6e-13 bits (10 x max of the differences above)
+         first-order bound 2.1e-11 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  2.5e-10 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [1.7513e-09, 2.2488e-09])
+time     total 10.2 s (superop 0.3, channel 2.6, entropy 7.3)
+real 24.51
+user 40.31
+sys 2.70
+
+file     candidates/20261026-230622_lead_32025a4e90f6200f.json
+family   depolarizing   n 240   rank 2   p 0.06646039 (= 0.06646039)   frame plain
+rates    gamma_X,Y,Z = 0.077257603837762 0.077257603837762 0.077257603837762
+method   uniform  {'poisson_mu': 55.625474763188606, 'poisson_terms': 139, 'poisson_tail': 4.686422354741253e-21}
+I_c      4.000565629271e-09 bits
+diag     trace-1 2.4e-15  herm-defect 1.1e-18  min-eig/max -2.5e-16
+         |evd - evr| 9.5e-16   |random-rotation probe| 5.9e-14
+check    expm: I_c 4.000566105597e-09   |diff| 4.8e-16   (74.3 s)
+error    empirical 5.9e-13 bits (10 x max of the differences above)
+         first-order bound 4.8e-11 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  7.5e-10 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [3.2485e-09, 4.7526e-09])
+time     total 48.8 s (superop 1.4, channel 17.6, entropy 29.8)
+real 123.77
+user 181.54
+sys 15.56
+
+file     candidates/20261026-210926_lead_c9b944ed9a6f8a4a.json
+family   independent_xz   n 48   rank 2   p 0.12179852 (= 0.12179852)   frame rot
+rates    gamma_X,Y,Z = 0.139590514466046 0.139590514466046 0
+method   uniform  {'poisson_mu': 13.400689388740375, 'poisson_terms': 60, 'poisson_tail': 9.880829273648315e-21}
+I_c      1.007172946187e-08 bits
+diag     trace-1 0.0e+00  herm-defect 3.1e-33  min-eig/max -1.7e-16
+         |evd - evr| 2.6e-15   |random-rotation probe| 1.0e-15
+check    expm: I_c 1.007172785844e-08   |diff| 1.6e-15   (0.3 s)
+error    empirical 2.6e-14 bits (10 x max of the differences above)
+         first-order bound 1.6e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  4.8e-12 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [1.0067e-08, 1.0077e-08])
+time     total 0.3 s (superop 0.0, channel 0.0, entropy 0.2)
+real 1.15
+user 1.03
+sys 0.18
+
+file     candidates/20261026-210955_lead_ad42e025717074f4.json
+family   two_pauli   n 48   rank 2   p 0.12086867 (= 0.12086867)   frame rot
+rates    gamma_X,Y,Z = 0.165157742339687 0.165157742339687 -0.0267950242334014
+method   uniform  {'neg_taylor_terms': 28, 'neg_growth_bound': 13.096202810648881, 'poisson_mu': 15.855143264609975, 'poisson_terms': 66, 'poisson_tail': 5.084258252245374e-21}
+I_c      1.004893785580e-08 bits
+diag     trace-1 2.7e-15  herm-defect 2.6e-18  min-eig/max -1.6e-16
+         |evd - evr| 4.8e-15   |random-rotation probe| 1.4e-16
+check    expm: I_c 1.004892977125e-08   |diff| 8.1e-15   (0.4 s)
+error    empirical 8.1e-14 bits (10 x max of the differences above)
+         first-order bound 1.6e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  5.0e-12 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [1.0044e-08, 1.0054e-08])
+time     total 0.3 s (superop 0.0, channel 0.1, entropy 0.1)
+real 1.20
+user 0.98
+sys 0.12
+
+file     work/lead/cand_dep_n45_06497.json
+family   depolarizing   n 45   rank 2   p 0.06497 (= 0.06497)   frame plain
+rates    gamma_X,Y,Z = 0.0752357359421554 0.0752357359421554 0.0752357359421554
+method   uniform  {'poisson_mu': 10.15682435219098, 'poisson_terms': 53, 'poisson_tail': 2.548412089536533e-21}
+I_c      5.345431120068e-09 bits
+diag     trace-1 -1.1e-15  herm-defect 1.7e-18  min-eig/max 0.0e+00
+         |evd - evr| 2.1e-15   |random-rotation probe| 1.4e-16
+check    expm: I_c 5.345428300623e-09   |diff| 2.8e-15   (0.3 s)
+error    empirical 2.8e-14 bits (10 x max of the differences above)
+         first-order bound 1.2e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  2.1e-12 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [5.3433e-09, 5.3475e-09])
+time     total 0.2 s (superop 0.0, channel 0.0, entropy 0.1)
+real 0.92
+user 0.78
+sys 0.11
+
+file     seeds/kg2026_A_n45.json
+family   depolarizing   n 45   rank 2   p 16239/250000 (= 0.064956)   frame plain
+rates    gamma_X,Y,Z = 0.0752168208062546 0.0752168208062546 0.0752168208062546
+method   uniform  {'poisson_mu': 10.154270808844377, 'poisson_terms': 53, 'poisson_tail': 2.5209601860137514e-21}
+I_c      8.608876935250e-08 bits
+diag     trace-1 -1.0e-15  herm-defect 1.7e-18  min-eig/max -7.8e-17
+         |evd - evr| 1.7e-15   |random-rotation probe| 1.2e-15
+check    expm: I_c 8.608876735586e-08   |diff| 2.0e-15   (0.2 s)
+error    empirical 2.0e-14 bits (10 x max of the differences above)
+         first-order bound 1.3e-12 bits (every eigenvalue off by 2 sqrt(dim) u ||block||)
+         worst-case floor  5.2e-12 bits (unresolved eigenvalues, 4 dim u ||block||)
+sign     POSITIVE   (I_c -+ (max(bound, floor) + empirical) = [8.6084e-08, 8.6094e-08])
+time     total 0.2 s (superop 0.0, channel 0.0, entropy 0.1)
+real 0.92
+user 0.76
+sys 0.14
+

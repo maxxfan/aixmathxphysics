@@ -3,7 +3,7 @@
 
 For each certificate: (1) verifier/verify.py verdict and pins; (2) results/check_independent.py
 (python-flint, different route for every condition); (3) a float evaluation of q_1..q_{k-1} on a
-16x oversampled grid (sanity only).  Appends one record per certificate to results/audits.json.
+grid of 2^ceil(log2(32 n)) points, at least 32x oversampled (sanity only).  Appends one record per certificate to results/audits.json.
 
 usage: .venv/bin/python results/audit.py CERT.json.gz [...]
 """

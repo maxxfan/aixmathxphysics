@@ -1,0 +1,9 @@
+file      certificates/board/20261027-074257_lead_d1c9e883b77efe7c.json
+family    two_pauli  n 80  rank 2  p 0.1236419 (= 0.1236419)  frame rot  complex  prec 128 bits
+series    Poisson mu 27.293639, 131 terms; Taylor 62 terms; trace-norm tail <= 2.69e-44
+trace     sum_k tr sigma_k = [1.0000000000000000000 +/- 3e-25]  (contains 1: True)
+spectra   max eta 9.3e-36; eigenvalue intervals clipped at 0: 1
+I_c       [4.612437972082580e-9, 4.612437972082580e-9] bits  (width 6.07e-30)
+I_c exact [4612437972082579989123, 4612437972082579989130] x 1e-30 bits (outward)
+sign      POSITIVE
+time      total 103.8 s (channel 40.0, spectra 63.8; 2 processes)

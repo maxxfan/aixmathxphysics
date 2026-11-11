@@ -18,6 +18,10 @@ It shares no code with the project verifier.  For every record it checks:
      2^(3n) inputs when 3n <= 24, otherwise 2048 random inputs.
 It also checks the small-algebra blocks (criterion 2 for F2[y]/(m)) and the genus-2 construction
 data in construction/curve64.json (curve, place Q, and the bilinear identity on random inputs).
+Finally it repeats the exhaustive enumeration behind the "exact" values of the paper: for the three
+2-dimensional algebras GF(4), F2[y]/(y^2) and F2 x F2 it visits all 2^22 decompositions (bit-sliced)
+and requires the minimum T-counts 17, 15 and 13 with 1008, 112 and 14 minimizers.  The standalone
+program exact/enumerate_small.py does the same enumeration by a plain Gray-code walk.
 
 usage: python3 -I check_release.py [RELEASE_DIR]
 """
@@ -33,11 +37,16 @@ RNG = random.Random(2026)
 # What the paper claims; the checker fails if any of these is missing or different.
 EXPECTED_RECORDS = {5: 57, 6: 69, 7: 97, 8: 113, 10: 151, 11: 179, 12: 191, 13: 219, 14: 229, 15: 253, 16: 267,
                     32: 571, 64: 1255}
-# (reported value, reported value invalid?, best checked published value) as printed in the paper, Table I
-EXPECTED_COMPARISON = {5: (49, True, 59), 6: (77, False, 77), 7: (101, False, 104), 8: (123, False, 123),
-                       10: (157, False, 157), 11: (215, True, None), 12: (243, True, None), 13: (293, True, None),
-                       14: (319, True, None), 15: (363, True, None), 16: (383, True, None), 32: (1177, True, None),
-                       64: (3729, True, None)}
+# (lowest reported value, its status, best checked published value, value in Vandaele 2025 Table 3) as printed
+# in the paper, Table I.  Status: "ok"; "invalid" = the released data is not a GF(2^n) multiplication tensor;
+# "unverified" = not released (n = 64: the released start of the same pipeline has the defect).
+EXPECTED_COMPARISON = {5: (49, "invalid", 59, 61), 6: (77, "ok", 77, 83), 7: (101, "ok", 104, 111),
+                       8: (123, "ok", 123, 135), 10: (157, "ok", 157, 207), 11: (215, "invalid", None, None),
+                       12: (243, "invalid", None, None), 13: (293, "invalid", None, None),
+                       14: (319, "invalid", None, None), 15: (363, "invalid", None, None),
+                       16: (383, "invalid", None, 425), 32: (1177, "invalid", None, 1255),
+                       64: (3729, "unverified", None, 3817)}
+STATUS_MARK = {"ok": "", "invalid": "*", "unverified": "?"}
 # record bars of the frozen verifier (data/records.json, pinned in verifier/PINS.json) at release time
 EXPECTED_BARS = {5: 59, 6: 77, 7: 101, 8: 123, 10: 157, 11: 215, 12: 243, 13: 293, 14: 319, 15: 363, 16: 383,
                  32: 1177, 64: 3729}
@@ -45,6 +54,14 @@ EXPECTED_BLOCKS = {  # algebra label -> (T-count, modulus pattern: exact bits, o
     "GF(4)": (17, "irreducible:2"), "GF(8)": (29, "irreducible:3"), "GF(16)": (39, "irreducible:4"),
     "F2[y]/(y^2)": (15, "100"), "F2[y]/(y^3)": (25, "1000"),
     "F2[y]/((y^2+y+1)^2) = GF(4)[e]/(e^2)": (35, "10101")}
+# Exhaustive minima for A = F2[x]/(x^2 + p1 x + p0): label -> ((p0, p1), minimum, number of minimizers,
+# the next two weights with their counts)
+EXPECTED_EXACT = {"GF(4)": ((1, 1), 17, 1008, ((18, 2576), (21, 24816))),
+                  "F2[y]/(y^2)": ((0, 0), 15, 112, ((16, 336), (19, 5600))),
+                  "F2 x F2": ((0, 1), 13, 14, ((14, 50), (17, 882)))}
+# Build product of the frozen verifier (verifier/verify.py compiles it next to its source).  It is not part of
+# the bundle and no check here reads it, so its presence does not count as an unlisted file.
+BUILD_PRODUCTS = {"verifier/phasecheck"}
 
 
 # ------------------------------------------------------------------ GF(2)[x]
@@ -424,6 +441,58 @@ def curve_ok(d):
     return True, "33 rational points, Q of degree 16 on the curve, identity a*b = sum_k l_k(a) l_k(b) w_k on 20 random pairs"
 
 
+# ------------------------------------------------------------------ exact minima for 2-dimensional algebras
+
+def exact_small(p0, p1):
+    """Weight distribution of ALL decompositions of f = c.(ab) for A = F2[x]/(x^2 + p1 x + p0), N = 6 variables.
+
+    A decomposition is a set of nonzero u in F2^6, i.e. a word w in F2^63.  By Lemma 1 it is valid iff, for each
+    of the 41 sets s of 1..3 variables, the number of u containing s is odd exactly when s is a monomial of f.
+    The solutions form a coset w0 + C with dim C = 22.  All 2^22 elements are evaluated at once: bit g of the
+    big integer plane[c] is coordinate c of the element w0 + sum_{j in g} B_j, and a bit-sliced counter adds the
+    63 planes.  Returns {weight: number of decompositions}."""
+    N, L = 6, 63
+    power = [1, 2, p0 | (p1 << 1)]
+    tgt = {(1 << i) | (1 << (2 + j)) | (1 << (4 + k))
+           for i in range(2) for j in range(2) for k in range(2) if power[i + j] >> k & 1}
+    red = []                                   # reduced rows: (pivot, mask over the 63 coordinates, rhs)
+    for s in range(1, 1 << N):
+        if bin(s).count("1") > 3:
+            continue
+        mask, rhs = sum(1 << (u - 1) for u in range(1, L + 1) if u & s == s), int(s in tgt)
+        for c, m, r in red:
+            if mask >> c & 1:
+                mask, rhs = mask ^ m, rhs ^ r
+        if not mask:
+            if rhs:
+                raise ValueError("inconsistent system")
+            continue
+        c = mask.bit_length() - 1
+        red = [(c2, m2 ^ mask, r2 ^ rhs) if m2 >> c & 1 else (c2, m2, r2) for c2, m2, r2 in red] + [(c, mask, rhs)]
+    piv = {c for c, _, _ in red}
+    w0 = sum(1 << c for c, _, r in red if r)
+    basis = [(1 << f) | sum(1 << c for c, m, _ in red if m >> f & 1) for f in range(L) if f not in piv]
+    sl, full = var_slices(len(basis), True, 0)
+    cnt = [0] * 7
+    for c in range(L):
+        v = full if w0 >> c & 1 else 0
+        for j, b in enumerate(basis):
+            if b >> c & 1:
+                v ^= sl[j]
+        for k in range(7):                     # ripple-carry add of one plane
+            cnt[k], v = cnt[k] ^ v, cnt[k] & v
+            if not v:
+                break
+    hist = {}
+    for w in range(L + 1):
+        m = full
+        for k in range(7):
+            m &= cnt[k] if w >> k & 1 else ~cnt[k]
+        if m:
+            hist[w] = bin(m).count("1")
+    return hist, len(basis)
+
+
 # ------------------------------------------------------------------ main
 
 def main():
@@ -431,7 +500,7 @@ def main():
     fails = 0
     man = root / "MANIFEST.sha256"
     actual = {str(q.relative_to(root)) for q in root.rglob("*") if q.is_file() and q.name != "MANIFEST.sha256"
-              and "__pycache__" not in q.parts}
+              and "__pycache__" not in q.parts} - BUILD_PRODUCTS
     problems = []
     listed = {}
     if not man.exists():
@@ -453,7 +522,9 @@ def main():
     fails += bool(problems)
     print(f"manifest: {'ok' if not problems else '; '.join(problems[:4])}")
     seen = {}
-    print("records (n, T-count; reported value, best checked published value): irreducible | tensor criterion | exact circuit identity | simulation")
+    print("records (n, T-count; lowest reported value, best checked published value, Vandaele 2025 Table 3): irreducible | tensor criterion | exact circuit identity | simulation")
+    print("  (* the released data behind the reported value is not a GF(2^n) multiplication tensor; ? not released, unverified;"
+          " the comparison values are not certified by this checker)")
     recs_table = json.loads((root / "data" / "records.json").read_text())["records"]
     def nkey(q):
         try:
@@ -475,7 +546,9 @@ def main():
             continue
         cmp_ = r.get("comparison", {})
         want = EXPECTED_COMPARISON.get(n)
-        if want is None or (cmp_.get("reported"), cmp_.get("reported_invalid"), cmp_.get("checked")) != want \
+        if want is None or (cmp_.get("reported"), cmp_.get("reported_status"), cmp_.get("checked"),
+                            cmp_.get("vandaele2025_table3")) != want \
+                or cmp_.get("reported_invalid") is not (want[1] == "invalid") \
                 or r.get("published_record") != recs_table.get(str(n)) \
                 or (r.get("published_record") or {}).get("tcount") != EXPECTED_BARS.get(n):
             print(f"  GF(2^{n}): comparison / published_record fields differ from the paper's table")
@@ -500,8 +573,9 @@ def main():
         seen[n] = r["tcount"]
         fails += not ok
         cmp = r.get("comparison", {})
-        rv = f"{cmp.get('reported', '-')}{'*' if cmp.get('reported_invalid') else ''}"
-        print(f"  GF(2^{n:<2})  T={r['tcount']:<5} ({rv:>6}, {str(cmp.get('checked') or '-'):>4})  "
+        rv = f"{cmp.get('reported', '-')}{STATUS_MARK[want[1]]}"
+        print(f"  GF(2^{n:<2})  T={r['tcount']:<5} ({rv:>6}, {str(cmp.get('checked') or '-'):>4}, "
+              f"{str(cmp.get('vandaele2025_table3') or '-'):>4})  "
               f"{'ok' if irr else 'FAIL'} | {'ok' if ten else 'FAIL'} | {'ok' if ident and same else 'FAIL'} | "
               f"{'ok' if sim else 'FAIL'} ({'all 2^' + str(3 * n) if ex else '2048 random'} inputs)")
     if seen != EXPECTED_RECORDS:
@@ -537,6 +611,15 @@ def main():
     ok, msg = curve_ok(json.loads(cp.read_text())) if cp.exists() else (False, "missing")
     fails += not ok
     print(f"genus-2 construction data: {'ok' if ok else 'FAIL'} ({msg})")
+    print("exact minima, 2-dimensional algebras (all 2^22 decompositions on 6 variables): minimum T-count, minimizers, next weights")
+    for label, ((p0, p1), mn, cnt, nxt) in EXPECTED_EXACT.items():
+        hist, dim = exact_small(p0, p1)
+        ws = sorted(hist)
+        ok = (dim == 22 and sum(hist.values()) == 1 << 22 and ws[0] == mn and hist[mn] == cnt
+              and tuple((w, hist[w]) for w in ws[1:3]) == nxt)
+        fails += not ok
+        print(f"  {label:<12} min T={ws[0]:<3} ({hist[ws[0]]} minimizers; next "
+              + ", ".join(f"{w}: {hist[w]}" for w in ws[1:3]) + f")  {'ok' if ok else 'FAIL'}")
     print("ALL CHECKS PASSED" if not fails else f"{fails} CHECK(S) FAILED")
     sys.exit(1 if fails else 0)
 

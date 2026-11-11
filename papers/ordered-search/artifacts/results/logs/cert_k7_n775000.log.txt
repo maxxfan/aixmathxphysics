@@ -1,0 +1,112 @@
+  q_1: grid min 1.290e-06, gamma 6.452e-07, budget 4.2e-13
+    M=2^26: err 3.99e-05 (tol 2.1e-14)
+    143 spikes narrower than the grid (closest root distance 7.34e-09)
+    refine 0: max residual 3.99e-05 (tol 2.1e-14)
+    refine 1: max residual 7.23e-05 (tol 2.1e-14)
+    refine 2: max residual 1.57e-04 (tol 2.1e-14)
+    refine 3: max residual 3.40e-04 (tol 2.1e-14)
+    refine 4: max residual 7.18e-04 (tol 2.1e-14)
+    refine 5: max residual 1.48e-03 (tol 2.1e-14)
+    refine 6: max residual 2.94e-03 (tol 2.1e-14)
+    refine 7: max residual 5.61e-03 (tol 2.1e-14)
+    refine 8: max residual 1.01e-02 (tol 2.1e-14)
+    refine 9: max residual 1.72e-02 (tol 2.1e-14)
+    refine 10: max residual 2.72e-02 (tol 2.1e-14)
+    M=2^27: err 2.58e-05 (tol 2.1e-14)
+    72 spikes narrower than the grid (closest root distance 7.34e-09)
+    refine 0: max residual 2.58e-05 (tol 2.1e-14)
+    refine 1: max residual 6.59e-05 (tol 2.1e-14)
+    refine 2: max residual 1.59e-05 (tol 2.1e-14)
+    refine 3: max residual 3.41e-06 (tol 2.1e-14)
+    refine 4: max residual 4.86e-07 (tol 2.1e-14)
+    refine 5: max residual 1.92e-08 (tol 2.1e-14)
+    refine 6: max residual 3.54e-11 (tol 2.1e-14)
+    refine 7: max residual 1.22e-16 (tol 2.1e-14)
+  q_2: grid min 2.976e-06, gamma 1.488e-06, budget 9.6e-13
+    M=2^26: err 2.36e-07 (tol 4.8e-14)
+    386979 spikes narrower than the grid (closest root distance 9.86e-09)
+    refine 0: max residual 2.36e-07 (tol 4.8e-14)
+    refine 1: max residual 8.95e-09 (tol 4.8e-14)
+    refine 2: max residual 4.59e-11 (tol 4.8e-14)
+    refine 3: max residual 4.78e-12 (tol 4.8e-14)
+    refine 4: max residual 6.89e-13 (tol 4.8e-14)
+    refine 5: max residual 8.97e-14 (tol 4.8e-14)
+    refine 6: max residual 1.21e-14 (tol 4.8e-14)
+  q_3: grid min 9.933e-06, gamma 4.967e-06, budget 3.2e-12
+    M=2^26: err 2.33e-12 (tol 1.6e-13)
+    170037 spikes narrower than the grid (closest root distance 2.00e-08)
+    refine 0: max residual 2.33e-12 (tol 1.6e-13)
+    refine 1: max residual 4.91e-15 (tol 1.6e-13)
+  q_4: grid min 2.597e-03, gamma 1.298e-03, budget 8.4e-10
+    M=2^26: err 2.36e-11 (tol 4.2e-11)
+  q_5: grid min 1.588e-04, gamma 7.939e-05, budget 5.1e-11
+    M=2^26: err 2.14e-05 (tol 2.6e-12)
+    26658 spikes narrower than the grid (closest root distance 9.98e-09)
+    refine 0: max residual 2.14e-05 (tol 2.6e-12)
+    refine 1: max residual 3.39e-06 (tol 2.6e-12)
+    refine 2: max residual 6.35e-07 (tol 2.6e-12)
+    refine 3: max residual 1.50e-07 (tol 2.6e-12)
+    refine 4: max residual 3.49e-08 (tol 2.6e-12)
+    refine 5: max residual 8.92e-09 (tol 2.6e-12)
+    refine 6: max residual 4.96e-09 (tol 2.6e-12)
+    refine 7: max residual 8.54e-09 (tol 2.6e-12)
+    refine 8: max residual 1.84e-08 (tol 2.6e-12)
+    refine 9: max residual 3.93e-08 (tol 2.6e-12)
+    refine 10: max residual 8.23e-08 (tol 2.6e-12)
+    M=2^27: err 3.07e-12 (tol 2.6e-12)
+    25363 spikes narrower than the grid (closest root distance 9.98e-09)
+    refine 0: max residual 3.07e-12 (tol 2.6e-12)
+    refine 1: max residual 8.16e-15 (tol 2.6e-12)
+  q_6: grid min 1.928e-05, gamma 9.640e-06, budget 6.2e-12
+    M=2^26: err 3.94e-05 (tol 3.1e-13)
+    97131 spikes narrower than the grid (closest root distance 5.23e-09)
+    refine 0: max residual 3.94e-05 (tol 3.1e-13)
+    refine 1: max residual 1.89e-04 (tol 3.1e-13)
+    refine 2: max residual 4.84e-05 (tol 3.1e-13)
+    refine 3: max residual 1.26e-05 (tol 3.1e-13)
+    refine 4: max residual 3.19e-06 (tol 3.1e-13)
+    refine 5: max residual 1.30e-06 (tol 3.1e-13)
+    refine 6: max residual 1.31e-06 (tol 3.1e-13)
+    refine 7: max residual 2.36e-06 (tol 3.1e-13)
+    refine 8: max residual 4.66e-06 (tol 3.1e-13)
+    refine 9: max residual 9.13e-06 (tol 3.1e-13)
+    refine 10: max residual 1.72e-05 (tol 3.1e-13)
+    M=2^27: err 3.00e-06 (tol 3.1e-13)
+    90040 spikes narrower than the grid (closest root distance 5.23e-09)
+    refine 0: max residual 3.00e-06 (tol 3.1e-13)
+    refine 1: max residual 1.62e-07 (tol 3.1e-13)
+    refine 2: max residual 4.24e-08 (tol 3.1e-13)
+    refine 3: max residual 1.79e-08 (tol 3.1e-13)
+    refine 4: max residual 4.26e-09 (tol 3.1e-13)
+    refine 5: max residual 1.12e-09 (tol 3.1e-13)
+    refine 6: max residual 2.42e-10 (tol 3.1e-13)
+    refine 7: max residual 4.45e-11 (tol 3.1e-13)
+    refine 8: max residual 4.56e-12 (tol 3.1e-13)
+    refine 9: max residual 9.02e-14 (tol 3.1e-13)
+{'t': 1, 'grid_min': 1.2903227610827628e-06, 'gamma': 6.451613805413814e-07, 'factor_err': 1.215770307459371e-16, 'budget': 4.1623314873637507e-13, 'M': 134217728}
+{'t': 2, 'grid_min': 2.9758834346332863e-06, 'gamma': 1.4879417173166432e-06, 'factor_err': 1.2068180146589852e-14, 'budget': 9.599623982688021e-13, 'M': 67108864}
+{'t': 3, 'grid_min': 9.933090382552301e-06, 'gamma': 4.9665451912761505e-06, 'factor_err': 4.909439639343484e-15, 'budget': 3.2042227040491293e-12, 'M': 67108864}
+{'t': 4, 'grid_min': 0.0025968726358540084, 'gamma': 0.0012984363179270042, 'factor_err': 2.3626711698199188e-11, 'budget': 8.377008502754866e-10, 'M': 67108864}
+{'t': 5, 'grid_min': 0.0001587829959761311, 'gamma': 7.939149798806555e-05, 'factor_err': 8.1635823625209e-15, 'budget': 5.122032128262294e-11, 'M': 134217728}
+{'t': 6, 'grid_min': 1.927953225461243e-05, 'gamma': 9.639766127306215e-06, 'factor_err': 9.019948692994201e-14, 'budget': 6.219203953100784e-12, 'M': 134217728}
+wrote out/cert_k7_n775000.json.gz (75.5 MB) in 23953s
+verifier (735.2s): IMPROVEMENT: exact ordered search with 7 queries for n=775000: 0.357803 log2 N (record 0.364572, k=6, n=90000); min certified margin 6.45e-07  margins=[6.450999891901627e-07, 1.476896678267086e-06, 4.966342057287107e-06, 0.0012965092149680411, 7.93891839949497e-05, 9.606654290166816e-06]
+independent: out/cert_k7_n775000.json.gz {"k": 7, "n": 775000, "constant": 0.35780302590901447, "beats_prior_explicit": true, "margins": [6.450999891901627e-07, 1.476896678267086e-06, 4.966342057287107e-06, 0.0012965092149680411, 7.93891839949497e-05, 9.606654290166816e-06]} 
+    24712.03 real     21061.86 user      2265.60 sys
+          7288881152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           431040269  page reclaims
+                3538  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+             1124116  voluntary context switches
+            39936128  involuntary context switches
+     266957151969915  instructions retired
+      86736772083906  cycles elapsed
+         11017691560  peak memory footprint

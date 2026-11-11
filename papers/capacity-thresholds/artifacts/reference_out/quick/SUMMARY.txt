@@ -1,0 +1,22 @@
+=== replay quick, 2026-11-10 21:50:56 UTC ===
+sums                        PASS SHA256SUMS: every released file unchanged
+env                         python 3.14.3 arm64 Darwin
+env                         numpy 2.5.4
+env                         flint 0.9.0 (FLINT library 3.6.0)
+env                         mpmath 1.4.1
+env                         scipy 1.18.1
+env                         reference versions (requirements.txt): python-flint==0.9.0, numpy==2.5.4, mpmath==1.4.1, scipy==1.18.1
+env                         Apple clang version 21.0.0 (clang-2100.1.1.101)
+verifier_build              PASS engine built from verifier/icball.c
+verifier_tests             51s  PASS text verifier_tests: verifier tests: 0 failures
+verifier_rec20             30s  PASS identical   verifier rec20: p08-capacity-thresholds/2 depolarizing n=240 p=666847/10000000 IMPROVEMENT I_c in [9.3916e-12, 2.1094e-09] bits
+arb_test_eig                0s  PASS text arb_test_eig: spectral unit test: ALL OK
+arb_validate_brute         26s  PASS text arb_validate_brute: 252 brute-force cases enclosed, 26 fifty-digit cases enclosed
+arb_test_tail_small         7s  PASS text arb_test_tail_small: series-tail bound: 30 early-truncation cases contain the 50-digit value
+arb_validate_kg            23s  PASS text arb_validate_kg: inside both Krohn-Grimberghe intervals; four signs reproduced
+arb_rec28                  27s  PASS identical   arb final_xz_n80: independent_xz n=80 p=0.12464123 sign POSITIVE I_c in [1605068705609815603826, 1605068705609815603827]e-30 bits; inside the verifier enclosure [3.5713e-11, 2.6056e-9]
+arb_rec27                  32s  PASS identical   arb final_2p_n80: two_pauli n=80 p=0.12367528 sign POSITIVE I_c in [4688004925413416462978, 4688004925413416462986]e-30 bits; inside the verifier enclosure [1.3223e-13, 7.5729e-9]
+second_validate             1s  PASS text second_validate: kernel evaluator: 142 cases, 0 failures
+second_headline           140s  PASS second second_headline: headline_2p_n320 +1.189804e-9 (ref 4e-15 away), headline_2p_n320_above -1.1752e-10, headline_dep_n480 +4.851871e-10 (ref 4e-15 away), headline_dep_n480_above -4.8441e-11, headline_xz_n320 +1.722045e-9 (ref 1e-15 away), headline_xz_n320_above -1.7158e-10, rec20_dep_n240 +1.312978e-9 (ref 2e-15 away), rec27_2p_n80 +4.688006e-9 (ref 7e-16 away), rec28_xz_n80 +1.605070e-9 (ref 2e-15 away), rec30_dep_n480 +4.532171e-9 (ref 3e-15 away), xz_n240 +1.730666e-9 (ref 8e-16 away)
+indep_final                10s  PASS second indep_final: rec20_dep_n240 +1.312979e-9 (ref 7e-16 away), rec27_2p_n80 +4.688001e-9 (ref 4e-15 away), rec28_xz_n80 +1.605067e-9 (ref 2e-15 away)
+RELEASE (quick): PASS

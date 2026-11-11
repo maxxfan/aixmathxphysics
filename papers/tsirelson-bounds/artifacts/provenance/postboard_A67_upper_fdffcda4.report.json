@@ -1,0 +1,37 @@
+{
+ "verifier": "p05-tsirelson-bounds/1",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "c850617872d1484b",
+  "qexact.py": "1b2c109a9b861982",
+  "rescheck.c": "02dca579309d519b",
+  "catalog.json": "8554ebd0a1d4bdd1",
+  "records.json": "7a8ddb53a7bab810",
+  "rescheck": "c1a2c81d8440856e"
+ },
+ "hash": "249b4599708514b6",
+ "type": "sos",
+ "inequality": "A67",
+ "side": "upper",
+ "target": "A67:upper",
+ "n_words": 436,
+ "tau": 2.1041141022442022e-13,
+ "penalty": 9.173937485784722e-11,
+ "lambda": "0.3990671104",
+ "bound": "0.3990671105",
+ "bound_exact": "3952169235234829175676441805/9903520314283042199192993792",
+ "value_float": 0.3990671104632296,
+ "sigma": 0.0,
+ "residual_bound": 2.1041141022442022e-13,
+ "psd_runs": 1,
+ "exact_pd_crosscheck": null,
+ "record": {
+  "lower": "0.3990671",
+  "upper": "0.3990671",
+  "status": "closed_numerically"
+ },
+ "gain": -1.0463229604994107e-08,
+ "verdict": "MATCHES_RECORD",
+ "summary": "MATCHES_RECORD: A67 quantum max <= 0.3990671105 (record upper 0.3990671, window [0.3990671, 0.3990671], gain -1.05e-08)",
+ "seconds": 0.91
+}

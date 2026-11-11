@@ -1,0 +1,2 @@
+independent_xz n=64 start threshold(margin 1e-08) 0.12331553
+  round 0: 0.12331553 -> 0.12346779203187497  (300 its)

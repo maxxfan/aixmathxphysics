@@ -1,0 +1,37 @@
+{
+ "verifier": "p05-tsirelson-bounds/1",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "c850617872d1484b",
+  "qexact.py": "1b2c109a9b861982",
+  "rescheck.c": "02dca579309d519b",
+  "catalog.json": "8554ebd0a1d4bdd1",
+  "records.json": "7a8ddb53a7bab810",
+  "rescheck": "c1a2c81d8440856e"
+ },
+ "hash": "1553b09bc490ee54",
+ "type": "sos",
+ "inequality": "A82",
+ "side": "upper",
+ "target": "A82:upper",
+ "n_words": 276,
+ "tau": 2.715816167031329e-12,
+ "penalty": 7.495652621006469e-10,
+ "lambda": "0.4709179056",
+ "bound": "0.4709179063",
+ "bound_exact": "4663745051078853317868116831/9903520314283042199192993792",
+ "value_float": 0.470917906267402,
+ "sigma": 2.6430425275049e-12,
+ "residual_bound": 7.277363952642938e-14,
+ "psd_runs": 21,
+ "exact_pd_crosscheck": null,
+ "record": {
+  "lower": "0.4708838",
+  "upper": "0.4709172",
+  "status": "open"
+ },
+ "gain": -7.062674020055571e-07,
+ "verdict": "MATCHES_RECORD",
+ "summary": "MATCHES_RECORD: A82 quantum max <= 0.4709179063 (record upper 0.4709172, window [0.4708838, 0.4709172], gain -7.06e-07)",
+ "seconds": 0.78
+}

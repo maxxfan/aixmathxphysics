@@ -1,0 +1,26 @@
+  q_1: grid min 7.176e-06, gamma 3.588e-06, budget 2.0e-11
+    M=2^23: err 2.09e-08 (tol 1.0e-12)
+    M=2^24: err 1.18e-10 (tol 1.0e-12)
+    M=2^25: err 7.14e-14 (tol 1.0e-12)
+  q_2: grid min 5.778e-05, gamma 2.889e-05, budget 1.6e-10
+    M=2^23: err 5.77e-10 (tol 8.0e-12)
+    M=2^24: err 1.51e-12 (tol 8.0e-12)
+  q_3: grid min 1.886e-05, gamma 9.431e-06, budget 5.2e-11
+    M=2^23: err 1.71e-12 (tol 2.6e-12)
+  q_4: grid min 3.486e-06, gamma 1.743e-06, budget 9.7e-12
+    M=2^23: err 2.23e-05 (tol 4.8e-13)
+    M=2^24: err 7.12e-13 (tol 4.8e-13)
+    M=2^25: err 5.37e-14 (tol 4.8e-13)
+  q_5: grid min 5.003e-06, gamma 2.501e-06, budget 1.4e-11
+    M=2^23: err 7.68e-05 (tol 6.9e-13)
+    M=2^24: err 5.53e-06 (tol 6.9e-13)
+    M=2^25: err 2.90e-11 (tol 6.9e-13)
+    M=2^26: err 2.12e-13 (tol 6.9e-13)
+{'t': 1, 'grid_min': 7.175721625405154e-06, 'gamma': 3.587860812702577e-06, 'factor_err': 7.144285163462882e-14, 'budget': 1.9932560070569874e-11, 'M': 33554432}
+{'t': 2, 'grid_min': 5.778046194353546e-05, 'gamma': 2.889023097176773e-05, 'factor_err': 1.5106110806684114e-12, 'budget': 1.605012831764874e-10, 'M': 16777216}
+{'t': 3, 'grid_min': 1.8861900377933893e-05, 'gamma': 9.430950188966947e-06, 'factor_err': 1.709602945321187e-12, 'budget': 5.239416771648304e-11, 'M': 8388608}
+{'t': 4, 'grid_min': 3.486024644998309e-06, 'gamma': 1.7430123224991545e-06, 'factor_err': 5.37013467548364e-14, 'budget': 9.68340179166197e-12, 'M': 33554432}
+{'t': 5, 'grid_min': 5.002897629280412e-06, 'gamma': 2.501448814640206e-06, 'factor_err': 2.1249668691325496e-13, 'budget': 1.3896937859112255e-11, 'M': 67108864}
+wrote candidates/cert_k6_n90000.json.gz (7.6 MB) in 92s
+verifier (18.0s): MATCHES_RECORD: exact ordered search with 6 queries for n=90000: 0.364572 log2 N (record 0.364572, k=6, n=90000); min certified margin 1.74e-06  margins=[3.5810924079524254e-06, 2.8732390935789768e-05, 9.27365009120331e-06, 1.7428019797005597e-06, 2.4934881972362788e-06]
+independent: candidates/cert_k6_n90000.json.gz {"k": 6, "n": 90000, "constant": 0.3645723782278663, "beats_record": true, "margins": [3.5810924079524254e-06, 2.8732390935789768e-05, 9.27365009120331e-06, 1.7428019797005597e-06, 2.4934881972362788e-06]} 

@@ -1,0 +1,18 @@
+independent_xz n=48 a0=16.000 sf=1.5000 q=0.4500: 0.12177430
+independent_xz n=48 a0=18.111 sf=1.5250 q=0.4597: 0.12178771
+independent_xz n=48 a0=17.028 sf=1.4688 q=0.4601: 0.12179185
+independent_xz n=48 a0=17.607 sf=1.4856 q=0.4399: 0.12179436
+independent_xz n=48 a0=17.634 sf=1.5040 q=0.4547: 0.12179673
+independent_xz n=48 a0=18.008 sf=1.4774 q=0.4542: 0.12179709
+independent_xz n=48 a0=17.747 sf=1.4880 q=0.4692: 0.12179865
+independent_xz n=48 a0=17.680 sf=1.4863 q=0.4593: 0.12179877
+independent_xz n=48 a0=17.795 sf=1.4836 q=0.4614: 0.12179887
+independent_xz n=48 a0=17.774 sf=1.4819 q=0.4650: 0.12179889
+independent_xz n=48 a0=17.748 sf=1.4860 q=0.4656: 0.12179893
+independent_xz n=48 a0=17.772 sf=1.4839 q=0.4627: 0.12179894
+independent_xz n=48 a0=17.737 sf=1.4865 q=0.4625: 0.12179894
+independent_xz n=48 a0=17.739 sf=1.4853 q=0.4626: 0.12179895
+independent_xz n=48 a0=17.749 sf=1.4856 q=0.4641: 0.12179896
+independent_xz n=48 a0=17.750 sf=1.4850 q=0.4637: 0.12179896
+independent_xz n=48 a0=17.747 sf=1.4852 q=0.4635: 0.12179896
+best [0.12179896034223989, (np.float64(17.746725644796363), np.float64(1.4852243174916704), np.float64(0.4635361724140612))]

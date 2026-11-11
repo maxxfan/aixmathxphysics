@@ -1,0 +1,4 @@
+IMPROVEMENT: Q > 0 certified at p=0.06645409 >= bar 0.06496; depolarizing n=150 r=2 p=6645409/100000000 (0.06645409): I_c in [1.4805e-9, 2.2967e-9] bits
+real 6.04
+user 5.11
+sys 0.12

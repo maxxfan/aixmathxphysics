@@ -1,0 +1,37 @@
+{
+ "verifier": "p05-tsirelson-bounds/1",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "c850617872d1484b",
+  "qexact.py": "1b2c109a9b861982",
+  "rescheck.c": "02dca579309d519b",
+  "catalog.json": "8554ebd0a1d4bdd1",
+  "records.json": "7a8ddb53a7bab810",
+  "rescheck": "c1a2c81d8440856e"
+ },
+ "hash": "549662b609522ce4",
+ "type": "sos",
+ "inequality": "A89",
+ "side": "upper",
+ "target": "A89:upper",
+ "n_words": 276,
+ "tau": 6.7573735014095e-14,
+ "penalty": 1.865035086389022e-11,
+ "lambda": "0.3058212221",
+ "bound": "0.3058212221",
+ "bound_exact": "6057413370833267790267889933/19807040628566084398385987584",
+ "value_float": 0.3058212220808571,
+ "sigma": 0.0,
+ "residual_bound": 6.7573735014095e-14,
+ "psd_runs": 1,
+ "exact_pd_crosscheck": null,
+ "record": {
+  "lower": "0.3035637",
+  "upper": "0.3054510",
+  "status": "open"
+ },
+ "gain": -0.0003702220808570943,
+ "verdict": "BELOW_RECORD",
+ "summary": "BELOW_RECORD: A89 quantum max <= 0.3058212221 (record upper 0.3054510, window [0.3035637, 0.3054510], gain -3.70e-04)",
+ "seconds": 0.32
+}

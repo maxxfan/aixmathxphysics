@@ -1,0 +1,23 @@
+{
+ "verifier": "p08-capacity-thresholds/2",
+ "pins": "ok",
+ "sources": {
+  "verify.py": "4f007e83056ea3a1",
+  "icball.c": "00b09294b432e40a",
+  "records.json": "3901d412c50f84f7",
+  "icball": "a0b8880a608f8574"
+ },
+ "hash": "ec43af2292c8ff7e",
+ "target": "depolarizing",
+ "p": "6688201/100000000",
+ "n": 480,
+ "rank": 2,
+ "I_c_lo": "-4.021833441323841386433649397559514145466E-9",
+ "I_c_hi": "2.838741479183992392597726461985940568769E-9",
+ "delta_max": 6.551705292981636e-15,
+ "engine_seconds": 534.99,
+ "verdict": "UNDECIDED",
+ "reason": "enclosure contains 0",
+ "summary": "UNDECIDED: enclosure contains 0; depolarizing n=480 r=2 p=6688201/100000000 (0.06688201): I_c in [-4.0218e-9, 2.8387e-9] bits",
+ "seconds": 534.99
+}

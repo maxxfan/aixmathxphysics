@@ -1,0 +1,12 @@
+k=6 n=90000: 766 variables, grid 720001 points per q
+  [0] mu=1: softmin -10.16, min over grid+extra -1.8282, 3000 its (1000s)
+  [0] mu=0.3: softmin -2.2556, min over grid+extra 0.35342, 3000 its (1627s)
+  [0] mu=0.1: softmin -0.072883, min over grid+extra 0.80988, 2955 its (2263s)
+  [0] mu=0.03: softmin 0.67814, min over grid+extra 0.8878, 120 its (2302s)
+  [0] mu=0.01: softmin 0.89268, min over grid+extra 0.95743, 339 its (2460s)
+  [0] mu=0.003: softmin 0.96784, min over grid+extra 0.98836, 121 its (2520s)
+  [0] true min q/omega -426.25; extra points +7523 (total 7523)
+  [1] mu=0.01: softmin 0.1694, min over grid+extra 0.19332, 3000 its (4227s)
+  [1] mu=0.003: softmin 0.48076, min over grid+extra 0.48965, 3000 its (5547s)
+  [1] true min q/omega -325.6; extra points +12749 (total 20272)
+  [2] mu=0.01: softmin 0.34358, min over grid+extra 0.38003, 3000 its (7031s)

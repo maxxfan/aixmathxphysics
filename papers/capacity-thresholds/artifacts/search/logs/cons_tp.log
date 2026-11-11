@@ -1,0 +1,12 @@
+two_pauli n=80: float zero crossing 0.1237127901, dI_c/dp -1.250e-04 bits, margin-1e-08 threshold 0.1236327827
+  IMPROVEMENT: Q > 0 certified at p=0.12363278 >= bar 0.118068; two_pauli n=80 r=2 p=6181639/50000000 (0.12363278): I_c in [5.3284e-9, 1.2876e-8] bits  (527.39 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12367278 >= bar 0.118068; two_pauli n=80 r=2 p=6183639/50000000 (0.12367278): I_c in [3.2018e-10, 7.8809e-9] bits  (541.89 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12365278 >= bar 0.118068; two_pauli n=80 r=2 p=6182639/50000000 (0.12365278): I_c in [2.9048e-9, 1.0330e-8] bits  (566.6 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366278 >= bar 0.118068; two_pauli n=80 r=2 p=6183139/50000000 (0.12366278): I_c in [1.5417e-9, 9.1480e-9] bits  (596.34 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366778 >= bar 0.118068; two_pauli n=80 r=2 p=6183389/50000000 (0.12366778): I_c in [9.3812e-10, 8.5104e-9] bits  (539.27 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366528 >= bar 0.118068; two_pauli n=80 r=2 p=193227/1562500 (0.12366528): I_c in [1.2601e-9, 8.8171e-9] bits  (553.43 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366653 >= bar 0.118068; two_pauli n=80 r=2 p=12366653/100000000 (0.12366653): I_c in [1.0951e-9, 8.6656e-9] bits  (472.91 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366715 >= bar 0.118068; two_pauli n=80 r=2 p=2473343/20000000 (0.12366715): I_c in [1.0805e-9, 8.5509e-9] bits  (449.95 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366746 >= bar 0.118068; two_pauli n=80 r=2 p=6183373/50000000 (0.12366746): I_c in [1.0017e-9, 8.5360e-9] bits  (473.19 s)
+  IMPROVEMENT: Q > 0 certified at p=0.12366762 >= bar 0.118068; two_pauli n=80 r=2 p=6183381/50000000 (0.12366762): I_c in [9.6281e-10, 8.5271e-9] bits  (419.44 s)
+best certified p = 0.12366746: work/lead/cands/two_pauli_n80_0.12366746.json

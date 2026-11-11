@@ -14,6 +14,23 @@ the Huber-Wyderka table data `huber_wyderka_table_2026-06-08.html` (the page's `
 github.com/huberfe/huberfe.github.io, branch gh-pages; live at https://huberfe.github.io/ame.html, page "updated:
 08.06.2026") and `codetables_k0_2026-10-10.json` (Grassl's [[n,0,d]]_q bounds for q <= 8, retrieved 2026-10-10).
 
+**The snapshots are historical.** They are the inputs the verifier used and are kept byte-identical (the pins depend on
+them). Two things are known today that they do not contain; the paper (revision 5) states both, and its Table I counts
+apply the first as a dated correction (`paper/make_tables.py`):
+
+* **AME(9,10) exists**: machine-checked Lean proof in github.com/facebookresearch/atlas-lean (file first committed
+  2026-08-28), compiled against Formal Conjectures in github.com/niketp03/atlas-fc-verified (2026-09-14). All three
+  status files have (9,10) as `open`. With it, AME(9,50) = AME(9,5) x AME(9,10) also exists. Corrected counts: 119
+  existing / 905 not covered for d <= 11 (files: 118 / 906), 948 / 1,119 beyond the table (files: 947 / 1,120).
+* **codetables.de changed on 2026-10-21**: it now shows [[15,0,8]]_8 and [[17,0,9]]_8 codes (bounds 8-8 and 9-9; they
+  were 7-8 and 8-9 in the snapshot of 2026-10-10 used here). `sources/codetables_2026-11-10/` holds the 41 pages
+  fetched on 2026-11-10 with an index (`INDEX.json`); `../ancillary/codetables/` compares the two codes with ours (n = 17: the same state up to local Cliffords and a
+  permutation; n = 15: a different state of the same family).
+
+`prior_art_check_2026-11-10.md` is the dated record of the literature check made for revision 5 (code tables, the
+AME(9,10) proof, bibliographic data, full-text reading for the q = 16 cells). It supersedes the corresponding entries
+of `literature_log_2026-10-19.md`, which is kept unchanged as the log of the original run.
+
 ## Status of every source
 
 | source | kind | used for |
@@ -26,9 +43,10 @@ github.com/huberfe/huberfe.github.io, branch gh-pages; live at https://huberfe.g
 | Bevins, Bidav, arXiv:2608.05781 (AME(12,5), (18,11), (18,13) and projections) | preprint, unrefereed | those cells |
 | Hontarenko, Zyczkowski, arXiv:2609.11796 (AME(2q,q), AME(2q-1,q), AME(4k+1/4k+2,q), AME(q+3,q) for odd prime powers q; Table 1 parents) | preprint, unrefereed | those cells |
 | Kitamura, github.com/KitaKen1/ame-9-6-lean and ame-11-10-lean (Lean 4 proofs) | repositories with machine-checked proofs, unrefereed | AME(9,6) (phase 2, 3), AME(11,10) (phase 3) |
+| facebookresearch/atlas-lean, `Atlas/FC/OpenQuantumProblem35_ame_9_10_open_solution.lean` (Lean 4 proof of AME(9,10), 2026-08-28); niketp03/atlas-fc-verified `AtlasFCSolutions/Oqp35.lean` | repositories with a machine-checked proof, unrefereed | **missing from all three snapshots** (found by the exam of 2026-11-09); applied as a correction to the paper's counts |
 | Hontarenko, Zyczkowski, arXiv:2610.17170 Sec. 7: "a forthcoming revision will also include an extension to stabilizer AME(N,q) states for all 2 <= N <= 2q" | **announcement** (no construction, no q-range) | **not used** to mark any cell; mentioned in the paper (Table I caption) |
-| Ball, Moreno, Simoens, arXiv:2401.06618 (no [[8,0,5]]_4 stabiliser code) | preprint (a journal version is claimed by the authors' repository, not confirmed) | annotation of AME(8,4) in phase 3 (the cell stays unknown: non-stabilizer states are not covered) |
-| this work (AME(15,8), AME(17,8)) | phase-1 results | phases 2 and 3 |
+| Ball, Moreno, Simoens, arXiv:2401.06618 (no [[8,0,5]]_4 stabiliser code) | refereed: IEEE Trans. Inf. Theory 71(5), 3707-3718 (2025), DOI 10.1109/TIT.2024.3454480 (confirmed through Crossref on 2026-11-10; the snapshots were built when we knew only the preprint) | annotation of AME(8,4) in phase 3 (the cell stays unknown: non-stabilizer states are not covered) |
+| this work (AME(15,8), AME(17,8)) | phase-1 results (certified 2026-10-16); codetables.de shows codes with these parameters since 2026-10-21, see above | phases 2 and 3 |
 
 Closure rules: tensor products on the same parties (AME(n,d1) and AME(n,d2) give AME(n,d1 d2)); projection
 AME(2k,d) -> AME(2k-1,d); and, contrapositively, AME(2k-1,d) nonexistent gives AME(2k,d) nonexistent.

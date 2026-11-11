@@ -1,0 +1,148 @@
+== float: kernel_ic against brute force ==
+ok   depolarizing    n 1 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 1 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 1 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 1 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 1 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 1 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 1 r 2 p 3/50    kernel -0.017648416010788 brute -0.017648416010789 diff 1.0e-15
+ok   depolarizing    n 1 r 2 p 27/400  kernel -0.053392032081771 brute -0.053392032081771 diff 4.4e-16
+ok   independent_xz  n 1 r 2 p 11/100  kernel -0.017998582179375 brute -0.017998582179374 diff 1.1e-15
+ok   independent_xz  n 1 r 2 p 0.1277  kernel -0.090235052579782 brute -0.090235052579782 diff 2.2e-16
+ok   two_pauli       n 1 r 2 p 23/200  kernel -0.028363429055455 brute -0.028363429055456 diff 5.6e-16
+ok   two_pauli       n 1 r 2 p 0.1268  kernel -0.070723555366897 brute -0.070723555366896 diff 1.0e-15
+ok   depolarizing    n 1 r 3 p 3/50    kernel -0.005564339427303 brute -0.005564339427299 diff 3.7e-15
+ok   depolarizing    n 1 r 3 p 27/400  kernel -0.048184502544718 brute -0.048184502544719 diff 6.7e-16
+ok   independent_xz  n 1 r 3 p 11/100  kernel -0.016056563639534 brute -0.016056563639537 diff 2.2e-15
+ok   independent_xz  n 1 r 3 p 0.1277  kernel -0.098954756748381 brute -0.098954756748374 diff 7.2e-15
+ok   two_pauli       n 1 r 3 p 23/200  kernel -0.021626705377645 brute -0.021626705377644 diff 6.7e-16
+ok   two_pauli       n 1 r 3 p 0.1268  kernel -0.069876771262953 brute -0.069876771262949 diff 3.8e-15
+ok   depolarizing    n 2 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 2 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 2 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 2 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 2 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 2 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 2 r 2 p 3/50    kernel -0.012132770728146 brute -0.012132770728146 diff 0.0e+00
+ok   depolarizing    n 2 r 2 p 27/400  kernel -0.031065656275703 brute -0.031065656275704 diff 1.7e-15
+ok   independent_xz  n 2 r 2 p 11/100  kernel -0.015468890903611 brute -0.015468890903611 diff 4.2e-16
+ok   independent_xz  n 2 r 2 p 0.1277  kernel -0.101759418832162 brute -0.101759418832163 diff 8.9e-16
+ok   two_pauli       n 2 r 2 p 23/200  kernel -0.025557292805743 brute -0.025557292805743 diff 5.6e-17
+ok   two_pauli       n 2 r 2 p 0.1268  kernel -0.051353340697466 brute -0.051353340697464 diff 1.7e-15
+ok   depolarizing    n 2 r 3 p 3/50    kernel +0.008738295750650 brute +0.008738295750651 diff 1.1e-16
+ok   depolarizing    n 2 r 3 p 27/400  kernel -0.054424548316341 brute -0.054424548316340 diff 6.7e-16
+ok   independent_xz  n 2 r 3 p 11/100  kernel -0.021369748525763 brute -0.021369748525764 diff 3.9e-16
+ok   independent_xz  n 2 r 3 p 0.1277  kernel -0.151856582744582 brute -0.151856582744582 diff 2.2e-16
+ok   two_pauli       n 2 r 3 p 23/200  kernel -0.050990864400920 brute -0.050990864400920 diff 1.1e-16
+ok   two_pauli       n 2 r 3 p 0.1268  kernel -0.125031237430575 brute -0.125031237430576 diff 7.8e-16
+ok   depolarizing    n 3 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 3 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 3 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 3 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 3 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 3 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 3 r 2 p 3/50    kernel +0.009758617305658 brute +0.009758617305658 diff 4.4e-16
+ok   depolarizing    n 3 r 2 p 27/400  kernel -0.070094402036817 brute -0.070094402036818 diff 2.2e-16
+ok   independent_xz  n 3 r 2 p 11/100  kernel -0.020019543553225 brute -0.020019543553225 diff 1.1e-16
+ok   independent_xz  n 3 r 2 p 0.1277  kernel -0.105080506009820 brute -0.105080506009820 diff 0.0e+00
+ok   two_pauli       n 3 r 2 p 23/200  kernel -0.037985802790959 brute -0.037985802790958 diff 1.3e-15
+ok   two_pauli       n 3 r 2 p 0.1268  kernel -0.052279622757082 brute -0.052279622757082 diff 7.8e-16
+ok   depolarizing    n 3 r 3 p 3/50    kernel +0.012753461868619 brute +0.012753461868619 diff 1.1e-16
+ok   depolarizing    n 3 r 3 p 27/400  kernel -0.089119630529033 brute -0.089119630529032 diff 1.1e-15
+ok   independent_xz  n 3 r 3 p 11/100  kernel -0.024871338715223 brute -0.024871338715224 diff 2.2e-16
+ok   independent_xz  n 3 r 3 p 0.1277  kernel -0.161782394939692 brute -0.161782394939691 diff 1.0e-15
+ok   two_pauli       n 3 r 3 p 23/200  kernel -0.053164012687609 brute -0.053164012687605 diff 3.8e-15
+ok   two_pauli       n 3 r 3 p 0.1268  kernel -0.107304108575014 brute -0.107304108575011 diff 2.9e-15
+ok   depolarizing    n 4 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 4 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 4 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 4 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 4 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 4 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 4 r 2 p 3/50    kernel -0.010059030479361 brute -0.010059030479363 diff 2.4e-15
+ok   depolarizing    n 4 r 2 p 27/400  kernel -0.059630485083791 brute -0.059630485083792 diff 1.1e-15
+ok   independent_xz  n 4 r 2 p 11/100  kernel -0.031873730288218 brute -0.031873730288219 diff 1.1e-15
+ok   independent_xz  n 4 r 2 p 0.1277  kernel -0.073602163465116 brute -0.073602163465116 diff 5.6e-17
+ok   two_pauli       n 4 r 2 p 23/200  kernel -0.035673837248010 brute -0.035673837248009 diff 1.3e-15
+ok   two_pauli       n 4 r 2 p 0.1268  kernel -0.102737193116965 brute -0.102737193116965 diff 5.8e-16
+ok   depolarizing    n 4 r 3 p 3/50    kernel +0.002401133411769 brute +0.002401133411768 diff 7.8e-16
+ok   depolarizing    n 4 r 3 p 27/400  kernel -0.074152886407371 brute -0.074152886407370 diff 3.6e-16
+ok   independent_xz  n 4 r 3 p 11/100  kernel -0.041405802768438 brute -0.041405802768440 diff 2.7e-15
+ok   independent_xz  n 4 r 3 p 0.1277  kernel -0.147471493083238 brute -0.147471493083239 diff 1.0e-15
+ok   two_pauli       n 4 r 3 p 23/200  kernel -0.071137665257442 brute -0.071137665257449 diff 7.5e-15
+ok   two_pauli       n 4 r 3 p 0.1268  kernel -0.148365296271779 brute -0.148365296271781 diff 2.1e-15
+ok   depolarizing    n 5 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 5 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 5 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 5 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 5 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 5 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 5 r 2 p 3/50    kernel +0.009461954295873 brute +0.009461954295873 diff 1.1e-16
+ok   depolarizing    n 5 r 2 p 27/400  kernel -0.061998290957834 brute -0.061998290957834 diff 2.8e-16
+ok   independent_xz  n 5 r 2 p 11/100  kernel -0.031515592988380 brute -0.031515592988379 diff 1.2e-15
+ok   independent_xz  n 5 r 2 p 0.1277  kernel -0.113286414282571 brute -0.113286414282571 diff 2.2e-16
+ok   two_pauli       n 5 r 2 p 23/200  kernel -0.048468940976286 brute -0.048468940976286 diff 5.6e-17
+ok   two_pauli       n 5 r 2 p 0.1268  kernel -0.142739253241916 brute -0.142739253241916 diff 2.2e-16
+ok   depolarizing    n 5 r 3 p 3/50    kernel +0.021412756369076 brute +0.021412756369077 diff 8.9e-16
+ok   depolarizing    n 5 r 3 p 27/400  kernel -0.088089436543052 brute -0.088089436543053 diff 1.0e-15
+ok   independent_xz  n 5 r 3 p 11/100  kernel -0.041048960691819 brute -0.041048960691819 diff 4.4e-16
+ok   independent_xz  n 5 r 3 p 0.1277  kernel -0.163076125685232 brute -0.163076125685232 diff 5.0e-16
+ok   two_pauli       n 5 r 3 p 23/200  kernel -0.075926306387141 brute -0.075926306387143 diff 1.7e-15
+ok   two_pauli       n 5 r 3 p 0.1268  kernel -0.175626098207813 brute -0.175626098207812 diff 8.9e-16
+ok   depolarizing    n 6 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 6 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 6 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 6 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 6 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 6 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 6 r 2 p 3/50    kernel +0.014129424430235 brute +0.014129424430235 diff 1.4e-16
+ok   depolarizing    n 6 r 2 p 27/400  kernel -0.073947894407409 brute -0.073947894407408 diff 1.0e-15
+ok   independent_xz  n 6 r 2 p 11/100  kernel -0.030659311756461 brute -0.030659311756459 diff 1.7e-15
+ok   independent_xz  n 6 r 2 p 0.1277  kernel -0.147560629913525 brute -0.147560629913524 diff 6.4e-16
+ok   two_pauli       n 6 r 2 p 23/200  kernel -0.042509606519556 brute -0.042509606519562 diff 5.7e-15
+ok   two_pauli       n 6 r 2 p 0.1268  kernel -0.138209730643755 brute -0.138209730643755 diff 2.5e-16
+ok   depolarizing    n 6 r 3 p 3/50    kernel +0.018672429303421 brute +0.018672429303422 diff 7.2e-16
+ok   depolarizing    n 6 r 3 p 27/400  kernel -0.108646441363358 brute -0.108646441363359 diff 1.5e-15
+ok   independent_xz  n 6 r 3 p 11/100  kernel -0.048504626875487 brute -0.048504626875483 diff 3.8e-15
+ok   independent_xz  n 6 r 3 p 0.1277  kernel -0.179634787490505 brute -0.179634787490506 diff 7.8e-16
+ok   two_pauli       n 6 r 3 p 23/200  kernel -0.106558716029383 brute -0.106558716029386 diff 3.0e-15
+ok   two_pauli       n 6 r 3 p 0.1268  kernel -0.220798767901121 brute -0.220798767901120 diff 8.9e-16
+ok   depolarizing    n 7 r 1 p 3/50    kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 7 r 1 p 27/400  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 7 r 1 p 11/100  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   independent_xz  n 7 r 1 p 0.1277  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 7 r 1 p 23/200  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   two_pauli       n 7 r 1 p 0.1268  kernel +0.000000000000000 brute +0.000000000000000 diff 0.0e+00
+ok   depolarizing    n 7 r 2 p 3/50    kernel +0.008342408091573 brute +0.008342408091574 diff 8.3e-16
+ok   depolarizing    n 7 r 2 p 27/400  kernel -0.073687748740199 brute -0.073687748740196 diff 3.6e-15
+ok   independent_xz  n 7 r 2 p 11/100  kernel -0.046495073780910 brute -0.046495073780912 diff 1.8e-15
+ok   independent_xz  n 7 r 2 p 0.1277  kernel -0.151643052258376 brute -0.151643052258376 diff 5.6e-17
+ok   two_pauli       n 7 r 2 p 23/200  kernel -0.076923186623052 brute -0.076923186623057 diff 4.9e-15
+ok   two_pauli       n 7 r 2 p 0.1268  kernel -0.168312786311917 brute -0.168312786311920 diff 2.9e-15
+ok   depolarizing    n 7 r 3 p 3/50    kernel +0.013718362429387 brute +0.013718362429386 diff 1.3e-15
+ok   depolarizing    n 7 r 3 p 27/400  kernel -0.107514996271826 brute -0.107514996271829 diff 2.9e-15
+ok   independent_xz  n 7 r 3 p 11/100  kernel -0.059796152620222 brute -0.059796152620224 diff 2.0e-15
+ok   independent_xz  n 7 r 3 p 0.1277  kernel -0.221068428304146 brute -0.221068428304141 diff 5.2e-15
+ok   two_pauli       n 7 r 3 p 23/200  kernel -0.097378293735366 brute -0.097378293735366 diff 1.7e-16
+ok   two_pauli       n 7 r 3 p 0.1268  kernel -0.251583895906578 brute -0.251583895906574 diff 4.6e-15
+float: worst |kernel - brute| = 7.55e-15
+== mp (30 digits): kernel_ic against brute force ==
+ok   depolarizing    n 2 r 2 p 27/400  mp -0.053271906422384439222 |mp - brute| 3.3e-16 |mp - float| 3.9e-16
+ok   independent_xz  n 2 r 2 p 0.1277  mp -0.10003819837144426302 |mp - brute| 1.9e-16 |mp - float| 3.6e-16
+ok   two_pauli       n 2 r 2 p 0.1268  mp -0.082027636443350305111 |mp - brute| 2.0e-15 |mp - float| 2.3e-15
+ok   depolarizing    n 3 r 2 p 27/400  mp -0.036528232317143469826 |mp - brute| 5.0e-16 |mp - float| 2.8e-16
+ok   independent_xz  n 3 r 2 p 0.1277  mp -0.078461363433597062934 |mp - brute| 2.6e-16 |mp - float| 4.2e-17
+ok   two_pauli       n 3 r 2 p 0.1268  mp -0.1006757418046951959 |mp - brute| 9.7e-17 |mp - float| 5.4e-16
+ok   depolarizing    n 4 r 2 p 27/400  mp -0.060729705229723845411 |mp - brute| 3.6e-16 |mp - float| 1.4e-16
+ok   independent_xz  n 4 r 2 p 0.1277  mp -0.10291969710469766426 |mp - brute| 1.2e-15 |mp - float| 6.8e-16
+ok   two_pauli       n 4 r 2 p 0.1268  mp -0.13041295238083122658 |mp - brute| 9.4e-16 |mp - float| 3.6e-16
+ok   depolarizing    n 5 r 2 p 27/400  mp -0.080227609698859537895 |mp - brute| 5.8e-16 |mp - float| 5.3e-16
+ok   independent_xz  n 5 r 2 p 0.1277  mp -0.14502221753328210451 |mp - brute| 8.3e-16 |mp - float| 2.8e-16
+ok   two_pauli       n 5 r 2 p 0.1268  mp -0.082045759998701793182 |mp - brute| 5.7e-16 |mp - float| 5.4e-16
+mp: worst |mp - float kernel| = 2.35e-15
+== frame change: Krawtchouk integers against exp(-i pi/2 J_x) ==
+ok   n 5: max |difference| 1.1e-15
+ok   n 20: max |difference| 6.3e-15
+ok   n 48: max |difference| 2.3e-14
+ok   n 80: max |difference| 2.7e-14
+kernel validation: 142 cases, 0 failures, worst float 7.5e-15, worst mp-float 2.3e-15, worst frame 2.7e-14

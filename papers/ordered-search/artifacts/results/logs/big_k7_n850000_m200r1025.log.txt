@@ -1,0 +1,10 @@
+k=7 n=850000: 2200 variables, grid 6800001 points per q, 8 fft workers, param log
+  [0] mu=0.01: softmin -24.499, min over grid+extra -24.48, 1500 its (2408s)
+  [0] mu=0.003: softmin -24.088, min over grid+extra -24.081, 1500 its (4833s)
+work/lead/smooth_big.py:159: RuntimeWarning: overflow encountered in divide
+  est = (vals[i] - d1 * d1 / (8 * np.maximum(d2, 1e-300))) / omega(i * h, n)
+  [0] true min q/omega -45.242; extra points +16423 (total 173502); best -45.242 (4865s)
+  [1] mu=0.01: softmin -24.052, min over grid+extra -24.014, 1000 its (6312s)
+  [1] mu=0.003: softmin -23.819, min over grid+extra -23.812, 1000 its (7894s)
+  [1] true min q/omega -29.701; extra points +6626 (total 180128); best -29.701 (7926s)
+k=7 n=850000 nv=2200: true min q/omega -29.701 (best pass; 7926s)
